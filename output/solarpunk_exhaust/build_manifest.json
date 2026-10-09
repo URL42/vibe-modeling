@@ -4,7 +4,7 @@
   "design": "solarpunk_exhaust",
   "revision": "rev_0001",
   "destination": "current",
-  "generated_at_utc": "2026-09-23T22:46:21.546014+00:00",
+  "generated_at_utc": "2026-10-09T06:02:38.758916+00:00",
   "config": {
     "path": "designs/solarpunk_exhaust/configs/rev_0001.json",
     "sha256": "99dc0987fc31dafc8c8616f96f5b380e70b5970391ecc84a00436ae660c7518d"
@@ -19,7 +19,7 @@
     "main_scad": "designs/solarpunk_exhaust/src/main.scad"
   },
   "git": {
-    "commit": "815d757e80a86b943f06becb7ee7fc5cdd074312",
+    "commit": "f423438f7d7aa2fe26b6c7d99d702428e9047b69",
     "dirty": true
   },
   "openscad": "C:\\Program Files (x86)\\OpenSCAD\\openscad.exe",
@@ -50,7 +50,7 @@
     {
       "path": "fan_proxy_rev_0001.stl",
       "bytes": 154434,
-      "sha256": "da6c37a758bd3ebfda91ebf232d84603f82572cc65776835d3fda464d2d8bae6"
+      "sha256": "ea5fa53f7461708a037ca312b28287f7ec3bf9ad80ddbdc2a11f188ea2e0566e"
     },
     {
       "path": "fan_proxy_rev_0001_inspect_inside_bottom_iso.png",
@@ -140,7 +140,7 @@
     {
       "path": "solarpunk_exhaust_rev_0001.stl",
       "bytes": 807423,
-      "sha256": "22db9c7196df8f0e43a1816d07066097d7d85e08ffd1cb9b9605d9745efeb83d"
+      "sha256": "302575080ce683649fc736efcad868b4bcab6b1ea7ffd99b8454b69e5abe8801"
     },
     {
       "path": "solarpunk_exhaust_rev_0001_inspect_inside_bottom_iso.png",

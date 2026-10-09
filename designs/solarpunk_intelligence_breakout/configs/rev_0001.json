@@ -1,0 +1,15 @@
+{
+  "part": "solarpunk_intelligence_breakout_rev_0001",
+  "part_id": 1,
+
+  "minimum_wall_thickness": 3.0,
+  "minimum_structural_overlap": 3.0,
+  "minimum_internal_edge_width": 6.5,
+
+  "hole_dia": 5.0,
+  "hole_pitch": 20.0,
+  "hole_grid_cols": 8,
+  "hole_grid_rows": 9,
+
+  "maximum_print_dimension": 220.0
+}

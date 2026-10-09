@@ -27,6 +27,7 @@
 | Design | Status | Role |
 |---|---|---|
 | `solarpunk_intelligence_hub` | rev_0002 built and audited (2026-09-20) | Electrical/IoT mounting hub: single flat hanging plate carrying the series electronics on one standoff plane |
+| `solarpunk_intelligence_breakout` | `rev_0001` built and verified (2026-09-25, updated with Ø5 zip-tie grid same day) | Blank companion backplane: same 169 × 194 × 3 mm envelope and hanging interface as the hub, but without component mounting holes, outlines, labels, or collars; carries a uniform 8 × 9 Ø5 zip-tie hole grid |
 | `solarpunk_seed_tray` | scaffold complete; placeholder configs, Phase 1 measurement pending | Per-tray converter: TPU flood tray with integrated bell siphon |
 | `solarpunk_exhaust` | scaffold in phase (rev_0001, plan V4 + V5 magnet-pocket addendum + V6 corner chamfer / front-face recesses, rebuilt + audited 2026-09-23); placeholder config pending fan measurement | 120 mm fan mounting plate over the ventilation screen: Ø116 airflow opening, adjacent-edge velcro bands, 8 front-face magnet recesses (V5, flipped front in V6), 45-degree top-left corner chamfer (V6) |
 | `solarpunk_siphon_filter` | deferred | Siphon-based filtration stage between return manifold and reservoir |
@@ -403,7 +404,38 @@ the insert lifted out (see the 5.3 no-inaccessible-cavities assumption).
 - **Assembly governance:** not applicable — a single printable part plus a
   reference mockup (no `assembly.json`); precedent: `ac_redirectors`.
 
-## 7. Design: `solarpunk_exhaust`
+## 7. Design: `solarpunk_intelligence_breakout`
+
+- **Status:** `rev_0001` built (2026-09-25) into
+  `output/solarpunk_intelligence_breakout/` (1 STL + 17 PNG, flat).
+  Installed STL verified numerically: bounds [0,0,0]→[169,194,3] mm, signed
+  volume 95,958 mm³ = 169 × 194 × 3 − 8 × (20 × 5 × 3) exactly; 38 facets =
+  plate plus 8 through-slots. OpenSCAD's `Volumes: 2` export summary is the
+  known report quirk (see `solarpunk_intelligence_hub`, journal 2026-09-20),
+  not a second shell.
+- **Role:** blank companion backplane for the intelligence hub — same
+  169 × 194 × 3 mm envelope and mirrored hanging-band interface, but without
+  any component mounting holes, raised outlines, text labels, or standoff
+  collars. Provides open real estate for components that don't fit on the
+  main hub layout.
+- **Geometry (rev_0001, updated 2026-09-25 with zip-tie grid):** flat
+  169 × 194 × 3 mm plate; 8 × 20 × 5 mm rectangular hanging slots (4 per band,
+  mirrored top/bottom) at identical positions to `solarpunk_intelligence_hub`
+  — slot centers x = 20/63/106/149, top band y center = 188.5, bottom band y
+  center = 5.5; each band is an 11 mm zone (3 mm gap + 5 mm slot + 3 mm gap).
+  Plus a uniform 8 × 9 = 72 Ø5 mm through-hole grid on a 20 mm center-to-center
+  pitch — columns at x = 14.5 / 34.5 / 54.5 / 74.5 / 94.5 / 114.5 / 134.5 / 154.5
+  (12 mm edge clearance, symmetric), rows at y = 17 / 37 / 57 / 77 / 97 / 117 /
+  137 / 157 / 177 (14.5 mm edge clearance, symmetric; 6.5 mm y-strip to the slot
+  bands) — for zip ties attaching components that don't fit on the hub.
+- **Structural minimums (asserted at render):** `minimum_wall_thickness =
+  3.0`; `minimum_internal_edge_width = 6.5 mm` — Ø5 hole edge to nearest slot
+  edge (governing, in y because the hole overlaps the slot in x); 15 mm
+  hole-to-hole ligament; 12/14.5 mm hole-to-plate-edge; 10 mm slot-to-plate-edge;
+- **Single-part design:** no `parts.json`, no `assembly.json`. Precedent:
+  `ac_redirectors`.
+
+## 8. Design: `solarpunk_exhaust`
 
 - **Status:** scaffold in phase (rev_0001, plan V4 + V5 magnet-pocket
   addendum + V6 corner chamfer and front-face recess flip, user
@@ -508,7 +540,7 @@ the insert lifted out (see the 5.3 no-inaccessible-cavities assumption).
 - **Open:** the real 120 mm fan model (mounting span / hole pattern / depth);
   material (working proposal PETG); the hose intake method (user-owned).
 
-## 8. Design: `solarpunk_siphon_filter`
+## 9. Design: `solarpunk_siphon_filter`
 
 - **Status:** deferred — no geometry this phase.
 - **Role:** siphon-based filtration stage handling the combined drainage from
@@ -522,7 +554,7 @@ the insert lifted out (see the 5.3 no-inaccessible-cavities assumption).
 - **Open:** full design deferred; tray-side work only needs to expose a clean
   connection point.
 
-## 9. Cross-Design Contracts
+## 10. Cross-Design Contracts
 
 - The tray drain port and the siphon-filter inlet must stay on the same ~1/2"
   commodity plumbing standard (see 5.6).
@@ -533,7 +565,7 @@ the insert lifted out (see the 5.3 no-inaccessible-cavities assumption).
   `playbooks/how_to_manage_reference_mockups_and_non_printable_geometry.md` and
   must never appear as print artifacts.
 
-## 10. Maintenance
+## 11. Maintenance
 
 - Update this document in the same task as any detail change to a solarpunk
   design (dimensions, decisions, scope, deviations, open items).

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "parts": [
+    { "part_id": 1, "name": "base" },
+    { "part_id": 2, "name": "lid" }
+  ]
+}
