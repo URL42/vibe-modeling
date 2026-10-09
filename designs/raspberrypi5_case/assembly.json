@@ -9,7 +9,18 @@
       "members": [
         {
           "assembly_id": "case_joint",
-          "transform": { "translate": [0, 0, 0], "rotate": [0, 0, 0] }
+          "transform": {
+            "translate": [
+              0,
+              0,
+              0
+            ],
+            "rotate": [
+              0,
+              0,
+              0
+            ]
+          }
         }
       ]
     },
@@ -19,11 +30,33 @@
       "members": [
         {
           "part_id": 1,
-          "transform": { "translate": [0, 0, 0], "rotate": [0, 0, 0] }
+          "transform": {
+            "translate": [
+              0,
+              0,
+              0
+            ],
+            "rotate": [
+              0,
+              0,
+              0
+            ]
+          }
         },
         {
           "part_id": 2,
-          "transform": { "translate": [0, 0, 0], "rotate": [0, 0, 0] }
+          "transform": {
+            "translate": [
+              0,
+              0,
+              0
+            ],
+            "rotate": [
+              0,
+              0,
+              0
+            ]
+          }
         }
       ]
     }
@@ -34,31 +67,322 @@
       "owner_assembly": "case_joint",
       "type": "structural_mount",
       "split_policy": "intentionally_terminated",
-      "local_frame": { "translate": [60, 60, 107], "rotate": [0, 0, 0] },
-      "engages_parts": ["base", "lid"]
+      "local_frame": {
+        "translate": [
+          60,
+          60,
+          113
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "base",
+        "lid"
+      ]
     }
   ],
   "views": [
     {
       "name": "front",
       "projection": "o",
-      "camera": [0, 0, 0, 90, 0, 0, 800],
+      "camera": [
+        0,
+        0,
+        0,
+        90,
+        0,
+        0,
+        800
+      ],
+      "assembly_view": "product",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "rear",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        0,
+        90,
+        0,
+        180,
+        800
+      ],
+      "assembly_view": "product",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "left",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        0,
+        90,
+        0,
+        90,
+        800
+      ],
+      "assembly_view": "product",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "right",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        0,
+        90,
+        0,
+        270,
+        800
+      ],
+      "assembly_view": "product",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "top",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        800
+      ],
+      "assembly_view": "product",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "bottom",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        0,
+        180,
+        0,
+        0,
+        800
+      ],
       "assembly_view": "product",
       "assembly_view_id": 0,
       "show_proxies": false
     },
     {
       "name": "isometric",
-      "projection": "p",
-      "camera": [0, 0, 0, 55, 0, 25, 800],
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        0,
+        55,
+        0,
+        25,
+        800
+      ],
       "assembly_view": "product",
       "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "exploded",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        0,
+        55,
+        0,
+        25,
+        800
+      ],
+      "assembly_view": "exploded",
+      "assembly_view_id": 1,
+      "show_proxies": false
+    },
+    {
+      "name": "base_isolation",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        0,
+        55,
+        0,
+        25,
+        800
+      ],
+      "assembly_view": "base_isolation",
+      "assembly_view_id": 2,
+      "show_proxies": false
+    },
+    {
+      "name": "lid_isolation",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        0,
+        55,
+        0,
+        25,
+        800
+      ],
+      "assembly_view": "lid_isolation",
+      "assembly_view_id": 3,
+      "show_proxies": false
+    },
+    {
+      "name": "stud_seam_start",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        0,
+        90,
+        0,
+        90,
+        800
+      ],
+      "assembly_view": "stud_seam_start",
+      "assembly_view_id": 4,
+      "show_proxies": false
+    },
+    {
+      "name": "stud_seam_mid",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        0,
+        90,
+        0,
+        90,
+        800
+      ],
+      "assembly_view": "stud_seam_mid",
+      "assembly_view_id": 5,
+      "show_proxies": false
+    },
+    {
+      "name": "stud_seam_end",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        0,
+        90,
+        0,
+        90,
+        800
+      ],
+      "assembly_view": "stud_seam_end",
+      "assembly_view_id": 6,
+      "show_proxies": false
+    },
+    {
+      "name": "fastener_section",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        0,
+        90,
+        0,
+        90,
+        800
+      ],
+      "assembly_view": "fastener_section",
+      "assembly_view_id": 7,
+      "show_proxies": false
+    },
+    {
+      "name": "lid_recess_section",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        0,
+        90,
+        0,
+        0,
+        800
+      ],
+      "assembly_view": "lid_recess_section",
+      "assembly_view_id": 8,
+      "show_proxies": false
+    },
+    {
+      "name": "wall_floor_section",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        0,
+        90,
+        0,
+        0,
+        800
+      ],
+      "assembly_view": "wall_floor_section",
+      "assembly_view_id": 9,
       "show_proxies": false
     }
   ],
   "view_sets": {
-    "compact": ["front", "isometric"],
-    "full": ["front", "isometric"]
+    "compact": [
+      "front",
+      "rear",
+      "left",
+      "right",
+      "isometric",
+      "base_isolation",
+      "lid_isolation",
+      "fastener_section",
+      "lid_recess_section"
+    ],
+    "full": [
+      "front",
+      "rear",
+      "left",
+      "right",
+      "top",
+      "bottom",
+      "isometric",
+      "exploded",
+      "base_isolation",
+      "lid_isolation",
+      "stud_seam_start",
+      "stud_seam_mid",
+      "stud_seam_end",
+      "fastener_section",
+      "lid_recess_section",
+      "wall_floor_section"
+    ]
   },
-  "geometry_exports": []
+  "geometry_exports": [
+    {
+      "name": "product_assembly",
+      "dispatch_id": 90,
+      "minimum_span": [
+        120,
+        120,
+        120
+      ]
+    }
+  ]
 }

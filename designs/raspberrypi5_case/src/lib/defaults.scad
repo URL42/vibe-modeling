@@ -8,7 +8,7 @@
 // Coordinate frame (assembly coordinates, shared by all parts):
 //   x: 0..envelope, left (Pi/PCB side) -> right
 //   y: 0..envelope, front -> back (back is the fully open band)
-//   z: 0..envelope+emblem_t, bottom -> top
+//   z: 0..envelope+emblem_t+bezel_h, bottom -> top
 //
 // Layout (rev_0001, fixed 2026-10-08 per user review): the PCB
 // (x 5..90, y 32..88) faces its TWO port edges into the open interior:
@@ -16,7 +16,7 @@
 // free space for plugs and cables), and the USB/Ethernet edge (x = 90)
 // looks across the interior with 27 mm of clearance to the right wall,
 // so both plug groups terminate inside the case and their cables leave
-// through the open back. The PCB edge against the left wall (5 mm gap) is
+// through the open back. The PCB edge against the left wall (5 mm from the outer face; 2 mm inner-wall gap) is
 // the port-FREE edge. All side walls are SOLID: there are no port
 // cutouts in this design.
 //
@@ -39,32 +39,30 @@ envelope = is_undef(envelope) ? 120.0 : envelope;
 // ---- Shell section sizes ----
 floor_t = is_undef(floor_t) ? 3.0 : floor_t;
 wall_t = is_undef(wall_t) ? 3.0 : wall_t;
-lid_slab_t = is_undef(lid_slab_t) ? 3.0 : lid_slab_t;
-lid_band_h = is_undef(lid_band_h) ? 10.0 : lid_band_h;
+lid_slab_t = is_undef(lid_slab_t) ? 7.0 : lid_slab_t;
 
-// ---- M3 lid/base join (rim block scheme, rev_0001 fix 2026-10-08) ----
-// The base carries short rim blocks at the four corners of the parting
-// line (NOT full-height columns: the full-height columns were rejected in
-// user review as breaking the interior layout). At each corner a
-// m3_rim_size x m3_rim_size x m3_rim_h block sits at z 107-m3_rim_h .. 107,
-// flush with the two outer faces; its 3 mm overlap into each adjacent wall
-// is the positive-volume join, and the Ø m3_pilot_d bore through the block
-// (depth = m3_rim_h, open end at the block bottom) receives the M3 screw
-// from the lid's clearance bore. The lid side is unchanged (Ø3.4
-// clearance bore + Ø7x4 counterbore over the stations).
+// ---- M3 lid/base join (flat lid slab scheme, rev_0002, 2026-10-09) ----
+// User review 2026-10-09: the lid rim band and M3 bosses were removed as
+// making the lid essentially impossible to print. The lid is now a single
+// flat 7 mm slab (z 113..120) carrying the Ø m3_clear_d clearance bores
+// and Ø m3_cbore_d x m3_cbore_depth counterbored head seats over the
+// stations. The base carries short rim blocks at the four corners of the
+// parting line: a m3_rim_size x m3_rim_size x m3_rim_h block at each
+// corner, z 110..113, flush with the two outer faces; its 3 mm overlap
+// into each adjacent wall is the positive-volume join. The Ø m3_pilot_d
+// bore (depth = m3_rim_h = 3 mm, open end at the block bottom) receives
+// the M3 screw. The 3 mm pilot depth is a user-requested exception to the
+// usual >= 10 mm thread engagement (documented in base.scad).
 m3_inset = is_undef(m3_inset) ? 10.0 : m3_inset;
-// Ø14 locked: Ø11 would leave only a 2.0 mm ring between the Ø7 lid
-// counterbore edge and the bore edge (sub-minimum); Ø14 leaves 3.5 mm.
-m3_boss_d = is_undef(m3_boss_d) ? 14.0 : m3_boss_d;
 // 15x15 block: 3 mm overlap into EACH adjacent wall (= the 3 mm wall
 // thickness) leaves 15 - 3 = 12 mm into the interior of which 3.5 mm is
 // ligament around the Ø3 pilot and 5.5 mm is thread engagement in the
 // wall (asserted in base.scad). 15 is also the maximum block that keeps
 // the block inner faces away from the PCB holes (see base.scad asserts).
 m3_rim_size = is_undef(m3_rim_size) ? 15.0 : m3_rim_size;
-// 10 mm: mirrors the lid band height (symmetric joint about the parting
-// line) and equals the documented M3 thread engagement (asserted >= 10).
-m3_rim_h = is_undef(m3_rim_h) ? 10.0 : m3_rim_h;
+// 3 mm: user-requested (rev_0002) — studs stay at the top of the base but
+// no taller than 3 mm; equals the pilot bore depth.
+m3_rim_h = is_undef(m3_rim_h) ? 3.0 : m3_rim_h;
 m3_clear_d = is_undef(m3_clear_d) ? 3.4 : m3_clear_d;
 m3_pilot_d = is_undef(m3_pilot_d) ? 3.0 : m3_pilot_d;
 m3_cbore_d = is_undef(m3_cbore_d) ? 7.0 : m3_cbore_d;
@@ -108,12 +106,13 @@ maximum_print_dimension = is_undef(maximum_print_dimension) ? 300.0 : maximum_pr
 // Derived layout (computed from the config inputs above)
 // ===========================================================================
 
-// Parting line: top of base walls = bottom of lid rim band.
-// Locked value: 120 - 3 (slab) - 10 (band) = 107.0
-function parting_line_z() = envelope - lid_slab_t - lid_band_h; // 107.0
+// Parting line: top of base walls = bottom of the flat lid slab. Locked
+// rev_0002 value: 120 - 7 (slab) = 113.0. The screw-head recesses
+// are 4 mm deep, leaving a 3 mm floor (asserted in lid.scad).
+function parting_line_z() = envelope - lid_slab_t; // 113.0
 
-// Lid slab spans z = 117..120.
-function lid_slab_z0() = envelope - lid_slab_t; // 117.0
+// Lid slab spans z = 113..120.
+function lid_slab_z0() = envelope - lid_slab_t; // 113.0
 
 // PCB hole centers in case coordinates. PCB origin (corner) is at
 // (pi_x_off, pi_y_off, floor_t); hole centers are inset pi_hole_inset from
@@ -191,19 +190,20 @@ function lens_center_y() = emblem_center_y; // 60.0
 // config stability but are not used by any rev_0001 geometry.
 
 // M3 screw pilot depth in the base rim blocks: a bore exactly
-// m3_rim_h deep (z 97..107) — the full block height (open end at the
-// block bottom), i.e. the documented 10 mm M3 thread engagement
-// (asserted >= 10 in base.scad, exact-minimum boundary). The bore passes
-// through the rim block only and no deeper; the lid's clearance bore over
-// the same station passes 13 mm of lid material.
-function m3_pilot_depth() = m3_rim_h; // 10.0
+// m3_rim_h deep (z 110..113) — the full block height (open end at the
+// block bottom). The 3 mm pilot depth is a user-requested exception
+// (rev_0002, 2026-10-09): the usual >= 10 mm M3 thread engagement is
+// waived for this design (documented in base.scad). The bore passes
+// through the rim block only and no deeper; the lid's counterbored
+// clearance bore over the same station seats the screw head in the flat
+// lid slab.
+function m3_pilot_depth() = m3_rim_h; // 3.0
 
 // Rim block size at each M3 corner: m3_rim_size x m3_rim_size x m3_rim_h,
-// flush with the two outer faces, z 107-m3_rim_h .. 107. The 3 mm
+// flush with the two outer faces, z 110..113. The 3 mm
 // overlap into each adjacent wall is the positive-volume join
 // (AGENTS.md section 10) and the load path rim block -> walls -> floor.
 // base.scad / lid.scad assert every ligament and margin.
-function boss_rad() = m3_boss_d / 2; // 7.0
 
 // ===========================================================================
 // Shared helper modules (hub pattern)

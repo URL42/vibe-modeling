@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "design": "raspberrypi5_case",
+  "primary_assembly": "product_assembly",
+  "view_set": "full",
+  "generated_at_utc": "2026-10-09T19:01:08.707115+00:00",
+  "config": {
+    "path": "designs/raspberrypi5_case/configs/rev_0002.json",
+    "sha256": "cffa570f71d27a44f223613f63ab89d022458a1aea67e5f34bacfdae0b769e96"
+  },
+  "parts_manifest": {
+    "path": "designs/raspberrypi5_case/parts.json",
+    "sha256": "e4e0d3dd85f90a75a45dbef937dc1d0c699ac9904e5ccb3366cae7662931b610"
+  },
+  "assembly_contract": {
+    "path": "designs/raspberrypi5_case/assembly.json",
+    "sha256": "2e0c9acfdfbd1a970fe5203bb426b79d2f9f89b4a06172f88c2f725b127a5ee2"
+  },
+  "source": {
+    "path": "designs/raspberrypi5_case/src",
+    "sha256": "55403f9be4f2911f2cce380d58915b5619ccd3de515960a5ac4139a5e885bc23",
+    "main_scad": "designs/raspberrypi5_case/src/main.scad"
+  },
+  "printable_build": {
+    "path": "output/raspberrypi5_case/build_manifest.json",
+    "directory": "output/raspberrypi5_case",
+    "sha256": "76caccae4e4ff99cb8bc3f3bf92433d805b8f234ce78b608afd8e7669f79cabf",
+    "counts": {
+      "parts": 2,
+      "stl": 2,
+      "png": 34,
+      "artifacts": 36
+    },
+    "stl_artifacts": [
+      {
+        "part_id": 1,
+        "name": "base",
+        "path": "base_rev_0002.stl",
+        "bytes": 270440,
+        "sha256": "19062bad2388da1ea3dbc313d81b0018e721ab9bf8c12e439f865c8d3a14d174"
+      },
+      {
+        "part_id": 2,
+        "name": "lid",
+        "path": "lid_rev_0002.stl",
+        "bytes": 368912,
+        "sha256": "534cca6a71720ed8238f8f19c8a93d0659b547a9f6eb3932bdf95f6acfc6824b"
+      }
+    ]
+  },
+  "git": {
+    "commit": "fc1ff8cd9f9da9913bb44c7e8a844ea16e073481",
+    "dirty": true
+  },
+  "counts": {
+    "png": 16,
+    "stl": 1,
+    "artifacts": 17
+  },
+  "artifacts": [
+    {
+      "path": "product_assembly.stl",
+      "bytes": 637205,
+      "sha256": "479eea8784dc79c59482edaa8f1fb63cc535a9e361037d036f24a37bdd5b339e"
+    },
+    {
+      "path": "product_assembly_base_isolation.png",
+      "bytes": 16350,
+      "sha256": "59c79b0732b73a3d87ed81e79c8b011f4274d031eb42ec8fb5962ae81d2291e3"
+    },
+    {
+      "path": "product_assembly_bottom.png",
+      "bytes": 5856,
+      "sha256": "fc511db09a9b286ec12d5662dcf5734d9e466297574bda78ce5366bfc487fe3f"
+    },
+    {
+      "path": "product_assembly_exploded.png",
+      "bytes": 26593,
+      "sha256": "edce948f2839b572cf8282915c45b142cceb257549abe1716712827ba3c47bf9"
+    },
+    {
+      "path": "product_assembly_fastener_section.png",
+      "bytes": 5976,
+      "sha256": "c5e2649822eaead1470ab0ecd4478ebaf1960c3f534e9eebf11ebc2b32567b7d"
+    },
+    {
+      "path": "product_assembly_front.png",
+      "bytes": 6143,
+      "sha256": "c108b208b0ed838d4cb3fcb50de5852368785da2f82d385a8829f72527d870f9"
+    },
+    {
+      "path": "product_assembly_isometric.png",
+      "bytes": 20625,
+      "sha256": "59d37ff05718ba25205859d99552ecc99538a03bfa68c8127f2f7a2f9e87fa6e"
+    },
+    {
+      "path": "product_assembly_left.png",
+      "bytes": 6142,
+      "sha256": "1a1a777ff7c6a9120267f3777ec5bb78c04f534dfb71be14c42d1ebd27f2fa92"
+    },
+    {
+      "path": "product_assembly_lid_isolation.png",
+      "bytes": 24401,
+      "sha256": "e5b0424ce832b17f801abba8898a3037028940bcabe75a44c8c415b97cbc1bdb"
+    },
+    {
+      "path": "product_assembly_lid_recess_section.png",
+      "bytes": 5929,
+      "sha256": "70072e0e9823202ade7ba793124437173a5f634632c476f1d0575eb2c280a9e5"
+    },
+    {
+      "path": "product_assembly_rear.png",
+      "bytes": 6143,
+      "sha256": "c108b208b0ed838d4cb3fcb50de5852368785da2f82d385a8829f72527d870f9"
+    },
+    {
+      "path": "product_assembly_right.png",
+      "bytes": 6142,
+      "sha256": "1a1a777ff7c6a9120267f3777ec5bb78c04f534dfb71be14c42d1ebd27f2fa92"
+    },
+    {
+      "path": "product_assembly_stud_seam_end.png",
+      "bytes": 5932,
+      "sha256": "acdbbd36078fbc88ce2574e41a6b0a574c33448a86861a223e4002c1b09e95ff"
+    },
+    {
+      "path": "product_assembly_stud_seam_mid.png",
+      "bytes": 6006,
+      "sha256": "de17e1892fcf6ab29a7db9e6b2671f95f6e7be31b286f85f7367e9c81d7b94fb"
+    },
+    {
+      "path": "product_assembly_stud_seam_start.png",
+      "bytes": 5856,
+      "sha256": "3275091883bc374e77b9a809d87efe894db4cc9726c0f7474ee1f0822bfe4d16"
+    },
+    {
+      "path": "product_assembly_top.png",
+      "bytes": 6729,
+      "sha256": "3b770f4d54de60dbc71441a4fe82f9a33e67474fae992af2ca436433c70912d7"
+    },
+    {
+      "path": "product_assembly_wall_floor_section.png",
+      "bytes": 5855,
+      "sha256": "e76bec3705f4e24171b1b559d72dfeeb53ceb613503aaf19889ea0f83b3bba18"
+    }
+  ]
+}
