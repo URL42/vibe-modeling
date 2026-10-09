@@ -1,0 +1,68 @@
+{
+  "printed_revision": "rev_0002",
+  "commit": "f684d15",
+  "lid_source_sha256": "928ffe3e167d5b46630afc1108bf2e3119359a1933d91778270b6193db554e6c",
+  "lid_canonical_triangle_sha256": "36281ee5052ce08af6e37fa510e84be303be2fedb1597a69591725c9751b3a6c",
+  "lid_bounds_mm": [
+    [
+      0.0,
+      0.0,
+      113.0
+    ],
+    [
+      120.0,
+      120.0,
+      125.0
+    ]
+  ],
+  "frozen_config": {
+    "envelope": 120.0,
+    "minimum_wall_thickness": 3.0,
+    "minimum_structural_overlap": 3.0,
+    "minimum_internal_edge_width": 3.0,
+    "boolean_epsilon": 0.001,
+    "wall_t": 3.0,
+    "lid_slab_t": 7.0,
+    "m3_inset": 10.0,
+    "m3_rim_size": 15.0,
+    "m3_rim_h": 3.0,
+    "m3_clear_d": 3.4,
+    "m3_pilot_d": 3.0,
+    "m3_cbore_d": 7.0,
+    "m3_cbore_depth": 4.0,
+    "pi_x_off": 5.0,
+    "pi_y_off": 32.0,
+    "pi_w": 85.0,
+    "pi_d": 56.0,
+    "pi_hole_span_x": 58.0,
+    "pi_hole_span_y": 49.0,
+    "pi_hole_inset": 3.5,
+    "pi_hole_d": 2.7,
+    "emblem_center_x": 60.0,
+    "emblem_center_y": 60.0,
+    "emblem_t": 3.0,
+    "lens_d": 44.0,
+    "bezel_h": 2.0,
+    "button_hole_d": 28.0,
+    "maximum_print_dimension": 300.0
+  },
+  "mount_centers_mm": [
+    [
+      8.5,
+      35.5
+    ],
+    [
+      66.5,
+      35.5
+    ],
+    [
+      8.5,
+      84.5
+    ],
+    [
+      66.5,
+      84.5
+    ]
+  ],
+  "mating_plane_z_mm": 113
+}

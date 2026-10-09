@@ -2,7 +2,7 @@
 // Both leaves use assembly coordinates; the screw interface is at
 // parting_line_z(). No hardware proxies are modeled.
 module assembly_review(view_id = 0, show_proxies = false) {
-    assert(view_id >= 0 && view_id <= 9, "unsupported assembly view");
+    assert(view_id >= 0 && view_id <= 11, "unsupported assembly view");
     if (view_id == 0) {
         union() { base(); lid(); }
     } else if (view_id == 1) {
@@ -28,11 +28,19 @@ module assembly_review(view_id = 0, show_proxies = false) {
             translate([-1, m3_inset - 0.05, -1])
                 cube([envelope + 2, 0.1, envelope + emblem_t + bezel_h + 2]);
         }
-    } else {
+    } else if (view_id == 9) {
         // Front wall/floor connection and both side-wall supports.
         intersection() {
             base();
             translate([-1, wall_t / 2 - 0.05, -1])
+                cube([envelope + 2, 0.1, envelope + 2]);
+        }
+    } else {
+        // Horizontal-floor section through either Raspberry Pi mount row.
+        section_y = view_id == 10 ? pi_hole_y0() : pi_hole_y1();
+        intersection() {
+            base();
+            translate([-1, section_y - 0.05, -1])
                 cube([envelope + 2, 0.1, envelope + 2]);
         }
     }

@@ -1,7 +1,8 @@
-// rev_0002 base: 120x120 floor and three solid walls, open at the back.
+// rev_0003 base: 120x120 floor and three solid walls, open at the back.
 // Wall tops are at parting_line_z() = 113. Four 15x15x3 mounting studs
 // sit at z 110..113; each joins the adjacent side wall through its full
 // 3 mm thickness. The front studs additionally join the front wall.
+// Four underside mounting-head recesses are added in the 6 mm floor.
 // Through-floor PCB holes retain the rev_0001 positions.
 // Physical screw retention and PCB/cable fit remain unverified.
 
@@ -59,7 +60,7 @@ module base() {
     // through-wall direction: wall_t (3.0 mm, exact-minimum
     // minimum_structural_overlap BOUNDARY, documented) x 15 mm along the
     // wall face x m3_rim_h rim height, a positive volume with each wall.
-    // The load path rim block -> wall (3 mm) -> floor (3 mm, asserted
+    // The load path rim block -> wall (3 mm) -> floor (6 mm in rev_0003, asserted
     // above as the floor/wall embed) keeps the base self-supporting even
     // if a thread pulls out of the rim material.
     assert(wall_t >= minimum_structural_overlap,
@@ -109,7 +110,7 @@ module base() {
             " mm < tallest connector ", pi_max_connector_h, " + ", minimum_internal_edge_width,
             " — the USB/Ethernet plugs would not seat"));
     // Rim-block bottom vs the Pi: the top rim blocks sit above
-    // the tallest plug body (z <= floor + 16 = 19) — a z-collision guard
+    // the tallest plug body (z <= floor + 16 = 22 in rev_0003) — a z-collision guard
     // with named dimensions.
     assert(parting_line_z() - m3_rim_h >= floor_t + pi_max_connector_h + minimum_internal_edge_width,
         str("rim bottom z ", parting_line_z() - m3_rim_h,
@@ -129,7 +130,7 @@ module base() {
     // PCB mounting-hole centers (through-floor holes; used by the hole
     // geometry below). The old boss-vs-PCB-hole 16-pair loop is dropped
     // with the rim-block scheme: the rim blocks sit at z 110..113 (derived)
-    // and the holes at z 0..3, so z separates them whenever x/y overlap.
+    // and the holes at z 0..floor_t, so z separates them whenever x/y overlap.
     holes = [
         ["front-left", pi_hole_x0(), pi_hole_y0()],
         ["front-right", pi_hole_x1(), pi_hole_y0()],
@@ -162,6 +163,28 @@ module base() {
         }
     }
 
+    // ---- Underside Raspberry Pi mounting-head recesses -------------------
+    assert(pi_mount_head_depth >= 0, "mounting-head depth must not be negative");
+    if (pi_mount_head_depth > 0) {
+        assert(pi_mount_head_d > pi_hole_d, "head recess must exceed through-bore diameter");
+        assert(floor_t - pi_mount_head_depth >= minimum_wall_thickness,
+            "mounting-head recess leaves less than the required floor thickness");
+        // Preserve the wall/floor seam and its neighboring internal strip.
+        for (h = holes) {
+            assert(h[1] - pi_mount_head_d / 2 - wall_t >= minimum_internal_edge_width);
+            assert(envelope - wall_t - h[1] - pi_mount_head_d / 2 >= minimum_internal_edge_width);
+            assert(h[2] - pi_mount_head_d / 2 - wall_t >= minimum_internal_edge_width);
+            assert(envelope - h[2] - pi_mount_head_d / 2 >= minimum_internal_edge_width);
+        }
+        // All six recess pairs are inventoried, not just exterior margins.
+        for (i = [0:len(holes)-2])
+            for (j = [i+1:len(holes)-1])
+                assert(norm([holes[i][1]-holes[j][1], holes[i][2]-holes[j][2]])
+                       - pi_mount_head_d >= minimum_internal_edge_width);
+        // Concentric cuts form one stepped hardware void. Approved shoulder:
+        // 1.15 mm radial seating face, supported by a full 3 mm axial floor.
+    }
+
     // ---- Pilot floor-breakthrough guard --------------------------------
     // (depth == rim height is asserted in the M3 block above; the usual
     // >= 10 mm M3 engagement is a documented rev_0002 exception, 3 mm.)
@@ -174,11 +197,11 @@ module base() {
     // All features in assembly coordinates; the part spans z 0..parting_line_z().
     difference() {
         union() {
-            // Floor, z 0..3.
+            // Floor, z 0..floor_t (6 mm in rev_0003).
             cube([envelope, envelope, floor_t]);
             // Front wall (y 0..3), left wall (x 0..3), right wall
             // (x 117..120), z 0..parting_line_z(): ALL SOLID, no port cutouts; port
-            // access is through the open back only. The bottom 3 mm embed
+            // access is through the open back only. The full floor_t embed
             // into the floor gives the positive-volume join (AGENTS.md
             // section 10). Back open.
             cube([envelope, wall_t, parting_line_z()]);
@@ -196,11 +219,18 @@ module base() {
                     cube([m3_rim_size, m3_rim_size, m3_rim_h]);
             }
         }
-        // PCB mounting holes, through the floor (M2.5 inserts assumed).
+        // PCB/baseplate mounting bores, through the floor. Hardware not modeled.
         for (h = holes) {
             translate([h[1], h[2], -boolean_epsilon])
                 cylinder($fn = 48, h = floor_t + 2 * boolean_epsilon, d = pi_hole_d);
         }
+        if (pi_mount_head_depth > 0)
+            for (h = holes) {
+                // Outward epsilon only: seat ceiling remains exactly at depth.
+                translate([h[1], h[2], -boolean_epsilon])
+                    cylinder($fn = 48, h = pi_mount_head_depth + boolean_epsilon,
+                             d = pi_mount_head_d);
+            }
         // M3 pilot bores, through each rim block (z 110..113 (derived); depth = rim
         // height, open end at the block bottom).
         for (s = stations) {

@@ -37,7 +37,7 @@ boolean_epsilon = is_undef(boolean_epsilon) ? 0.001 : boolean_epsilon;
 envelope = is_undef(envelope) ? 120.0 : envelope;
 
 // ---- Shell section sizes ----
-floor_t = is_undef(floor_t) ? 3.0 : floor_t;
+floor_t = is_undef(floor_t) ? 6.0 : floor_t;
 wall_t = is_undef(wall_t) ? 3.0 : wall_t;
 lid_slab_t = is_undef(lid_slab_t) ? 7.0 : lid_slab_t;
 
@@ -77,6 +77,10 @@ pi_hole_span_x = is_undef(pi_hole_span_x) ? 58.0 : pi_hole_span_x;
 pi_hole_span_y = is_undef(pi_hole_span_y) ? 49.0 : pi_hole_span_y;
 pi_hole_inset = is_undef(pi_hole_inset) ? 3.5 : pi_hole_inset;
 pi_hole_d = is_undef(pi_hole_d) ? 2.7 : pi_hole_d;
+// rev_0003 underside head seats. A zero depth preserves older configs.
+pi_mount_head_d = is_undef(pi_mount_head_d) ? 5.0 : pi_mount_head_d;
+pi_mount_head_depth = is_undef(pi_mount_head_depth) ? 0.0 : pi_mount_head_depth;
+
 // Tallest standard connector on the Pi 5's edges (stacked USB-A pair,
 // 16.0 mm, docs/raspberry-pi-mounting.md): used by base.scad's
 // port-access channel assert and the rim-block z-collision guard.

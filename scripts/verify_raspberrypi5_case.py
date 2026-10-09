@@ -7,6 +7,7 @@ Physical fastener retention, printer settings and cable fit are outside scope.
 import argparse
 from collections import defaultdict
 import json
+import hashlib
 from pathlib import Path
 
 import scad_build_all as build
@@ -176,6 +177,49 @@ def main():
     require(floor + TOL >= required_floor, "recess floor below declared minimum")
     require(min(size - inset - cfg["m3_pilot_d"] / 2,
                 inset - cfg["m3_cbore_d"] / 2) >= minimum, "fastener edge ligament")
+    # rev_0003: approved four underside mounting-head recesses. The older
+    # zero-depth configuration retains the original plain through-holes.
+    head_depth = cfg.get("pi_mount_head_depth", 0)
+    if head_depth > 0:
+        head_d = cfg["pi_mount_head_d"]
+        close(cfg["floor_t"], 6, "approved thicker base floor")
+        close(head_d, 5, "approved mounting-head diameter")
+        close(head_depth, 3, "approved mounting-head depth")
+        require(cfg["floor_t"] - head_depth >= minimum, "thin roof above base head recess")
+        xs = [cfg["pi_x_off"] + cfg["pi_hole_inset"],
+              cfg["pi_x_off"] + cfg["pi_hole_inset"] + cfg["pi_hole_span_x"]]
+        ys = [cfg["pi_y_off"] + cfg["pi_hole_inset"],
+              cfg["pi_y_off"] + cfg["pi_hole_inset"] + cfg["pi_hole_span_y"]]
+        for x in xs:
+            for y in ys:
+                r = head_d / 2
+                pr = cfg["pi_hole_d"] / 2
+                section(base, 0, (y, head_depth / 2),
+                        [(0, xs[0]-r), (xs[0]+r, xs[1]-r), (xs[1]+r, e)],
+                        "underside head diameters and exterior ligaments")
+                section(base, 1, (x, head_depth / 2),
+                        [(0, ys[0]-r), (ys[0]+r, ys[1]-r), (ys[1]+r, e)],
+                        "underside head diameters and pairwise ligaments")
+                section(base, 0, (y, (head_depth + cfg["floor_t"]) / 2),
+                        [(0, xs[0]-pr), (xs[0]+pr, xs[1]-pr), (xs[1]+pr, e)],
+                        "retained diameter-2.7 mounting bores")
+                section(base, 2, (x + (r + pr) / 2, y),
+                        [(head_depth, cfg["floor_t"])], "3 mm floor above mounting-head seat")
+                section(base, 2, (wall + 0.13, y), [(0, cfg["floor_t"])],
+                        "uninterrupted floor beside side-wall seam")
+        reference_path = build.REPO_ROOT / "designs/raspberrypi5_case/docs/rev_0002_lid_compatibility.json"
+        reference = json.loads(reference_path.read_text(encoding="utf-8"))
+        for key, value in reference["frozen_config"].items():
+            require(cfg.get(key) == value, f"printed-lid compatibility input changed: {key}")
+        require(build.sha256_file(build.REPO_ROOT / "designs/raspberrypi5_case/src/parts/lid.scad")
+                == reference["lid_source_sha256"], "printed lid source changed")
+        canonical = sorted(tuple(sorted(tuple(round(c, 6) for c in v) for v in tri))
+                           for tri in lid.triangles)
+        geometry_hash = hashlib.sha256(json.dumps(canonical, separators=(',', ':')).encode()).hexdigest()
+        require(geometry_hash == reference["lid_canonical_triangle_sha256"],
+                "exported lid geometry differs from the printed rev_0002 reference")
+        report["printed_lid_compatibility"] = {"result": "PASS", "reference": build.repo_relative(reference_path),
+                                               "canonical_geometry_sha256": geometry_hash}
     # Floor PCB holes and button bore are measured from the final meshes.
     for x in [cfg["pi_x_off"] + cfg["pi_hole_inset"],
               cfg["pi_x_off"] + cfg["pi_hole_inset"] + cfg["pi_hole_span_x"]]:
@@ -194,6 +238,9 @@ def main():
         print("PASS: installed STL geometry, closed-shell connectivity, "
               f"{len(report['sections'])} post-subtraction line sections, "
               f"{t:g} mm slab, {h:g} mm studs, {floor:g} mm recess floors")
+        if head_depth > 0:
+            print("PASS: four diameter-5 x 3 mm underside head recesses, 3 mm retained roofs; "
+                  "printed rev_0002 lid geometry and coupling unchanged")
         print("Base bounds:", base.bounds, "Lid bounds:", lid.bounds)
         print("STL SHA-256:", report[base.path.stem + "_sha256"], report[lid.path.stem + "_sha256"])
     else:
