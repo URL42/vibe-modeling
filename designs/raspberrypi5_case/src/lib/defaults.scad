@@ -10,15 +10,12 @@
 //   y: 0..envelope, front -> back (back is the fully open band)
 //   z: 0..envelope+emblem_t+bezel_h, bottom -> top
 //
-// Layout (rev_0001, fixed 2026-10-08 per user review): the PCB
-// (x 5..90, y 32..88) faces its TWO port edges into the open interior:
-// the HDMI/power edge (y = 88) looks straight at the open back (32 mm of
-// free space for plugs and cables), and the USB/Ethernet edge (x = 90)
-// looks across the interior with 27 mm of clearance to the right wall,
-// so both plug groups terminate inside the case and their cables leave
-// through the open back. The PCB edge against the left wall (5 mm from the outer face; 2 mm inner-wall gap) is
-// the port-FREE edge. All side walls are SOLID: there are no port
-// cutouts in this design.
+// Layout (rev_0004, approved 2026-10-09): rotated PCB footprint
+// x 5..61, y 17.5..102.5. USB/Ethernet faces the open back (+y);
+// USB-C/HDMI faces the interior (+x). GPIO is at the left, port-free edge.
+// Left PCB edge is 5 mm from outer face, 2 mm from wall inner face.
+// PCB is centered front-to-back; 17.5 mm remains to the rear board edge.
+// Earlier configs explicitly retain their original dimensions/placements.
 //
 // Structural governance: AGENTS.md section 10. minimum_wall_thickness,
 // minimum_structural_overlap, and minimum_internal_edge_width are asserted in
@@ -70,11 +67,11 @@ m3_cbore_depth = is_undef(m3_cbore_depth) ? 4.0 : m3_cbore_depth;
 
 // ---- Raspberry Pi PCB placement (docs/raspberry-pi-mounting.md) ----
 pi_x_off = is_undef(pi_x_off) ? 5.0 : pi_x_off;
-pi_y_off = is_undef(pi_y_off) ? 32.0 : pi_y_off;
-pi_w = is_undef(pi_w) ? 85.0 : pi_w;
-pi_d = is_undef(pi_d) ? 56.0 : pi_d;
-pi_hole_span_x = is_undef(pi_hole_span_x) ? 58.0 : pi_hole_span_x;
-pi_hole_span_y = is_undef(pi_hole_span_y) ? 49.0 : pi_hole_span_y;
+pi_y_off = is_undef(pi_y_off) ? 17.5 : pi_y_off;
+pi_w = is_undef(pi_w) ? 56.0 : pi_w;
+pi_d = is_undef(pi_d) ? 85.0 : pi_d;
+pi_hole_span_x = is_undef(pi_hole_span_x) ? 49.0 : pi_hole_span_x;
+pi_hole_span_y = is_undef(pi_hole_span_y) ? 58.0 : pi_hole_span_y;
 pi_hole_inset = is_undef(pi_hole_inset) ? 3.5 : pi_hole_inset;
 pi_hole_d = is_undef(pi_hole_d) ? 2.7 : pi_hole_d;
 // rev_0003 underside head seats. A zero depth preserves older configs.
@@ -121,11 +118,11 @@ function lid_slab_z0() = envelope - lid_slab_t; // 113.0
 // PCB hole centers in case coordinates. PCB origin (corner) is at
 // (pi_x_off, pi_y_off, floor_t); hole centers are inset pi_hole_inset from
 // the PCB corner and span pi_hole_span_x / pi_hole_span_y.
-// Locked value: (8.5, 35.5), (66.5, 35.5), (8.5, 84.5), (66.5, 84.5).
+// rev_0004: (8.5,21), (57.5,21), (8.5,79), (57.5,79).
 function pi_hole_x0() = pi_x_off + pi_hole_inset; // 8.5
-function pi_hole_y0() = pi_y_off + pi_hole_inset; // 35.5
-function pi_hole_x1() = pi_x_off + pi_hole_inset + pi_hole_span_x; // 66.5
-function pi_hole_y1() = pi_y_off + pi_hole_inset + pi_hole_span_y; // 84.5
+function pi_hole_y0() = pi_y_off + pi_hole_inset; // 21
+function pi_hole_x1() = pi_x_off + pi_hole_inset + pi_hole_span_x; // 57.5
+function pi_hole_y1() = pi_y_off + pi_hole_inset + pi_hole_span_y; // 79
 
 // M3 stations: four corners inset m3_inset from the envelope edges.
 // Locked value: (10, 10), (110, 10), (10, 110), (110, 110).

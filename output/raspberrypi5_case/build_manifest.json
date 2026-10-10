@@ -2,12 +2,12 @@
   "schema_version": 1,
   "build_scope": "complete",
   "design": "raspberrypi5_case",
-  "revision": "rev_0003",
+  "revision": "rev_0004",
   "destination": "current",
-  "generated_at_utc": "2026-10-09T19:29:40.997250+00:00",
+  "generated_at_utc": "2026-10-10T06:31:25.725780+00:00",
   "config": {
-    "path": "designs/raspberrypi5_case/configs/rev_0003.json",
-    "sha256": "4e1277d4414aea710ffa1f1312823e6638f09b3715ef50db7c241ccba4db963e"
+    "path": "designs/raspberrypi5_case/configs/rev_0004.json",
+    "sha256": "57074aea42ac1294d289ffe6b1b21090d81d8c62f722bd7ab1627b311fc7bd31"
   },
   "parts_manifest": {
     "path": "designs/raspberrypi5_case/parts.json",
@@ -15,11 +15,11 @@
   },
   "source": {
     "path": "designs/raspberrypi5_case/src",
-    "sha256": "154ab5af0d49bb1cc102ebf8bddb2b679e910ec0fb61ea67050d08bdd86a8769",
+    "sha256": "66d26b64ecb741e95cca5ed29828dbed414d0463f41af119cfbf811e7706baff",
     "main_scad": "designs/raspberrypi5_case/src/main.scad"
   },
   "git": {
-    "commit": "f684d153b965eaa0ff7180e66d17bf64cb7072c3",
+    "commit": "f64f579fd6f23e1e599e8d36ea92b05918895fe0",
     "dirty": true
   },
   "openscad": "C:\\Program Files (x86)\\OpenSCAD\\openscad.exe",
@@ -33,192 +33,192 @@
     {
       "part_id": 1,
       "name": "base",
-      "output_name": "base_rev_0003"
+      "output_name": "base_rev_0004"
     },
     {
       "part_id": 2,
       "name": "lid",
-      "output_name": "lid_rev_0003"
+      "output_name": "lid_rev_0004"
     }
   ],
   "artifacts": [
     {
-      "path": "base_rev_0003.png",
+      "path": "base_rev_0004.png",
       "bytes": 17529,
       "sha256": "13f1f0f07a34d40b1f06bdfb3d7c7a3bd211fc5e263692575a30b266d95082c8"
     },
     {
-      "path": "base_rev_0003.stl",
-      "bytes": 397781,
-      "sha256": "c11afb9925a5ea0a165a8bee654ac85fe57bad27553722c4e094fcba8e46a185"
+      "path": "base_rev_0004.stl",
+      "bytes": 397688,
+      "sha256": "0576f307253eb15b00840b97b5a2f6f4dae38f8291c5533d2effaed46f8828a1"
     },
     {
-      "path": "base_rev_0003_inspect_inside_bottom_iso.png",
-      "bytes": 16098,
-      "sha256": "561b7650173fc9032a7af9a9ff8e66d0f4b602c371dac8005f210f604286bb12"
+      "path": "base_rev_0004_inspect_inside_bottom_iso.png",
+      "bytes": 16094,
+      "sha256": "5500205949d1a264ba6792290097f6dcc31107ce3a6a32be14635df90f0a2747"
     },
     {
-      "path": "base_rev_0003_inspect_inside_bottom_ortho.png",
-      "bytes": 6121,
-      "sha256": "0e445a5d77da5160b68b7125411c5decb90ee11dfe82f4ce4081cdb2801073ec"
+      "path": "base_rev_0004_inspect_inside_bottom_ortho.png",
+      "bytes": 6147,
+      "sha256": "d052c27f7ff0a0ed85a6d1bd944e562a92df9bf2c2e26034612dab1386637880"
     },
     {
-      "path": "base_rev_0003_iso_back_left.png",
-      "bytes": 21384,
-      "sha256": "edb32285bb851ad4f17bf63638da056bb1983347a595dc6b677acbb229da62c1"
+      "path": "base_rev_0004_iso_back_left.png",
+      "bytes": 21370,
+      "sha256": "c1a02b24aef7f017508cbfd09b291ade85d680d6233399b116f0b7ddc8b585fb"
     },
     {
-      "path": "base_rev_0003_iso_back_right.png",
-      "bytes": 20480,
-      "sha256": "cce27af2495dda5d5bf447c93d81fde44bbcec679f3ea8576682574ef58fa783"
+      "path": "base_rev_0004_iso_back_right.png",
+      "bytes": 20503,
+      "sha256": "c3cb95fdea54ec3d7cbd182b4cc71aa517da9e00a4b8b760a6bad64dce6c22c8"
     },
     {
-      "path": "base_rev_0003_iso_bottom_back_left.png",
-      "bytes": 17570,
-      "sha256": "0b3bb121ae1c4ce794b3d77a1766dfadb7429710088ea224d068ee1c4565d601"
+      "path": "base_rev_0004_iso_bottom_back_left.png",
+      "bytes": 17640,
+      "sha256": "87040aef61e6c3e465b9f21c727c3290cb2652133e0013b17eaaf41383a72160"
     },
     {
-      "path": "base_rev_0003_iso_bottom_back_right.png",
-      "bytes": 18335,
-      "sha256": "6c685aab597c89ead77a2f30c4b77e7614b615de67e7b08ee9810f1b017cc97e"
+      "path": "base_rev_0004_iso_bottom_back_right.png",
+      "bytes": 18415,
+      "sha256": "963134875c6709730e0d4aed06e6b52901b33ec4e8b5704f47006cc1719619ca"
     },
     {
-      "path": "base_rev_0003_iso_bottom_front_left.png",
-      "bytes": 15153,
-      "sha256": "d50f1c5b5abf923b01a4fe9779bfa4aa68e135a4d435431b802074772bff9a84"
+      "path": "base_rev_0004_iso_bottom_front_left.png",
+      "bytes": 15091,
+      "sha256": "3d327d5b2e0416ab7fd1fe5d0077a2426c71655d827baacafd60848839c97aa3"
     },
     {
-      "path": "base_rev_0003_iso_bottom_front_right.png",
-      "bytes": 13932,
-      "sha256": "fa83dbfd5471306c85ae33bb0951f5816f9d6dc6e1cdae4ea994c15b927e1470"
+      "path": "base_rev_0004_iso_bottom_front_right.png",
+      "bytes": 14023,
+      "sha256": "f3118e4483a5a84cf76f7b16fc7c53c36e7feabf873964efdef8b503ba183f9e"
     },
     {
-      "path": "base_rev_0003_iso_front_left.png",
+      "path": "base_rev_0004_iso_front_left.png",
       "bytes": 16720,
       "sha256": "e502071961ad8274ad4e1bbcddf772b37e5fbb13cc5e920a27f67c7cbbc36444"
     },
     {
-      "path": "base_rev_0003_iso_front_right.png",
+      "path": "base_rev_0004_iso_front_right.png",
       "bytes": 17529,
       "sha256": "13f1f0f07a34d40b1f06bdfb3d7c7a3bd211fc5e263692575a30b266d95082c8"
     },
     {
-      "path": "base_rev_0003_ortho_back.png",
+      "path": "base_rev_0004_ortho_back.png",
       "bytes": 5854,
       "sha256": "2d834ccbe5c0c7d4545e61b476190755098c305a6c4b4f7a170b97a19292ff2d"
     },
     {
-      "path": "base_rev_0003_ortho_bottom.png",
-      "bytes": 6121,
-      "sha256": "0e445a5d77da5160b68b7125411c5decb90ee11dfe82f4ce4081cdb2801073ec"
+      "path": "base_rev_0004_ortho_bottom.png",
+      "bytes": 6147,
+      "sha256": "d052c27f7ff0a0ed85a6d1bd944e562a92df9bf2c2e26034612dab1386637880"
     },
     {
-      "path": "base_rev_0003_ortho_front.png",
+      "path": "base_rev_0004_ortho_front.png",
       "bytes": 5854,
       "sha256": "2d834ccbe5c0c7d4545e61b476190755098c305a6c4b4f7a170b97a19292ff2d"
     },
     {
-      "path": "base_rev_0003_ortho_left.png",
+      "path": "base_rev_0004_ortho_left.png",
       "bytes": 5854,
       "sha256": "2d834ccbe5c0c7d4545e61b476190755098c305a6c4b4f7a170b97a19292ff2d"
     },
     {
-      "path": "base_rev_0003_ortho_right.png",
+      "path": "base_rev_0004_ortho_right.png",
       "bytes": 5854,
       "sha256": "2d834ccbe5c0c7d4545e61b476190755098c305a6c4b4f7a170b97a19292ff2d"
     },
     {
-      "path": "base_rev_0003_ortho_top.png",
-      "bytes": 6121,
-      "sha256": "0e445a5d77da5160b68b7125411c5decb90ee11dfe82f4ce4081cdb2801073ec"
+      "path": "base_rev_0004_ortho_top.png",
+      "bytes": 6171,
+      "sha256": "80b93aac43af33516829d918f5e90a5955832ef3b695a70edd41beeaa26efd32"
     },
     {
-      "path": "lid_rev_0003.png",
+      "path": "lid_rev_0004.png",
       "bytes": 24283,
       "sha256": "4fbf9849214fb9cf8139f9023f8e81dc2eea068dadc3ef3b6170ef910672d819"
     },
     {
-      "path": "lid_rev_0003.stl",
+      "path": "lid_rev_0004.stl",
       "bytes": 368912,
-      "sha256": "25f887282354567b6ea85122de3fbe6cb1e63f5e0ed3014eff46ba1765027c95"
+      "sha256": "6e9cc399b43130483ea456f443bfe3c44e203c347e083a43050d2e718bdb499b"
     },
     {
-      "path": "lid_rev_0003_inspect_inside_bottom_iso.png",
+      "path": "lid_rev_0004_inspect_inside_bottom_iso.png",
       "bytes": 15849,
       "sha256": "d532cfa8383c00d1f5b76e8a480b490cef25fcc83e1bf89ff3eef56375d2b134"
     },
     {
-      "path": "lid_rev_0003_inspect_inside_bottom_ortho.png",
+      "path": "lid_rev_0004_inspect_inside_bottom_ortho.png",
       "bytes": 7020,
       "sha256": "5c4c685946256c2ce8dde5be7ffc52abffea8b758a5e50e9386b551479578113"
     },
     {
-      "path": "lid_rev_0003_iso_back_left.png",
+      "path": "lid_rev_0004_iso_back_left.png",
       "bytes": 23966,
       "sha256": "8d8e27236f104b76936482447c51a23e126af5a7ded30bd964b4ba3e58233b88"
     },
     {
-      "path": "lid_rev_0003_iso_back_right.png",
+      "path": "lid_rev_0004_iso_back_right.png",
       "bytes": 23812,
       "sha256": "919603e1b5fcda04e6c15d9f893d5f57c1c101f73f77187a6668d44effeb529b"
     },
     {
-      "path": "lid_rev_0003_iso_bottom_back_left.png",
+      "path": "lid_rev_0004_iso_bottom_back_left.png",
       "bytes": 16784,
       "sha256": "d3406ba75784d229dd473bdc6d30be0b1f6d99ab17739f7c17e4c4e544ce0420"
     },
     {
-      "path": "lid_rev_0003_iso_bottom_back_right.png",
+      "path": "lid_rev_0004_iso_bottom_back_right.png",
       "bytes": 16780,
       "sha256": "9cdfe368a44f415d52acc839b172687d584ac8a4e19a67b92cba7f84da28bc3b"
     },
     {
-      "path": "lid_rev_0003_iso_bottom_front_left.png",
+      "path": "lid_rev_0004_iso_bottom_front_left.png",
       "bytes": 16780,
       "sha256": "9cdfe368a44f415d52acc839b172687d584ac8a4e19a67b92cba7f84da28bc3b"
     },
     {
-      "path": "lid_rev_0003_iso_bottom_front_right.png",
+      "path": "lid_rev_0004_iso_bottom_front_right.png",
       "bytes": 16785,
       "sha256": "bda476273697d956481254952194d10eaaa45759adedbf99e19d47c4d709788d"
     },
     {
-      "path": "lid_rev_0003_iso_front_left.png",
+      "path": "lid_rev_0004_iso_front_left.png",
       "bytes": 23798,
       "sha256": "105f2cf84db0464c049a9df358e4418eb717ca1c8dd7b173373186bd414886a8"
     },
     {
-      "path": "lid_rev_0003_iso_front_right.png",
+      "path": "lid_rev_0004_iso_front_right.png",
       "bytes": 24283,
       "sha256": "4fbf9849214fb9cf8139f9023f8e81dc2eea068dadc3ef3b6170ef910672d819"
     },
     {
-      "path": "lid_rev_0003_ortho_back.png",
+      "path": "lid_rev_0004_ortho_back.png",
       "bytes": 6145,
       "sha256": "65d658c5c4eb505d5e2cd6f50e275e7ff512d7810bf776dc0af53559af44dae5"
     },
     {
-      "path": "lid_rev_0003_ortho_bottom.png",
+      "path": "lid_rev_0004_ortho_bottom.png",
       "bytes": 7020,
       "sha256": "5c4c685946256c2ce8dde5be7ffc52abffea8b758a5e50e9386b551479578113"
     },
     {
-      "path": "lid_rev_0003_ortho_front.png",
+      "path": "lid_rev_0004_ortho_front.png",
       "bytes": 6145,
       "sha256": "65d658c5c4eb505d5e2cd6f50e275e7ff512d7810bf776dc0af53559af44dae5"
     },
     {
-      "path": "lid_rev_0003_ortho_left.png",
+      "path": "lid_rev_0004_ortho_left.png",
       "bytes": 6145,
       "sha256": "edadd5d429efd9034d53a046d4888218d5069e65442747002be04a3d9d64025d"
     },
     {
-      "path": "lid_rev_0003_ortho_right.png",
+      "path": "lid_rev_0004_ortho_right.png",
       "bytes": 6145,
       "sha256": "edadd5d429efd9034d53a046d4888218d5069e65442747002be04a3d9d64025d"
     },
     {
-      "path": "lid_rev_0003_ortho_top.png",
+      "path": "lid_rev_0004_ortho_top.png",
       "bytes": 7020,
       "sha256": "5c4c685946256c2ce8dde5be7ffc52abffea8b758a5e50e9386b551479578113"
     }

@@ -3,7 +3,7 @@
 Two printable leaves: a base with a floor and three solid walls, plus a separate
 flat lid fastened at four M3 stations. The back remains open for cables.
 The nominal shell is 120 x 120 x 120 mm; the raised camera/lens reaches 125 mm.
-The current mutable candidate is `configs/rev_0003.json`. Earlier configs are
+The current mutable candidate is `configs/rev_0004.json`. Earlier configs are
 preserved; the rev_0002 lid is already printing and remains geometry-identical.
 
 ## Approved update, 2026-10-09
@@ -13,7 +13,7 @@ the base studs from 10 mm to 3 mm. The user selected a **7 mm flat lid** so the
 4 mm deep screw-head recesses retain 3 mm beneath them. No extra embedding slab,
 rim, or bosses extend beneath the flat lid underside.
 
-| Feature | rev_0003 geometry (lid retained from rev_0002) |
+| Feature | rev_0004 geometry (lid retained from rev_0002) |
 | --- | --- |
 | Base floor | 120 x 120 x 6 mm, thickened inward |
 | Pi mounting head recesses | Four diameter-5 x 3 mm deep underside recesses; 3 mm retained floor |
@@ -34,16 +34,18 @@ rim, or bosses extend beneath the flat lid underside.
 ## PCB and hardware assumptions
 
 The dimensional background is [Raspberry Pi mounting guidance](../../docs/raspberry-pi-mounting.md).
-The 85 x 56 mm PCB occupies x 5..90, y 32..88. Its four diameter-2.7 floor
-holes are at (8.5,35.5), (66.5,35.5), (8.5,84.5), and (66.5,84.5).
+The rotated 56 x 85 mm PCB occupies x 5..61, y 17.5..102.5. Its four diameter-2.7 floor
+holes are at (8.5,21), (57.5,21), (8.5,79), and (57.5,79).
 The mounting surface is now z=6 rather than z=3; the 3 mm underside recesses
 keep the same remaining mounting-floor thickness while admitting the screw heads.
 A head must fit the approved diameter-5 x 3 mm envelope with suitable print
 clearance; actual hardware fit has not been measured.
 The PCB origin is 5 mm from the case outer x face, so the actual gap to the
 3 mm left wall inner face is **2 mm**, not 5 mm. This retained layout was not
-changed by the lid/stud update. The port edges face the open interior/rear;
-the right-side channel is 27 mm and the rear space is 32 mm. The floor has
+changed by this orientation correction. The port edges face the open interior/rear;
+USB/Ethernet faces the open rear with a 17.5 mm board-edge gap; USB-C/HDMI
+faces the right interior with a 56 mm board-edge gap. Plug/cable envelopes
+remain physically unverified. The floor has
 through-holes, without modeled PCB standoffs or insert pockets. PCB underside,
 mounting hardware, fan stack, cable bend radii and electrical clearance require
 physical verification.
@@ -64,6 +66,17 @@ The base outer bounds and lid placement do not change. No reprint of the lid is
 required by this digital geometry update. Previous configs remain unchanged;
 zero recess depth in older configs preserves the earlier base geometry.
 
+## Mounting orientation correction, 2026-10-09
+
+The user confirmed USB/Ethernet toward the open rear. rev_0004 changes the
+case-frame mounting pitch from 58 x 49 to 49 x 58 mm and moves the four
+concentric head recesses with their bores. The PCB keeps its x5 left edge and
+is centered front-to-back in its rotated 56 x 85 mm footprint. Drawing
+coordinates (u,v) transform to case (5+v,17.5+u); the hole rectangle is
+asymmetric relative to the PCB, so simply swapping pitch at the old origin
+would give the wrong placement. The four obsolete stations are solid floor.
+Floor/head-seat dimensions, all lid geometry and the coupling remain unchanged.
+
 ## Structural contract and hierarchy
 
 `minimum_wall_thickness`, `minimum_structural_overlap`, and
@@ -72,7 +85,7 @@ have full-thickness positive-volume overlap (6 mm wall/floor embed in rev_0003).
 3 x 15 x 3 mm overlap, and retains a 3 mm thick throat and 3.5 mm to the pilot
 bore at the inner block edge. Pilot cuts remain 5.5 mm from the wall inner face.
 The new underside recesses leave 6 mm to the nearest exterior x face and 3 mm
-to the side-wall inner face; hole-to-hole head-recess ligaments are 53 and 44 mm.
+to the side-wall inner face; hole-to-hole head-recess ligaments are 44 and 53 mm.
 Their approved hardware seating shoulder is 1.15 mm radially, with a full 3 mm
 axial floor above it. This is a seating-face detail exception, not a reduced
 wall/floor throat. The lid head recesses retain 6.5 mm to an exterior edge and a 3 mm axial floor.
@@ -103,15 +116,15 @@ The installed manifest selects the config for the normal VS Code task:
 python scripts/rebuild_stale_designs.py --all
 ```
 
-For the first build that switches from a prior config to rev_0003, initialize the
+For the first build that switches from a prior config to rev_0004, initialize the
 installed config selection with the complete manifest builder:
 
 ```powershell
-python scripts/scad_build_all.py --design raspberrypi5_case --config designs/raspberrypi5_case/configs/rev_0003.json
-python scripts/scad_build_all.py --design raspberrypi5_case --config designs/raspberrypi5_case/configs/rev_0003.json --audit-only
-python scripts/verify_raspberrypi5_case.py --config designs/raspberrypi5_case/configs/rev_0003.json
-python scripts/scad_render_assembly_review.py --design raspberrypi5_case --config designs/raspberrypi5_case/configs/rev_0003.json --set full
-python scripts/scad_render_assembly_review.py --design raspberrypi5_case --config designs/raspberrypi5_case/configs/rev_0003.json --set full --audit-only
+python scripts/scad_build_all.py --design raspberrypi5_case --config designs/raspberrypi5_case/configs/rev_0004.json
+python scripts/scad_build_all.py --design raspberrypi5_case --config designs/raspberrypi5_case/configs/rev_0004.json --audit-only
+python scripts/verify_raspberrypi5_case.py --config designs/raspberrypi5_case/configs/rev_0004.json
+python scripts/scad_render_assembly_review.py --design raspberrypi5_case --config designs/raspberrypi5_case/configs/rev_0004.json --set full
+python scripts/scad_render_assembly_review.py --design raspberrypi5_case --config designs/raspberrypi5_case/configs/rev_0004.json --set full --audit-only
 ```
 
 Review installed printable artifacts before generating assembly evidence.
@@ -124,8 +137,9 @@ sections through both Raspberry Pi mounting-hole rows. Final output is the flat 
 The combined STL is review-only, not a third printable part.
 
 Exact digital findings, measurements and artifact provenance are recorded in
-[rev_0003 verification](docs/rev_0003_verification.md). The prior
-[rev_0002 record](docs/rev_0002_verification.md) remains historical.
+[rev_0004 verification](docs/rev_0004_verification.md). The prior
+[rev_0003 record](docs/rev_0003_verification.md) and
+[rev_0002 record](docs/rev_0002_verification.md) remain historical.
 Compatibility is measured against [the printed lid reference](docs/rev_0002_lid_compatibility.json). Immutable revision
 publication and committing/pushing this checkpoint require separate approval.
 

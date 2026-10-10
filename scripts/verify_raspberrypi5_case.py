@@ -180,6 +180,8 @@ def main():
     # rev_0003: approved four underside mounting-head recesses. The older
     # zero-depth configuration retains the original plain through-holes.
     head_depth = cfg.get("pi_mount_head_depth", 0)
+    if rev == "rev_0004":
+        close(head_depth, 3, "retained underside head-seat depth")
     if head_depth > 0:
         head_d = cfg["pi_mount_head_d"]
         close(cfg["floor_t"], 6, "approved thicker base floor")
@@ -209,7 +211,21 @@ def main():
                         "uninterrupted floor beside side-wall seam")
         reference_path = build.REPO_ROOT / "designs/raspberrypi5_case/docs/rev_0002_lid_compatibility.json"
         reference = json.loads(reference_path.read_text(encoding="utf-8"))
+        approved_layout = {}
+        if rev == "rev_0004":
+            approved_layout = {"pi_w": 56.0, "pi_d": 85.0, "pi_y_off": 17.5,
+                               "pi_hole_span_x": 49.0, "pi_hole_span_y": 58.0}
+            for key, value in approved_layout.items():
+                require(cfg.get(key) == value, f"approved rotated PCB input changed: {key}")
+            require(xs == [8.5, 57.5] and ys == [21.0, 79.0],
+                    "mounting centers differ from approved official-drawing transform")
+            for x, y in reference["mount_centers_mm"]:
+                section(base, 2, (x, y), [(0, 6)], "obsolete mounting station restored to solid floor")
+            report["rotated_mounting_pattern"] = {"result": "PASS", "pitch_mm": [49, 58],
+                                                 "centers_mm": [[x,y] for x in xs for y in ys]}
         for key, value in reference["frozen_config"].items():
+            if key in approved_layout:
+                continue
             require(cfg.get(key) == value, f"printed-lid compatibility input changed: {key}")
         require(build.sha256_file(build.REPO_ROOT / "designs/raspberrypi5_case/src/parts/lid.scad")
                 == reference["lid_source_sha256"], "printed lid source changed")
@@ -241,6 +257,8 @@ def main():
         if head_depth > 0:
             print("PASS: four diameter-5 x 3 mm underside head recesses, 3 mm retained roofs; "
                   "printed rev_0002 lid geometry and coupling unchanged")
+        if rev == "rev_0004":
+            print("PASS: rotated 49 x 58 mm mounting pitch at approved centers; all four obsolete stations solid")
         print("Base bounds:", base.bounds, "Lid bounds:", lid.bounds)
         print("STL SHA-256:", report[base.path.stem + "_sha256"], report[lid.path.stem + "_sha256"])
     else:

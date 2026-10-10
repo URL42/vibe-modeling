@@ -1,9 +1,9 @@
-// rev_0003 base: 120x120 floor and three solid walls, open at the back.
+// rev_0004 base: 120x120 floor and three solid walls, open at the back.
 // Wall tops are at parting_line_z() = 113. Four 15x15x3 mounting studs
 // sit at z 110..113; each joins the adjacent side wall through its full
 // 3 mm thickness. The front studs additionally join the front wall.
 // Four underside mounting-head recesses are added in the 6 mm floor.
-// Through-floor PCB holes retain the rev_0001 positions.
+// PCB bores and head seats share the approved rev_0004 rotated positions.
 // Physical screw retention and PCB/cable fit remain unverified.
 
 module base() {
@@ -76,13 +76,10 @@ module base() {
         str("pilot depth ", m3_pilot_depth(), " != rim height ", m3_rim_h,
             " — bore no longer spans the full block height"));
 
-    assert(envelope - pi_x_off - pi_d >= wall_t
-           && envelope - pi_y_off - pi_w >= wall_t
-           && envelope - pi_x_off - pi_w >= wall_t
-           && envelope - pi_y_off - pi_d >= wall_t,
-        str("PCB sits inside the wall box with margin: ",
-            pi_x_off, " / ", pi_y_off, " / ",
-            envelope - pi_x_off - pi_w, " / ", envelope - pi_y_off - pi_d));
+    assert(pi_x_off >= wall_t && pi_y_off >= wall_t
+           && pi_x_off + pi_w <= envelope - wall_t
+           && pi_y_off + pi_d <= envelope,
+        "PCB case-frame outline exceeds the wall box/open rear");
     // Hole edges to the nearest floor-edge features (left/wall box for x,
     // front wall for y, back rim for y, right wall for x; the holes are
     // through-floor only, so z never separates them from the walls).
@@ -99,16 +96,14 @@ module base() {
         str("hole-to-hole x ligament ", pi_hole_span_x - pi_hole_d));
     assert(pi_hole_span_y - pi_hole_d >= minimum_internal_edge_width,
         str("hole-to-hole y ligament ", pi_hole_span_y - pi_hole_d));
-    // Port access (all side walls SOLID; access via the open back only):
-    // the USB/Ethernet edge (x = pi_x_off + pi_w = 90) faces the right
-    // wall (x = 117): the channel must clear the tallest standard
-    // connector (16.0 mm, docs/raspberry-pi-mounting.md) with margin;
-    // cables then exit under the 120 mm open-back band (physical check,
-    // not modeled).
+    // Named case-frame connector channels. rev_0004 places USB/Ethernet
+    // toward the open rear (17.5 mm to the PCB edge), with power/HDMI
+    // toward the right interior (56 mm). These are board-edge gaps;
+    // plug envelopes and cable bend radii still require physical review.
     assert(envelope - wall_t - (pi_x_off + pi_w) >= pi_max_connector_h + minimum_internal_edge_width,
-        str("PCB-to-right-wall channel ", envelope - wall_t - (pi_x_off + pi_w),
-            " mm < tallest connector ", pi_max_connector_h, " + ", minimum_internal_edge_width,
-            " — the USB/Ethernet plugs would not seat"));
+        "PCB-to-right-wall channel is below the retained clearance guard");
+    assert(envelope - (pi_y_off + pi_d) >= minimum_internal_edge_width,
+        "PCB rear edge has insufficient clearance to the open boundary");
     // Rim-block bottom vs the Pi: the top rim blocks sit above
     // the tallest plug body (z <= floor + 16 = 22 in rev_0003) — a z-collision guard
     // with named dimensions.

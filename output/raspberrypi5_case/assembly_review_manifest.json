@@ -3,10 +3,10 @@
   "design": "raspberrypi5_case",
   "primary_assembly": "product_assembly",
   "view_set": "full",
-  "generated_at_utc": "2026-10-09T19:32:25.657260+00:00",
+  "generated_at_utc": "2026-10-10T06:34:10.509322+00:00",
   "config": {
-    "path": "designs/raspberrypi5_case/configs/rev_0003.json",
-    "sha256": "4e1277d4414aea710ffa1f1312823e6638f09b3715ef50db7c241ccba4db963e"
+    "path": "designs/raspberrypi5_case/configs/rev_0004.json",
+    "sha256": "57074aea42ac1294d289ffe6b1b21090d81d8c62f722bd7ab1627b311fc7bd31"
   },
   "parts_manifest": {
     "path": "designs/raspberrypi5_case/parts.json",
@@ -18,13 +18,13 @@
   },
   "source": {
     "path": "designs/raspberrypi5_case/src",
-    "sha256": "154ab5af0d49bb1cc102ebf8bddb2b679e910ec0fb61ea67050d08bdd86a8769",
+    "sha256": "66d26b64ecb741e95cca5ed29828dbed414d0463f41af119cfbf811e7706baff",
     "main_scad": "designs/raspberrypi5_case/src/main.scad"
   },
   "printable_build": {
     "path": "output/raspberrypi5_case/build_manifest.json",
     "directory": "output/raspberrypi5_case",
-    "sha256": "fb2d5c844d6129cf1da47c1a9fb4e01675882f337a40708f35abb1d304351d50",
+    "sha256": "f0c7d08c238570ed034de11d17a20b45f0067a4b7a723315f2d7f7e5cdd1a7cf",
     "counts": {
       "parts": 2,
       "stl": 2,
@@ -35,21 +35,21 @@
       {
         "part_id": 1,
         "name": "base",
-        "path": "base_rev_0003.stl",
-        "bytes": 397781,
-        "sha256": "c11afb9925a5ea0a165a8bee654ac85fe57bad27553722c4e094fcba8e46a185"
+        "path": "base_rev_0004.stl",
+        "bytes": 397688,
+        "sha256": "0576f307253eb15b00840b97b5a2f6f4dae38f8291c5533d2effaed46f8828a1"
       },
       {
         "part_id": 2,
         "name": "lid",
-        "path": "lid_rev_0003.stl",
+        "path": "lid_rev_0004.stl",
         "bytes": 368912,
-        "sha256": "25f887282354567b6ea85122de3fbe6cb1e63f5e0ed3014eff46ba1765027c95"
+        "sha256": "6e9cc399b43130483ea456f443bfe3c44e203c347e083a43050d2e718bdb499b"
       }
     ]
   },
   "git": {
-    "commit": "f684d153b965eaa0ff7180e66d17bf64cb7072c3",
+    "commit": "f64f579fd6f23e1e599e8d36ea92b05918895fe0",
     "dirty": true
   },
   "counts": {
@@ -60,8 +60,8 @@
   "artifacts": [
     {
       "path": "product_assembly.stl",
-      "bytes": 764546,
-      "sha256": "b09d208ca6c272170ae709c0286f7ef102a9011a601d454159ebccc4b5ada152"
+      "bytes": 764453,
+      "sha256": "2a13d9a058a7ad3b23fb7b42c8a4628f8b56139c8b87f07bb68053204b8241ee"
     },
     {
       "path": "product_assembly_base_isolation.png",
@@ -70,13 +70,13 @@
     },
     {
       "path": "product_assembly_base_underside.png",
-      "bytes": 17140,
-      "sha256": "a37c0ac06ca85e64889f832b5d58646319e2d794325df08d06b64c148dc07dab"
+      "bytes": 17128,
+      "sha256": "71c9f4cd47576debeee094918d6fd1796ba92fc1e9f4ccff506ad308d93cb51c"
     },
     {
       "path": "product_assembly_bottom.png",
-      "bytes": 6453,
-      "sha256": "25a019a4390a16159c5ffc132e5b4d9362b93200776978707c669aee4d3701f3"
+      "bytes": 6485,
+      "sha256": "4518b4effa5bbde1bc945d2a6b80d76eb74aacad0c4ac2405afabe88ab29d26c"
     },
     {
       "path": "product_assembly_exploded.png",
@@ -85,8 +85,8 @@
     },
     {
       "path": "product_assembly_fastener_section.png",
-      "bytes": 6004,
-      "sha256": "383fa83e48fcfa67168fee7fa285657ac5d8f0fb45e48ec29ab36e49167817b2"
+      "bytes": 6002,
+      "sha256": "1e0dc216096f5e548a73c0d560dc82f59b3c018167d740f34e70c3b0f5e8e4c4"
     },
     {
       "path": "product_assembly_front.png",
@@ -95,8 +95,8 @@
     },
     {
       "path": "product_assembly_isometric.png",
-      "bytes": 20658,
-      "sha256": "53732fe562a041b4eda9084d408ce67ac1620493351036e3ed4a7c87eafe0c66"
+      "bytes": 20618,
+      "sha256": "42c1988a28b14f311a444e88613d1da5aeaa21cd6cee1bea006672096cfb114e"
     },
     {
       "path": "product_assembly_left.png",
@@ -105,8 +105,8 @@
     },
     {
       "path": "product_assembly_lid_isolation.png",
-      "bytes": 24442,
-      "sha256": "1f95e885fd4c7bc3d442c30e8cd5a41cc2b946f6fd1ef2aa92acc98e2949ed1e"
+      "bytes": 24401,
+      "sha256": "e5b0424ce832b17f801abba8898a3037028940bcabe75a44c8c415b97cbc1bdb"
     },
     {
       "path": "product_assembly_lid_recess_section.png",
@@ -115,13 +115,13 @@
     },
     {
       "path": "product_assembly_pi_mount_front_section.png",
-      "bytes": 5948,
-      "sha256": "51a34c24272e199305a3e8714f46aa882b4a0307ca1fb5e91c6670b2acf14dad"
+      "bytes": 5952,
+      "sha256": "3d84f5a2f04f987262538871cd266373ea217b3621b890b26d1126295a79d3d4"
     },
     {
       "path": "product_assembly_pi_mount_rear_section.png",
-      "bytes": 5948,
-      "sha256": "51a34c24272e199305a3e8714f46aa882b4a0307ca1fb5e91c6670b2acf14dad"
+      "bytes": 5952,
+      "sha256": "3d84f5a2f04f987262538871cd266373ea217b3621b890b26d1126295a79d3d4"
     },
     {
       "path": "product_assembly_rear.png",
@@ -140,8 +140,8 @@
     },
     {
       "path": "product_assembly_stud_seam_mid.png",
-      "bytes": 6022,
-      "sha256": "083ae19f60b5079e280bb0ef59cadcdf95952f38e5bed81af94884ac51b600f6"
+      "bytes": 6066,
+      "sha256": "077dca0821c426ac67dd1db6d9b125e78d442aabfc921797516af6e868c7df47"
     },
     {
       "path": "product_assembly_stud_seam_start.png",

@@ -28,7 +28,7 @@ The following combines Raspberry Pi's official mechanical drawings with practica
 
 Nominal dimensions in millimeters. PCB thickness is a design assumption rather than a controlled tolerance from the two mechanical drawings.
 
-Official references: Raspberry Pi official mechanical drawings for the [Raspberry Pi 4 Model B](https://pip.raspberrypi.com/documentation/hardware/raspberrypi4/CM4_datasheet.pdf) and the [Raspberry Pi 5](https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-datasheet.pdf) (pip-assets.raspberrypi.com). Raspberry Pi also provides a documentation page with DXF and STEP resources. The Pi 5 STEP model is especially useful for confirming three-dimensional collisions between connectors, coolers, and enclosure walls.
+Official references: Raspberry Pi official mechanical drawings for the [Raspberry Pi 4 Model B](https://pip.raspberrypi.com/documentation/hardware/raspberrypi4/CM4_datasheet.pdf) and the [Raspberry Pi 5](https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-mechanical-drawing.pdf) (pip-assets.raspberrypi.com). Raspberry Pi also provides a documentation page with DXF and STEP resources. The Pi 5 STEP model is especially useful for confirming three-dimensional collisions between connectors, coolers, and enclosure walls.
 
 ## 2. Exact mounting-hole coordinates
 
