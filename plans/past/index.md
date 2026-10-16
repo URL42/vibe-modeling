@@ -2,6 +2,7 @@
 
 Format: `created_at | path | title | summary`
 
+2026-10-16-13-40-00 | plans/past/2026-10-16-13-40-00_cicero-license-readmes.md | Document Cicero source and licensing | Add source attribution and user-specified CC BY-NC-SA licensing notices to the imported Cicero folders.
 2026-10-09-23-23-19 | plans/past/2026-10-09-23-23-19_raspberrypi5-case-mount-pattern-rotation.md | Correct the Raspberry Pi base mounting pattern by 90 degrees | Rotate the mounting holes and their underside recesses together while preserving the printing lid and its coupling.
 2026-10-09-19-00-00 | plans/past/2026-10-09-19-00-00_raspberrypi5-case-base-mount-recesses.md | Add Raspberry Pi base mounting screw-head recesses without changing the printed lid | Thicken the floor inward and add four underside mounting-head recesses while freezing the rev_0002 lid and lid/base coupling.
 2026-10-05-09-00-00 | plans/past/2026-10-05-09-00-00_raspberrypi5-case-flat-lid-3mm-studs.md | Raspberry Pi 5 Case - Flat 7 mm Lid and 3 mm Mounting Studs | Reduce the lid to a single flat screw-plate slab (drop the bottom rim band and bosses) and shrink the base mounting studs to 3 mm thick at the parting line.
