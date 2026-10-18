@@ -2,6 +2,13 @@
 
 Format: `created_at | path | title | summary`
 
+2026-10-16-21-00-00 | plans/past/2026-10-16-21-00-00_gravity-dovetails-and-flat-bed-slicing.md | Document gravity-seated dovetails and flat-bed slicing | Establish reusable joint and slicing workflows and map Cicero seam ownership before production geometry.
+2026-10-16-20-00-00 | plans/past/2026-10-16-20-00-00_cicero-artifact-cleanup.md | Remove superseded Cicero artifacts | Keep only current reference outputs and original imports, and synchronize documentation.
+2026-10-16-19-00-00 | plans/past/2026-10-16-19-00-00_cicero-face-up-flat-bed.md | Develop a face-first head split with flat cut faces on the bed | Find the deepest face-up section and divide the rear head only as needed using broad planar bed contact rather than arbitrary tilted orientations.
+2026-10-16-18-00-00 | plans/past/2026-10-16-18-00-00_cicero-intermediate-head-base.md | Export Cicero intermediate head and base and assess head splits | Export capped intermediate head/base reference meshes at the neck plane and test the smallest feasible head split count without claiming unproven minimality.
+2026-10-16-17-00-00 | plans/past/2026-10-16-17-00-00_cicero-neck-interface.md | Establish Cicero neck cut and dovetail interface first | Refine the neck cut in the turned head's frame, study a sliding dovetail interface, before any further head/base partitioning.
+2026-10-16-16-00-00 | plans/past/2026-10-16-16-00-00_cicero-split-feasibility.md | Investigate Cicero split and dovetail feasibility | Audit the scaled scan, preview a tilted neck separation, and measure candidate split footprints before defining printable dovetail parts.
+2026-10-16-15-00-00 | plans/past/2026-10-16-15-00-00_cicero-initial-scale.md | Establish the initial Cicero scale master | Measure scan ear landmarks and build an unsplit 228.6 mm ear-span reference master with assembled bounds.
 2026-10-16-13-40-00 | plans/past/2026-10-16-13-40-00_cicero-license-readmes.md | Document Cicero source and licensing | Add source attribution and user-specified CC BY-NC-SA licensing notices to the imported Cicero folders.
 2026-10-09-23-23-19 | plans/past/2026-10-09-23-23-19_raspberrypi5-case-mount-pattern-rotation.md | Correct the Raspberry Pi base mounting pattern by 90 degrees | Rotate the mounting holes and their underside recesses together while preserving the printing lid and its coupling.
 2026-10-09-19-00-00 | plans/past/2026-10-09-19-00-00_raspberrypi5-case-base-mount-recesses.md | Add Raspberry Pi base mounting screw-head recesses without changing the printed lid | Thicken the floor inward and add four underside mounting-head recesses while freezing the rev_0002 lid and lid/base coupling.

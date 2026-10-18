@@ -124,6 +124,7 @@ When working in Git:
 - `playbooks/how_to_design_and_validate_fit_clearances_and_tolerance_stacks.md` - Verify functional clearances independently from structure and epsilon.
 - `playbooks/how_to_create_fit_test_coupons_and_partial_prints.md` - Validate risky interfaces with production-derived test prints.
 - `playbooks/how_to_apply_physical_print_feedback_to_a_new_revision.md` - Turn measured print feedback into traceable new revisions.
+- `playbooks/how_to_slice_large_objects_for_flat_bed_printing.md` - Preserve useful build volume with real planar bed contact, protected major interfaces, and verified reassembly.
 - `playbooks/how_to_design_split_print_parts_and_verify_reassembly.md` - Split oversized parts while preserving alignment and load paths.
 - `playbooks/how_to_design_and_verify_fasteners_mounting_bosses_and_recesses.md` - Verify complete hardware, boss, and tool envelopes.
 - `playbooks/how_to_design_and_verify_mating_sliding_and_moving_parts.md` - Verify installation and swept envelopes for moving assemblies.
@@ -146,6 +147,7 @@ Operational references:
 
 Engineering references:
 
+- `references/engineering/joints/gravity_seated_dovetails.md` - Downhill insertion, closed lower stops, single-owner major interfaces, and joint verification.
 - `references/engineering/fasteners/m3_captive_nut_registration_seam_stations.md` - Captive-nut M3 tongue-and-receiver seam standard for split printable parts.
 - `references/engineering/servo/designing-for-servos.md` - Servo selection, geometry, mounting, and validation guidance.
 - `references/engineering/servo/working-with-servo-receivers.md` - Servo-receiver interfaces and integration guidance.

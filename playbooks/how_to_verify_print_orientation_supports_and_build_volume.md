@@ -23,6 +23,14 @@ orientation compatible with strength, support, surface, and assembly needs.
 8. Split or reorient only through an approved geometry change and reverify all
    resulting parts and assembly interfaces.
 
+## Flat-bed slicing of large objects
+
+Apply the [flat-bed slicing workflow](how_to_slice_large_objects_for_flat_bed_printing.md)
+when splitting oversized bodies. Choose a broad actual cut face at Z=0 before
+optimizing in-plane rotation. Reject elevated angular cut-face bases supported
+above a small contact region. Recheck actual contact after sockets, as well as
+final connector/support envelopes; local sculpted overhangs still need review.
+
 ## Verification
 
 - Every part plus required adhesion/support margin fits the usable build volume.

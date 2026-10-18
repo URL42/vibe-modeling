@@ -293,6 +293,15 @@ If a structural join fails:
 4. Identify whether the failure is zero-volume contact, insufficient overlap, a narrowed throat, partial seam coverage, or subtraction damage.
 5. Propose a repair and regression verification plan before changing geometry.
 
+## Gravity-seated split joints
+
+Use the [gravity-seated dovetail protocol](../references/engineering/joints/gravity_seated_dovetails.md)
+for sliding dovetails with closed lower stops. Verify male roots, socket walls,
+stop roots and bearing lands after all subtractions. Structural overlap attaches
+features to their own owner; separate mating parts retain their intended clearance.
+Reserve continuous major interface ownership before secondary fabrication cuts;
+gravity seating does not prove anti-lift retention, material width or strength.
+
 ## Verification
 
 - Every design declares its minimum wall thickness and structural overlap.

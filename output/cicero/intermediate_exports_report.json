@@ -1,0 +1,78 @@
+{
+  "scope": "Intermediate reference pair, not a complete printable manifest",
+  "source": "output/cicero/scaled_master.stl",
+  "neck_plane": {
+    "normal": [
+      0.0,
+      -0.28734788556634544,
+      0.9578262852211514
+    ],
+    "offset_mm": 291.5062138491311,
+    "angle_degrees": 16.69924423399362
+  },
+  "artifacts": {
+    "head_intermediate": {
+      "triangles": 307814,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "inconsistent_edge_winding": 0,
+      "connected_shells": 1,
+      "bounds_mm": [
+        [
+          -132.49899291992188,
+          -141.2760009765625,
+          278.80511474609375
+        ],
+        [
+          103.48799896240234,
+          112.33499908447266,
+          568.9990234375
+        ]
+      ],
+      "size_xyz_mm": [
+        235.98699188232422,
+        253.61100006103516,
+        290.19390869140625
+      ],
+      "signed_volume_mm3": 8463600.893923325,
+      "cap_triangles": 687,
+      "cap_loops": 1,
+      "sha256": "e9ffdd01fcb0448ca866363400d51dec25399c35d1176380033c7eea7c8f436c",
+      "scope": "Capped intermediate reference in assembly coordinates; no joints"
+    },
+    "base_intermediate": {
+      "triangles": 203730,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "inconsistent_edge_winding": 0,
+      "connected_shells": 3,
+      "bounds_mm": [
+        [
+          -218.77000427246094,
+          -171.11700439453125,
+          -3.8239000860066166e-14
+        ],
+        [
+          218.77000427246094,
+          171.11700439453125,
+          333.6729431152344
+        ]
+      ],
+      "size_xyz_mm": [
+        437.5400085449219,
+        342.2340087890625,
+        333.67294311523443
+      ],
+      "signed_volume_mm3": 28732409.34537992,
+      "cap_triangles": 687,
+      "cap_loops": 1,
+      "sha256": "11871681013cd1c1b465f3044ba92700533d0c1ed6b177292ba34e8e0cd5b92a",
+      "scope": "Capped intermediate reference in assembly coordinates; no joints"
+    }
+  },
+  "signed_volume_recombination_error_mm3": 0.00015748292207717896,
+  "limits": [
+    "Base retains three overlapping source shells; no solid union repair",
+    "No dovetails, subdivision joints, supports, or print approval"
+  ]
+}

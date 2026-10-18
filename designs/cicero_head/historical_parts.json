@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "parts": [
+    {
+      "part_id": 1,
+      "name": "face"
+    },
+    {
+      "part_id": 2,
+      "name": "neck_owner"
+    },
+    {
+      "part_id": 3,
+      "name": "rear_left_lower"
+    },
+    {
+      "part_id": 4,
+      "name": "rear_right_lower"
+    },
+    {
+      "part_id": 5,
+      "name": "rear_left_upper"
+    },
+    {
+      "part_id": 6,
+      "name": "rear_right_upper"
+    },
+    {
+      "part_id": 7,
+      "name": "midline_key_lower"
+    },
+    {
+      "part_id": 8,
+      "name": "midline_key_upper"
+    }
+  ]
+}

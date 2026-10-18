@@ -1,0 +1,821 @@
+{
+  "config": "designs/cicero_joined/configs/rev_0001.json",
+  "verification_script_sha256": "253d2701dff614bf3dd65960113b6d1f37d08ecd28c24b5184ca0cfd2a04ac9f",
+  "geometry_manifest_sha256": "d3cc9b489fb358ffa6298ba8ecaeef0db208de30bcc9cfe2436f541bf7b5b079",
+  "build_manifest_sha256": "3b513366e7ebc7eccba5b9e33c9ec035c9f2ace34bdc569a17416f8aeceeeda8",
+  "parts": {
+    "h_face": {
+      "size_xyz_mm": [
+        200.94700622558594,
+        200.94700622558594,
+        43.145301818847656
+      ],
+      "bed_area_mm2": 19877.354248137563,
+      "shells": 1,
+      "maximum_export_vertex_deviation_mm": 0.0007016492248413162
+    },
+    "h_neck": {
+      "size_xyz_mm": [
+        205.6320037841797,
+        205.6320037841797,
+        69.20030212402344
+      ],
+      "bed_area_mm2": 18293.288259895002,
+      "shells": 1,
+      "maximum_export_vertex_deviation_mm": 0.0006985247227082279
+    },
+    "h_left_lower": {
+      "size_xyz_mm": [
+        201.10499572753906,
+        201.10499572753906,
+        98.89360046386719
+      ],
+      "bed_area_mm2": 19969.436505554997,
+      "shells": 1,
+      "maximum_export_vertex_deviation_mm": 0.0005508235017033644
+    },
+    "h_right_lower": {
+      "size_xyz_mm": [
+        201.3040008544922,
+        201.3040008544922,
+        104.89399719238281
+      ],
+      "bed_area_mm2": 15437.603109649663,
+      "shells": 1,
+      "maximum_export_vertex_deviation_mm": 0.0006952270149867639
+    },
+    "h_left_upper": {
+      "size_xyz_mm": [
+        201.22799682617188,
+        201.22799682617188,
+        116.53299713134766
+      ],
+      "bed_area_mm2": 19858.740874013994,
+      "shells": 1,
+      "maximum_export_vertex_deviation_mm": 0.0008268795634863932
+    },
+    "h_right_upper": {
+      "size_xyz_mm": [
+        199.51199340820312,
+        199.51199340820312,
+        108.62799835205078
+      ],
+      "bed_area_mm2": 20232.920732282004,
+      "shells": 1,
+      "maximum_export_vertex_deviation_mm": 0.0008111397493828598
+    },
+    "b_neck": {
+      "size_xyz_mm": [
+        162.6510009765625,
+        162.65199279785156,
+        28.0
+      ],
+      "bed_area_mm2": 17722.67022399378,
+      "shells": 1,
+      "maximum_export_vertex_deviation_mm": 0.0006999994648297163
+    },
+    "b_lower_lf": {
+      "size_xyz_mm": [
+        185.94400024414062,
+        199.03199768066406,
+        171.11700439453125
+      ],
+      "bed_area_mm2": 25137.553586489998,
+      "shells": 1,
+      "maximum_export_vertex_deviation_mm": 0.0007031383327660011
+    },
+    "b_lower_lb": {
+      "size_xyz_mm": [
+        142.20199584960938,
+        169.94400024414062,
+        173.52999877929688
+      ],
+      "bed_area_mm2": 20514.050003964003,
+      "shells": 1,
+      "maximum_export_vertex_deviation_mm": 0.000595741908576997
+    },
+    "b_lower_rf": {
+      "size_xyz_mm": [
+        187.20199584960938,
+        150.00100708007812,
+        168.9709930419922
+      ],
+      "bed_area_mm2": 27261.120395966,
+      "shells": 1,
+      "maximum_export_vertex_deviation_mm": 0.0007540164382719827
+    },
+    "b_lower_rb": {
+      "size_xyz_mm": [
+        190.0590057373047,
+        172.96400451660156,
+        168.13400268554688
+      ],
+      "bed_area_mm2": 19400.5299120085,
+      "shells": 1,
+      "maximum_export_vertex_deviation_mm": 0.0007744711125036765
+    },
+    "b_upper_lf": {
+      "size_xyz_mm": [
+        134.91299438476562,
+        134.91299438476562,
+        92.00630187988281
+      ],
+      "bed_area_mm2": 7258.511665615,
+      "shells": 1,
+      "maximum_export_vertex_deviation_mm": 0.0005022930944795814
+    },
+    "b_upper_lb": {
+      "size_xyz_mm": [
+        150.6909942626953,
+        150.6909942626953,
+        123.21800231933594
+      ],
+      "bed_area_mm2": 4301.513169145,
+      "shells": 1,
+      "maximum_export_vertex_deviation_mm": 0.0006952916142834826
+    },
+    "b_upper_mf": {
+      "size_xyz_mm": [
+        152.69700622558594,
+        152.69700622558594,
+        219.60000610351562
+      ],
+      "bed_area_mm2": 10874.015606775,
+      "shells": 1,
+      "maximum_export_vertex_deviation_mm": 0.0007336674182960043
+    },
+    "b_upper_mb": {
+      "size_xyz_mm": [
+        171.1179962158203,
+        163.50100708007812,
+        219.60000610351562
+      ],
+      "bed_area_mm2": 14944.407442029,
+      "shells": 1,
+      "maximum_export_vertex_deviation_mm": 0.0008023373348316012
+    },
+    "b_upper_rf": {
+      "size_xyz_mm": [
+        144.70399475097656,
+        144.70399475097656,
+        137.5290069580078
+      ],
+      "bed_area_mm2": 7933.898017468001,
+      "shells": 1,
+      "maximum_export_vertex_deviation_mm": 0.0008245802285508052
+    },
+    "b_upper_rb": {
+      "size_xyz_mm": [
+        139.88299560546875,
+        126.69900512695312,
+        140.5659942626953
+      ],
+      "bed_area_mm2": 10080.905786805,
+      "shells": 1,
+      "maximum_export_vertex_deviation_mm": 0.0006903672149610503
+    }
+  },
+  "joints": [
+    {
+      "id": "head_to_bust",
+      "male": "b_neck",
+      "female": "h_neck",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 9.769828109255764,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "face__h_left_lower",
+      "male": "h_left_lower",
+      "female": "h_face",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 17.726539554219748,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "face__h_left_upper",
+      "male": "h_left_upper",
+      "female": "h_face",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 17.726539554219748,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "face__h_neck",
+      "male": "h_neck",
+      "female": "h_face",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 17.726539554219748,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "face__h_right_lower",
+      "male": "h_right_lower",
+      "female": "h_face",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 17.726539554219748,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "face__h_right_upper",
+      "male": "h_right_upper",
+      "female": "h_face",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 17.726539554219748,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_height__b_lower_lb__b_upper_lb",
+      "male": "b_lower_lb",
+      "female": "b_upper_lb",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 2.966809058604899,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_height__b_lower_lb__b_upper_mb",
+      "male": "b_lower_lb",
+      "female": "b_upper_mb",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 2.966809058604899,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_height__b_lower_lf__b_upper_lf",
+      "male": "b_lower_lf",
+      "female": "b_upper_lf",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 2.966809058604899,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_height__b_lower_lf__b_upper_mf",
+      "male": "b_lower_lf",
+      "female": "b_upper_mf",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 2.966809058604899,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_height__b_lower_rb__b_upper_mb",
+      "male": "b_upper_mb",
+      "female": "b_lower_rb",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 2.966809058604899,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_height__b_lower_rb__b_upper_rb",
+      "male": "b_upper_rb",
+      "female": "b_lower_rb",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 2.966809058604899,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_height__b_lower_rf__b_upper_mf",
+      "male": "b_lower_rf",
+      "female": "b_upper_mf",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 2.966809058604899,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_height__b_lower_rf__b_upper_rf",
+      "male": "b_lower_rf",
+      "female": "b_upper_rf",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 2.966809058604899,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_neck__b_upper_mb",
+      "male": "b_upper_mb",
+      "female": "b_neck",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 2.87347885566346,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_neck__b_upper_mf",
+      "male": "b_upper_mf",
+      "female": "b_neck",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 2.87347885566346,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_x__b_lower_lb__b_lower_rb",
+      "male": "b_lower_rb",
+      "female": "b_lower_lb",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 20.0,
+      "sampled_connector_states": 20,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_x__b_lower_lf__b_lower_rf",
+      "male": "b_lower_lf",
+      "female": "b_lower_rf",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 20.0,
+      "sampled_connector_states": 20,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_x__b_upper_lb__b_upper_mb",
+      "male": "b_upper_lb",
+      "female": "b_upper_mb",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 20.0,
+      "sampled_connector_states": 20,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_x__b_upper_lf__b_upper_mf",
+      "male": "b_upper_lf",
+      "female": "b_upper_mf",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 20.0,
+      "sampled_connector_states": 20,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_x__b_upper_mb__b_upper_rb",
+      "male": "b_upper_rb",
+      "female": "b_upper_mb",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 20.0,
+      "sampled_connector_states": 20,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_x__b_upper_mf__b_upper_rf",
+      "male": "b_upper_rf",
+      "female": "b_upper_mf",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 20.0,
+      "sampled_connector_states": 20,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_y__b_lower_lf__b_lower_lb",
+      "male": "b_lower_lb",
+      "female": "b_lower_lf",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 20.0,
+      "sampled_connector_states": 20,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_y__b_lower_rf__b_lower_rb",
+      "male": "b_lower_rb",
+      "female": "b_lower_rf",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 20.0,
+      "sampled_connector_states": 20,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_y__b_upper_lf__b_upper_lb",
+      "male": "b_upper_lb",
+      "female": "b_upper_lf",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 20.0,
+      "sampled_connector_states": 20,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_y__b_upper_mf__b_upper_mb",
+      "male": "b_upper_mf",
+      "female": "b_upper_mb",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 20.0,
+      "sampled_connector_states": 20,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "bust_y__b_upper_rf__b_upper_rb",
+      "male": "b_upper_rf",
+      "female": "b_upper_rb",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 20.0,
+      "sampled_connector_states": 20,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "head_collar__left",
+      "male": "h_neck",
+      "female": "h_left_lower",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 2.966809058604899,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "head_collar__right",
+      "male": "h_neck",
+      "female": "h_right_lower",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 2.966809058604899,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "head_height__left",
+      "male": "h_left_upper",
+      "female": "h_left_lower",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 2.966809058604899,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "head_height__right",
+      "male": "h_right_lower",
+      "female": "h_right_upper",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 2.966809058604899,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "head_midline__lower",
+      "male": "h_left_lower",
+      "female": "h_right_lower",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 20.0,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    },
+    {
+      "id": "head_midline__upper",
+      "male": "h_right_upper",
+      "female": "h_left_upper",
+      "feature_presence": "passed",
+      "closed_stop": "passed",
+      "gravity_drop_mm": 20.0,
+      "sampled_connector_states": 10,
+      "maximum_probe_interference_mm3": 0.0
+    }
+  ],
+  "subassembly_installation_samples": [
+    {
+      "stage": "head_lower_pair",
+      "moving": [
+        "h_right_lower"
+      ],
+      "fixed": [
+        "h_left_lower"
+      ],
+      "sampled_states": 7,
+      "maximum_interference_mm3": 0.0,
+      "witness": null
+    },
+    {
+      "stage": "head_upper_pair",
+      "moving": [
+        "h_right_upper"
+      ],
+      "fixed": [
+        "h_left_upper"
+      ],
+      "sampled_states": 7,
+      "maximum_interference_mm3": 0.0,
+      "witness": null
+    },
+    {
+      "stage": "head_lower_to_collar",
+      "moving": [
+        "h_left_lower",
+        "h_right_lower"
+      ],
+      "fixed": [
+        "h_neck"
+      ],
+      "sampled_states": 7,
+      "maximum_interference_mm3": 0.0,
+      "witness": null
+    },
+    {
+      "stage": "head_upper_to_lower",
+      "moving": [
+        "h_left_upper",
+        "h_right_upper"
+      ],
+      "fixed": [
+        "h_left_lower",
+        "h_neck",
+        "h_right_lower"
+      ],
+      "sampled_states": 7,
+      "maximum_interference_mm3": 0.00724146923135112,
+      "witness": [
+        2,
+        "h_left_upper",
+        "h_right_lower",
+        [
+          0.0,
+          19.77872705736595,
+          2.966809058604899
+        ]
+      ]
+    },
+    {
+      "stage": "head_face",
+      "moving": [
+        "h_face"
+      ],
+      "fixed": [
+        "h_left_lower",
+        "h_left_upper",
+        "h_neck",
+        "h_right_lower",
+        "h_right_upper"
+      ],
+      "sampled_states": 7,
+      "maximum_interference_mm3": 0.0,
+      "witness": null
+    },
+    {
+      "stage": "bust_lower_rf",
+      "moving": [
+        "b_lower_rf"
+      ],
+      "fixed": [
+        "b_lower_lf"
+      ],
+      "sampled_states": 7,
+      "maximum_interference_mm3": 0.0,
+      "witness": null
+    },
+    {
+      "stage": "bust_lower_lb",
+      "moving": [
+        "b_lower_lb"
+      ],
+      "fixed": [
+        "b_lower_lf",
+        "b_lower_rf"
+      ],
+      "sampled_states": 7,
+      "maximum_interference_mm3": 9.13928888511736e-12,
+      "witness": [
+        2,
+        "b_lower_lb",
+        "b_lower_rf",
+        [
+          0.0,
+          0.0,
+          20.0
+        ]
+      ]
+    },
+    {
+      "stage": "bust_lower_rb",
+      "moving": [
+        "b_lower_rb"
+      ],
+      "fixed": [
+        "b_lower_lb",
+        "b_lower_lf",
+        "b_lower_rf"
+      ],
+      "sampled_states": 7,
+      "maximum_interference_mm3": 0.0,
+      "witness": null
+    },
+    {
+      "stage": "bust_upper_mf",
+      "moving": [
+        "b_upper_mf"
+      ],
+      "fixed": [
+        "b_upper_lf"
+      ],
+      "sampled_states": 7,
+      "maximum_interference_mm3": 0.0,
+      "witness": null
+    },
+    {
+      "stage": "bust_upper_rf",
+      "moving": [
+        "b_upper_rf"
+      ],
+      "fixed": [
+        "b_upper_lf",
+        "b_upper_mf"
+      ],
+      "sampled_states": 7,
+      "maximum_interference_mm3": 0.0,
+      "witness": null
+    },
+    {
+      "stage": "bust_upper_lb",
+      "moving": [
+        "b_upper_lb"
+      ],
+      "fixed": [
+        "b_upper_lf",
+        "b_upper_mf",
+        "b_upper_rf"
+      ],
+      "sampled_states": 7,
+      "maximum_interference_mm3": 1.667440192503438e-09,
+      "witness": [
+        6,
+        "b_upper_lb",
+        "b_upper_mf",
+        [
+          -0.0,
+          -0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "stage": "bust_upper_mb",
+      "moving": [
+        "b_upper_mb"
+      ],
+      "fixed": [
+        "b_upper_lb",
+        "b_upper_lf",
+        "b_upper_mf",
+        "b_upper_rf"
+      ],
+      "sampled_states": 7,
+      "maximum_interference_mm3": 3.6735059040268113e-11,
+      "witness": [
+        6,
+        "b_upper_mb",
+        "b_upper_lf",
+        [
+          -0.0,
+          -0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "stage": "bust_upper_rb",
+      "moving": [
+        "b_upper_rb"
+      ],
+      "fixed": [
+        "b_upper_lb",
+        "b_upper_lf",
+        "b_upper_mb",
+        "b_upper_mf",
+        "b_upper_rf"
+      ],
+      "sampled_states": 7,
+      "maximum_interference_mm3": 0.0,
+      "witness": null
+    },
+    {
+      "stage": "bust_upper_to_lower",
+      "moving": [
+        "b_upper_lb",
+        "b_upper_lf",
+        "b_upper_mb",
+        "b_upper_mf",
+        "b_upper_rb",
+        "b_upper_rf"
+      ],
+      "fixed": [
+        "b_lower_lb",
+        "b_lower_lf",
+        "b_lower_rb",
+        "b_lower_rf"
+      ],
+      "sampled_states": 7,
+      "maximum_interference_mm3": 0.009957743568684799,
+      "witness": [
+        2,
+        "b_upper_mf",
+        "b_lower_rb",
+        [
+          0.0,
+          19.77872705736595,
+          2.966809058604899
+        ]
+      ]
+    },
+    {
+      "stage": "bust_neck",
+      "moving": [
+        "b_neck"
+      ],
+      "fixed": [
+        "b_lower_lb",
+        "b_lower_lf",
+        "b_lower_rb",
+        "b_lower_rf",
+        "b_upper_lb",
+        "b_upper_lf",
+        "b_upper_mb",
+        "b_upper_mf",
+        "b_upper_rb",
+        "b_upper_rf"
+      ],
+      "sampled_states": 7,
+      "maximum_interference_mm3": 0.0004258068212166122,
+      "witness": [
+        6,
+        "b_neck",
+        "b_upper_mf",
+        [
+          -0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "stage": "head_to_complete_bust",
+      "moving": [
+        "h_face",
+        "h_left_lower",
+        "h_left_upper",
+        "h_neck",
+        "h_right_lower",
+        "h_right_upper"
+      ],
+      "fixed": [
+        "b_lower_lb",
+        "b_lower_lf",
+        "b_lower_rb",
+        "b_lower_rf",
+        "b_neck",
+        "b_upper_lb",
+        "b_upper_lf",
+        "b_upper_mb",
+        "b_upper_mf",
+        "b_upper_rb",
+        "b_upper_rf"
+      ],
+      "sampled_states": 7,
+      "maximum_interference_mm3": 0.0,
+      "witness": null
+    }
+  ],
+  "actual_seams": 33,
+  "covered_seams": 33,
+  "connector_only_leaves": 0,
+  "head_to_bust_connections": 1,
+  "ear_span_mm": 228.60018830356114,
+  "diagnostic_contact_exclusion_mm": 0.02,
+  "full_subassembly_swept_paths": "unverified",
+  "physical_fit": "unverified",
+  "structural_load_capacity": "unverified",
+  "global_minimum_material_width": "unverified"
+}

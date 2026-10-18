@@ -1,0 +1,1339 @@
+{
+  "schema_version": 1,
+  "primary_assembly": "cicero",
+  "review_dispatch_id": 90,
+  "assemblies": [
+    {
+      "assembly_id": "cicero",
+      "role": "product",
+      "members": [
+        {
+          "assembly_id": "head",
+          "transform": {
+            "translate": [
+              0,
+              0,
+              0
+            ],
+            "rotate": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "assembly_id": "bust",
+          "transform": {
+            "translate": [
+              0,
+              0,
+              0
+            ],
+            "rotate": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "assembly_id": "head",
+      "role": "head",
+      "members": [
+        {
+          "part_id": 1,
+          "transform": {
+            "translate": [
+              161.3232103605518,
+              -36.3616993481692,
+              394.93634413661965
+            ],
+            "rotate": [
+              -104.70028815882876,
+              -46.81994935877206,
+              -143.9278028424306
+            ]
+          }
+        },
+        {
+          "part_id": 2,
+          "transform": {
+            "translate": [
+              134.38899483194535,
+              52.7414753118463,
+              320.16384884355386
+            ],
+            "rotate": [
+              -14.622216530719609,
+              -8.155222923864015,
+              151.46589082358113
+            ]
+          }
+        },
+        {
+          "part_id": 3,
+          "transform": {
+            "translate": [
+              -178.74111281108057,
+              -73.03351845994717,
+              449.04497223100793
+            ],
+            "rotate": [
+              -176.36331459448888,
+              -7.721960587197942,
+              64.68501837660465
+            ]
+          }
+        },
+        {
+          "part_id": 4,
+          "transform": {
+            "translate": [
+              143.3111337840462,
+              83.4829671135885,
+              372.5224450670382
+            ],
+            "rotate": [
+              -8.044488978235195,
+              -2.848429732378322,
+              160.6278166644706
+            ]
+          }
+        },
+        {
+          "part_id": 5,
+          "transform": {
+            "translate": [
+              55.66774643295288,
+              -154.50899826954148,
+              487.0482344848716
+            ],
+            "rotate": [
+              -90.0,
+              -44.723308124297574,
+              115.24192808725385
+            ]
+          }
+        },
+        {
+          "part_id": 6,
+          "transform": {
+            "translate": [
+              142.6370351266421,
+              69.956286388626,
+              470.4934429582938
+            ],
+            "rotate": [
+              -8.061664330642179,
+              -2.799162817050286,
+              160.9764503764982
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "assembly_id": "bust",
+      "role": "bust",
+      "members": [
+        {
+          "part_id": 7,
+          "transform": {
+            "translate": [
+              115.7894290899575,
+              37.19413721711524,
+              294.61905033100874
+            ],
+            "rotate": [
+              -13.617633890283637,
+              -9.758489793823456,
+              145.0207362084074
+            ]
+          }
+        },
+        {
+          "part_id": 8,
+          "transform": {
+            "translate": [
+              34.642220354803605,
+              0.0,
+              1.8079383774008786
+            ],
+            "rotate": [
+              -90.0,
+              -78.72523547801137,
+              -180.0
+            ]
+          }
+        },
+        {
+          "part_id": 9,
+          "transform": {
+            "translate": [
+              0.0,
+              -13.949797760583575,
+              171.23334162248972
+            ],
+            "rotate": [
+              -90.0,
+              -1.4655513429279412,
+              90.0
+            ]
+          }
+        },
+        {
+          "part_id": 10,
+          "transform": {
+            "translate": [
+              192.20179614139462,
+              0.0,
+              154.99996800460175
+            ],
+            "rotate": [
+              -90.0,
+              -0.00036656871791825734,
+              -180.0
+            ]
+          }
+        },
+        {
+          "part_id": 11,
+          "transform": {
+            "translate": [
+              -19.212233966364586,
+              136.6148202475687,
+              170.49222303713523
+            ],
+            "rotate": [
+              -171.50195103626953,
+              -0.7491644220887593,
+              5.001061947578398
+            ]
+          }
+        },
+        {
+          "part_id": 12,
+          "transform": {
+            "translate": [
+              -50.47937110760235,
+              0.0,
+              165.49013365420151
+            ],
+            "rotate": [
+              -90.0,
+              -59.386620202355466,
+              -180.0
+            ]
+          }
+        },
+        {
+          "part_id": 13,
+          "transform": {
+            "translate": [
+              -49.3127186423911,
+              17.67694456048666,
+              152.65154168407295
+            ],
+            "rotate": [
+              -3.0783546204959125,
+              -7.959820949673834,
+              111.22404121916964
+            ]
+          }
+        },
+        {
+          "part_id": 14,
+          "transform": {
+            "translate": [
+              109.80000000000001,
+              -153.44343840882237,
+              285.9711619122823
+            ],
+            "rotate": [
+              -90.0,
+              -1.9401278202802426,
+              90.0
+            ]
+          }
+        },
+        {
+          "part_id": 15,
+          "transform": {
+            "translate": [
+              109.80000000000001,
+              -5.0010780432549575,
+              318.5013471052796
+            ],
+            "rotate": [
+              -90.0,
+              -0.00036656871793097954,
+              90.0
+            ]
+          }
+        },
+        {
+          "part_id": 16,
+          "transform": {
+            "translate": [
+              255.25710568745617,
+              -90.00090684287525,
+              136.49986397356872
+            ],
+            "rotate": [
+              -2.5751748448203466,
+              -8.135543626288149,
+              107.63098632098392
+            ]
+          }
+        },
+        {
+          "part_id": 17,
+          "transform": {
+            "translate": [
+              52.55924626553938,
+              0.0,
+              166.9282182166932
+            ],
+            "rotate": [
+              -90.0,
+              -68.72013399525655,
+              0.0
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_id": "head_to_bust",
+      "owner_assembly": "cicero",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          -10.619497299194336,
+          22.60840590489714,
+          311.12394395516463
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_neck",
+        "h_neck"
+      ]
+    },
+    {
+      "interface_id": "face__h_left_lower",
+      "owner_assembly": "head",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          11.402578092059688,
+          -106.26812988836993,
+          390.96122768698
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "h_left_lower",
+        "h_face"
+      ]
+    },
+    {
+      "interface_id": "face__h_left_upper",
+      "owner_assembly": "head",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          6.982885832764854,
+          -125.76274327411284,
+          480.27504290918773
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "h_left_upper",
+        "h_face"
+      ]
+    },
+    {
+      "interface_id": "face__h_neck",
+      "owner_assembly": "head",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          22.048949612347577,
+          -88.00833971036724,
+          323.04079012909375
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "h_neck",
+        "h_face"
+      ]
+    },
+    {
+      "interface_id": "face__h_right_lower",
+      "owner_assembly": "head",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          36.470308782478256,
+          -91.62960197103651,
+          376.494607581167
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "h_right_lower",
+        "h_face"
+      ]
+    },
+    {
+      "interface_id": "face__h_right_upper",
+      "owner_assembly": "head",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          56.57914034647074,
+          -103.46282956350431,
+          485.8288177760482
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "h_right_upper",
+        "h_face"
+      ]
+    },
+    {
+      "interface_id": "bust_height__b_lower_lb__b_upper_lb",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          -132.91571611676898,
+          61.82084178587845,
+          159.2731262678818
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_lower_lb",
+        "b_upper_lb"
+      ]
+    },
+    {
+      "interface_id": "bust_height__b_lower_lb__b_upper_mb",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          -54.900001525878906,
+          76.55537864370626,
+          161.48330679655595
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_lower_lb",
+        "b_upper_mb"
+      ]
+    },
+    {
+      "interface_id": "bust_height__b_lower_lf__b_upper_lf",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          -156.2064437866211,
+          -33.43071262751319,
+          144.98539310587302
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_lower_lf",
+        "b_upper_lf"
+      ]
+    },
+    {
+      "interface_id": "bust_height__b_lower_lf__b_upper_mf",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          -54.900001525878906,
+          -55.352427469303976,
+          141.6971358796044
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_lower_lf",
+        "b_upper_mf"
+      ]
+    },
+    {
+      "interface_id": "bust_height__b_lower_rb__b_upper_mb",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          54.900001525878906,
+          56.828638452859344,
+          158.52429576792892
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_upper_mb",
+        "b_lower_rb"
+      ]
+    },
+    {
+      "interface_id": "bust_height__b_lower_rb__b_upper_rb",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          148.74300384521484,
+          42.02166039641137,
+          156.3032490594617
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_upper_rb",
+        "b_lower_rb"
+      ]
+    },
+    {
+      "interface_id": "bust_height__b_lower_rf__b_upper_mf",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          54.900001525878906,
+          -61.6643621100013,
+          140.75034568349977
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_lower_rf",
+        "b_upper_mf"
+      ]
+    },
+    {
+      "interface_id": "bust_height__b_lower_rf__b_upper_rf",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          148.50040435791016,
+          -53.51006635221944,
+          141.97349004716708
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_lower_rf",
+        "b_upper_rf"
+      ]
+    },
+    {
+      "interface_id": "bust_neck__b_upper_mb",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          -6.3438072204589915,
+          54.50641228792807,
+          299.8127328522528
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_upper_mb",
+        "b_neck"
+      ]
+    },
+    {
+      "interface_id": "bust_neck__b_upper_mf",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          -9.836076736450195,
+          -21.542081055557432,
+          276.99818484920706
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_upper_mf",
+        "b_neck"
+      ]
+    },
+    {
+      "interface_id": "bust_x__b_lower_lb__b_lower_rb",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          0.0,
+          66.66603088378906,
+          74.9999041557312
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_lower_rb",
+        "b_lower_lb"
+      ]
+    },
+    {
+      "interface_id": "bust_x__b_lower_lf__b_lower_rf",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          0.0,
+          -84.48529052734375,
+          85.0
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_lower_lf",
+        "b_lower_rf"
+      ]
+    },
+    {
+      "interface_id": "bust_x__b_upper_lb__b_upper_mb",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          -109.8,
+          74.62706756591797,
+          226.83831787109375
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_upper_lb",
+        "b_upper_mb"
+      ]
+    },
+    {
+      "interface_id": "bust_x__b_upper_lf__b_upper_mf",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          -109.8,
+          -46.003150939941406,
+          206.06147003173828
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_upper_lf",
+        "b_upper_mf"
+      ]
+    },
+    {
+      "interface_id": "bust_x__b_upper_mb__b_upper_rb",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          109.8,
+          70.28279876708984,
+          215.0593719482422
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_upper_rb",
+        "b_upper_mb"
+      ]
+    },
+    {
+      "interface_id": "bust_x__b_upper_mf__b_upper_rf",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          109.8,
+          -64.3495101928711,
+          180.2553690592448
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_upper_rf",
+        "b_upper_mf"
+      ]
+    },
+    {
+      "interface_id": "bust_y__b_lower_lf__b_lower_lb",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          -86.5219497680664,
+          0.0,
+          65.0
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_lower_lb",
+        "b_lower_lf"
+      ]
+    },
+    {
+      "interface_id": "bust_y__b_lower_rf__b_lower_rb",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          93.60040283203126,
+          0.0,
+          65.00000333786011
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_lower_rb",
+        "b_lower_rf"
+      ]
+    },
+    {
+      "interface_id": "bust_y__b_upper_lf__b_upper_lb",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          -138.15102059500558,
+          0.0,
+          183.66792873806423
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_upper_lb",
+        "b_upper_lf"
+      ]
+    },
+    {
+      "interface_id": "bust_y__b_upper_mf__b_upper_mb",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          0.0,
+          0.0,
+          228.08306884765625
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_upper_mf",
+        "b_upper_mb"
+      ]
+    },
+    {
+      "interface_id": "bust_y__b_upper_rf__b_upper_rb",
+      "owner_assembly": "bust",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          163.36295318603516,
+          0.0,
+          229.53399658203125
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "b_upper_rf",
+        "b_upper_rb"
+      ]
+    },
+    {
+      "interface_id": "head_collar__left",
+      "owner_assembly": "head",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          -38.311829425394535,
+          1.3041559219864922,
+          360.19562338829803
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "h_neck",
+        "h_left_lower"
+      ]
+    },
+    {
+      "interface_id": "head_collar__right",
+      "owner_assembly": "head",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          8.23127484321595,
+          17.98718595632856,
+          362.69807789344935
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "h_neck",
+        "h_right_lower"
+      ]
+    },
+    {
+      "interface_id": "head_height__left",
+      "owner_assembly": "head",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          -48.215904235839844,
+          -28.104306071222027,
+          455.7843540893167
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "h_left_upper",
+        "h_left_lower"
+      ]
+    },
+    {
+      "interface_id": "head_height__right",
+      "owner_assembly": "head",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          18.59811019897461,
+          9.565431748579542,
+          461.434814762287
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "h_right_lower",
+        "h_right_upper"
+      ]
+    },
+    {
+      "interface_id": "head_midline__lower",
+      "owner_assembly": "head",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          -16.036832289094104,
+          -2.418003734079983,
+          420.5955505371094
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "h_left_lower",
+        "h_right_lower"
+      ]
+    },
+    {
+      "interface_id": "head_midline__upper",
+      "owner_assembly": "head",
+      "type": "integral_sliding_dovetail",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          -12.880670475267763,
+          -9.112468686456895,
+          495.57916259765625
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "h_right_upper",
+        "h_left_upper"
+      ]
+    }
+  ],
+  "views": [
+    {
+      "name": "front",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        90,
+        0,
+        0,
+        1000
+      ],
+      "assembly_view": "product_reference",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "back",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        90,
+        0,
+        180,
+        1000
+      ],
+      "assembly_view": "product_reference",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "left",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        90,
+        0,
+        270,
+        1000
+      ],
+      "assembly_view": "product_reference",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "right",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        90,
+        0,
+        90,
+        1000
+      ],
+      "assembly_view": "product_reference",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "isometric",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        55,
+        0,
+        25,
+        1000
+      ],
+      "assembly_view": "product_reference",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "top",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        0,
+        0,
+        0,
+        1000
+      ],
+      "assembly_view": "product_reference",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "bottom",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        180,
+        0,
+        0,
+        1000
+      ],
+      "assembly_view": "product_reference",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "exploded",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        55,
+        0,
+        25,
+        1000
+      ],
+      "assembly_view": "exploded_reference",
+      "assembly_view_id": 1,
+      "show_proxies": false
+    },
+    {
+      "name": "head",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        55,
+        0,
+        25,
+        1000
+      ],
+      "assembly_view": "head_reference",
+      "assembly_view_id": 2,
+      "show_proxies": false
+    },
+    {
+      "name": "bust",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        55,
+        0,
+        25,
+        1000
+      ],
+      "assembly_view": "bust_reference",
+      "assembly_view_id": 3,
+      "show_proxies": false
+    },
+    {
+      "name": "neck_front",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        55,
+        0,
+        25,
+        1000
+      ],
+      "assembly_view": "neck_reference",
+      "assembly_view_id": 4,
+      "show_proxies": false
+    },
+    {
+      "name": "neck_back",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        125,
+        0,
+        205,
+        1000
+      ],
+      "assembly_view": "neck_reference",
+      "assembly_view_id": 4,
+      "show_proxies": false
+    },
+    {
+      "name": "exposed",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        55,
+        0,
+        25,
+        1000
+      ],
+      "assembly_view": "exposed_reference",
+      "assembly_view_id": 5,
+      "show_proxies": false
+    },
+    {
+      "name": "head_neck_socket",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        125,
+        0,
+        205,
+        1000
+      ],
+      "assembly_view": "head_neck_socket_reference",
+      "assembly_view_id": 6,
+      "show_proxies": false
+    },
+    {
+      "name": "bust_neck_rail",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        55,
+        0,
+        25,
+        1000
+      ],
+      "assembly_view": "bust_neck_rail_reference",
+      "assembly_view_id": 7,
+      "show_proxies": false
+    }
+  ],
+  "view_sets": {
+    "compact": [
+      "front",
+      "back",
+      "left",
+      "right",
+      "isometric",
+      "head",
+      "bust",
+      "neck_front",
+      "exposed"
+    ],
+    "full": [
+      "front",
+      "back",
+      "left",
+      "right",
+      "isometric",
+      "top",
+      "bottom",
+      "exploded",
+      "head",
+      "bust",
+      "neck_front",
+      "neck_back",
+      "exposed",
+      "head_neck_socket",
+      "bust_neck_rail"
+    ]
+  },
+  "geometry_exports": [
+    {
+      "name": "cicero_assembled_reference",
+      "dispatch_id": 91,
+      "minimum_span": [
+        437,
+        342,
+        568
+      ]
+    },
+    {
+      "name": "head_assembled_reference",
+      "dispatch_id": 92,
+      "minimum_span": [
+        235,
+        253,
+        290
+      ]
+    },
+    {
+      "name": "bust_assembled_reference",
+      "dispatch_id": 93,
+      "minimum_span": [
+        437,
+        342,
+        333
+      ]
+    }
+  ]
+}

@@ -23,6 +23,14 @@ their complete installation and motion envelopes.
    removal independently.
 8. Use coupons or partial assemblies for uncertain friction and flex behavior.
 
+## Gravity-seated dovetails
+
+Follow the [gravity-seated dovetail protocol](../references/engineering/joints/gravity_seated_dovetails.md).
+Record assembly-space downhill travel, accessible entry, closed low stop and
+independent anti-lift retention. Female-down/male-up ownership does not establish
+an insertion path; a horizontal sliding rail has no gravity seating drop. Verify
+the complete moving subassembly, not only a connector's final position.
+
 ## Verification
 
 - Full swept and installation envelopes are collision-free at required clearance.

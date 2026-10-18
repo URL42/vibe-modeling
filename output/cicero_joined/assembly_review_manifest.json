@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "design": "cicero_joined",
+  "primary_assembly": "cicero",
+  "view_set": "full",
+  "generated_at_utc": "2026-10-17T17:45:42.794880+00:00",
+  "config": {
+    "path": "designs/cicero_joined/configs/rev_0001.json",
+    "sha256": "e69427fed878b63ff08d4fd5babd7e1693f6f8949f3aa2f67e4dae02465fea2a"
+  },
+  "parts_manifest": {
+    "path": "designs/cicero_joined/parts.json",
+    "sha256": "4301bc74ab82d30fb7a43bed5540bd89d4c881c17b8f6bbf0db1c6094c0f3187"
+  },
+  "assembly_contract": {
+    "path": "designs/cicero_joined/assembly.json",
+    "sha256": "f654a45d4b96ecb478942a9a55150a149224c9cc8a023ff3b098ee8abc4275c3"
+  },
+  "source": {
+    "path": "designs/cicero_joined/src",
+    "sha256": "09a0c56e890a36aa61517c642fe0317efbf60ff46163dcceb6dcf322f44da8ec",
+    "main_scad": "designs/cicero_joined/src/main.scad"
+  },
+  "printable_build": {
+    "path": "output/cicero_joined/build_manifest.json",
+    "directory": "output/cicero_joined",
+    "sha256": "3b513366e7ebc7eccba5b9e33c9ec035c9f2ace34bdc569a17416f8aeceeeda8",
+    "counts": {
+      "parts": 17,
+      "stl": 17,
+      "png": 289,
+      "artifacts": 306
+    },
+    "stl_artifacts": [
+      {
+        "part_id": 1,
+        "name": "h_face",
+        "path": "h_face_rev_0001.stl",
+        "bytes": 5589665,
+        "sha256": "7d1bd90aa707e3b199c4386b2b8a25a8e66715aa0e02e29b1e4036712eee1098"
+      },
+      {
+        "part_id": 2,
+        "name": "h_neck",
+        "path": "h_neck_rev_0001.stl",
+        "bytes": 5714711,
+        "sha256": "1c877236983085b8ef4775799fd1659b5821b096a872b83a6572d494b0fa6e25"
+      },
+      {
+        "part_id": 3,
+        "name": "h_left_lower",
+        "path": "h_left_lower_rev_0001.stl",
+        "bytes": 10297502,
+        "sha256": "c037860ab78a4343e9ae16532be425dac30c42e867537d16454710ff95e6d06d"
+      },
+      {
+        "part_id": 4,
+        "name": "h_right_lower",
+        "path": "h_right_lower_rev_0001.stl",
+        "bytes": 9698316,
+        "sha256": "8e66cb1d3d7b317a42ef699dee7814fcb451db760d69ba64156ae5ccddd37a49"
+      },
+      {
+        "part_id": 5,
+        "name": "h_left_upper",
+        "path": "h_left_upper_rev_0001.stl",
+        "bytes": 16953616,
+        "sha256": "b1817685ce2fd75f1a3053ebf7913c1c12116bd88d3ae6d2572e4bb6a5fb01c2"
+      },
+      {
+        "part_id": 6,
+        "name": "h_right_upper",
+        "path": "h_right_upper_rev_0001.stl",
+        "bytes": 16161681,
+        "sha256": "58af42a4bbfde2afd427b0321fda8736360f718f69eb24eb932363d4c755845d"
+      },
+      {
+        "part_id": 7,
+        "name": "b_neck",
+        "path": "b_neck_rev_0001.stl",
+        "bytes": 1632314,
+        "sha256": "4cf5b11985da390688f9d875ae0e8b014a3f4bd8fb121645c7ed25e59c25157e"
+      },
+      {
+        "part_id": 8,
+        "name": "b_lower_lf",
+        "path": "b_lower_lf_rev_0001.stl",
+        "bytes": 4679263,
+        "sha256": "ca6191e11fb6ed3f6b74a2ee650ff4b7294c6caac94c05025908c43efd615bdb"
+      },
+      {
+        "part_id": 9,
+        "name": "b_lower_lb",
+        "path": "b_lower_lb_rev_0001.stl",
+        "bytes": 75623,
+        "sha256": "5ac447b94ea790d4f11e70979befbd922eafd65b8c1b52d2bfa519dcc1b64a84"
+      },
+      {
+        "part_id": 10,
+        "name": "b_lower_rf",
+        "path": "b_lower_rf_rev_0001.stl",
+        "bytes": 3593526,
+        "sha256": "cdcc98b493cf58fdcc16a223b85d7e649fecdf26fe5d4c3433f3cca1148c725d"
+      },
+      {
+        "part_id": 11,
+        "name": "b_lower_rb",
+        "path": "b_lower_rb_rev_0001.stl",
+        "bytes": 65882,
+        "sha256": "ba4081654aff1fa0ac7ba13772282f3833366b2438e4b3f00acb43e8b90d7fa8"
+      },
+      {
+        "part_id": 12,
+        "name": "b_upper_lf",
+        "path": "b_upper_lf_rev_0001.stl",
+        "bytes": 3272464,
+        "sha256": "a30fa528a00a84c5c1389bc3c544a830c141c788240307d04b63486c9b289878"
+      },
+      {
+        "part_id": 13,
+        "name": "b_upper_lb",
+        "path": "b_upper_lb_rev_0001.stl",
+        "bytes": 4489841,
+        "sha256": "f619f094126fc4fe05dba54698b56ef930464694046c077cf4db8541b4effe7b"
+      },
+      {
+        "part_id": 14,
+        "name": "b_upper_mf",
+        "path": "b_upper_mf_rev_0001.stl",
+        "bytes": 7404049,
+        "sha256": "32414f3ceecc1d6a4ac3b08ad5c5d388e6cc98e2652196f23a69bed10dd96bda"
+      },
+      {
+        "part_id": 15,
+        "name": "b_upper_mb",
+        "path": "b_upper_mb_rev_0001.stl",
+        "bytes": 7115373,
+        "sha256": "8c4f121112d0541841d3c0f33c6a9be970b2040fa0bf0ce17302e6fcf5143ed1"
+      },
+      {
+        "part_id": 16,
+        "name": "b_upper_rf",
+        "path": "b_upper_rf_rev_0001.stl",
+        "bytes": 3972601,
+        "sha256": "1760028ffb4499b52dcc6defac5820076982301a9254e65c5a270ebccd9f728b"
+      },
+      {
+        "part_id": 17,
+        "name": "b_upper_rb",
+        "path": "b_upper_rb_rev_0001.stl",
+        "bytes": 3134988,
+        "sha256": "9f806b04ec461f9ece5b122e65f3030df2b205947820a075efa317c1b5f56ccb"
+      }
+    ]
+  },
+  "git": {
+    "commit": "f3ab27af2b71378703b933484b576199d2443545",
+    "dirty": true
+  },
+  "counts": {
+    "png": 15,
+    "stl": 3,
+    "artifacts": 18
+  },
+  "artifacts": [
+    {
+      "path": "bust_assembled_reference.stl",
+      "bytes": 40249295,
+      "sha256": "7a55fef7f9e736127ac3ccf656dce74b07b1a12750be29234c4fdb662bd57553"
+    },
+    {
+      "path": "cicero_assembled_reference.stl",
+      "bytes": 105916522,
+      "sha256": "ad90d8b1a2a1b979593699229d5a8058869a6f9de8ce7d32bb56bd6d33d806e1"
+    },
+    {
+      "path": "cicero_back.png",
+      "bytes": 193833,
+      "sha256": "ad2b95815de12de1398f05118c1d21e548b33a637699927fb81378cf83d53d94"
+    },
+    {
+      "path": "cicero_bottom.png",
+      "bytes": 73693,
+      "sha256": "c749aad256942cbcf59034f604cdfdcbcfe4703bb15a7eeee8ed8828049f64a4"
+    },
+    {
+      "path": "cicero_bust.png",
+      "bytes": 275049,
+      "sha256": "da6f6ea30adc8b6e99a88943d9ed8805459b957393f3382b13a85ecc67752360"
+    },
+    {
+      "path": "cicero_bust_neck_rail.png",
+      "bytes": 30922,
+      "sha256": "8abdc4ea1309acc159616760f929e14c89a1c6f7b9e0dd7811347c08d3b44947"
+    },
+    {
+      "path": "cicero_exploded.png",
+      "bytes": 229733,
+      "sha256": "2d0f296eb4ae1043afa87c3629993b911c0752de0314b9ef4e080278d4645efe"
+    },
+    {
+      "path": "cicero_exposed.png",
+      "bytes": 296689,
+      "sha256": "b0471756ea52525f0e54cb6c5ad725ea09ab5e803037cc4892cffd0aee52541e"
+    },
+    {
+      "path": "cicero_front.png",
+      "bytes": 284864,
+      "sha256": "7469f2b684a4fb209712df92bca7a0c10ef0665b434bc1f58ed3b98c8b2e07d6"
+    },
+    {
+      "path": "cicero_head.png",
+      "bytes": 337105,
+      "sha256": "ec77cf0a81bdf85e88fd8c12024b701eca1a7979961c7b00fb67d86afd3e27b8"
+    },
+    {
+      "path": "cicero_head_neck_socket.png",
+      "bytes": 126977,
+      "sha256": "92282fd57a3843b2118bb60c3ca838007c960017cc24324043120310e0f0076e"
+    },
+    {
+      "path": "cicero_isometric.png",
+      "bytes": 323043,
+      "sha256": "d080974d1d89793980f48e0da3a5b3f8f1f2320801432912314460c2460b2f3a"
+    },
+    {
+      "path": "cicero_left.png",
+      "bytes": 231035,
+      "sha256": "998362193a64fea07ac381019d173ec504868f4c59c03746fd650963933d1c74"
+    },
+    {
+      "path": "cicero_neck_back.png",
+      "bytes": 140943,
+      "sha256": "2e15715e928af0a0d6b97a51627dd47667c0bb42283f4f9f4dc9554700c31e8d"
+    },
+    {
+      "path": "cicero_neck_front.png",
+      "bytes": 46863,
+      "sha256": "64f8a246642205f4ec32c01b2f0eff3ecb07a687cb29ec15367f17a964906cb6"
+    },
+    {
+      "path": "cicero_right.png",
+      "bytes": 206879,
+      "sha256": "6e2fae164d5d841bfeaa246ec40119ea42cd7700f398b249beef0cb86caf5643"
+    },
+    {
+      "path": "cicero_top.png",
+      "bytes": 256462,
+      "sha256": "730341e6a587d65dfb1fc19fc685c9340cebe40254c9aedb86fdb7f1e1573e99"
+    },
+    {
+      "path": "head_assembled_reference.stl",
+      "bytes": 65667274,
+      "sha256": "6055386f24acef054943186d64f5c3bfd032c00eb9c2493f28091a6059380706"
+    }
+  ]
+}

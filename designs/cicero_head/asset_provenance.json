@@ -1,0 +1,1065 @@
+{
+  "inputs": {
+    "designs/cicero/measure_scale.py": "ed3d6726ce151f32b98ea472e30a7da7119c35fb953ea476d29ca81b305b8b9a",
+    "designs/cicero/export_intermediates.py": "e443fcee25ab0c745bf6148f9cb47349ee4033cdeaa13ce0d394c136ea446721",
+    "designs/cicero/face_up_split.py": "42eccc2bf7a8914e0dd4c64af7168a4437fbcfd6229c8f12e5169005b858e4d7",
+    "designs/cicero/analyze_splits.py": "4105f1a84d4a9873e4b9752d20e428609bdcb00973b270a710bce7d51e824f3b",
+    "output/cicero/head_intermediate.stl": "e9ffdd01fcb0448ca866363400d51dec25399c35d1176380033c7eea7c8f436c",
+    "output/cicero/face_up_report.json": "646af9c0ec7958a3ee8382e090d3841a86ad3b3c443393d18bb6dc290a7400f8",
+    "designs/cicero_head/head_parameters.json": "b799421c0a3ff251c34e7a4c61c079d22215f8dae95cd4ba7a3ae953beef9b51",
+    "designs/cicero_head/generate.py": "7604d3d08b3cc474b84c21d0b9286f99217c61d44ede28844897428c9c479357"
+  },
+  "assets": {
+    "assets/face.stl": "9603a6122399afc0daba0503b96e840307dc496fd5dc2100235194a0b6081abb",
+    "assets/neck_owner.stl": "3f721d7399dca3a4ad5da7698c09a570012c0c70ff5752e5e5fee048f97a9aa9",
+    "assets/rear_left_lower.stl": "753ad0591d547909a34ad85453fc8194ae7e5bb18be156bdf4aee0ad587dfe16",
+    "assets/rear_right_lower.stl": "2974b7150aae16e15ef8aaf7456d1c3334bbbfa9f0434a60fb573c72399c4837",
+    "assets/rear_left_upper.stl": "8521ef70c4b2e9f1c46183299f4481caefb64e0802b8d790bd5705b4ac5d4ee8",
+    "assets/rear_right_upper.stl": "354e064c7002a346ca8820db78bdfe44af59b5a3c63888391616de9166e2fd25",
+    "assets/midline_key_lower.stl": "6d6bf0e3d68b18073bdf6ac980e0c98947a31e2d1d7a8623abb4f9a8a5338029",
+    "assets/midline_key_upper.stl": "ed87efe2755985b945e27a7005b7e60aa54b2bb7be6b54e5f0156858fcfcc684",
+    "assets/assembled_reference.stl": "57edb32d08a84879e87de6e9bc3dba2488b9ad4d5c89e47e9fd256e277290b9e",
+    "assets/exploded_reference.stl": "aceba58000afcc4811db5f702994ed7a10b9b9b1f4e11a1219e6fb9817f05240",
+    "assets/rear_reference.stl": "c11070bd9fab240088c606f4273575750aad2f99cb1dacd668b8c3e3f9797086"
+  },
+  "parts": [
+    {
+      "part_id": 1,
+      "name": "face",
+      "fit": {
+        "bed_face": "face_rear",
+        "bed_normal_assembly": [
+          0.41996271293350146,
+          -0.8907736132926748,
+          -0.17364817766693036
+        ],
+        "bed_plane_offset_mm": 25.611251490731743,
+        "in_plane_yaw_degrees": 48.0477792036925,
+        "rotation_matrix": [
+          [
+            -0.5496063390845848,
+            -0.4018920089270552,
+            0.7324040450452308
+          ],
+          [
+            -0.722194012564196,
+            -0.21214425050443436,
+            -0.6583544829302357
+          ],
+          [
+            0.41996271293350146,
+            -0.8907736132926748,
+            -0.17364817766693036
+          ]
+        ],
+        "size_xyz_mm": [
+          209.74708854643555,
+          209.7472443884288,
+          49.09383135051193
+        ],
+        "envelope_ratio": 0.9990342671513638,
+        "fits": true,
+        "contact_convex_hull_area_mm2": 26042.567225844068,
+        "actual_contact_area_mm2": 21901.34800412009
+      },
+      "mesh": {
+        "triangles": 32450,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            214.74708557128906,
+            214.7472381591797,
+            49.09383010864258
+          ]
+        ],
+        "size_xyz_mm": [
+          209.74708557128906,
+          209.7472381591797,
+          49.09383010864258
+        ],
+        "signed_volume_mm3": 378590.0564439178
+      },
+      "assembly_to_print_rotation": [
+        [
+          -0.5496063390845848,
+          -0.4018920089270552,
+          0.7324040450452308
+        ],
+        [
+          -0.722194012564196,
+          -0.21214425050443436,
+          -0.6583544829302357
+        ],
+        [
+          0.41996271293350146,
+          -0.8907736132926748,
+          -0.17364817766693036
+        ]
+      ],
+      "assembly_to_print_translation": [
+        -210.69609703628765,
+        375.58430904735474,
+        -25.61124287683044
+      ],
+      "inverse_translation": [
+        166.20059569568826,
+        -27.812845325237024,
+        397.13494167085383
+      ],
+      "inverse_rotation": [
+        -104.775870570568,
+        -47.088314064066104,
+        -143.82437999063453
+      ],
+      "asset_sha256": "9603a6122399afc0daba0503b96e840307dc496fd5dc2100235194a0b6081abb"
+    },
+    {
+      "part_id": 2,
+      "name": "neck_owner",
+      "fit": {
+        "bed_face": "collar_top",
+        "bed_normal_assembly": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "bed_plane_offset_mm": -360.0,
+        "in_plane_yaw_degrees": 31.331482831927165,
+        "rotation_matrix": [
+          [
+            0.5199885406749866,
+            -0.854173236273941,
+            0.0
+          ],
+          [
+            -0.854173236273941,
+            -0.5199885406749866,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ],
+        "size_xyz_mm": [
+          202.59203541602074,
+          198.5402204585692,
+          81.19488525390625
+        ],
+        "envelope_ratio": 0.9649537290593987,
+        "fits": true,
+        "contact_convex_hull_area_mm2": 30469.77895639575,
+        "actual_contact_area_mm2": 28520.834436215962
+      },
+      "mesh": {
+        "triangles": 22894,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            207.592041015625,
+            203.54022216796875,
+            81.19488525390625
+          ]
+        ],
+        "size_xyz_mm": [
+          202.592041015625,
+          198.54022216796875,
+          81.19488525390625
+        ],
+        "signed_volume_mm3": 1315702.61958205
+      },
+      "assembly_to_print_rotation": [
+        [
+          0.5199885406749866,
+          -0.854173236273941,
+          0.0
+        ],
+        [
+          -0.854173236273941,
+          -0.5199885406749866,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "assembly_to_print_translation": [
+        114.77403544109822,
+        93.50384036773808,
+        360.0
+      ],
+      "inverse_translation": [
+        20.187294734556957,
+        146.6578347932699,
+        360.0
+      ],
+      "inverse_rotation": [
+        180.0,
+        0.0,
+        -58.66851716807284
+      ],
+      "asset_sha256": "3f721d7399dca3a4ad5da7698c09a570012c0c70ff5752e5e5fee048f97a9aa9"
+    },
+    {
+      "part_id": 3,
+      "name": "rear_left_lower",
+      "fit": {
+        "bed_face": "lower_top",
+        "bed_normal_assembly": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "bed_plane_offset_mm": -460.0,
+        "in_plane_yaw_degrees": 65.18754849869735,
+        "rotation_matrix": [
+          [
+            0.9076863018990026,
+            -0.4196493504640664,
+            0.0
+          ],
+          [
+            -0.4196493504640664,
+            -0.9076863018990026,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ],
+        "size_xyz_mm": [
+          199.55081155406697,
+          199.55080592053613,
+          113.20687866210938
+        ],
+        "envelope_ratio": 0.9504682617483543,
+        "fits": true,
+        "contact_convex_hull_area_mm2": 20829.521915085912,
+        "actual_contact_area_mm2": 20258.047056232248
+      },
+      "mesh": {
+        "triangles": 53114,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            204.55081176757812,
+            204.55081176757812,
+            113.20687866210938
+          ]
+        ],
+        "size_xyz_mm": [
+          199.55081176757812,
+          199.55081176757812,
+          113.20687866210938
+        ],
+        "signed_volume_mm3": 1776880.2791992251
+      },
+      "assembly_to_print_rotation": [
+        [
+          0.9076863018990026,
+          -0.4196493504640664,
+          0.0
+        ],
+        [
+          -0.4196493504640664,
+          -0.9076863018990026,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "assembly_to_print_translation": [
+        132.40479680123605,
+        69.90825790245398,
+        460.0
+      ],
+      "inverse_translation": [
+        -90.84506534136358,
+        119.01835506364557,
+        460.0
+      ],
+      "inverse_rotation": [
+        180.0,
+        0.0,
+        -24.812451501302647
+      ],
+      "asset_sha256": "753ad0591d547909a34ad85453fc8194ae7e5bb18be156bdf4aee0ad587dfe16"
+    },
+    {
+      "part_id": 4,
+      "name": "rear_right_lower",
+      "fit": {
+        "bed_face": "lower_top",
+        "bed_normal_assembly": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "bed_plane_offset_mm": -460.0,
+        "in_plane_yaw_degrees": 71.90110039091743,
+        "rotation_matrix": [
+          [
+            0.9505216981314328,
+            -0.31065817449624145,
+            0.0
+          ],
+          [
+            -0.31065817449624145,
+            -0.9505216981314328,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ],
+        "size_xyz_mm": [
+          197.4894558309742,
+          197.4897360625949,
+          113.20687866210938
+        ],
+        "envelope_ratio": 0.9406512791740648,
+        "fits": true,
+        "contact_convex_hull_area_mm2": 20820.208749500955,
+        "actual_contact_area_mm2": 20249.779944754988
+      },
+      "mesh": {
+        "triangles": 48436,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            202.4894561767578,
+            202.48973083496094,
+            113.20687866210938
+          ]
+        ],
+        "size_xyz_mm": [
+          197.4894561767578,
+          197.48973083496094,
+          113.20687866210938
+        ],
+        "signed_volume_mm3": 1826026.43451688
+      },
+      "assembly_to_print_rotation": [
+        [
+          0.9505216981314328,
+          -0.31065817449624145,
+          0.0
+        ],
+        [
+          -0.31065817449624145,
+          -0.9505216981314328,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "assembly_to_print_translation": [
+        98.4165929673082,
+        113.92203920864047,
+        460.0
+      ],
+      "inverse_translation": [
+        -58.15629433615034,
+        138.8592892745562,
+        460.0
+      ],
+      "inverse_rotation": [
+        180.0,
+        0.0,
+        -18.09889960908256
+      ],
+      "asset_sha256": "2974b7150aae16e15ef8aaf7456d1c3334bbbfa9f0434a60fb573c72399c4837"
+    },
+    {
+      "part_id": 5,
+      "name": "rear_left_upper",
+      "fit": {
+        "bed_face": "midline",
+        "bed_normal_assembly": [
+          -0.9045152321030036,
+          -0.4264413147124111,
+          -0.0
+        ],
+        "bed_plane_offset_mm": 15.536695771507482,
+        "in_plane_yaw_degrees": 37.51336446454748,
+        "rotation_matrix": [
+          [
+            -0.33825807930861945,
+            0.7174717236834546,
+            0.6089464652144196
+          ],
+          [
+            -0.25967993121551264,
+            0.5508013533217243,
+            -0.7932113227273446
+          ],
+          [
+            -0.9045152321030036,
+            -0.4264413147124111,
+            -0.0
+          ]
+        ],
+        "size_xyz_mm": [
+          197.22632499924222,
+          197.22594681610133,
+          116.53325304923237
+        ],
+        "envelope_ratio": 0.9393966420540235,
+        "fits": true,
+        "contact_convex_hull_area_mm2": 20091.954845619086,
+        "actual_contact_area_mm2": 19696.326709345107
+      },
+      "mesh": {
+        "triangles": 84192,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            202.226318359375,
+            202.2259521484375,
+            116.53325653076172
+          ]
+        ],
+        "size_xyz_mm": [
+          197.226318359375,
+          197.2259521484375,
+          116.53325653076172
+        ],
+        "signed_volume_mm3": 1585669.9246003975
+      },
+      "assembly_to_print_rotation": [
+        [
+          -0.33825807930861945,
+          0.7174717236834546,
+          0.6089464652144196
+        ],
+        [
+          -0.25967993121551264,
+          0.5508013533217243,
+          -0.7932113227273446
+        ],
+        [
+          -0.9045152321030036,
+          -0.4264413147124111,
+          -0.0
+        ]
+      ],
+      "assembly_to_print_translation": [
+        -186.953622518986,
+        494.57083465120905,
+        -15.53669253055458
+      ],
+      "inverse_translation": [
+        51.13837199997619,
+        -144.90183483079008,
+        506.14393352801983
+      ],
+      "inverse_rotation": [
+        -90.0,
+        -37.513364464547486,
+        115.24192808725385
+      ],
+      "asset_sha256": "8521ef70c4b2e9f1c46183299f4481caefb64e0802b8d790bd5705b4ac5d4ee8"
+    },
+    {
+      "part_id": 6,
+      "name": "rear_right_upper",
+      "fit": {
+        "bed_face": "midline",
+        "bed_normal_assembly": [
+          0.9045152321030036,
+          0.4264413147124111,
+          0.0
+        ],
+        "bed_plane_offset_mm": -15.536695771507482,
+        "in_plane_yaw_degrees": 52.35569424448067,
+        "rotation_matrix": [
+          [
+            0.2604522927599854,
+            -0.5524395922952098,
+            0.7918175926694034
+          ],
+          [
+            0.3376637352303568,
+            -0.716211073616607,
+            -0.6107576441922202
+          ],
+          [
+            0.9045152321030036,
+            0.4264413147124111,
+            0.0
+          ]
+        ],
+        "size_xyz_mm": [
+          196.73195959089264,
+          196.73196294087427,
+          112.59621351229198
+        ],
+        "envelope_ratio": 0.9370419763794917,
+        "fits": true,
+        "contact_convex_hull_area_mm2": 20091.95484561909,
+        "actual_contact_area_mm2": 19696.3267095309
+      },
+      "mesh": {
+        "triangles": 84392,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            201.73196411132812,
+            201.73196411132812,
+            112.5962142944336
+          ]
+        ],
+        "size_xyz_mm": [
+          196.73196411132812,
+          196.73196411132812,
+          112.5962142944336
+        ],
+        "signed_volume_mm3": 1555508.3984441527
+      },
+      "assembly_to_print_rotation": [
+        [
+          0.2604522927599854,
+          -0.5524395922952098,
+          0.7918175926694034
+        ],
+        [
+          0.3376637352303568,
+          -0.716211073616607,
+          -0.6107576441922202
+        ],
+        [
+          0.9045152321030036,
+          0.4264413147124111,
+          0.0
+        ]
+      ],
+      "assembly_to_print_translation": [
+        -287.46660279518613,
+        394.70269807794585,
+        15.536699919543123
+      ],
+      "inverse_translation": [
+        -72.45863328240897,
+        117.25701956313327,
+        468.6888034325353
+      ],
+      "inverse_rotation": [
+        -90.0,
+        -52.35569424448066,
+        -64.75807191274613
+      ],
+      "asset_sha256": "354e064c7002a346ca8820db78bdfe44af59b5a3c63888391616de9166e2fd25"
+    },
+    {
+      "part_id": 7,
+      "name": "midline_key_lower",
+      "fit": {
+        "bed_face": "key_planar_side",
+        "bed_normal_assembly": [
+          0.90451660626006,
+          0.42643840000612476,
+          -0.0
+        ],
+        "bed_plane_offset_mm": -22.53648096316807,
+        "in_plane_yaw_degrees": 71.55093026796466,
+        "rotation_matrix": [
+          [
+            0.1349513636298733,
+            -0.28624474118397203,
+            0.9486053328961199
+          ],
+          [
+            0.4045217403974987,
+            -0.8580292763913929,
+            -0.3164615654404835
+          ],
+          [
+            0.90451660626006,
+            0.42643840000612476,
+            -0.0
+          ]
+        ],
+        "size_xyz_mm": [
+          29.573380836202148,
+          29.573359853578758,
+          14.000101302456526
+        ],
+        "envelope_ratio": 0.14085916092499237,
+        "fits": true,
+        "contact_convex_hull_area_mm2": 373.2208422682615,
+        "actual_contact_area_mm2": 373.2208422701201
+      },
+      "mesh": {
+        "triangles": 34,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            34.57337951660156,
+            34.573360443115234,
+            14.000101089477539
+          ]
+        ],
+        "size_xyz_mm": [
+          29.573379516601562,
+          29.573360443115234,
+          14.000101089477539
+        ],
+        "signed_volume_mm3": 3925.5042988390505
+      },
+      "assembly_to_print_rotation": [
+        [
+          0.1349513636298733,
+          -0.28624474118397203,
+          0.9486053328961199
+        ],
+        [
+          0.4045217403974987,
+          -0.8580292763913929,
+          -0.3164615654404835
+        ],
+        [
+          0.90451660626006,
+          0.42643840000612476,
+          -0.0
+        ]
+      ],
+      "assembly_to_print_translation": [
+        -390.1019350192244,
+        70.04667665265247,
+        22.53648096316807
+      ],
+      "inverse_translation": [
+        3.924763259055517,
+        -61.17294902674918,
+        392.2198568797337
+      ],
+      "inverse_rotation": [
+        -90.0,
+        -71.55093026796465,
+        -64.75825654229789
+      ],
+      "asset_sha256": "6d6bf0e3d68b18073bdf6ac980e0c98947a31e2d1d7a8623abb4f9a8a5338029"
+    },
+    {
+      "part_id": 8,
+      "name": "midline_key_upper",
+      "fit": {
+        "bed_face": "key_planar_side",
+        "bed_normal_assembly": [
+          -0.90451478774512,
+          -0.42644225722880774,
+          0.0
+        ],
+        "bed_plane_offset_mm": 8.536780031604737,
+        "in_plane_yaw_degrees": 18.44903173308541,
+        "rotation_matrix": [
+          [
+            -0.4045254888808871,
+            0.8580277411773081,
+            0.31646093631891736
+          ],
+          [
+            -0.1349523160085811,
+            0.28624359664412746,
+            -0.9486055427753699
+          ],
+          [
+            -0.90451478774512,
+            -0.42644225722880774,
+            0.0
+          ]
+        ],
+        "size_xyz_mm": [
+          29.573338857588283,
+          29.573360666562735,
+          14.000033418666737
+        ],
+        "envelope_ratio": 0.14085906485621688,
+        "fits": true,
+        "contact_convex_hull_area_mm2": 373.2208450491093,
+        "actual_contact_area_mm2": 373.2208450493408
+      },
+      "mesh": {
+        "triangles": 34,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            34.57333755493164,
+            34.573360443115234,
+            14.000033378601074
+          ]
+        ],
+        "size_xyz_mm": [
+          29.57333755493164,
+          29.573360443115234,
+          14.000033378601074
+        ],
+        "signed_volume_mm3": 3925.494272583043
+      },
+      "assembly_to_print_rotation": [
+        [
+          -0.4045254888808871,
+          0.8580277411773081,
+          0.31646093631891736
+        ],
+        [
+          -0.1349523160085811,
+          0.28624359664412746,
+          -0.9486055427753699
+        ],
+        [
+          -0.90451478774512,
+          -0.42644225722880774,
+          0.0
+        ]
+      ],
+      "assembly_to_print_translation": [
+        -43.154795697466696,
+        515.0498391050643,
+        -8.536780031604732
+      ],
+      "inverse_translation": [
+        44.328310041689235,
+        -114.04215026929053,
+        502.23593923369833
+      ],
+      "inverse_rotation": [
+        -90.00000000000003,
+        -18.449031733085395,
+        115.24198779020082
+      ],
+      "asset_sha256": "ed87efe2755985b945e27a7005b7e60aa54b2bb7be6b54e5f0156858fcfcc684"
+    }
+  ],
+  "joints": [
+    {
+      "id": "face_neck_owner",
+      "type": "loading-pocket sliding dovetail",
+      "male": "neck_owner",
+      "female": "face",
+      "center_mm": [
+        19.657943330012802,
+        -86.39922917695478,
+        343.26018321263876
+      ],
+      "moving": "face",
+      "insertion_direction": [
+        -0.07405075718170011,
+        0.15706742172666707,
+        -0.9848077530122081
+      ],
+      "travel_mm": 24,
+      "stop": "closed socket upper end limits downward face travel",
+      "root_overlap_mm": 4,
+      "engagement_mm": 6,
+      "retention": "24mm reverse lift then normal withdrawal; no separate anti-lift latch yet"
+    },
+    {
+      "id": "face_rear_left_lower",
+      "type": "loading-pocket sliding dovetail",
+      "male": "rear_left_lower",
+      "female": "face",
+      "center_mm": [
+        4.588968210867404,
+        -102.43781149491254,
+        389.0904266290723
+      ],
+      "moving": "face",
+      "insertion_direction": [
+        -0.07405075718170011,
+        0.15706742172666707,
+        -0.9848077530122081
+      ],
+      "travel_mm": 24,
+      "stop": "closed socket upper end limits downward face travel",
+      "root_overlap_mm": 4,
+      "engagement_mm": 6,
+      "retention": "24mm reverse lift then normal withdrawal; no separate anti-lift latch yet"
+    },
+    {
+      "id": "face_rear_right_lower",
+      "type": "loading-pocket sliding dovetail",
+      "male": "rear_right_lower",
+      "female": "face",
+      "center_mm": [
+        36.529906911410514,
+        -86.41980255185364,
+        384.1700384907122
+      ],
+      "moving": "face",
+      "insertion_direction": [
+        -0.07405075718170011,
+        0.15706742172666707,
+        -0.9848077530122081
+      ],
+      "travel_mm": 24,
+      "stop": "closed socket upper end limits downward face travel",
+      "root_overlap_mm": 4,
+      "engagement_mm": 6,
+      "retention": "24mm reverse lift then normal withdrawal; no separate anti-lift latch yet"
+    },
+    {
+      "id": "face_rear_left_upper",
+      "type": "loading-pocket sliding dovetail",
+      "male": "rear_left_upper",
+      "female": "face",
+      "center_mm": [
+        2.100640858837829,
+        -120.62135931149363,
+        476.3497350146432
+      ],
+      "moving": "face",
+      "insertion_direction": [
+        -0.07405075718170011,
+        0.15706742172666707,
+        -0.9848077530122081
+      ],
+      "travel_mm": 24,
+      "stop": "closed socket upper end limits downward face travel",
+      "root_overlap_mm": 4,
+      "engagement_mm": 6,
+      "retention": "24mm reverse lift then normal withdrawal; no separate anti-lift latch yet"
+    },
+    {
+      "id": "face_rear_right_upper",
+      "type": "loading-pocket sliding dovetail",
+      "male": "rear_right_upper",
+      "female": "face",
+      "center_mm": [
+        59.55981684576275,
+        -93.53961151560203,
+        476.3900757314841
+      ],
+      "moving": "face",
+      "insertion_direction": [
+        -0.07405075718170011,
+        0.15706742172666707,
+        -0.9848077530122081
+      ],
+      "travel_mm": 24,
+      "stop": "closed socket upper end limits downward face travel",
+      "root_overlap_mm": 4,
+      "engagement_mm": 6,
+      "retention": "24mm reverse lift then normal withdrawal; no separate anti-lift latch yet"
+    },
+    {
+      "id": "neck_owner__rear_left_lower",
+      "type": "drop-in dovetail-planform mortise",
+      "male": "rear_left_lower",
+      "female": "neck_owner",
+      "center_mm": [
+        -67.59158983618741,
+        -53.336275428032266,
+        360.0
+      ],
+      "moving": "rear_left_lower",
+      "insertion_direction": [
+        -0.07405075718170011,
+        0.15706742172666707,
+        -0.9848077530122081
+      ],
+      "travel_mm": 12,
+      "stop": "closed lower socket floor; shoulder bearing",
+      "normal_capture": false,
+      "retention": "gravity only; lift-off remains possible",
+      "root_overlap_along_post_mm": 6,
+      "minimum_normal_root_overlap_mm": 4.5,
+      "clearance_mm": 0.4
+    },
+    {
+      "id": "neck_owner__rear_right_lower",
+      "type": "drop-in dovetail-planform mortise",
+      "male": "rear_right_lower",
+      "female": "neck_owner",
+      "center_mm": [
+        31.17895187886075,
+        -67.3915343949708,
+        360.0
+      ],
+      "moving": "rear_right_lower",
+      "insertion_direction": [
+        -0.07405075718170011,
+        0.15706742172666707,
+        -0.9848077530122081
+      ],
+      "travel_mm": 12,
+      "stop": "closed lower socket floor; shoulder bearing",
+      "normal_capture": false,
+      "retention": "gravity only; lift-off remains possible",
+      "root_overlap_along_post_mm": 6,
+      "minimum_normal_root_overlap_mm": 4.5,
+      "clearance_mm": 0.4
+    },
+    {
+      "id": "rear_left_lower__rear_left_upper",
+      "type": "drop-in dovetail-planform mortise",
+      "male": "rear_left_upper",
+      "female": "rear_left_lower",
+      "center_mm": [
+        -84.85457162813279,
+        -67.49770525550142,
+        460.0
+      ],
+      "moving": "rear_left_upper",
+      "insertion_direction": [
+        -0.07405075718170011,
+        0.15706742172666707,
+        -0.9848077530122081
+      ],
+      "travel_mm": 12,
+      "stop": "closed lower socket floor; shoulder bearing",
+      "normal_capture": false,
+      "retention": "gravity only; lift-off remains possible",
+      "root_overlap_along_post_mm": 6,
+      "minimum_normal_root_overlap_mm": 4.5,
+      "clearance_mm": 0.4
+    },
+    {
+      "id": "rear_right_lower__rear_right_upper",
+      "type": "drop-in dovetail-planform mortise",
+      "male": "rear_right_upper",
+      "female": "rear_right_lower",
+      "center_mm": [
+        38.6982641023997,
+        -83.34057653711359,
+        460.0
+      ],
+      "moving": "rear_right_upper",
+      "insertion_direction": [
+        -0.07405075718170011,
+        0.15706742172666707,
+        -0.9848077530122081
+      ],
+      "travel_mm": 12,
+      "stop": "closed lower socket floor; shoulder bearing",
+      "normal_capture": false,
+      "retention": "gravity only; lift-off remains possible",
+      "root_overlap_along_post_mm": 6,
+      "minimum_normal_root_overlap_mm": 4.5,
+      "clearance_mm": 0.4
+    },
+    {
+      "id": "midline_lower",
+      "type": "separate double-dovetail spline",
+      "owners": [
+        "rear_left_lower",
+        "rear_right_lower"
+      ],
+      "key": "midline_key_lower",
+      "insertion_direction": [
+        -0.3983442365156753,
+        0.8449191415514211,
+        -0.3569783095297994
+      ],
+      "travel_mm": 32,
+      "stop": "closed rear/down channel end",
+      "clearance_mm": 0.3,
+      "retention": "entry blocked by subsequently installed face"
+    },
+    {
+      "id": "midline_upper",
+      "type": "separate double-dovetail spline",
+      "owners": [
+        "rear_left_upper",
+        "rear_right_upper"
+      ],
+      "key": "midline_key_upper",
+      "insertion_direction": [
+        -0.3983442365156753,
+        0.8449191415514211,
+        -0.3569783095297994
+      ],
+      "travel_mm": 32,
+      "stop": "closed rear/down channel end",
+      "clearance_mm": 0.3,
+      "retention": "entry blocked by subsequently installed face"
+    }
+  ],
+  "boolean_backend": "manifold3d==3.3.2",
+  "raw_coplanar_collision_check": "unverified; see installation verification",
+  "neck_owner": "neck_owner",
+  "unverified": [
+    "physical friction/clearance",
+    "anti-lift retention on face/posts",
+    "load capacity",
+    "slicer supports"
+  ],
+  "reference_meshes": "Non-printable concatenations of printable leaf geometry; intentionally separate components, not a fused production solid."
+}

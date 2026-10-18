@@ -1,0 +1,167 @@
+{
+  "scope": "Single unsplit scale reference; not a complete manifest build or fabrication approval",
+  "source": {
+    "path": "designs/cicero/assets/cicero_original.stl",
+    "sha256": "db7b379d72aa3abc496fd5ea425933e3e6da5e8a36160fa6e3bb0012c84c17e8",
+    "triangles": 508792,
+    "units": "STL unitless; retained source coordinates",
+    "bounds": [
+      [
+        -25.718992233276367,
+        -19.748825073242188,
+        -4.307562828063965
+      ],
+      [
+        25.09483528137207,
+        19.99650001525879,
+        61.77321243286133
+      ]
+    ]
+  },
+  "config": {
+    "path": "designs/cicero/configs/rev_0001.json",
+    "sha256": "0e5e746728c0882bf876fff1b5ca05394fb6c8b66b03828d2708d87fb0028eb4"
+  },
+  "scad_sha256": "92e759fd570916c82e4348a724073f77f80857787b71fb27d3efdb6fb2518587",
+  "measurement_script_sha256": "ed3d6726ce151f32b98ea472e30a7da7119c35fb953ea476d29ca81b305b8b9a",
+  "git_head": "f3ab27af2b71378703b933484b576199d2443545",
+  "preserved_import_sha256": {
+    "2.stl": "db7b379d72aa3abc496fd5ea425933e3e6da5e8a36160fa6e3bb0012c84c17e8",
+    "5352-tsaritsyno-museum-moscow-bust-5(1).3mf": "51d8a2f41803b2e4d8891d39075d3929e49c14fd93c61f8db0d8913e53bf0f42",
+    "simplified.stl": "fffb7dd0a159b9941065d037ece8783dcd3df1942ddcec02fd55b5cafe602bbf"
+  },
+  "landmark_interpretation": "Initial visually selected outer lateral ear-rim points; user review pending",
+  "source_ear_landmarks": [
+    [
+      -14.551604270935059,
+      -4.4222002029418945,
+      45.65835952758789
+    ],
+    [
+      9.461223602294922,
+      6.8988494873046875,
+      45.459285736083984
+    ]
+  ],
+  "source_ear_span": 26.548478279043916,
+  "target_ear_span_mm": 228.6,
+  "uniform_scale": 8.610663014175309,
+  "rotation_degrees": [
+    0,
+    0,
+    0
+  ],
+  "source_translation_before_scale": [
+    0.31207847595214844,
+    -0.12383747100830078,
+    4.307562828063965
+  ],
+  "source_to_assembled_matrix": [
+    [
+      8.610663014175309,
+      0.0,
+      0.0,
+      2.687202590401363
+    ],
+    [
+      0.0,
+      8.610663014175309,
+      0.0,
+      -1.0663227313801826
+    ],
+    [
+      0.0,
+      0.0,
+      8.610663014175309,
+      37.09097192484678
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "scaled_ear_landmarks_mm": [
+    [
+      -122.6117581022546,
+      -39.144398460130496,
+      430.23971959696667
+    ],
+    [
+      84.15461073152473,
+      58.33734538931658,
+      428.5255622633723
+    ]
+  ],
+  "scaled_ear_span_mm": 228.6,
+  "assembled_bounds_mm": [
+    [
+      -218.77037259453348,
+      -171.11680036296465,
+      0.0
+    ],
+    [
+      218.77037259453348,
+      171.11680036296465,
+      568.9992874872802
+    ]
+  ],
+  "assembled_size_xyz_mm": [
+    437.54074518906697,
+    342.2336007259293,
+    568.9992874872802
+  ],
+  "structural_joins": "unverified",
+  "minimum_material_width": "unverified",
+  "export_verification": {
+    "result": "passed",
+    "tolerance_mm": 0.002,
+    "max_triangle_vertex_error_mm": 0.0008480259597372311,
+    "ear_span_mm": 228.60019092445214,
+    "bounds_mm": [
+      [
+        -218.77000427246094,
+        -171.11700439453125,
+        -3.8239000860066166e-14
+      ],
+      [
+        218.77000427246094,
+        171.11700439453125,
+        568.9990234375
+      ]
+    ],
+    "triangles": 508792,
+    "path": "output/cicero/scaled_master.stl",
+    "sha256": "3a034bec3ebe4802f80876d735b58bb8832547433bffc99404f430b3ad67792c"
+  },
+  "generated_png_sha256": {
+    "scaled_master.png": "23938eac90a7e844fdf27a25ab3e432fe7b7749ccf2624e058362324d21a1996",
+    "scaled_master_inspect_inside_bottom_iso.png": "d9fb712828ef90278275c357690466eea4595eeaa32325931a8443c0f67fd3db",
+    "scaled_master_inspect_inside_bottom_ortho.png": "45faa1a76a6aaf15fa1ac9a57c01724e86a28047bee09b77d635533dd0422f56",
+    "scaled_master_iso_back_left.png": "7f6c42bbb6ccd83c7bd28bc4297ad62bb1fbb068e10f447fd73c8934c863cc24",
+    "scaled_master_iso_back_right.png": "c1786bde18cc446e06cd68949029f52ae4d4cc3cde12e07d3f91876df2a4820b",
+    "scaled_master_iso_bottom_back_left.png": "ead7f35a4e6da74c3b41221fc77efee952d0833458505f76e78e288395164c4f",
+    "scaled_master_iso_bottom_back_right.png": "60e8f21c8d9b069a18bfb5605178d40199a43fb29fa12812fd64c4de84a6280d",
+    "scaled_master_iso_bottom_front_left.png": "72ab0a0b593ed957f013c11270aeed214013ef11ee6fe274295dabbeb1d8d8b1",
+    "scaled_master_iso_bottom_front_right.png": "bbe116b19543a68a51cbb5bdd811dc408d732c8000d50cac949328da85e67d44",
+    "scaled_master_iso_front_left.png": "e4ea44b01aa7e2f180161214a57216289958bbd132800ddb13901919f73395ef",
+    "scaled_master_iso_front_right.png": "23938eac90a7e844fdf27a25ab3e432fe7b7749ccf2624e058362324d21a1996",
+    "scaled_master_ortho_back.png": "d4a1e0af484392c8711e0af6cb4f8bbfce3cf3926d80d18c59122ad5057ae08f",
+    "scaled_master_ortho_bottom.png": "45faa1a76a6aaf15fa1ac9a57c01724e86a28047bee09b77d635533dd0422f56",
+    "scaled_master_ortho_front.png": "c52fbb894fc1a2b870165f5c664941740b8761f9b09a8dece76e73bb15a76b9b",
+    "scaled_master_ortho_left.png": "dd99f4d3a58b10aa182cbf2c0af51acc4c2572b155796fe7d1a45bb242ab0188",
+    "scaled_master_ortho_right.png": "11e12a62985633b5ced6bb7eddd6712169bc9e8592ed276dabb504f8be90823f",
+    "scaled_master_ortho_top.png": "e8802feb17226786701cf1c7281f760b7e310d2ffa4499b511f4b8c0b7fde107",
+    "scaled_master_dimensions.png": "88e7d29a7d18b1d30e695d6945e405b1010b559a3bbb788820d92ab107d9c89a",
+    "source_ear_landmarks.png": "bc43115f3ad049a5bee3ee96af453765d5b53347ee642e9a11912e8a38b88458"
+  },
+  "generation_measurement_script_sha256": "66325f4a9691383751157d70f84055194e60e8886c66f7340cd024ac85fc24e4",
+  "audit_contract_updates": [
+    {
+      "prior_sha256": "66325f4a9691383751157d70f84055194e60e8886c66f7340cd024ac85fc24e4",
+      "new_sha256": "ed3d6726ce151f32b98ea472e30a7da7119c35fb953ea476d29ca81b305b8b9a",
+      "reason": "Only optional face-up diagnostic audit coverage added; prior source hash reconstructed exactly by removing the new branch. Scale algorithm, geometry/config, and existing artifact bytes unchanged."
+    }
+  ]
+}

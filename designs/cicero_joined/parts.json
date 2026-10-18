@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "parts": [
+    {
+      "part_id": 1,
+      "name": "h_face"
+    },
+    {
+      "part_id": 2,
+      "name": "h_neck"
+    },
+    {
+      "part_id": 3,
+      "name": "h_left_lower"
+    },
+    {
+      "part_id": 4,
+      "name": "h_right_lower"
+    },
+    {
+      "part_id": 5,
+      "name": "h_left_upper"
+    },
+    {
+      "part_id": 6,
+      "name": "h_right_upper"
+    },
+    {
+      "part_id": 7,
+      "name": "b_neck"
+    },
+    {
+      "part_id": 8,
+      "name": "b_lower_lf"
+    },
+    {
+      "part_id": 9,
+      "name": "b_lower_lb"
+    },
+    {
+      "part_id": 10,
+      "name": "b_lower_rf"
+    },
+    {
+      "part_id": 11,
+      "name": "b_lower_rb"
+    },
+    {
+      "part_id": 12,
+      "name": "b_upper_lf"
+    },
+    {
+      "part_id": 13,
+      "name": "b_upper_lb"
+    },
+    {
+      "part_id": 14,
+      "name": "b_upper_mf"
+    },
+    {
+      "part_id": 15,
+      "name": "b_upper_mb"
+    },
+    {
+      "part_id": 16,
+      "name": "b_upper_rf"
+    },
+    {
+      "part_id": 17,
+      "name": "b_upper_rb"
+    }
+  ]
+}

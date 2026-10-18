@@ -96,6 +96,20 @@ If the agent follows the included playbooks, it should also document what it cha
 - `playbooks/`
   - repeatable workflows for agents and humans
 
+Current complete Cicero candidate: [design and assembly notes](designs/cicero_joined/README.md), [17 generated head/bust parts](output/cicero_joined/). All 33 mating pairs use integral joints, including one head-to-bust connection. Original imports and reference meshes remain in `output/cicero/`.
+
+## Large objects and gravity-seated joints
+
+Use the [flat-bed slicing playbook](playbooks/how_to_slice_large_objects_for_flat_bed_printing.md)
+to choose real cut faces on the bed before optimizing fit, preserve useful section
+depth and reserve major attachment owners. The
+[gravity-seated dovetail protocol](references/engineering/joints/gravity_seated_dovetails.md)
+defines downward insertion to closed lower stops, retention and verified entry
+paths. Major subassemblies should connect through one continuous interface on one
+printed owner per side wherever feasible. See the
+[complete Cicero candidate](designs/cicero_joined/README.md) for current geometry
+and unresolved fabrication checks.
+
 ## Plan-governed agent workflow
 
 Substantial changes use an approved plan under `plans/current/`. Plans begin in
@@ -336,6 +350,8 @@ embedded in one-off design notes:
   - Parametric L-shaped replacement logic backplane prototype for a Winegard GM-6000 Carryout G2+ (4-hole pattern)
 - `designs/gigachad_xavier_void/`
   - Parametric positive void/cutter model for subtracting a Jetson Xavier + carrier board cavity shape from a head mesh (simple back prism + top shaft prototype)
+- [designs/cicero/](designs/cicero/README.md)
+  - Imported CC BY-NC-SA bust scan targeting a 228.6 mm ear span; source, scaled master and intermediate head/base references. The complete 17-piece integral-joint candidate is in `designs/cicero_joined/`, with broad flat bed faces and documented fabrication limits.
 - `designs/cottage_pi6_plus/`
   - Parametric cottage-style Orange Pi 6 Plus enclosure concept with separate base + roof and a chimney exhaust path
   - Includes a separate sliding drawer part and tunables for drawer length, drawer end-wall headroom, and front-biased exhaust opening (`main_room_extra_x`, `drawer_end_wall_extra_h`, `divider_hole_front_extend_y`)

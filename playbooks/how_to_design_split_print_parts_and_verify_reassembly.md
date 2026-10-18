@@ -36,6 +36,17 @@ repeatable alignment, adequate attachment, and verified assembled load paths.
 11. Export split parts through the manifest or explicitly documented variant
    configs and use coupons for uncertain joints.
 
+## Large objects and gravity-seated interfaces
+
+For oversized scans and flat-face cutting, apply the
+[flat-bed slicing workflow](how_to_slice_large_objects_for_flat_bed_printing.md).
+For gravity-seated sliding seams, apply the
+[dovetail protocol](../references/engineering/joints/gravity_seated_dovetails.md).
+Reserve one continuous major interface on one printable owner per side where
+feasible before secondary cuts; use a single connection between those owners.
+Record and review any necessary alternative rather than fragmenting that interface
+silently. Body-only fit does not establish connector fit or installation access.
+
 ## Verification
 
 - Every piece fits the declared build volume in its print transform.

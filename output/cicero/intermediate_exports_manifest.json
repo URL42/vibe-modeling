@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "output/cicero/scaled_master.stl": "3a034bec3ebe4802f80876d735b58bb8832547433bffc99404f430b3ad67792c",
+    "designs/cicero/neck_interface.json": "4f5aeb29d4e48e5fa51cd1994a092def1c195e087e75f20cb746bd995f630e83",
+    "designs/cicero/configs/rev_0001.json": "0e5e746728c0882bf876fff1b5ca05394fb6c8b66b03828d2708d87fb0028eb4",
+    "designs/cicero/export_intermediates.py": "e443fcee25ab0c745bf6148f9cb47349ee4033cdeaa13ce0d394c136ea446721",
+    "designs/cicero/analyze_splits.py": "4105f1a84d4a9873e4b9752d20e428609bdcb00973b270a710bce7d51e824f3b",
+    "designs/cicero/measure_scale.py": "ed3d6726ce151f32b98ea472e30a7da7119c35fb953ea476d29ca81b305b8b9a"
+  },
+  "artifacts": {
+    "head_intermediate.stl": "e9ffdd01fcb0448ca866363400d51dec25399c35d1176380033c7eea7c8f436c",
+    "base_intermediate.stl": "11871681013cd1c1b465f3044ba92700533d0c1ed6b177292ba34e8e0cd5b92a",
+    "intermediate_head_base.png": "030184676b1b5cbc9bb81ce42e4f21789c11a7f13e43f2746fd834861133204a",
+    "intermediate_exports_report.json": "c650bce9eb96ce4625b2ef9e37b98dbbc0b56bae1ebcd126cca57a405ed659f9"
+  },
+  "compatibility_updates": [
+    {
+      "reason": "Audit-only verifier extension for flat-bed face-up references; prior verifier hash reconstructed exactly. Geometry algorithms, inputs, and artifact bytes unchanged.",
+      "prior_hashes": {
+        "designs/cicero/measure_scale.py": "66325f4a9691383751157d70f84055194e60e8886c66f7340cd024ac85fc24e4"
+      }
+    }
+  ]
+}

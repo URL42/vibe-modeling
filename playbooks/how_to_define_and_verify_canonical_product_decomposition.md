@@ -63,6 +63,15 @@ silently change product ownership.
 - Do not enable a repository-wide blocking validator without accounting for all
   declared legacy designs.
 
+## Major interface ownership
+
+For major subassembly divisions, reserve one continuous attachment interface on
+one printable leaf per side wherever feasible, with a single connection between
+them. Secondary cuts must preserve the interface and its supporting material.
+Document volume/access evidence and review an alternative before fragmenting the
+major interface. See the [gravity-seated dovetail protocol](../references/engineering/joints/gravity_seated_dovetails.md)
+and [flat-bed slicing workflow](how_to_slice_large_objects_for_flat_bed_printing.md).
+
 ## Verification
 
 - The declared hierarchy matches the approved user-facing product.

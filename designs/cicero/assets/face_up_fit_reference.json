@@ -1,0 +1,615 @@
+{
+  "scope": "Face-first intermediate geometry with actual planar cut faces on the bed; no joining features",
+  "source_size_xyz_mm": [
+    235.98699188232422,
+    253.61100006103516,
+    290.19390869140625
+  ],
+  "printer_volume_mm": [
+    220,
+    220,
+    220
+  ],
+  "xy_margin_per_side_mm": 5,
+  "face_pitch_degrees": -10,
+  "face_plane_normal": [
+    0.4199627129335014,
+    -0.8907736132926747,
+    -0.17364817766693033
+  ],
+  "face_plane_offset_mm": 25.61125149073174,
+  "face_thickness_mm": 49.09383135051193,
+  "face_offset_search_resolution_mm": 0.01,
+  "deepest_face_cut_scope": "At the selected feature-preserving pitch, with fixed cut-face-down orientation and in-plane yaw only; refined using actual triangle/plane intersections to 0.01 mm",
+  "rear_bed_face_selection": "Prefer the largest measured actual planar contact area among cut-flat orientations that fit",
+  "rear_lateral_normal": [
+    0.9045152321030036,
+    0.4264413147124111,
+    0.0
+  ],
+  "rear_lateral_offset_mm": -15.536695771507482,
+  "unsliced_rear_halves": [
+    {
+      "side": "left",
+      "fit": {
+        "bed_face": "face_rear_cut",
+        "bed_normal_assembly": [
+          -0.41996271293350146,
+          0.8907736132926748,
+          0.17364817766693036
+        ],
+        "bed_plane_offset_mm": -25.611251490731743,
+        "in_plane_yaw_degrees": 45.579148353521035,
+        "rotation_matrix": [
+          [
+            0.6859796811132503,
+            0.18629583699733873,
+            0.7033674276061018
+          ],
+          [
+            0.5941912123595378,
+            0.4145072146283746,
+            -0.6892899043042264
+          ],
+          [
+            -0.41996271293350146,
+            0.8907736132926748,
+            0.17364817766693036
+          ]
+        ],
+        "size_xyz_mm": [
+          236.08836442108776,
+          236.08863007773536,
+          223.20682926195985
+        ],
+        "envelope_ratio": 1.1244993097296279,
+        "fits": false,
+        "contact_convex_hull_area_mm2": 14197.93507686593
+      }
+    },
+    {
+      "side": "right",
+      "fit": {
+        "bed_face": "face_rear_cut",
+        "bed_normal_assembly": [
+          -0.41996271293350146,
+          0.8907736132926748,
+          0.17364817766693036
+        ],
+        "bed_plane_offset_mm": -25.611251490731743,
+        "in_plane_yaw_degrees": 48.280597022012444,
+        "rotation_matrix": [
+          [
+            0.6572120947230915,
+            0.16655237092994934,
+            0.735073173423775
+          ],
+          [
+            0.6258622710271166,
+            0.42282700670501755,
+            -0.6553729778573841
+          ],
+          [
+            -0.41996271293350146,
+            0.8907736132926748,
+            0.17364817766693036
+          ]
+        ],
+        "size_xyz_mm": [
+          233.37126512183792,
+          233.3713058948268,
+          223.00607510467023
+        ],
+        "envelope_ratio": 1.1115565891632617,
+        "fits": false,
+        "contact_convex_hull_area_mm2": 12136.609981961376
+      }
+    }
+  ],
+  "rear_height_trials": [
+    {
+      "rear_height_mm": 400,
+      "all_fit": true,
+      "worst_envelope_ratio": 0.9737284837687697
+    },
+    {
+      "rear_height_mm": 410,
+      "all_fit": true,
+      "worst_envelope_ratio": 0.9737284837687697
+    },
+    {
+      "rear_height_mm": 420,
+      "all_fit": true,
+      "worst_envelope_ratio": 0.9737284837687697
+    },
+    {
+      "rear_height_mm": 430,
+      "all_fit": true,
+      "worst_envelope_ratio": 0.972991997879377
+    },
+    {
+      "rear_height_mm": 440,
+      "all_fit": true,
+      "worst_envelope_ratio": 0.9691279157444065
+    },
+    {
+      "rear_height_mm": 450,
+      "all_fit": true,
+      "worst_envelope_ratio": 0.9603638258498799
+    },
+    {
+      "rear_height_mm": 460,
+      "all_fit": true,
+      "worst_envelope_ratio": 0.9406512786580099
+    },
+    {
+      "rear_height_mm": 470,
+      "all_fit": true,
+      "worst_envelope_ratio": 0.9479218221026692
+    },
+    {
+      "rear_height_mm": 480,
+      "all_fit": true,
+      "worst_envelope_ratio": 0.9541286456097605
+    },
+    {
+      "rear_height_mm": 490,
+      "all_fit": true,
+      "worst_envelope_ratio": 0.9630727471857273
+    }
+  ],
+  "selected_rear_height_mm": 460,
+  "pieces": [
+    {
+      "name": "face_up_face.stl",
+      "fit": {
+        "bed_face": "face_rear_cut",
+        "bed_normal_assembly": [
+          0.41996271293350146,
+          -0.8907736132926748,
+          -0.17364817766693036
+        ],
+        "bed_plane_offset_mm": 25.611251490731743,
+        "in_plane_yaw_degrees": 47.952876830550764,
+        "rotation_matrix": [
+          [
+            -0.5508017970737641,
+            -0.4022428444791852,
+            0.7313125695662603
+          ],
+          [
+            -0.7212826769622613,
+            -0.2114782823998872,
+            -0.6595667032130625
+          ],
+          [
+            0.41996271293350146,
+            -0.8907736132926748,
+            -0.17364817766693036
+          ]
+        ],
+        "size_xyz_mm": [
+          209.9476411664002,
+          209.94783432382513,
+          49.09383135051193
+        ],
+        "envelope_ratio": 0.9999896848003103,
+        "fits": true,
+        "contact_convex_hull_area_mm2": 26343.566682325032
+      },
+      "installed_mesh": {
+        "triangles": 32740,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            214.94764709472656,
+            214.9478302001953,
+            49.09383010864258
+          ]
+        ],
+        "size_xyz_mm": [
+          209.94764709472656,
+          209.9478302001953,
+          49.09383010864258
+        ],
+        "signed_volume_mm3": 404413.71679545863
+      },
+      "bed_contact_area_mm2": 25549.446616117435,
+      "assembly_to_print_rotation_matrix": [
+        [
+          -0.5508017970737641,
+          -0.4022428444791852,
+          0.7313125695662603
+        ],
+        [
+          -0.7212826769622613,
+          -0.2114782823998872,
+          -0.6595667032130625
+        ],
+        [
+          0.41996271293350146,
+          -0.8907736132926748,
+          -0.17364817766693036
+        ]
+      ],
+      "assembly_to_print_translation_mm": [
+        -210.00376799410793,
+        376.20625233562174,
+        -25.61124287683044
+      ],
+      "assembly_volume_mm3": 404413.4586812023,
+      "sha256": "1d644784136c75523789b3a492acb3bb27e853e2963f637c1f61afd0c42b125c"
+    },
+    {
+      "name": "face_up_rear_left_lower.stl",
+      "fit": {
+        "bed_face": "rear_height_cut",
+        "bed_normal_assembly": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "bed_plane_offset_mm": -460.0,
+        "in_plane_yaw_degrees": 65.18754849869735,
+        "rotation_matrix": [
+          [
+            0.9076863018990026,
+            -0.4196493504640664,
+            0.0
+          ],
+          [
+            -0.4196493504640664,
+            -0.9076863018990026,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ],
+        "size_xyz_mm": [
+          199.55081155406697,
+          199.55080592053613,
+          180.90634155273438
+        ],
+        "envelope_ratio": 0.9504682617483543,
+        "fits": true,
+        "contact_convex_hull_area_mm2": 20829.52297417515,
+        "actual_contact_area_mm2": 20563.406060994726
+      },
+      "installed_mesh": {
+        "triangles": 65586,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            204.55081176757812,
+            204.55081176757812,
+            180.90634155273438
+          ]
+        ],
+        "size_xyz_mm": [
+          199.55081176757812,
+          199.55081176757812,
+          180.90634155273438
+        ],
+        "signed_volume_mm3": 2438316.8513153903
+      },
+      "bed_contact_area_mm2": 20563.40595054413,
+      "assembly_to_print_rotation_matrix": [
+        [
+          0.9076863018990026,
+          -0.4196493504640664,
+          0.0
+        ],
+        [
+          -0.4196493504640664,
+          -0.9076863018990026,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "assembly_to_print_translation_mm": [
+        132.40479680123605,
+        69.90825790245398,
+        460.0
+      ],
+      "assembly_volume_mm3": 2438316.850623973,
+      "sha256": "d5d7c17767b825841afb833adc7459f0407d66454c4aa8e1380d26b2e821c506"
+    },
+    {
+      "name": "face_up_rear_left_upper.stl",
+      "fit": {
+        "bed_face": "rear_height_cut",
+        "bed_normal_assembly": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "bed_plane_offset_mm": 460.0,
+        "in_plane_yaw_degrees": 22.575005566974873,
+        "rotation_matrix": [
+          [
+            0.3838925493582373,
+            0.9233777723917949,
+            0.0
+          ],
+          [
+            -0.9233777723917949,
+            0.3838925493582373,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "size_xyz_mm": [
+          202.8966379283492,
+          202.89678906796993,
+          108.9990234375
+        ],
+        "envelope_ratio": 0.9664052825337935,
+        "fits": true,
+        "contact_convex_hull_area_mm2": 20829.52297417515,
+        "actual_contact_area_mm2": 20563.406060994726
+      },
+      "installed_mesh": {
+        "triangles": 86596,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            207.89663696289062,
+            207.89678955078125,
+            108.9990234375
+          ]
+        ],
+        "size_xyz_mm": [
+          202.89663696289062,
+          202.89678955078125,
+          108.9990234375
+        ],
+        "signed_volume_mm3": 1582848.5104656469
+      },
+      "bed_contact_area_mm2": 20563.405943065696,
+      "assembly_to_print_rotation_matrix": [
+        [
+          0.3838925493582373,
+          0.9233777723917949,
+          0.0
+        ],
+        [
+          -0.9233777723917949,
+          0.3838925493582373,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "assembly_to_print_translation_mm": [
+        140.50192680919204,
+        81.46864828237052,
+        -460.0
+      ],
+      "assembly_volume_mm3": 1582848.5145095296,
+      "sha256": "fdcacbf866b55f2f01d7a63a6cea184602f967edac1cf6e6089f632ce8d5b999"
+    },
+    {
+      "name": "face_up_rear_right_lower.stl",
+      "fit": {
+        "bed_face": "rear_height_cut",
+        "bed_normal_assembly": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "bed_plane_offset_mm": -460.0,
+        "in_plane_yaw_degrees": 71.90110039091743,
+        "rotation_matrix": [
+          [
+            0.9505216981314328,
+            -0.31065817449624145,
+            0.0
+          ],
+          [
+            -0.31065817449624145,
+            -0.9505216981314328,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ],
+        "size_xyz_mm": [
+          197.4894558309742,
+          197.4897360625949,
+          178.18710327148438
+        ],
+        "envelope_ratio": 0.9406512791740648,
+        "fits": true,
+        "contact_convex_hull_area_mm2": 20820.209851400345,
+        "actual_contact_area_mm2": 20555.138928554214
+      },
+      "installed_mesh": {
+        "triangles": 60764,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            202.4894561767578,
+            202.48973083496094,
+            178.18710327148438
+          ]
+        ],
+        "size_xyz_mm": [
+          197.4894561767578,
+          197.48973083496094,
+          178.18710327148438
+        ],
+        "signed_volume_mm3": 2485335.110333717
+      },
+      "bed_contact_area_mm2": 20555.14017028953,
+      "assembly_to_print_rotation_matrix": [
+        [
+          0.9505216981314328,
+          -0.31065817449624145,
+          0.0
+        ],
+        [
+          -0.31065817449624145,
+          -0.9505216981314328,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "assembly_to_print_translation_mm": [
+        98.4165929673082,
+        113.92203920864047,
+        460.0
+      ],
+      "assembly_volume_mm3": 2485335.1056451374,
+      "sha256": "f2f53a2f77680e69ac76f222cdf339e66a4b6bdb9253d53e1868d8a9bb2b7b93"
+    },
+    {
+      "name": "face_up_rear_right_upper.stl",
+      "fit": {
+        "bed_face": "rear_height_cut",
+        "bed_normal_assembly": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "bed_plane_offset_mm": 460.0,
+        "in_plane_yaw_degrees": 19.69084886470212,
+        "rotation_matrix": [
+          [
+            0.336944884857705,
+            0.9415243727956425,
+            0.0
+          ],
+          [
+            -0.9415243727956425,
+            0.336944884857705,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "size_xyz_mm": [
+          201.78017519848888,
+          201.7801260250145,
+          107.88800048828125
+        ],
+        "envelope_ratio": 0.9610868073278823,
+        "fits": true,
+        "contact_convex_hull_area_mm2": 20820.209851400345,
+        "actual_contact_area_mm2": 20555.138928554214
+      },
+      "installed_mesh": {
+        "triangles": 86282,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            206.78018188476562,
+            206.78012084960938,
+            107.88800048828125
+          ]
+        ],
+        "size_xyz_mm": [
+          201.78018188476562,
+          201.78012084960938,
+          107.88800048828125
+        ],
+        "signed_volume_mm3": 1552686.9581545815
+      },
+      "bed_contact_area_mm2": 20555.142588960603,
+      "assembly_to_print_rotation_matrix": [
+        [
+          0.336944884857705,
+          0.9415243727956425,
+          0.0
+        ],
+        [
+          -0.9415243727956425,
+          0.336944884857705,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "assembly_to_print_translation_mm": [
+        98.99679764459239,
+        112.78731087372864,
+        -460.0
+      ],
+      "assembly_volume_mm3": 1552686.960222731,
+      "sha256": "1dea3bd1cc0680db9010d83c0156ae67495c1cc8f4525d53657444a165a20a12"
+    }
+  ],
+  "volume_recombination_error_mm3": 0.004240751266479492,
+  "supersedes": "The earlier freely tilted three-piece bounding-box layout is rejected as a practical print recommendation",
+  "limits": [
+    "Five is a demonstrated flat-bed layout, not a mathematical minimum",
+    "No dovetails, registration, slicer settings, or strength verification",
+    "Face features point upward; local sculpted overhangs may still need supports, unlike support under an entire sloping cut face"
+  ]
+}

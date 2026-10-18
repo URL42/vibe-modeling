@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "scope": "Diagnostic study; no printable cut solids or production joints",
+  "scale_config": "configs/rev_0001.json",
+  "printer_volume_mm": [220, 220, 220],
+  "study_xy_margin_per_side_mm": 5,
+  "margin_status": "Provisional study allowance; not a measured printer limit",
+  "neck_plane_source": {
+    "origin": [0, 0, 31],
+    "normal_unnormalized": [0, -0.3, 1],
+    "selection": "Candidate through the neck above the collar; visual review required"
+  },
+  "vertical_plane_x_mm": 0,
+  "vertical_plane_y_mm": 0,
+  "base_additional_height_mm": 170,
+  "head_additional_height_mm": 465,
+  "orientation_search_seed": 55952,
+  "orientation_search_iterations": 90,
+  "dovetail_status": "Not dimensioned; part count, ownership, retention, and assembly access must be resolved first"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "scope": "Neck-first diagnostic interface study; not printable geometry",
+  "scale_config": "configs/rev_0001.json",
+  "source_plane_origin": [
+    0,
+    0,
+    31
+  ],
+  "selected_tilt_degrees": 16.69924423399362,
+  "comparison_tilts_degrees": [
+    0,
+    10,
+    15,
+    16.69924423399362,
+    20,
+    25
+  ],
+  "comparison_yaws_degrees": [
+    0,
+    "head"
+  ],
+  "selected_plane_yaw_degrees": 0,
+  "frame": "Compare scan-posterior and head-posterior tilt. Project the ear-line direction into the selected cut plane for joint U, with V=normal cross U.",
+  "selection_status": "Working plane from anatomical visual inspection; not a fitted or certified neck-axis measurement",
+  "joint": {
+    "concept": "Two parallel integral rails owned by head; rear-open receivers owned by base",
+    "rail_centers_local_u_mm": [
+      -25,
+      25
+    ],
+    "joint_center_shift_in_plane_uv_mm": [
+      -10,
+      15
+    ],
+    "rail_length_mm": 60,
+    "throat_width_mm": 24,
+    "flared_width_mm": 32,
+    "engagement_depth_mm": 8,
+    "root_overlap_mm": 4,
+    "flank_clearance_normal_mm": 0.25,
+    "floor_clearance_mm": 0.25,
+    "minimum_wall_thickness_mm": 3,
+    "minimum_structural_overlap_mm": 3,
+    "minimum_internal_edge_width_mm": 3,
+    "insertion": "Head starts posterior and slides anterior in the cut plane; front stop seats it, separate rear retainer required",
+    "status": "Preliminary envelope only; no receiver mouth, stop, retainer, or cut solids modeled"
+  }
+}

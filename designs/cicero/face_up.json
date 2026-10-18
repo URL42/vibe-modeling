@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "scope": "Face-first intermediate geometry with actual planar cut faces on the bed; no joining features",
+  "source": "output/cicero/head_intermediate.stl",
+  "scale_config": "configs/rev_0001.json",
+  "printer_volume_mm": [220, 220, 220],
+  "xy_margin_per_side_mm": 5,
+  "footprint_numerical_reserve_mm": 0.05,
+  "face_pitch_degrees": -10,
+  "face_pitch_reason": "Visual comparison retains both eyes/brows, nose, mouth, chin and forehead; a deeper -20 degree trial clipped an eye",
+  "face_plane_offset_resolution_mm": 0.01,
+  "rear_lateral_split": "Midpoint of rear-region lateral bounds in the horizontal ear-line frame",
+  "rear_height_candidates_mm": [400, 410, 420, 430, 440, 450, 460, 470, 480, 490],
+  "minimum_planar_bed_contact_area_mm2": 1000,
+  "orientation_policy": "Actual cut plane normal is print +Z; optimize only in-plane yaw. No free 3D tilt.",
+  "readiness": "Body fit and planar contact only; local sculpted overhang supports, dovetails, seam registration, material and slicing unverified"
+}

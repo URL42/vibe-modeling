@@ -1,0 +1,314 @@
+{
+  "verification_script_sha256": "17a54ce1ab2195617695258bfc7eeaf71f0ccca1dbe7588ef0173239f6dfb5fd",
+  "config": "designs/cicero_head/configs/rev_0001.json",
+  "build_manifest_sha256": "22808d8aa8859478675f1de19fbf959056fe777512ec4f3b3c099557587d9fbb",
+  "asset_provenance_sha256": "d8f4f0c0b68e6780b9db9423fde3b5fe793a4441b5255bf554004ba996ac59ed",
+  "leaves": {
+    "face": {
+      "mesh": {
+        "triangles": 32450,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            214.7469940185547,
+            214.7469940185547,
+            49.09379959106445
+          ]
+        ],
+        "size_xyz_mm": [
+          209.7469940185547,
+          209.7469940185547,
+          49.09379959106445
+        ],
+        "signed_volume_mm3": 378590.0729054056
+      },
+      "bed_contact_area_mm2": 21901.334646969997,
+      "maximum_vertex_deviation_mm": 0.000703831328203498,
+      "asset_volume_difference_mm3": 0.01610460103256628
+    },
+    "neck_owner": {
+      "mesh": {
+        "triangles": 22894,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            207.5919952392578,
+            203.5399932861328,
+            81.19490051269531
+          ]
+        ],
+        "size_xyz_mm": [
+          202.5919952392578,
+          198.5399932861328,
+          81.19490051269531
+        ],
+        "signed_volume_mm3": 1315702.0753287065
+      },
+      "bed_contact_area_mm2": 28520.839919967508,
+      "maximum_vertex_deviation_mm": 0.0007031362320701187,
+      "asset_volume_difference_mm3": 0.5571982723195106
+    },
+    "rear_left_lower": {
+      "mesh": {
+        "triangles": 53114,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            204.55099487304688,
+            204.55099487304688,
+            113.20700073242188
+          ]
+        ],
+        "size_xyz_mm": [
+          199.55099487304688,
+          199.55099487304688,
+          113.20700073242188
+        ],
+        "signed_volume_mm3": 1776881.8474869144
+      },
+      "bed_contact_area_mm2": 20258.097188393498,
+      "maximum_vertex_deviation_mm": 0.0006980666359957199,
+      "asset_volume_difference_mm3": 1.5678599576931447
+    },
+    "rear_right_lower": {
+      "mesh": {
+        "triangles": 48436,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            202.48899841308594,
+            202.49000549316406,
+            113.20700073242188
+          ]
+        ],
+        "size_xyz_mm": [
+          197.48899841308594,
+          197.49000549316406,
+          113.20700073242188
+        ],
+        "signed_volume_mm3": 1826027.4839993475
+      },
+      "bed_contact_area_mm2": 20249.819913632502,
+      "maximum_vertex_deviation_mm": 0.0006968201140892916,
+      "asset_volume_difference_mm3": 1.0126948314718902
+    },
+    "rear_left_upper": {
+      "mesh": {
+        "triangles": 84192,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            202.2259979248047,
+            202.2259979248047,
+            116.53299713134766
+          ]
+        ],
+        "size_xyz_mm": [
+          197.2259979248047,
+          197.2259979248047,
+          116.53299713134766
+        ],
+        "signed_volume_mm3": 1585669.0128851905
+      },
+      "bed_contact_area_mm2": 19696.307917426995,
+      "maximum_vertex_deviation_mm": 0.0008322138026321854,
+      "asset_volume_difference_mm3": 0.9345740368589759
+    },
+    "rear_right_upper": {
+      "mesh": {
+        "triangles": 84392,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            201.73199462890625,
+            201.73199462890625,
+            112.59600067138672
+          ]
+        ],
+        "size_xyz_mm": [
+          196.73199462890625,
+          196.73199462890625,
+          112.59600067138672
+        ],
+        "signed_volume_mm3": 1555505.7059432536
+      },
+      "bed_contact_area_mm2": 19696.312583431998,
+      "maximum_vertex_deviation_mm": 0.0008602232409792953,
+      "asset_volume_difference_mm3": 2.691597468452528
+    },
+    "midline_key_lower": {
+      "mesh": {
+        "triangles": 34,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            34.57339859008789,
+            34.57339859008789,
+            14.000100135803223
+          ]
+        ],
+        "size_xyz_mm": [
+          29.57339859008789,
+          29.57339859008789,
+          14.000100135803223
+        ],
+        "signed_volume_mm3": 3925.523843102699
+      },
+      "bed_contact_area_mm2": 373.22244695398183,
+      "maximum_vertex_deviation_mm": 5.964847572469125e-05,
+      "asset_volume_difference_mm3": 0.01937129183443176
+    },
+    "midline_key_upper": {
+      "mesh": {
+        "triangles": 34,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edge_winding": 0,
+        "connected_shells": 1,
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            34.573299407958984,
+            34.57339859008789,
+            14.0
+          ]
+        ],
+        "size_xyz_mm": [
+          29.573299407958984,
+          29.57339859008789,
+          14.0
+        ],
+        "signed_volume_mm3": 3925.499327966189
+      },
+      "bed_contact_area_mm2": 373.22206646945006,
+      "maximum_vertex_deviation_mm": 6.91387256436524e-05,
+      "asset_volume_difference_mm3": 0.005114454778777144
+    }
+  },
+  "installation_samples": [
+    {
+      "moving": "rear_left_lower",
+      "samples": 4,
+      "worst_overlap_mm3": 0,
+      "witness": null
+    },
+    {
+      "moving": "rear_right_lower",
+      "samples": 4,
+      "worst_overlap_mm3": 0,
+      "witness": null
+    },
+    {
+      "moving": "rear_left_upper",
+      "samples": 4,
+      "worst_overlap_mm3": 0,
+      "witness": null
+    },
+    {
+      "moving": "rear_right_upper",
+      "samples": 4,
+      "worst_overlap_mm3": 0,
+      "witness": null
+    },
+    {
+      "moving": "midline_key_lower",
+      "samples": 6,
+      "worst_overlap_mm3": 0,
+      "witness": null
+    },
+    {
+      "moving": "midline_key_upper",
+      "samples": 6,
+      "worst_overlap_mm3": 0,
+      "witness": null
+    },
+    {
+      "moving": "face",
+      "samples": 10,
+      "worst_overlap_mm3": 0.0008780225026089552,
+      "witness": [
+        9,
+        "rear_left_upper",
+        [
+          0.0,
+          -0.0,
+          0.0
+        ]
+      ]
+    }
+  ],
+  "motion_geometry": "source assets independently matched to installed STL within 0.002mm; face obstacles trimmed to rail protrusions >0.02mm beyond seam to avoid coplanar contact degeneracy",
+  "ear_span_mm": 228.60019092445214,
+  "ear_landmark_errors_mm": [
+    0.0003626743515558399,
+    0.00044120802405030787
+  ],
+  "verification_contact_plane_exclusion_mm": 0.02,
+  "excess_outside_master_mm3": null,
+  "intentional_removed_volume_mm3": null,
+  "single_neck_owner_cap_symmetric_area_difference_mm2": 0.014672910787834392,
+  "recombination_boolean": "unverified; near-coincident serialized mesh Booleans avoided",
+  "full_continuous_sweeps": "unverified",
+  "structural_joins": "unverified",
+  "minimum_internal_material_width": "unverified"
+}

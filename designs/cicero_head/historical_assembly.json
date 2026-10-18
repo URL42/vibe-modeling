@@ -1,0 +1,573 @@
+{
+  "schema_version": 1,
+  "primary_assembly": "head",
+  "review_dispatch_id": 90,
+  "assemblies": [
+    {
+      "assembly_id": "head",
+      "role": "product",
+      "members": [
+        {
+          "part_id": 1,
+          "transform": {
+            "translate": [
+              166.20059569568826,
+              -27.812845325237024,
+              397.13494167085383
+            ],
+            "rotate": [
+              -104.775870570568,
+              -47.088314064066104,
+              -143.82437999063453
+            ]
+          }
+        },
+        {
+          "part_id": 2,
+          "transform": {
+            "translate": [
+              20.187294734556957,
+              146.6578347932699,
+              360.0
+            ],
+            "rotate": [
+              180.0,
+              0.0,
+              -58.66851716807284
+            ]
+          }
+        },
+        {
+          "part_id": 3,
+          "transform": {
+            "translate": [
+              -90.84506534136358,
+              119.01835506364557,
+              460.0
+            ],
+            "rotate": [
+              180.0,
+              0.0,
+              -24.812451501302647
+            ]
+          }
+        },
+        {
+          "part_id": 4,
+          "transform": {
+            "translate": [
+              -58.15629433615034,
+              138.8592892745562,
+              460.0
+            ],
+            "rotate": [
+              180.0,
+              0.0,
+              -18.09889960908256
+            ]
+          }
+        },
+        {
+          "part_id": 5,
+          "transform": {
+            "translate": [
+              51.13837199997619,
+              -144.90183483079008,
+              506.14393352801983
+            ],
+            "rotate": [
+              -90.0,
+              -37.513364464547486,
+              115.24192808725385
+            ]
+          }
+        },
+        {
+          "part_id": 6,
+          "transform": {
+            "translate": [
+              -72.45863328240897,
+              117.25701956313327,
+              468.6888034325353
+            ],
+            "rotate": [
+              -90.0,
+              -52.35569424448066,
+              -64.75807191274613
+            ]
+          }
+        },
+        {
+          "part_id": 7,
+          "transform": {
+            "translate": [
+              3.924763259055517,
+              -61.17294902674918,
+              392.2198568797337
+            ],
+            "rotate": [
+              -90.0,
+              -71.55093026796465,
+              -64.75825654229789
+            ]
+          }
+        },
+        {
+          "part_id": 8,
+          "transform": {
+            "translate": [
+              44.328310041689235,
+              -114.04215026929053,
+              502.23593923369833
+            ],
+            "rotate": [
+              -90.00000000000003,
+              -18.449031733085395,
+              115.24198779020082
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_id": "face_neck_owner",
+      "owner_assembly": "head",
+      "type": "sliding_joint",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          0,
+          0,
+          0
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "neck_owner",
+        "face"
+      ]
+    },
+    {
+      "interface_id": "face_rear_left_lower",
+      "owner_assembly": "head",
+      "type": "sliding_joint",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          0,
+          0,
+          0
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "rear_left_lower",
+        "face"
+      ]
+    },
+    {
+      "interface_id": "face_rear_right_lower",
+      "owner_assembly": "head",
+      "type": "sliding_joint",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          0,
+          0,
+          0
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "rear_right_lower",
+        "face"
+      ]
+    },
+    {
+      "interface_id": "face_rear_left_upper",
+      "owner_assembly": "head",
+      "type": "sliding_joint",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          0,
+          0,
+          0
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "rear_left_upper",
+        "face"
+      ]
+    },
+    {
+      "interface_id": "face_rear_right_upper",
+      "owner_assembly": "head",
+      "type": "sliding_joint",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          0,
+          0,
+          0
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "rear_right_upper",
+        "face"
+      ]
+    },
+    {
+      "interface_id": "neck_owner__rear_left_lower",
+      "owner_assembly": "head",
+      "type": "sliding_joint",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          0,
+          0,
+          0
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "rear_left_lower",
+        "neck_owner"
+      ]
+    },
+    {
+      "interface_id": "neck_owner__rear_right_lower",
+      "owner_assembly": "head",
+      "type": "sliding_joint",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          0,
+          0,
+          0
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "rear_right_lower",
+        "neck_owner"
+      ]
+    },
+    {
+      "interface_id": "rear_left_lower__rear_left_upper",
+      "owner_assembly": "head",
+      "type": "sliding_joint",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          0,
+          0,
+          0
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "rear_left_upper",
+        "rear_left_lower"
+      ]
+    },
+    {
+      "interface_id": "rear_right_lower__rear_right_upper",
+      "owner_assembly": "head",
+      "type": "sliding_joint",
+      "split_policy": "continuous_across_seam",
+      "local_frame": {
+        "translate": [
+          0,
+          0,
+          0
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "rear_right_upper",
+        "rear_right_lower"
+      ]
+    },
+    {
+      "interface_id": "midline_lower",
+      "owner_assembly": "head",
+      "type": "sliding_joint",
+      "split_policy": "separate_bridge",
+      "local_frame": {
+        "translate": [
+          0,
+          0,
+          0
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "rear_left_lower",
+        "rear_right_lower",
+        "midline_key_lower"
+      ]
+    },
+    {
+      "interface_id": "midline_upper",
+      "owner_assembly": "head",
+      "type": "sliding_joint",
+      "split_policy": "separate_bridge",
+      "local_frame": {
+        "translate": [
+          0,
+          0,
+          0
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engages_parts": [
+        "rear_left_upper",
+        "rear_right_upper",
+        "midline_key_upper"
+      ]
+    }
+  ],
+  "views": [
+    {
+      "name": "front",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        430,
+        90,
+        0,
+        0,
+        700
+      ],
+      "assembly_view": "head",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "back",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        430,
+        90,
+        0,
+        180,
+        700
+      ],
+      "assembly_view": "head",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "left",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        430,
+        90,
+        0,
+        270,
+        700
+      ],
+      "assembly_view": "head",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "right",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        430,
+        90,
+        0,
+        90,
+        700
+      ],
+      "assembly_view": "head",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "isometric",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        430,
+        55,
+        0,
+        25,
+        700
+      ],
+      "assembly_view": "head",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "top",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        430,
+        0,
+        0,
+        0,
+        700
+      ],
+      "assembly_view": "top",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "bottom",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        430,
+        180,
+        0,
+        0,
+        700
+      ],
+      "assembly_view": "bottom",
+      "assembly_view_id": 0,
+      "show_proxies": false
+    },
+    {
+      "name": "exploded",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        430,
+        55,
+        0,
+        25,
+        900
+      ],
+      "assembly_view": "exploded",
+      "assembly_view_id": 1,
+      "show_proxies": false
+    },
+    {
+      "name": "face_joint",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        430,
+        55,
+        0,
+        205,
+        700
+      ],
+      "assembly_view": "face_joint",
+      "assembly_view_id": 2,
+      "show_proxies": false
+    },
+    {
+      "name": "rear_joints",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        430,
+        55,
+        0,
+        25,
+        700
+      ],
+      "assembly_view": "rear_joints",
+      "assembly_view_id": 3,
+      "show_proxies": false
+    }
+  ],
+  "view_sets": {
+    "compact": [
+      "front",
+      "back",
+      "left",
+      "right",
+      "isometric"
+    ],
+    "full": [
+      "front",
+      "back",
+      "left",
+      "right",
+      "isometric",
+      "top",
+      "bottom",
+      "exploded",
+      "face_joint",
+      "rear_joints"
+    ]
+  },
+  "geometry_exports": [
+    {
+      "name": "head_assembled_reference",
+      "dispatch_id": 91,
+      "minimum_span": [
+        235,
+        253,
+        290
+      ]
+    }
+  ]
+}

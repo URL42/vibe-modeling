@@ -1,0 +1,8 @@
+{
+  "collar_height_mm": 360,
+  "upper_split_height_mm": 460,
+  "minimum_wall_thickness_mm": 3,
+  "minimum_structural_overlap_mm": 4,
+  "minimum_internal_edge_width_mm": 3,
+  "continuous_neck_band_mm": 6
+}

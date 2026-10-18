@@ -1,0 +1,8 @@
+{
+  "revision": "rev_0001",
+  "part_id": 1,
+  "part": "head",
+  "minimum_wall_thickness": 3,
+  "minimum_structural_overlap": 4,
+  "minimum_internal_edge_width": 3
+}
