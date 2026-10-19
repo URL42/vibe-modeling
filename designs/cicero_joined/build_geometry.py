@@ -41,13 +41,21 @@ def partition():
     r=json.loads((ROOT/'designs/cicero/assets/face_up_fit_reference.json').read_text())
     fn=np.array(r['face_plane_normal']);lat=np.array(r['rear_lateral_normal'])
     mid=r['rear_lateral_offset_mm'];nn=norm([0,-.3,1]);nd=291.5062138491311
-    ht=mesh(head);cap=ht[np.max(np.abs(ht@nn-nd),axis=1)<.002]
-    # Preserve the entire neck contact in the rear owner without introducing
-    # a second sliver cut across the face: move the face plane just beyond it.
-    fd=max(r['face_plane_offset_mm'],float((cap@fn).max())+.1)
+    # Keep the deeper face plane: advancing it to clear the neck sliced through
+    # the eye recesses. Reserve a six-mm neck band on the collar instead.
+    fd=float(r['face_plane_offset_mm'])
     face,rear=head.split_by_plane(fn,fd)
+    face,face_neck_band=face.split_by_plane(nn,nd+6.)
     q=norm([0,-.15,1]);hz0=360/np.linalg.norm([0,-.15,1]);hz1=460/np.linalg.norm([0,-.15,1])
     rest,collar=rear.split_by_plane(q,hz0)
+    collar=(collar+face_neck_band).simplify(.001)
+    # Coplanar recombination can emit closed zero-volume sheets. Preserve the
+    # one volumetric owner; reject, rather than discard, any real extra island.
+    collar_components=collar.decompose()
+    volumetric=[c for c in collar_components if abs(c.volume())>1e-8]
+    null_volume=sum(abs(c.volume()) for c in collar_components if abs(c.volume())<=1e-8)
+    assert len(volumetric)==1 and null_volume<1e-6,('neck band recombination islands',len(volumetric),null_volume)
+    collar=volumetric[0]
     right,left=rest.split_by_plane(lat,mid)
     lu,ll=left.split_by_plane(q,hz1);ru,rl=right.split_by_plane(q,hz1)
     pieces=dict(h_face=face,h_neck=collar,h_left_lower=ll,h_right_lower=rl,h_left_upper=lu,h_right_upper=ru)
@@ -111,7 +119,9 @@ def partition():
     return pieces,edges,dict(face_normal=fn.tolist(),face_offset_mm=fd,ear_lateral=lat.tolist(),midline=mid,
                               height_normal=q.tolist(),neck_normal=nn.tolist(),neck_offset_mm=nd,
                               head_lower_offset_mm=hz0,head_upper_offset_mm=hz1,bust_height_offset_mm=bz,
-                              bust_neck_offset_mm=bn,source_base_union_shells=len(base.decompose()))
+                              bust_neck_offset_mm=bn,source_base_union_shells=len(base.decompose()),
+                              face_neck_reserve_mm=6.,face_depth_increase_mm=31.559798942226173-fd,
+                              collar_null_sheet_count=len(collar_components)-1,collar_null_sheet_total_volume_mm3=null_volume)
 
 
 def same_plane(a,b):
@@ -271,6 +281,9 @@ def audit_seam_coverage(original,edges):
     for e in edges:
         n=e['normal'];d=e['offset']
         if not any(same_plane((n,d),p) or same_plane((-n,-d),p) for p in planes):planes.append((n,d))
+    # The collar's reserved neck band adds a second contact face for the same
+    # face/collar mating pair, not a new independently moving seam or loose key.
+    planes.append((norm([0,-.3,1]),291.5062138491311+6.))
     actual=set();area_records=[]
     for n,d in planes:
         w=norm(np.cross(n,[1,0,0]) if abs(n[0])<.9 else np.cross(n,[0,1,0]))
@@ -337,6 +350,13 @@ def emit(solids,records,beds,parameters,coverage):
     for p in parts:
         name=p['name'];r=np.array(p['rotation']);tr=np.array(p['translation'])
         meshes[name]=(read_stl(assets/(name+'.stl'))-tr)@r
+    # Before connector recesses, the face's rear cut must be one uninterrupted
+    # cap contour: the rejected shallow plane exposed both eye recesses here.
+    raw_face=partition()[0]['h_face']
+    fn=np.array(parameters['face_normal']);u=norm(np.cross(fn,[0,0,1]));w=np.cross(fn,u)
+    contours=plane_section(raw_face,fn,parameters['face_offset_mm'],u,w).to_polygons()
+    assert len(contours)==1,('face rear cap exposes sculpted recesses',len(contours))
+    parameters['face_uncut_rear_cap_contours']=len(contours)
     references=dict(product_reference=list(meshes),head_reference=[n for n in meshes if n.startswith('h_')],bust_reference=[n for n in meshes if n.startswith('b_')])
     for name,names in references.items():write_stl(assets/(name+'.stl'),np.concatenate([meshes[n] for n in names]))
     exploded=[]
@@ -346,6 +366,15 @@ def emit(solids,records,beds,parameters,coverage):
         if name.startswith('h_'):shift[2]+=80
         exploded.append(t+shift)
     write_stl(assets/'exploded_reference.stl',np.concatenate(exploded))
+    for prefix,label in [('h_','head'),('b_','bust')]:
+        names=[n for n in meshes if n.startswith(prefix)]
+        center=np.concatenate([meshes[n].reshape(-1,3) for n in names]).mean(0)
+        separated=[]
+        for name in names:
+            t=meshes[name];shift=(t.reshape(-1,3).mean(0)-center)*np.array([.7,.7,.5])
+            if name=='h_face':shift+=np.array(parameters['face_normal'])*100
+            separated.append(t+shift)
+        write_stl(assets/(label+'_exploded_reference.stl'),np.concatenate(separated))
     neck_names=['h_neck','b_neck'];write_stl(assets/'neck_reference.stl',np.concatenate([meshes[n] for n in neck_names]))
     write_stl(assets/'head_neck_socket_reference.stl',meshes['h_neck'])
     write_stl(assets/'bust_neck_rail_reference.stl',meshes['b_neck'])
@@ -354,7 +383,7 @@ def emit(solids,records,beds,parameters,coverage):
            'minimum_wall_thickness=3; minimum_structural_overlap=6; minimum_internal_edge_width=3;',
            'assert(minimum_structural_overlap>=minimum_wall_thickness);']
     for p in parts:lines.append(f'if(part_id=={p["part_id"]}) import("../assets/{p["name"]}.stl",convexity=10);')
-    refs=['product_reference','exploded_reference','head_reference','bust_reference','neck_reference','exposed_reference','head_neck_socket_reference','bust_neck_rail_reference']
+    refs=['product_reference','exploded_reference','head_reference','bust_reference','neck_reference','exposed_reference','head_neck_socket_reference','bust_neck_rail_reference','head_exploded_reference','bust_exploded_reference']
     lines.append('if(part_id==90) {')
     for i,name in enumerate(refs):lines.append(f' if(assembly_view_id=={i}) import("../assets/{name}.stl",convexity=10);')
     lines.append('}')
@@ -368,6 +397,9 @@ def emit(solids,records,beds,parameters,coverage):
     def view(name,vid,rot):views.append(dict(name=name,projection='o',camera=[0,0,280,*rot,1000],assembly_view=refs[vid],assembly_view_id=vid,show_proxies=False))
     for name,rot in [('front',[90,0,0]),('back',[90,0,180]),('left',[90,0,270]),('right',[90,0,90]),('isometric',[55,0,25]),('top',[0,0,0]),('bottom',[180,0,0])]:view(name,0,rot)
     for name,vid,rot in [('exploded',1,[55,0,25]),('head',2,[55,0,25]),('bust',3,[55,0,25]),('neck_front',4,[55,0,25]),('neck_back',4,[125,0,205]),('exposed',5,[55,0,25]),('head_neck_socket',6,[125,0,205]),('bust_neck_rail',7,[55,0,25])]:view(name,vid,rot)
+    for label,vid in [('head',8),('bust',9)]:
+        for angle,rot in [('front_left',[55,0,335]),('front_right',[55,0,25]),('back_left',[55,0,205]),('back_right',[55,0,155]),('underside',[125,0,25])]:
+            view(label+'_exploded_'+angle,vid,rot)
     interfaces=[dict(interface_id=j['id'],owner_assembly='cicero' if j['id']=='head_to_bust' else ('head' if j['male'].startswith('h_') else 'bust'),type='integral_sliding_dovetail',split_policy='continuous_across_seam',local_frame=dict(translate=j['center_mm'],rotate=[0,0,0]),engages_parts=[j['male'],j['female']]) for j in records]
     write_json(HERE/'assembly.json',dict(schema_version=1,primary_assembly='cicero',review_dispatch_id=90,assemblies=assemblies,interfaces=interfaces,views=views,
         view_sets=dict(compact=['front','back','left','right','isometric','head','bust','neck_front','exposed'],full=[v['name'] for v in views]),

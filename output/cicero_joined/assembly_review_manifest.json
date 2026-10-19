@@ -3,7 +3,7 @@
   "design": "cicero_joined",
   "primary_assembly": "cicero",
   "view_set": "full",
-  "generated_at_utc": "2026-10-17T17:45:42.794880+00:00",
+  "generated_at_utc": "2026-10-19T05:12:49.026206+00:00",
   "config": {
     "path": "designs/cicero_joined/configs/rev_0001.json",
     "sha256": "e69427fed878b63ff08d4fd5babd7e1693f6f8949f3aa2f67e4dae02465fea2a"
@@ -14,17 +14,17 @@
   },
   "assembly_contract": {
     "path": "designs/cicero_joined/assembly.json",
-    "sha256": "f654a45d4b96ecb478942a9a55150a149224c9cc8a023ff3b098ee8abc4275c3"
+    "sha256": "2bf83109df66e6c15e78ffe90d0a810c5b93e971d9abf72667a94b5d634d1494"
   },
   "source": {
     "path": "designs/cicero_joined/src",
-    "sha256": "09a0c56e890a36aa61517c642fe0317efbf60ff46163dcceb6dcf322f44da8ec",
+    "sha256": "5010d0e15a2e3073a140e6eb4bb28a28aec0f15518419376a11de85bc079bcbc",
     "main_scad": "designs/cicero_joined/src/main.scad"
   },
   "printable_build": {
     "path": "output/cicero_joined/build_manifest.json",
     "directory": "output/cicero_joined",
-    "sha256": "3b513366e7ebc7eccba5b9e33c9ec035c9f2ace34bdc569a17416f8aeceeeda8",
+    "sha256": "178bc0c37b7aad28416a40cd8e81d8da5b87bca79293909bfed1720ae8a6e6e2",
     "counts": {
       "parts": 17,
       "stl": 17,
@@ -36,43 +36,43 @@
         "part_id": 1,
         "name": "h_face",
         "path": "h_face_rev_0001.stl",
-        "bytes": 5589665,
-        "sha256": "7d1bd90aa707e3b199c4386b2b8a25a8e66715aa0e02e29b1e4036712eee1098"
+        "bytes": 6369198,
+        "sha256": "b6e4e0c9709f681c7231ef2dd752ae190dcdf14a97f790b24073160f8062a654"
       },
       {
         "part_id": 2,
         "name": "h_neck",
         "path": "h_neck_rev_0001.stl",
-        "bytes": 5714711,
-        "sha256": "1c877236983085b8ef4775799fd1659b5821b096a872b83a6572d494b0fa6e25"
+        "bytes": 5952017,
+        "sha256": "12123197107b913cc2403352a50e2bdf38ca3308972e2df2f371ae61b8a6eba7"
       },
       {
         "part_id": 3,
         "name": "h_left_lower",
         "path": "h_left_lower_rev_0001.stl",
-        "bytes": 10297502,
-        "sha256": "c037860ab78a4343e9ae16532be425dac30c42e867537d16454710ff95e6d06d"
+        "bytes": 10041508,
+        "sha256": "20fe94dfc0ff4393bb9695cc80ca17ea29907e061f6c041a49b1fdcd460153ab"
       },
       {
         "part_id": 4,
         "name": "h_right_lower",
         "path": "h_right_lower_rev_0001.stl",
-        "bytes": 9698316,
-        "sha256": "8e66cb1d3d7b317a42ef699dee7814fcb451db760d69ba64156ae5ccddd37a49"
+        "bytes": 9537556,
+        "sha256": "c6b07a25c287574efc19e472d556659598eb33e5f34dd687ae032e333647665e"
       },
       {
         "part_id": 5,
         "name": "h_left_upper",
         "path": "h_left_upper_rev_0001.stl",
-        "bytes": 16953616,
-        "sha256": "b1817685ce2fd75f1a3053ebf7913c1c12116bd88d3ae6d2572e4bb6a5fb01c2"
+        "bytes": 16741692,
+        "sha256": "346a054216368e9ba6db9dbe3f95ec0f0f5495e4dfec05fa6e683eda34db59aa"
       },
       {
         "part_id": 6,
         "name": "h_right_upper",
         "path": "h_right_upper_rev_0001.stl",
-        "bytes": 16161681,
-        "sha256": "58af42a4bbfde2afd427b0321fda8736360f718f69eb24eb932363d4c755845d"
+        "bytes": 15910231,
+        "sha256": "dd12672171ada48363124db299af07a48bd738616fc76df9017aaf887a7db5c9"
       },
       {
         "part_id": 7,
@@ -154,13 +154,13 @@
     ]
   },
   "git": {
-    "commit": "f3ab27af2b71378703b933484b576199d2443545",
+    "commit": "b3c558acf0b13641fc347a83ccf8f89b5e61ee76",
     "dirty": true
   },
   "counts": {
-    "png": 15,
+    "png": 25,
     "stl": 3,
-    "artifacts": 18
+    "artifacts": 28
   },
   "artifacts": [
     {
@@ -170,13 +170,13 @@
     },
     {
       "path": "cicero_assembled_reference.stl",
-      "bytes": 105916522,
-      "sha256": "ad90d8b1a2a1b979593699229d5a8058869a6f9de8ce7d32bb56bd6d33d806e1"
+      "bytes": 106049798,
+      "sha256": "6c9d5e11895bd3d8d23e8b115a83bd2ec86994fb982705895f9da7bf9c659351"
     },
     {
       "path": "cicero_back.png",
-      "bytes": 193833,
-      "sha256": "ad2b95815de12de1398f05118c1d21e548b33a637699927fb81378cf83d53d94"
+      "bytes": 193844,
+      "sha256": "a92de0053d00338903dc5395f3d0493a2bb77ac8622f4d7e61b59c45a55638a0"
     },
     {
       "path": "cicero_bottom.png",
@@ -189,69 +189,119 @@
       "sha256": "da6f6ea30adc8b6e99a88943d9ed8805459b957393f3382b13a85ecc67752360"
     },
     {
+      "path": "cicero_bust_exploded_back_left.png",
+      "bytes": 100904,
+      "sha256": "957ed734c52a223fe9929c554b1a7fadf6328bbc9cd144c8232c09d61af56b86"
+    },
+    {
+      "path": "cicero_bust_exploded_back_right.png",
+      "bytes": 96947,
+      "sha256": "d04ebf2c18533b9fc298583e6af1fc0b71c05f4d88558c580dfe93e6dfe4359c"
+    },
+    {
+      "path": "cicero_bust_exploded_front_left.png",
+      "bytes": 192561,
+      "sha256": "2e40a267abaa99c1c021029b0d3b3c379b77f79ab3b576351618432fb0e1d7df"
+    },
+    {
+      "path": "cicero_bust_exploded_front_right.png",
+      "bytes": 176677,
+      "sha256": "67a40246198d74fd6bc97d1c0bc3d4236ad9deb99775e538691b49e87aed7a3c"
+    },
+    {
+      "path": "cicero_bust_exploded_underside.png",
+      "bytes": 88030,
+      "sha256": "fd6cc0a0b79c72c9e0fc2673191e35e8f24c63393952bd3607a2f227380095c7"
+    },
+    {
       "path": "cicero_bust_neck_rail.png",
       "bytes": 30922,
       "sha256": "8abdc4ea1309acc159616760f929e14c89a1c6f7b9e0dd7811347c08d3b44947"
     },
     {
       "path": "cicero_exploded.png",
-      "bytes": 229733,
-      "sha256": "2d0f296eb4ae1043afa87c3629993b911c0752de0314b9ef4e080278d4645efe"
+      "bytes": 230510,
+      "sha256": "461b37db45dcd63343536106c03e208f38b6080cdb783e0d6849cc0a75abb0b6"
     },
     {
       "path": "cicero_exposed.png",
-      "bytes": 296689,
-      "sha256": "b0471756ea52525f0e54cb6c5ad725ea09ab5e803037cc4892cffd0aee52541e"
+      "bytes": 291686,
+      "sha256": "0d68c4b1714dae8dd8de89d37ee6b6e126ae33d994d33032c6b51760c4524afd"
     },
     {
       "path": "cicero_front.png",
-      "bytes": 284864,
-      "sha256": "7469f2b684a4fb209712df92bca7a0c10ef0665b434bc1f58ed3b98c8b2e07d6"
+      "bytes": 284885,
+      "sha256": "e8ebc65ae1f2c00b32a40e1dcbbc6f1d12aa535b684f7d80be83bfdeba4c704c"
     },
     {
       "path": "cicero_head.png",
-      "bytes": 337105,
-      "sha256": "ec77cf0a81bdf85e88fd8c12024b701eca1a7979961c7b00fb67d86afd3e27b8"
+      "bytes": 337086,
+      "sha256": "f62db37b476ec1ee01ca29200fc5220563e353a1f1f4ab15feb17e56f8ffbdfd"
+    },
+    {
+      "path": "cicero_head_exploded_back_left.png",
+      "bytes": 195965,
+      "sha256": "507e9eac45cebe50f72bfc0bae89e5623e1951d804bae8e39d49d270ae5a6f24"
+    },
+    {
+      "path": "cicero_head_exploded_back_right.png",
+      "bytes": 204365,
+      "sha256": "a987e73648f4c8af9a099b68b50bb8bcdd905b43dbf2aca4c6dccf7049255f45"
+    },
+    {
+      "path": "cicero_head_exploded_front_left.png",
+      "bytes": 190116,
+      "sha256": "26d07944c553869002260e6fcb9d0abf664b88f000af044dbaf1520e1e806a23"
+    },
+    {
+      "path": "cicero_head_exploded_front_right.png",
+      "bytes": 186287,
+      "sha256": "4eb11550f4e47a1b0d865accf80c710d8d0b675e60dfe40d1170b0d2d5e27db3"
+    },
+    {
+      "path": "cicero_head_exploded_underside.png",
+      "bytes": 133307,
+      "sha256": "6a3889da5d9fe55e4c854157c404809f5084e5fec755038184d666479b6e6fc9"
     },
     {
       "path": "cicero_head_neck_socket.png",
-      "bytes": 126977,
-      "sha256": "92282fd57a3843b2118bb60c3ca838007c960017cc24324043120310e0f0076e"
+      "bytes": 128435,
+      "sha256": "9322055a751a4d05d9fe062d2fb4006b0b53fa87d0d87b621b0be7e2022e1ce3"
     },
     {
       "path": "cicero_isometric.png",
-      "bytes": 323043,
-      "sha256": "d080974d1d89793980f48e0da3a5b3f8f1f2320801432912314460c2460b2f3a"
+      "bytes": 323046,
+      "sha256": "e9566aa97a88d3c00169c59d1d6b4f69e6941178ca0e852d507e1d07c0599f28"
     },
     {
       "path": "cicero_left.png",
-      "bytes": 231035,
-      "sha256": "998362193a64fea07ac381019d173ec504868f4c59c03746fd650963933d1c74"
+      "bytes": 231038,
+      "sha256": "eb5bbf44eef56319dfab3674b9f14cb3c9b2c50ca1f5c1ab00d4d140b1f1dcbb"
     },
     {
       "path": "cicero_neck_back.png",
-      "bytes": 140943,
-      "sha256": "2e15715e928af0a0d6b97a51627dd47667c0bb42283f4f9f4dc9554700c31e8d"
+      "bytes": 142658,
+      "sha256": "fa6bad7f02880969664f84da336c80dce22b83c2b16adef821fcc1acbcca4f9c"
     },
     {
       "path": "cicero_neck_front.png",
-      "bytes": 46863,
-      "sha256": "64f8a246642205f4ec32c01b2f0eff3ecb07a687cb29ec15367f17a964906cb6"
+      "bytes": 43823,
+      "sha256": "a5b74e63a54cab35e2bf418ce42d9172add5576e18e81602e4ce9e557e38a241"
     },
     {
       "path": "cicero_right.png",
-      "bytes": 206879,
-      "sha256": "6e2fae164d5d841bfeaa246ec40119ea42cd7700f398b249beef0cb86caf5643"
+      "bytes": 206888,
+      "sha256": "2c74c7008950676ef35752ca21a64034fc82c2f4f87fdb4d56d244bce8bae43f"
     },
     {
       "path": "cicero_top.png",
-      "bytes": 256462,
-      "sha256": "730341e6a587d65dfb1fc19fc685c9340cebe40254c9aedb86fdb7f1e1573e99"
+      "bytes": 256471,
+      "sha256": "2d203659d0b1de7c20a564c015f3964ff5e59fc5ed50d51077a98fccee1b651d"
     },
     {
       "path": "head_assembled_reference.stl",
-      "bytes": 65667274,
-      "sha256": "6055386f24acef054943186d64f5c3bfd032c00eb9c2493f28091a6059380706"
+      "bytes": 65800550,
+      "sha256": "3cfe3cb1c6a3bbe0cbd4e1ba17b610ddda1034fab4806a104dd395d8f29b133c"
     }
   ]
 }

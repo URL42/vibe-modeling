@@ -67,3 +67,33 @@ pass sampled collision checks; maximum diagnostic overlap is 0.009958 mm3.
 The installed ear span is 228.600188 mm. See cicero_joined/assembly_review.md.
 Continuous sweeps, global material paths, anti-lift retention and physical fit/load
 remain open under item 2.3. No commit or push is authorized.
+
+## User-directed face correction and exploded views (2026-10-18)
+
+Authority: user reports eye recesses open at the back and requests deeper face
+plus separate multi-angle exploded head/bust views. Execute this atomic correction.
+
+- [x] 9. Restore deeper face plane, reserve neck-bearing band on collar; verify
+  uninterrupted pre-joint rear face cap, flat-bed fit, all joints and assembly paths.
+- [x] 10. Add five exploded angles each for head and bust, complete governed build,
+  installed verification and artifact-bound review; update docs and journal.
+
+Expected: cicero_joined generator/assets/contracts, current output, verification,
+README/review record and today's journal. Preserve single neck owners, integral
+joints and original scan; no commit/push. Mutable config rev_0001 remains current.
+
+Items 9-10 verified complete: deeper face has an uninterrupted rear cap and
+installed solid eye-backing probes through 4 mm. All 17 leaves / 33 mating pairs /
+16 sampled installation stages pass; ear span 228.600190 mm. Ten separate exploded
+views visually reviewed, five each for head and bust. Complete current totals:
+20 STL / 314 PNG / 2 manifests, 336 flat files; all artifact/provenance audits pass.
+Earlier evidence above is historical. Item 2.3 remains open; no commit or push.
+
+## Commit and push authorization (2026-10-18)
+
+User explicitly keeps the neck pieces separate and authorizes committing every
+repository change and pushing all local commits. Include generated artifacts.
+The assembled product STL exceeds 100 MiB; track that exact artifact with Git LFS,
+leaving its working-tree bytes and provenance hashes unchanged. Record LFS checkout
+requirements. Items 9-10 remain complete; unresolved physical/structural work
+under item 2.3 keeps this plan current. No geometry changes in this checkpoint.

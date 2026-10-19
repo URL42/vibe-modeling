@@ -47,6 +47,11 @@ provisional margins where brim, material or profile details are not yet known.
    against actual mesh/plane intersections; a convex hull is a conservative search
    aid, not proof of the deepest feasible nonconvex section. Declare resolution
    and numerical reserve; inspect features rather than trusting bounds alone.
+   Inspect the rear cap for breakthroughs into protected recesses such as eyes.
+   Recheck backing after connector cuts. If a major-interface reservation forces
+   an excessively shallow feature section, reserve a local band on its interface
+   owner and verify the resulting compound contact and installation path; retain
+   broad real bed contact rather than sacrificing the protected feature.
 8. Test the remainder on its real cut faces. Add only the cuts needed for fit,
    stable contact, load paths or assembly. A rear-only height slice can preserve
    a face section intact. Do not retain a low piece count at the cost of large

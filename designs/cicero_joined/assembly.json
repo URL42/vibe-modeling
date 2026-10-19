@@ -47,14 +47,14 @@
           "part_id": 1,
           "transform": {
             "translate": [
-              161.3232103605518,
-              -36.3616993481692,
-              394.93634413661965
+              166.20059840746407,
+              -27.81285586413531,
+              397.13495268574604
             ],
             "rotate": [
-              -104.70028815882876,
-              -46.81994935877206,
-              -143.9278028424306
+              -104.77586899065307,
+              -47.08830849558207,
+              -143.8243821477977
             ]
           }
         },
@@ -62,14 +62,14 @@
           "part_id": 2,
           "transform": {
             "translate": [
-              134.38899483194535,
-              52.7414753118463,
-              320.16384884355386
+              134.27717736386475,
+              50.971852898793315,
+              319.63296211963797
             ],
             "rotate": [
-              -14.622216530719609,
-              -8.155222923864015,
-              151.46589082358113
+              -14.49974042506007,
+              -8.374240610992974,
+              150.61388272323094
             ]
           }
         },
@@ -77,14 +77,14 @@
           "part_id": 3,
           "transform": {
             "translate": [
-              -178.74111281108057,
-              -73.03351845994717,
-              449.04497223100793
+              -179.06398661128108,
+              -68.54434679243822,
+              449.7183479811344
             ],
             "rotate": [
-              -176.36331459448888,
-              -7.721960587197942,
-              64.68501837660465
+              -176.22651327479514,
+              -7.656346369686009,
+              63.66260296958438
             ]
           }
         },
@@ -92,14 +92,14 @@
           "part_id": 4,
           "transform": {
             "translate": [
-              143.3111337840462,
-              83.4829671135885,
-              372.5224450670382
+              139.67949610298683,
+              87.25742244384307,
+              373.08861336657645
             ],
             "rotate": [
-              -8.044488978235195,
-              -2.848429732378322,
-              160.6278166644706
+              -8.103303542985655,
+              -2.6754870921493237,
+              161.84832771786452
             ]
           }
         },
@@ -107,13 +107,13 @@
           "part_id": 5,
           "transform": {
             "translate": [
-              55.66774643295288,
-              -154.50899826954148,
-              487.0482344848716
+              54.14247929671958,
+              -151.27378791315414,
+              492.99796437154123
             ],
             "rotate": [
               -90.0,
-              -44.723308124297574,
+              -43.14756205304913,
               115.24192808725385
             ]
           }
@@ -122,14 +122,14 @@
           "part_id": 6,
           "transform": {
             "translate": [
-              142.6370351266421,
-              69.956286388626,
-              470.4934429582938
+              140.2808071492851,
+              74.40794784508816,
+              471.16119217676305
             ],
             "rotate": [
-              -8.061664330642179,
-              -2.799162817050286,
-              160.9764503764982
+              -8.148148836317624,
+              -2.534760396669213,
+              162.83494735796845
             ]
           }
         }
@@ -337,9 +337,9 @@
       "split_policy": "continuous_across_seam",
       "local_frame": {
         "translate": [
-          11.402578092059688,
-          -106.26812988836993,
-          390.96122768698
+          -0.7207041718598344,
+          -107.09742690973059,
+          400.1518616915107
         ],
         "rotate": [
           0,
@@ -359,9 +359,9 @@
       "split_policy": "continuous_across_seam",
       "local_frame": {
         "translate": [
-          6.982885832764854,
-          -125.76274327411284,
-          480.27504290918773
+          1.7312480258871528,
+          -122.33530703489095,
+          484.2485117753881
         ],
         "rotate": [
           0,
@@ -381,9 +381,9 @@
       "split_policy": "continuous_across_seam",
       "local_frame": {
         "translate": [
-          22.048949612347577,
-          -88.00833971036724,
-          323.04079012909375
+          18.331247908631617,
+          -83.66511882764604,
+          326.0262795598495
         ],
         "rotate": [
           0,
@@ -403,9 +403,9 @@
       "split_policy": "continuous_across_seam",
       "local_frame": {
         "translate": [
-          36.470308782478256,
-          -91.62960197103651,
-          376.494607581167
+          52.60846456843744,
+          -80.65478610786825,
+          393.48237442725093
         ],
         "rotate": [
           0,
@@ -425,9 +425,9 @@
       "split_policy": "continuous_across_seam",
       "local_frame": {
         "translate": [
-          56.57914034647074,
-          -103.46282956350431,
-          485.8288177760482
+          59.56359701568792,
+          -95.79731585327633,
+          487.98070114475104
         ],
         "rotate": [
           0,
@@ -909,9 +909,9 @@
       "split_policy": "continuous_across_seam",
       "local_frame": {
         "translate": [
-          -38.311829425394535,
-          1.3041559219864922,
-          360.19562338829803
+          -39.56965637952089,
+          1.9713097279812644,
+          360.29569645919725
         ],
         "rotate": [
           0,
@@ -932,8 +932,8 @@
       "local_frame": {
         "translate": [
           8.23127484321595,
-          17.98718595632856,
-          362.69807789344935
+          20.655137623138828,
+          363.09827064347087
         ],
         "rotate": [
           0,
@@ -953,9 +953,9 @@
       "split_policy": "continuous_across_seam",
       "local_frame": {
         "translate": [
-          -48.215904235839844,
-          -28.104306071222027,
-          455.7843540893167
+          -49.47373294830322,
+          -26.271169620055083,
+          456.0593245569917
         ],
         "rotate": [
           0,
@@ -976,8 +976,8 @@
       "local_frame": {
         "translate": [
           18.59811019897461,
-          9.565431748579542,
-          461.434814762287
+          12.233385128484684,
+          461.83500776927275
         ],
         "rotate": [
           0,
@@ -997,9 +997,9 @@
       "split_policy": "continuous_across_seam",
       "local_frame": {
         "translate": [
-          -16.036832289094104,
-          -2.418003734079983,
-          420.5955505371094
+          -17.29466133192751,
+          0.24994960292638435,
+          420.99574279785156
         ],
         "rotate": [
           0,
@@ -1019,9 +1019,9 @@
       "split_policy": "continuous_across_seam",
       "local_frame": {
         "translate": [
-          -12.880670475267763,
-          -9.112468686456895,
-          495.57916259765625
+          -13.898466879853405,
+          -6.953643264609017,
+          495.97935485839844
         ],
         "rotate": [
           0,
@@ -1275,6 +1275,166 @@
       "assembly_view": "bust_neck_rail_reference",
       "assembly_view_id": 7,
       "show_proxies": false
+    },
+    {
+      "name": "head_exploded_front_left",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        55,
+        0,
+        335,
+        1000
+      ],
+      "assembly_view": "head_exploded_reference",
+      "assembly_view_id": 8,
+      "show_proxies": false
+    },
+    {
+      "name": "head_exploded_front_right",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        55,
+        0,
+        25,
+        1000
+      ],
+      "assembly_view": "head_exploded_reference",
+      "assembly_view_id": 8,
+      "show_proxies": false
+    },
+    {
+      "name": "head_exploded_back_left",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        55,
+        0,
+        205,
+        1000
+      ],
+      "assembly_view": "head_exploded_reference",
+      "assembly_view_id": 8,
+      "show_proxies": false
+    },
+    {
+      "name": "head_exploded_back_right",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        55,
+        0,
+        155,
+        1000
+      ],
+      "assembly_view": "head_exploded_reference",
+      "assembly_view_id": 8,
+      "show_proxies": false
+    },
+    {
+      "name": "head_exploded_underside",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        125,
+        0,
+        25,
+        1000
+      ],
+      "assembly_view": "head_exploded_reference",
+      "assembly_view_id": 8,
+      "show_proxies": false
+    },
+    {
+      "name": "bust_exploded_front_left",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        55,
+        0,
+        335,
+        1000
+      ],
+      "assembly_view": "bust_exploded_reference",
+      "assembly_view_id": 9,
+      "show_proxies": false
+    },
+    {
+      "name": "bust_exploded_front_right",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        55,
+        0,
+        25,
+        1000
+      ],
+      "assembly_view": "bust_exploded_reference",
+      "assembly_view_id": 9,
+      "show_proxies": false
+    },
+    {
+      "name": "bust_exploded_back_left",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        55,
+        0,
+        205,
+        1000
+      ],
+      "assembly_view": "bust_exploded_reference",
+      "assembly_view_id": 9,
+      "show_proxies": false
+    },
+    {
+      "name": "bust_exploded_back_right",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        55,
+        0,
+        155,
+        1000
+      ],
+      "assembly_view": "bust_exploded_reference",
+      "assembly_view_id": 9,
+      "show_proxies": false
+    },
+    {
+      "name": "bust_exploded_underside",
+      "projection": "o",
+      "camera": [
+        0,
+        0,
+        280,
+        125,
+        0,
+        25,
+        1000
+      ],
+      "assembly_view": "bust_exploded_reference",
+      "assembly_view_id": 9,
+      "show_proxies": false
     }
   ],
   "view_sets": {
@@ -1304,7 +1464,17 @@
       "neck_back",
       "exposed",
       "head_neck_socket",
-      "bust_neck_rail"
+      "bust_neck_rail",
+      "head_exploded_front_left",
+      "head_exploded_front_right",
+      "head_exploded_back_left",
+      "head_exploded_back_right",
+      "head_exploded_underside",
+      "bust_exploded_front_left",
+      "bust_exploded_front_right",
+      "bust_exploded_back_left",
+      "bust_exploded_back_right",
+      "bust_exploded_underside"
     ]
   },
   "geometry_exports": [

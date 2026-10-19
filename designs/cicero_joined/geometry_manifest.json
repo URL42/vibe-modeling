@@ -1,6 +1,6 @@
 {
   "inputs": {
-    "designs/cicero_joined/build_geometry.py": "ce2b4e8a839d89a9f93a78c635ec3b8ecdf0c7f034743b712045b134a70af791",
+    "designs/cicero_joined/build_geometry.py": "96705a53d95bc8aa12d4a2951a6a432c873edbb173ba0591bb2d06c617797eac",
     "designs/cicero_head/generate.py": "7604d3d08b3cc474b84c21d0b9286f99217c61d44ede28844897428c9c479357",
     "designs/cicero/face_up_split.py": "42eccc2bf7a8914e0dd4c64af7168a4437fbcfd6229c8f12e5169005b858e4d7",
     "designs/cicero/measure_scale.py": "ed3d6726ce151f32b98ea472e30a7da7119c35fb953ea476d29ca81b305b8b9a",
@@ -22,20 +22,22 @@
     "b_upper_mf.stl": "97dd5f4e40e34e842ae033aca079927759cc4f9cf94b37350f96951ce4386242",
     "b_upper_rb.stl": "8aeb424766c0f87f41190fa9f600e64582ac3a922b52e23589e23796401386c2",
     "b_upper_rf.stl": "c3322f628f597000b0e5bfa40af6c4559bde11d2b2b55935af79aa29077db551",
+    "bust_exploded_reference.stl": "c64a0030422a2156fb543d0e0cb8100dc3d3415028d1df1c499e5ccc31642086",
     "bust_neck_rail_reference.stl": "ce204f16c433862d61f4b849de23fc55047f9479c337fe032201bc83951b5794",
     "bust_reference.stl": "57b901f798a79f3f5abe19961c3ed9d32b8e469419f9c5817e13d551629bedfa",
-    "exploded_reference.stl": "a0323e3aa8ee56572d44be4ff18a1c0d3a0d843f82626195a32f473e6867ab5f",
-    "exposed_reference.stl": "35c9c663c59ffd8fb81e70e25625d6f3a59db97276dd9bd8acac4cf7e0dfc0e8",
-    "h_face.stl": "16970e4676facfc7fdcac6b60777e80bbfe41b490e9d962d9a736be40884ac1c",
-    "h_left_lower.stl": "f9c2f92db4923b9529e91f92a4b1937016fd541a2454cd6ebab6d8cfac2d5d4b",
-    "h_left_upper.stl": "af650839c354635ffb202b910159ea4617a11201e3bb485c49c2055cb4a236f8",
-    "h_neck.stl": "bfa41865c6b19c75c71e5ab0b69f83d82d3acffa3c77b5ccf85dd96b40463229",
-    "h_right_lower.stl": "08e0f36c46486323244740c65ff1c75185ab46ca33dedacc0e9cd8bdf8b4a57a",
-    "h_right_upper.stl": "483877ceec7df46ee63d5c5c751ed596d8463c3f739f9150aab94959de945738",
-    "head_neck_socket_reference.stl": "7a07b1fbd4f00912c9994c14659a3e0eb1492d65eaeb9c5bff8562d85975a58d",
-    "head_reference.stl": "191ac0bc7b66e65db58a4f426ac1c19559ff609ded7435c1822db32fcda3a682",
-    "neck_reference.stl": "1455d96be5411408ef9ff83885f2e8e7beb7930b85cb1580e448324386e9b12b",
-    "product_reference.stl": "cc53f465d923050ecbbfe6e2e5eb5f507691db809743af537a7b34e8148d8bb3"
+    "exploded_reference.stl": "a084af5178f007703b5ba4054a81a3db2c4dc63978f22ca1a7f40999296f0acd",
+    "exposed_reference.stl": "aaaf7d8e7eae52c1fe6803bafdc8c6eca0fa1c9ec7e38467c9bf741886cea11e",
+    "h_face.stl": "cc01ae7be7d402b83ff673425f598b65ba5a2ba97b46a7e0d351f4392c044471",
+    "h_left_lower.stl": "cad195d177fd2b7b8532d42bfc1fc012295d2d1231a0e7adc5e4e29eac7c38df",
+    "h_left_upper.stl": "6ee93126f1ee645e677c5f241b127f8bb540ad24753aa124d2b5af6399f2402a",
+    "h_neck.stl": "f6579973070bd8ddb96fa5cf34a8c3e065c1cfd871a2b39eb1e324ed8572950e",
+    "h_right_lower.stl": "6d382d2b346f68a96912a224c7b3fb63aca49f1bd9385573156b0bcbeeb70092",
+    "h_right_upper.stl": "eb52227e10537d2bc4a9a959f47017c8174d71a8485b577439b5adbe2ecd99a8",
+    "head_exploded_reference.stl": "e6252e86988ac78b9e1b47c42e693b28384ace4d2b936d1294a59dbbcea4480d",
+    "head_neck_socket_reference.stl": "c86b0aee6b5665e655a8fdcacc08a8861dc6cb893632d94858cbfcc3edb59bde",
+    "head_reference.stl": "7c9a940d9329555b0b32c11f03d14c2c8df69b8c3a367ff652de10d7bb785e1c",
+    "neck_reference.stl": "41ceca911b76faa1887e9b05e5a2cd22d198ca132ba1513f8a56d6e64b108a8d",
+    "product_reference.stl": "04e62ddea4369b6a7557ffbd3a0079efd290a3ebdc9dfab157a239943c3abea6"
   },
   "parameters": {
     "face_normal": [
@@ -43,7 +45,7 @@
       -0.8907736132926747,
       -0.17364817766693033
     ],
-    "face_offset_mm": 31.55979894222617,
+    "face_offset_mm": 25.61125149073174,
     "ear_lateral": [
       0.9045152321030036,
       0.4264413147124111,
@@ -65,7 +67,12 @@
     "head_upper_offset_mm": 454.9107223194169,
     "bust_height_offset_mm": 148.34045293024462,
     "bust_neck_offset_mm": 271.5062138491311,
-    "source_base_union_shells": 1
+    "source_base_union_shells": 1,
+    "face_neck_reserve_mm": 6.0,
+    "face_depth_increase_mm": 5.948547451494434,
+    "collar_null_sheet_count": 66,
+    "collar_null_sheet_total_volume_mm3": 4.10323942249928e-13,
+    "face_uncut_rear_cap_contours": 1
   },
   "parts": [
     {
@@ -78,18 +85,18 @@
           -0.8907736132926748,
           -0.17364817766693036
         ],
-        "bed_plane_offset_mm": 31.559798942226173,
-        "in_plane_yaw_degrees": 47.770284713713764,
+        "bed_plane_offset_mm": 25.611251490731743,
+        "in_plane_yaw_degrees": 48.04777344476585,
         "rotation_matrix": [
           [
-            -0.5530976041285566,
-            -0.40291474687111406,
-            0.7292069302063967
+            -0.5496064116739138,
+            -0.40189203025014514,
+            0.732403978872549
           ],
           [
-            -0.7195237036073128,
-            -0.21019532967051968,
-            -0.6618939215100238
+            -0.7221939573220328,
+            -0.21214421010937068,
+            -0.6583545565457972
           ],
           [
             0.41996271293350146,
@@ -98,17 +105,17 @@
           ]
         ],
         "size_xyz_mm": [
-          200.94736435453692,
-          200.94693625185346,
-          43.1452752851162
+          209.7470863789508,
+          209.74724491699135,
+          49.093822736610626
         ],
-        "envelope_ratio": 0.9571200969494496,
+        "envelope_ratio": 0.9990342696689276,
         "fits": true,
-        "contact_convex_hull_area_mm2": 22999.71204347256,
-        "actual_contact_area_mm2": 19877.35084381982
+        "contact_convex_hull_area_mm2": 26042.56654654523,
+        "actual_contact_area_mm2": 23424.397941065366
       },
       "mesh": {
-        "triangles": 28512,
+        "triangles": 32394,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "inconsistent_edge_winding": 0,
@@ -120,28 +127,28 @@
             0.0
           ],
           [
-            205.94735717773438,
-            205.94692993164062,
-            43.1452751159668
+            214.74708557128906,
+            214.7472381591797,
+            49.09382247924805
           ]
         ],
         "size_xyz_mm": [
-          200.94735717773438,
-          200.94692993164062,
-          43.1452751159668
+          209.74708557128906,
+          209.7472381591797,
+          49.09382247924805
         ],
-        "signed_volume_mm3": 252529.09786339794
+        "signed_volume_mm3": 391452.21751898323
       },
       "rotation": [
         [
-          -0.5530976041285566,
-          -0.40291474687111406,
-          0.7292069302063967
+          -0.5496064116739138,
+          -0.40189203025014514,
+          0.732403978872549
         ],
         [
-          -0.7195237036073128,
-          -0.21019532967051968,
-          -0.6618939215100238
+          -0.7221939573220328,
+          -0.21214421010937068,
+          -0.6583545565457972
         ],
         [
           0.41996271293350146,
@@ -150,19 +157,19 @@
         ]
       ],
       "translation": [
-        -213.41350288272426,
-        369.83877998199654,
-        -31.55979894222617
+        -210.6960700979103,
+        375.58433719925404,
+        -25.611251490731743
       ],
       "inverse_translation": [
-        161.3232103605518,
-        -36.3616993481692,
-        394.93634413661965
+        166.20059840746407,
+        -27.81285586413531,
+        397.13495268574604
       ],
       "inverse_rotation": [
-        -104.70028815882876,
-        -46.81994935877206,
-        -143.9278028424306
+        -104.77586899065307,
+        -47.08830849558207,
+        -143.8243821477977
       ]
     },
     {
@@ -176,17 +183,17 @@
           0.9578262852211514
         ],
         "bed_plane_offset_mm": 291.50621384913114,
-        "in_plane_yaw_degrees": 29.58216525184869,
+        "in_plane_yaw_degrees": 30.453305630269252,
         "rotation_matrix": [
           [
-            -0.8696486391714195,
-            0.47285124257320704,
-            0.1418553727719621
+            -0.8620425030490177,
+            0.4854608355758137,
+            0.1456382506727441
           ],
           [
-            -0.49367119055834946,
-            -0.8329723255051903,
-            -0.2498916976515571
+            -0.5068359921483322,
+            -0.8256869683981838,
+            -0.24770609051945514
           ],
           [
             0.0,
@@ -195,17 +202,17 @@
           ]
         ],
         "size_xyz_mm": [
-          205.6317259951091,
-          205.631910618414,
-          69.20030632221051
+          205.1685890925138,
+          205.1687611925663,
+          69.0086020056687
         ],
-        "envelope_ratio": 0.9794327726526031,
+        "envelope_ratio": 0.9772267739584012,
         "fits": true,
         "contact_convex_hull_area_mm2": 20352.281474252115,
-        "actual_contact_area_mm2": 18293.28244078249
+        "actual_contact_area_mm2": 18293.28249502144
       },
       "mesh": {
-        "triangles": 28952,
+        "triangles": 30178,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "inconsistent_edge_winding": 0,
@@ -217,28 +224,28 @@
             0.0
           ],
           [
-            210.63172912597656,
-            210.6319122314453,
-            69.20030975341797
+            210.16859436035156,
+            210.16876220703125,
+            69.00859832763672
           ]
         ],
         "size_xyz_mm": [
-          205.63172912597656,
-          205.6319122314453,
-          69.20030975341797
+          205.16859436035156,
+          205.16876220703125,
+          69.00859832763672
         ],
-        "signed_volume_mm3": 1336331.8948942453
+        "signed_volume_mm3": 1308415.529611884
       },
       "rotation": [
         [
-          -0.8696486391714195,
-          0.47285124257320704,
-          0.1418553727719621
+          -0.8620425030490177,
+          0.4854608355758137,
+          0.1456382506727441
         ],
         [
-          -0.49367119055834946,
-          -0.8329723255051903,
-          -0.2498916976515571
+          -0.5068359921483322,
+          -0.8256869683981838,
+          -0.24770609051945514
         ],
         [
           0.0,
@@ -247,19 +254,19 @@
         ]
       ],
       "translation": [
-        46.5153722130571,
-        190.28245213188174,
+        44.45701031755564,
+        189.3183325535434,
         -291.5061985874188
       ],
       "inverse_translation": [
-        134.38899483194535,
-        52.7414753118463,
-        320.16384884355386
+        134.27717736386475,
+        50.971852898793315,
+        319.63296211963797
       ],
       "inverse_rotation": [
-        -14.622216530719609,
-        -8.155222923864015,
-        151.46589082358113
+        -14.49974042506007,
+        -8.374240610992974,
+        150.61388272323094
       ]
     },
     {
@@ -273,17 +280,17 @@
           -0.9889363528682975
         ],
         "bed_plane_offset_mm": -454.9107223194169,
-        "in_plane_yaw_degrees": 64.93053671261117,
+        "in_plane_yaw_degrees": 63.91519230577186,
         "rotation_matrix": [
           [
-            0.42371672497914875,
-            0.8957733607950005,
-            0.13436600411925007
+            0.4397010372117992,
+            0.8882074461291596,
+            0.13323111691937392
           ],
           [
-            0.905794754330662,
-            -0.4190288726501788,
-            -0.06285433089752682
+            0.8981441965936583,
+            -0.43483634009264427,
+            -0.06522545101389664
           ],
           [
             -0.0,
@@ -292,17 +299,17 @@
           ]
         ],
         "size_xyz_mm": [
-          201.10485992551668,
-          201.1047328076936,
-          98.8936352868298
+          197.67847638861429,
+          197.67869525196016,
+          98.89363528682992
         ],
-        "envelope_ratio": 0.9578702544678099,
+        "envelope_ratio": 0.9415512991281743,
         "fits": true,
-        "contact_convex_hull_area_mm2": 20731.363654102875,
-        "actual_contact_area_mm2": 19969.394876365062
+        "contact_convex_hull_area_mm2": 20306.660989488366,
+        "actual_contact_area_mm2": 19544.71289600816
       },
       "mesh": {
-        "triangles": 52000,
+        "triangles": 50712,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "inconsistent_edge_winding": 0,
@@ -314,28 +321,28 @@
             0.0
           ],
           [
-            206.1048583984375,
-            206.104736328125,
+            202.67848205566406,
+            202.67869567871094,
             98.89363861083984
           ]
         ],
         "size_xyz_mm": [
-          201.1048583984375,
-          201.104736328125,
+          197.67848205566406,
+          197.67869567871094,
           98.89363861083984
         ],
-        "signed_volume_mm3": 1770692.784025669
+        "signed_volume_mm3": 1735055.8298986203
       },
       "rotation": [
         [
-          0.42371672497914875,
-          0.8957733607950005,
-          0.13436600411925007
+          0.4397010372117992,
+          0.8882074461291596,
+          0.13323111691937392
         ],
         [
-          0.905794754330662,
-          -0.4190288726501788,
-          -0.06285433089752682
+          0.8981441965936583,
+          -0.43483634009264427,
+          -0.06522545101389664
         ],
         [
           -0.0,
@@ -344,19 +351,19 @@
         ]
       ],
       "translation": [
-        80.82070063247008,
-        159.52403073403272,
-        454.9107223194169
+        79.69974205070082,
+        160.35278957687584,
+        454.910722319417
       ],
       "inverse_translation": [
-        -178.74111281108057,
-        -73.03351845994717,
-        449.04497223100793
+        -179.06398661128108,
+        -68.54434679243822,
+        449.7183479811344
       ],
       "inverse_rotation": [
-        -176.36331459448888,
-        -7.721960587197942,
-        64.68501837660465
+        -176.22651327479514,
+        -7.656346369686009,
+        63.66260296958438
       ]
     },
     {
@@ -370,17 +377,17 @@
           0.9889363528682975
         ],
         "bed_plane_offset_mm": 356.01708703258714,
-        "in_plane_yaw_degrees": 19.57251731517445,
+        "in_plane_yaw_degrees": 18.341218717204075,
         "rotation_matrix": [
           [
-            -0.9422182482278053,
-            0.3312933427199943,
-            0.04969400140799914
+            -0.9491993450747008,
+            0.31119393604087986,
+            0.046679090406131975
           ],
           [
-            -0.3349996607558369,
-            -0.931793878008362,
-            -0.1397690817012543
+            -0.31467539355621543,
+            -0.9386977384631512,
+            -0.14080466076947268
           ],
           [
             0.0,
@@ -389,17 +396,17 @@
           ]
         ],
         "size_xyz_mm": [
-          201.30407347522333,
-          201.30426960473085,
-          104.89363528682986
+          197.50558760975366,
+          197.50574077515344,
+          104.8936352868298
         ],
-        "envelope_ratio": 0.9588200505107447,
+        "envelope_ratio": 0.9407275102412643,
         "fits": true,
-        "contact_convex_hull_area_mm2": 16552.97403727565,
-        "actual_contact_area_mm2": 15437.58309501009
+        "contact_convex_hull_area_mm2": 16272.891131791152,
+        "actual_contact_area_mm2": 15157.50111093055
       },
       "mesh": {
-        "triangles": 48868,
+        "triangles": 48050,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "inconsistent_edge_winding": 0,
@@ -411,28 +418,28 @@
             0.0
           ],
           [
-            206.3040771484375,
-            206.3042755126953,
+            202.50558471679688,
+            202.5057373046875,
             104.89363861083984
           ]
         ],
         "size_xyz_mm": [
-          201.3040771484375,
-          201.3042755126953,
+          197.50558471679688,
+          197.5057373046875,
           104.89363861083984
         ],
-        "signed_volume_mm3": 1856392.2184906288
+        "signed_volume_mm3": 1825687.0315668161
       },
       "rotation": [
         [
-          -0.9422182482278053,
-          0.3312933427199943,
-          0.04969400140799914
+          -0.9491993450747008,
+          0.31119393604087986,
+          0.046679090406131975
         ],
         [
-          -0.3349996607558369,
-          -0.931793878008362,
-          -0.1397690817012543
+          -0.31467539355621543,
+          -0.9386977384631512,
+          -0.14080466076947268
         ],
         [
           0.0,
@@ -441,19 +448,19 @@
         ]
       ],
       "translation": [
-        88.86088328062789,
-        177.8652189347309,
-        -356.017087032587
+        88.01426836940112,
+        178.3946611621343,
+        -356.0170870325871
       ],
       "inverse_translation": [
-        143.3111337840462,
-        83.4829671135885,
-        372.5224450670382
+        139.67949610298683,
+        87.25742244384307,
+        373.08861336657645
       ],
       "inverse_rotation": [
-        -8.044488978235195,
-        -2.848429732378322,
-        160.6278166644706
+        -8.103303542985655,
+        -2.6754870921493237,
+        161.84832771786452
       ]
     },
     {
@@ -467,17 +474,17 @@
           -0.0
         ],
         "bed_plane_offset_mm": 15.536695771507482,
-        "in_plane_yaw_degrees": 44.723308124297574,
+        "in_plane_yaw_degrees": 43.14756205304915,
         "rotation_matrix": [
           [
-            -0.302992213674966,
-            0.6426700768016332,
-            0.7036838003223653
+            -0.31112937838319554,
+            0.659929636724171,
+            0.6838796564308591
           ],
           [
-            -0.30007984495129525,
-            0.6364927159757079,
-            -0.7105132716310607
+            -0.29163453979344756,
+            0.6185795661670809,
+            -0.7295948296965995
           ],
           [
             -0.9045152321030036,
@@ -486,17 +493,17 @@
           ]
         ],
         "size_xyz_mm": [
-          201.22780649887855,
-          201.22770155600034,
-          116.53324980827955
+          197.80750824030727,
+          197.80714343038858,
+          116.53324980827944
         ],
-        "envelope_ratio": 0.9584558537693668,
+        "envelope_ratio": 0.9421648403920327,
         "fits": true,
-        "contact_convex_hull_area_mm2": 20566.086818448235,
-        "actual_contact_area_mm2": 19858.699416432537
+        "contact_convex_hull_area_mm2": 20141.036691782247,
+        "actual_contact_area_mm2": 19439.1461084689
       },
       "mesh": {
-        "triangles": 85770,
+        "triangles": 84696,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "inconsistent_edge_winding": 0,
@@ -508,28 +515,28 @@
             0.0
           ],
           [
-            206.22781372070312,
-            206.2277069091797,
+            202.80751037597656,
+            202.80714416503906,
             116.53324890136719
           ]
         ],
         "size_xyz_mm": [
-          201.22781372070312,
-          201.2277069091797,
+          197.80751037597656,
+          197.80714416503906,
           116.53324890136719
         ],
-        "signed_volume_mm3": 1686710.1385345235
+        "signed_volume_mm3": 1662604.738695611
       },
       "rotation": [
         [
-          -0.302992213674966,
-          0.6426700768016332,
-          0.7036838003223653
+          -0.31112937838319554,
+          0.659929636724171,
+          0.6838796564308591
         ],
         [
-          -0.30007984495129525,
-          0.6364927159757079,
-          -0.7105132716310607
+          -0.29163453979344756,
+          0.6185795661670809,
+          -0.7295948296965995
         ],
         [
           -0.9045152321030036,
@@ -538,18 +545,18 @@
         ]
       ],
       "translation": [
-        -226.56274907616623,
-        461.102855195633,
-        -15.536695771507404
+        -220.47590666439206,
+        469.05345698916983,
+        -15.536695771507508
       ],
       "inverse_translation": [
-        55.66774643295288,
-        -154.50899826954148,
-        487.0482344848716
+        54.14247929671958,
+        -151.27378791315414,
+        492.99796437154123
       ],
       "inverse_rotation": [
         -90.0,
-        -44.723308124297574,
+        -43.14756205304913,
         115.24192808725385
       ]
     },
@@ -564,17 +571,17 @@
           0.9889363528682975
         ],
         "bed_plane_offset_mm": 454.9107223194169,
-        "in_plane_yaw_degrees": 19.22083891831884,
+        "in_plane_yaw_degrees": 17.34562302719293,
         "rotation_matrix": [
           [
-            -0.9442566964335672,
-            0.3255678375715171,
-            0.04883517563572756
+            -0.9545237055477929,
+            0.29483656829209554,
+            0.044225485243814325
           ],
           [
-            -0.3292101019719263,
-            -0.9338097735424792,
-            -0.14007146603137186
+            -0.29813502905111694,
+            -0.943963192090767,
+            -0.14159447881361503
           ],
           [
             0.0,
@@ -583,17 +590,17 @@
           ]
         ],
         "size_xyz_mm": [
-          199.51216438140762,
-          199.51194443787858,
-          108.62845449817104
+          197.13048918444198,
+          197.130299960239,
+          108.62845449817121
         ],
-        "envelope_ratio": 0.9502841837647422,
+        "envelope_ratio": 0.9389401723479018,
         "fits": true,
-        "contact_convex_hull_area_mm2": 21020.69916749321,
-        "actual_contact_area_mm2": 20232.966580876495
+        "contact_convex_hull_area_mm2": 20659.939331607733,
+        "actual_contact_area_mm2": 19890.870821490447
       },
       "mesh": {
-        "triangles": 81538,
+        "triangles": 80270,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "inconsistent_edge_winding": 0,
@@ -605,28 +612,28 @@
             0.0
           ],
           [
-            204.5121612548828,
-            204.51194763183594,
+            202.1304931640625,
+            202.1302947998047,
             108.62845611572266
           ]
         ],
         "size_xyz_mm": [
-          199.5121612548828,
-          199.51194763183594,
+          197.1304931640625,
+          197.1302947998047,
           108.62845611572266
         ],
-        "signed_volume_mm3": 1523568.7477769072
+        "signed_volume_mm3": 1503009.581150551
       },
       "rotation": [
         [
-          -0.9442566964335672,
-          0.3255678375715171,
-          0.04883517563572756
+          -0.9545237055477929,
+          0.29483656829209554,
+          0.044225485243814325
         ],
         [
-          -0.3292101019719263,
-          -0.9338097735424792,
-          -0.14007146603137186
+          -0.29813502905111694,
+          -0.943963192090767,
+          -0.14159447881361503
         ],
         [
           0.0,
@@ -635,19 +642,19 @@
         ]
       ],
       "translation": [
-        88.93382877135659,
-        178.18612314276655,
-        -454.91072231941683
+        91.12583950899649,
+        178.7748099230093,
+        -454.91072231941666
       ],
       "inverse_translation": [
-        142.6370351266421,
-        69.956286388626,
-        470.4934429582938
+        140.2808071492851,
+        74.40794784508816,
+        471.16119217676305
       ],
       "inverse_rotation": [
-        -8.061664330642179,
-        -2.799162817050286,
-        160.9764503764982
+        -8.148148836317624,
+        -2.534760396669213,
+        162.83494735796845
       ]
     },
     {
@@ -1763,7 +1770,7 @@
       "minimum_stock_margin_mm": 3,
       "construction_stock_guard_mm": 3.1,
       "loading_pocket_tangential_allowance_mm": 0,
-      "contact_area_mm2": 20191.682417403732,
+      "contact_area_mm2": 20191.679314816465,
       "gravity_drop_mm": 9.769828109255764,
       "stop": "closed channel end at lowest installed position",
       "initial_male_guard_error_mm3": 0.0,
@@ -1781,9 +1788,9 @@
       "female": "h_face",
       "group": "face",
       "center_mm": [
-        11.402578092059688,
-        -106.26812988836993,
-        390.96122768698
+        -0.7207041718598344,
+        -107.09742690973059,
+        400.1518616915107
       ],
       "normal_into_female": [
         0.4199627129335014,
@@ -1814,17 +1821,17 @@
       "minimum_stock_margin_mm": 3,
       "construction_stock_guard_mm": 3.1,
       "loading_pocket_tangential_allowance_mm": 0,
-      "contact_area_mm2": 5522.840960981465,
+      "contact_area_mm2": 6358.763598533107,
       "gravity_drop_mm": 17.726539554219748,
       "stop": "closed channel end at lowest installed position",
       "initial_male_guard_error_mm3": 0.0,
-      "initial_female_guard_error_mm3": 0.04789102498421138,
+      "initial_female_guard_error_mm3": 0.014165173761607423,
       "seam_plane_normal": [
         0.4199627129335014,
         -0.8907736132926747,
         -0.17364817766693033
       ],
-      "seam_plane_offset_mm": 31.55979894222617
+      "seam_plane_offset_mm": 25.61125149073174
     },
     {
       "id": "face__h_left_upper",
@@ -1832,9 +1839,9 @@
       "female": "h_face",
       "group": "face",
       "center_mm": [
-        6.982885832764854,
-        -125.76274327411284,
-        480.27504290918773
+        1.7312480258871528,
+        -122.33530703489095,
+        484.2485117753881
       ],
       "normal_into_female": [
         0.4199627129335014,
@@ -1865,17 +1872,17 @@
       "minimum_stock_margin_mm": 3,
       "construction_stock_guard_mm": 3.1,
       "loading_pocket_tangential_allowance_mm": 0,
-      "contact_area_mm2": 3733.6951029884713,
+      "contact_area_mm2": 4385.038106565313,
       "gravity_drop_mm": 17.726539554219748,
       "stop": "closed channel end at lowest installed position",
       "initial_male_guard_error_mm3": 0.0,
-      "initial_female_guard_error_mm3": 0.03440060631579446,
+      "initial_female_guard_error_mm3": 0.00026234850483009,
       "seam_plane_normal": [
         0.4199627129335014,
         -0.8907736132926747,
         -0.17364817766693033
       ],
-      "seam_plane_offset_mm": 31.55979894222617
+      "seam_plane_offset_mm": 25.61125149073174
     },
     {
       "id": "face__h_neck",
@@ -1883,9 +1890,9 @@
       "female": "h_face",
       "group": "face",
       "center_mm": [
-        22.048949612347577,
-        -88.00833971036724,
-        323.04079012909375
+        18.331247908631617,
+        -83.66511882764604,
+        326.0262795598495
       ],
       "normal_into_female": [
         0.4199627129335014,
@@ -1916,7 +1923,7 @@
       "minimum_stock_margin_mm": 3,
       "construction_stock_guard_mm": 3.1,
       "loading_pocket_tangential_allowance_mm": 0,
-      "contact_area_mm2": 4588.287323855744,
+      "contact_area_mm2": 5184.902541481992,
       "gravity_drop_mm": 17.726539554219748,
       "stop": "closed channel end at lowest installed position",
       "initial_male_guard_error_mm3": 0.0,
@@ -1926,7 +1933,7 @@
         -0.8907736132926747,
         -0.17364817766693033
       ],
-      "seam_plane_offset_mm": 31.55979894222617
+      "seam_plane_offset_mm": 25.61125149073174
     },
     {
       "id": "face__h_right_lower",
@@ -1934,9 +1941,9 @@
       "female": "h_face",
       "group": "face",
       "center_mm": [
-        36.470308782478256,
-        -91.62960197103651,
-        376.494607581167
+        52.60846456843744,
+        -80.65478610786825,
+        393.48237442725093
       ],
       "normal_into_female": [
         0.4199627129335014,
@@ -1967,17 +1974,17 @@
       "minimum_stock_margin_mm": 3,
       "construction_stock_guard_mm": 3.1,
       "loading_pocket_tangential_allowance_mm": 0,
-      "contact_area_mm2": 4775.648882470475,
+      "contact_area_mm2": 5487.859612545606,
       "gravity_drop_mm": 17.726539554219748,
       "stop": "closed channel end at lowest installed position",
       "initial_male_guard_error_mm3": 0.0,
-      "initial_female_guard_error_mm3": 0.003746573875320569,
+      "initial_female_guard_error_mm3": 0.04739021881836192,
       "seam_plane_normal": [
         0.4199627129335014,
         -0.8907736132926747,
         -0.17364817766693033
       ],
-      "seam_plane_offset_mm": 31.55979894222617
+      "seam_plane_offset_mm": 25.61125149073174
     },
     {
       "id": "face__h_right_upper",
@@ -1985,9 +1992,9 @@
       "female": "h_face",
       "group": "face",
       "center_mm": [
-        56.57914034647074,
-        -103.46282956350431,
-        485.8288177760482
+        59.56359701568792,
+        -95.79731585327633,
+        487.98070114475104
       ],
       "normal_into_female": [
         0.4199627129335014,
@@ -2018,17 +2025,17 @@
       "minimum_stock_margin_mm": 3,
       "construction_stock_guard_mm": 3.1,
       "loading_pocket_tangential_allowance_mm": 0,
-      "contact_area_mm2": 3080.927588628646,
+      "contact_area_mm2": 3831.883779682966,
       "gravity_drop_mm": 17.726539554219748,
       "stop": "closed channel end at lowest installed position",
       "initial_male_guard_error_mm3": 0.0,
-      "initial_female_guard_error_mm3": 0.00138970876478689,
+      "initial_female_guard_error_mm3": 3.0998274641613234e-06,
       "seam_plane_normal": [
         0.4199627129335014,
         -0.8907736132926747,
         -0.17364817766693033
       ],
-      "seam_plane_offset_mm": 31.55979894222617
+      "seam_plane_offset_mm": 25.61125149073174
     },
     {
       "id": "bust_height__b_lower_lb__b_upper_lb",
@@ -3147,9 +3154,9 @@
       "female": "h_left_lower",
       "group": "head_lower",
       "center_mm": [
-        -38.311829425394535,
-        1.3041559219864922,
-        360.19562338829803
+        -39.56965637952089,
+        1.9713097279812644,
+        360.29569645919725
       ],
       "normal_into_female": [
         0.0,
@@ -3183,7 +3190,7 @@
       "minimum_stock_margin_mm": 3,
       "construction_stock_guard_mm": 3.1,
       "loading_pocket_tangential_allowance_mm": 0,
-      "contact_area_mm2": 14082.993318390942,
+      "contact_area_mm2": 13768.321051960062,
       "gravity_drop_mm": 2.966809058604899,
       "stop": "closed channel end at lowest installed position",
       "initial_male_guard_error_mm3": 0.0,
@@ -3202,8 +3209,8 @@
       "group": "head_lower",
       "center_mm": [
         8.23127484321595,
-        17.98718595632856,
-        362.69807789344935
+        20.655137623138828,
+        363.09827064347087
       ],
       "normal_into_female": [
         0.0,
@@ -3237,7 +3244,7 @@
       "minimum_stock_margin_mm": 3,
       "construction_stock_guard_mm": 3.1,
       "loading_pocket_tangential_allowance_mm": 0,
-      "contact_area_mm2": 15958.991831016683,
+      "contact_area_mm2": 15678.90830409321,
       "gravity_drop_mm": 2.966809058604899,
       "stop": "closed channel end at lowest installed position",
       "initial_male_guard_error_mm3": 0.0,
@@ -3255,9 +3262,9 @@
       "female": "h_left_lower",
       "group": "head_upper",
       "center_mm": [
-        -48.215904235839844,
-        -28.104306071222027,
-        455.7843540893167
+        -49.47373294830322,
+        -26.271169620055083,
+        456.0593245569917
       ],
       "normal_into_female": [
         -0.0,
@@ -3289,7 +3296,7 @@
       "minimum_stock_margin_mm": 3,
       "construction_stock_guard_mm": 3.1,
       "loading_pocket_tangential_allowance_mm": 0,
-      "contact_area_mm2": 20490.806696467676,
+      "contact_area_mm2": 20066.12437267319,
       "gravity_drop_mm": 2.966809058604899,
       "stop": "closed channel end at lowest installed position",
       "initial_male_guard_error_mm3": 0.0,
@@ -3308,8 +3315,8 @@
       "group": "head_upper",
       "center_mm": [
         18.59811019897461,
-        9.565431748579542,
-        461.434814762287
+        12.233385128484684,
+        461.83500776927275
       ],
       "normal_into_female": [
         0.0,
@@ -3341,7 +3348,7 @@
       "minimum_stock_margin_mm": 3,
       "construction_stock_guard_mm": 3.1,
       "loading_pocket_tangential_allowance_mm": 0,
-      "contact_area_mm2": 20754.378057135902,
+      "contact_area_mm2": 20412.281786069798,
       "gravity_drop_mm": 2.966809058604899,
       "stop": "closed channel end at lowest installed position",
       "initial_male_guard_error_mm3": 0.0,
@@ -3359,9 +3366,9 @@
       "female": "h_right_lower",
       "group": "head_midline_lower",
       "center_mm": [
-        -16.036832289094104,
-        -2.418003734079983,
-        420.5955505371094
+        -17.29466133192751,
+        0.24994960292638435,
+        420.99574279785156
       ],
       "normal_into_female": [
         0.9045152321030036,
@@ -3392,7 +3399,7 @@
       "minimum_stock_margin_mm": 3,
       "construction_stock_guard_mm": 3.1,
       "loading_pocket_tangential_allowance_mm": 0,
-      "contact_area_mm2": 21727.049360283796,
+      "contact_area_mm2": 21137.129795204935,
       "gravity_drop_mm": 20.0,
       "stop": "closed channel end at lowest installed position",
       "initial_male_guard_error_mm3": 0.0,
@@ -3410,9 +3417,9 @@
       "female": "h_left_upper",
       "group": "head_midline_upper",
       "center_mm": [
-        -12.880670475267763,
-        -9.112468686456895,
-        495.57916259765625
+        -13.898466879853405,
+        -6.953643264609017,
+        495.97935485839844
       ],
       "normal_into_female": [
         -0.9045152321030036,
@@ -3443,7 +3450,7 @@
       "minimum_stock_margin_mm": 3,
       "construction_stock_guard_mm": 3.1,
       "loading_pocket_tangential_allowance_mm": 0,
-      "contact_area_mm2": 20380.106675179843,
+      "contact_area_mm2": 19960.553357283447,
       "gravity_drop_mm": 20.0,
       "stop": "closed channel end at lowest installed position",
       "initial_male_guard_error_mm3": 0.0,
@@ -3467,8 +3474,8 @@
         -0.8907736132926747,
         -0.17364817766693033
       ],
-      "plane_offset_mm": 31.55979894222617,
-      "contact_area_mm2": 5522.840960455422
+      "plane_offset_mm": 25.61125149073174,
+      "contact_area_mm2": 6358.763598706786
     },
     {
       "parts": [
@@ -3480,8 +3487,8 @@
         -0.8907736132926747,
         -0.17364817766693033
       ],
-      "plane_offset_mm": 31.55979894222617,
-      "contact_area_mm2": 3733.6951032351576
+      "plane_offset_mm": 25.61125149073174,
+      "contact_area_mm2": 4385.038105979124
     },
     {
       "parts": [
@@ -3493,8 +3500,8 @@
         -0.8907736132926747,
         -0.17364817766693033
       ],
-      "plane_offset_mm": 31.55979894222617,
-      "contact_area_mm2": 4588.287324114231
+      "plane_offset_mm": 25.61125149073174,
+      "contact_area_mm2": 5184.902541468684
     },
     {
       "parts": [
@@ -3506,8 +3513,8 @@
         -0.8907736132926747,
         -0.17364817766693033
       ],
-      "plane_offset_mm": 31.55979894222617,
-      "contact_area_mm2": 4775.6488822432375
+      "plane_offset_mm": 25.61125149073174,
+      "contact_area_mm2": 5487.859612494353
     },
     {
       "parts": [
@@ -3519,8 +3526,8 @@
         -0.8907736132926747,
         -0.17364817766693033
       ],
-      "plane_offset_mm": 31.55979894222617,
-      "contact_area_mm2": 3080.9275888726634
+      "plane_offset_mm": 25.61125149073174,
+      "contact_area_mm2": 3831.8837800451693
     },
     {
       "parts": [
@@ -3533,7 +3540,7 @@
         0.9889363528682975
       ],
       "plane_offset_mm": 356.01708703258714,
-      "contact_area_mm2": 14082.99331839095
+      "contact_area_mm2": 13768.321051960069
     },
     {
       "parts": [
@@ -3546,7 +3553,7 @@
         0.9889363528682975
       ],
       "plane_offset_mm": 356.01708703258714,
-      "contact_area_mm2": 15958.991831016685
+      "contact_area_mm2": 15678.908304093211
     },
     {
       "parts": [
@@ -3559,7 +3566,7 @@
         0.9889363528682975
       ],
       "plane_offset_mm": 454.9107223194169,
-      "contact_area_mm2": 20490.806696467655
+      "contact_area_mm2": 20066.12437267317
     },
     {
       "parts": [
@@ -3572,7 +3579,7 @@
         0.9889363528682975
       ],
       "plane_offset_mm": 454.9107223194169,
-      "contact_area_mm2": 20754.378057135913
+      "contact_area_mm2": 20412.281786069812
     },
     {
       "parts": [
@@ -3585,7 +3592,7 @@
         0.0
       ],
       "plane_offset_mm": -15.536695771507482,
-      "contact_area_mm2": 21727.04936027828
+      "contact_area_mm2": 21137.12979520498
     },
     {
       "parts": [
@@ -3598,7 +3605,7 @@
         0.0
       ],
       "plane_offset_mm": -15.536695771507482,
-      "contact_area_mm2": 20380.106675179923
+      "contact_area_mm2": 19960.553357283483
     },
     {
       "parts": [
@@ -3611,7 +3618,7 @@
         0.9578262852211513
       ],
       "plane_offset_mm": 291.5062138491311,
-      "contact_area_mm2": 20191.682417403717
+      "contact_area_mm2": 20191.679314816454
     },
     {
       "parts": [
@@ -3885,9 +3892,542 @@
       ],
       "plane_offset_mm": 109.8,
       "contact_area_mm2": 11693.092102468927
+    },
+    {
+      "parts": [
+        "h_face",
+        "h_neck"
+      ],
+      "plane_normal": [
+        0.0,
+        -0.2873478855663454,
+        0.9578262852211513
+      ],
+      "plane_offset_mm": 297.5062138491311,
+      "contact_area_mm2": 657.6060748118182
     }
   ],
   "local_skin_contact_repairs": [
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        42.50354022100654,
+        -65.31417989932878,
+        290.3502891613412
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        41.97288784992591,
+        -65.44653575999517,
+        289.74587682285613
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        41.33916099040009,
+        -65.61288188879844,
+        289.0665439870102
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        41.03325164984341,
+        -65.69851669644652,
+        288.76599784687346
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        29.90551231038374,
+        -69.89353575533028,
+        283.3733508897661
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        29.294149346986124,
+        -70.25975485424495,
+        283.7734049659726
+      ],
+      "maximum_displacement_mm": 0.003999999999999999,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        27.470298338392926,
+        -70.97820457484555,
+        283.04795327589835
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        26.74152082268489,
+        -71.3028120328978,
+        282.9505861480775
+      ],
+      "maximum_displacement_mm": 0.003999999999999999,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        25.185143320817676,
+        -71.99603551851094,
+        282.7426062578242
+      ],
+      "maximum_displacement_mm": 0.003999999999999999,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        24.22367060210977,
+        -72.42428603649425,
+        282.6141371292598
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        22.76706079076157,
+        -73.07307368140927,
+        282.4194970599377
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        21.389941284260612,
+        -74.12483369726782,
+        284.4842536872545
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        21.11667454456825,
+        -74.00693100992285,
+        283.2185539999221
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        19.689775906800474,
+        -74.87263461357757,
+        284.2084964593221
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        19.788060549864127,
+        -75.08613741761884,
+        285.5414131225112
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        18.9552635567253,
+        -74.77088621583535,
+        281.9101562608442
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        18.435603149537243,
+        -75.0023462861973,
+        281.8407085340697
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        18.094173090728678,
+        -75.15442533820757,
+        281.79509972195666
+      ],
+      "maximum_displacement_mm": 0.003999999999999999,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        18.029023423550406,
+        -75.47879193149835,
+        283.3014603119531
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        18.156128439327453,
+        -75.803103046433,
+        285.27249827810436
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        18.052472881206704,
+        -75.63848483422169,
+        284.17735848649045
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        17.215857442933274,
+        -75.74467623747617,
+        282.6987665852601
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        16.626706805794672,
+        -75.80804583551677,
+        281.5989949858945
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        16.600247571843134,
+        -75.8198330846366,
+        281.5954699204926
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        16.29284870190868,
+        -76.30641384396665,
+        283.3480782223229
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        16.09967490513915,
+        -76.12645905731753,
+        281.95776839854335
+      ],
+      "maximum_displacement_mm": 0.004000000000000001,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        16.192139782256536,
+        -76.59431409649015,
+        284.5813762619101
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        15.842820978729096,
+        -76.28379502522202,
+        282.143671051264
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        15.88456725358705,
+        -76.96618656022473,
+        285.7451384583014
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        15.531843089560827,
+        -76.7175074387412,
+        283.61642163902684
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        15.126263277489855,
+        -76.47636262490666,
+        281.39852427604234
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        14.91825821897432,
+        -76.56900930916612,
+        281.37072584449226
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        14.562772392256978,
+        -77.77570026619578,
+        286.7010303956785
+      ],
+      "maximum_displacement_mm": 0.004000000000000001,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        14.402383086998043,
+        -77.68121651024187,
+        285.828454786269
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        14.12764614182449,
+        -77.33855021902205,
+        283.4062159302507
+      ],
+      "maximum_displacement_mm": 0.003999999999999999,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        13.843909702185142,
+        -78.02037214607624,
+        286.2175915703197
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        13.792068907908615,
+        -77.9251836637974,
+        285.6039220787067
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        12.684525588900932,
+        -77.81899215679212,
+        282.38062600466725
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        11.2340760968806,
+        -78.70487728103798,
+        283.4171378291108
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        10.670725400506953,
+        -78.46090044742016,
+        280.8031489089728
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        10.346915266030628,
+        -78.60513014232461,
+        280.75988801112294
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        7.490729539029296,
+        -80.38643058674616,
+        282.98993690588605
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        6.838644159917472,
+        -80.55091692242556,
+        282.2566642679787
+      ],
+      "maximum_displacement_mm": 0.003999999999999999,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        6.3540077004807785,
+        -81.07473090394788,
+        283.7716264994103
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        4.957409555292889,
+        -81.57502030042617,
+        282.96036228442824
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        5.026425586985653,
+        -81.8785996771535,
+        284.68456499278267
+      ],
+      "maximum_displacement_mm": 0.004000000000000001,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        4.376143806575493,
+        -81.89248987596987,
+        283.18313214398336
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        4.3441670813963675,
+        -82.29171635168692,
+        285.15373375142417
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        2.2106639630141522,
+        -82.86789964114074,
+        282.94960531123775
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        1.3043908252027405,
+        -83.31172156444453,
+        283.0345122354789
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        -0.5008794041074776,
+        -84.32912299938604,
+        283.8875483645243
+      ],
+      "maximum_displacement_mm": 0.004,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
+    {
+      "part": "h_neck",
+      "assembly_vertex_mm": [
+        -0.5677581961220319,
+        -84.34374300927628,
+        283.80080124112675
+      ],
+      "maximum_displacement_mm": 0.003999999999999999,
+      "reason": "separate coincident topological skin fans for position-only STL encoding"
+    },
     {
       "part": "b_neck",
       "assembly_vertex_mm": [

@@ -19,12 +19,12 @@ overhangs and joint bridges still require slicer review.
 
 | Part | Print dimensions XYZ (mm) | Actual bed contact (mm2) |
 | --- | --- | --- |
-| h_face | 200.95 x 200.95 x 43.15 | 19877 |
-| h_neck | 205.63 x 205.63 x 69.20 | 18293 |
-| h_left_lower | 201.10 x 201.10 x 98.89 | 19969 |
-| h_right_lower | 201.30 x 201.30 x 104.89 | 15438 |
-| h_left_upper | 201.23 x 201.23 x 116.53 | 19859 |
-| h_right_upper | 199.51 x 199.51 x 108.63 | 20233 |
+| h_face | 209.75 x 209.75 x 49.09 | 23424 |
+| h_neck | 205.17 x 205.17 x 69.01 | 18293 |
+| h_left_lower | 197.68 x 197.68 x 98.89 | 19545 |
+| h_right_lower | 197.51 x 197.51 x 104.89 | 15158 |
+| h_left_upper | 197.81 x 197.81 x 116.53 | 19439 |
+| h_right_upper | 197.13 x 197.13 x 108.63 | 19891 |
 | b_neck | 162.65 x 162.65 x 28.00 | 17723 |
 | b_lower_lf | 185.94 x 199.03 x 171.12 | 25138 |
 | b_lower_lb | 142.20 x 169.94 x 173.53 | 20514 |
@@ -46,6 +46,21 @@ Head and bust each retain a continuous printed neck owner: `h_neck` and
 `b_neck`. **One** 32 mm-long, 32 mm-wide flared dovetail joins those owners,
 with 8 mm engagement, 6 mm root overlap and 34 mm downhill travel.
 The head owns the downward-facing recess; the bust owns the upward male.
+
+The face cut is approximately 5.95 mm deeper than the rejected shallow candidate:
+its normal-plane offset is 25.61125 mm and face print depth is 49.09 mm. The
+uncut rear cap has one contour with no eye openings. Independent point-in-mesh
+checks verify solid backing at the two former eye-opening locations, sampling
+0.5 through 4 mm behind the rear plane after joint cuts. These samples do not
+establish a global minimum wall thickness.
+
+A six-mm band above the oblique neck plane belongs entirely to `h_neck`, including
+the small region below the face. The remaining face still sits on its broad rear
+plane at Z=0. The collar/face pair also contacts along the band's top plane; its
+integral joint remains on their main face cut. Neck-cap ownership remains single.
+Coplanar band recombination emits zero-volume sheets; only numerical sheets with
+absolute total below 1e-6 mm3 are removed, requiring exactly one volumetric owner.
+Counts and volume are recorded in geometry provenance. The scan is unchanged.
 
 The face cut retains the entire facial region. Rear head height cuts use
 Z = 0.15Y + 360 and Z = 0.15Y + 460 mm, permitting downhill in-plane seating.
@@ -104,7 +119,7 @@ python scripts/scad_render_assembly_review.py --design cicero_joined --config de
 ```
 
 The normal pipeline installs 17 printable STL / 289 PNG; full assembly review adds
-3 nonprintable reference STL / 15 PNG. Total: **20 STL, 304 PNG and two manifests**.
+3 nonprintable reference STL / 25 PNG. Total: **20 STL, 314 PNG and two manifests**.
 Reference assembly meshes are inspection artifacts, never additional print parts.
 `verification.json` binds independent mesh/joint/assembly samples to installed
 build and geometry hashes; the standard SCAD digest alone does not cover imports.
@@ -132,3 +147,23 @@ exact license version remain unverified because the source listing returned 403.
 No version or creator is invented. Changes: uniform scaling, source-shell union,
 flat-bed partitioning, integral dovetails and small STL vertex-fan separation.
 See [original import documentation](../cicero/README.md) for source provenance.
+
+## Separate exploded views
+
+Each logical subassembly has front-left, front-right, back-left, back-right and
+underside views, generated from the same installed printable artifacts:
+
+| View | Head | Bust/base |
+| --- | --- | --- |
+| front left | [Head](../../output/cicero_joined/cicero_head_exploded_front_left.png) | [Bust](../../output/cicero_joined/cicero_bust_exploded_front_left.png) |
+| front right | [Head](../../output/cicero_joined/cicero_head_exploded_front_right.png) | [Bust](../../output/cicero_joined/cicero_bust_exploded_front_right.png) |
+| back left | [Head](../../output/cicero_joined/cicero_head_exploded_back_left.png) | [Bust](../../output/cicero_joined/cicero_bust_exploded_back_left.png) |
+| back right | [Head](../../output/cicero_joined/cicero_head_exploded_back_right.png) | [Bust](../../output/cicero_joined/cicero_bust_exploded_back_right.png) |
+| underside | [Head](../../output/cicero_joined/cicero_head_exploded_underside.png) | [Bust](../../output/cicero_joined/cicero_bust_exploded_underside.png) |
+
+## Git checkout
+
+The large `output/cicero_joined/cicero_assembled_reference.stl` is stored with
+Git LFS. Install Git LFS and run `git lfs pull` after cloning to obtain its actual
+mesh bytes before artifact audits. The other committed artifacts use normal Git.
+The two neck owners intentionally remain separate for removable subassemblies.

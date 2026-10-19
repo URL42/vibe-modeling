@@ -28,6 +28,8 @@ if(part_id==90) {
  if(assembly_view_id==5) import("../assets/exposed_reference.stl",convexity=10);
  if(assembly_view_id==6) import("../assets/head_neck_socket_reference.stl",convexity=10);
  if(assembly_view_id==7) import("../assets/bust_neck_rail_reference.stl",convexity=10);
+ if(assembly_view_id==8) import("../assets/head_exploded_reference.stl",convexity=10);
+ if(assembly_view_id==9) import("../assets/bust_exploded_reference.stl",convexity=10);
 }
 if(part_id==91) import("../assets/product_reference.stl",convexity=10);
 if(part_id==92) import("../assets/head_reference.stl",convexity=10);

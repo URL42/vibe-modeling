@@ -3,3 +3,4 @@ references/engineering/ten_inch_rack/v*/10-inch-rack-agent-readable-design-spec.
 references/engineering/ten_inch_rack/v*/10-inch-rack-parameters.json -text
 references/engineering/ten_inch_rack/v*/rack_constants_and_assertions.scad -text
 references/engineering/ten_inch_rack/v*/README.md -text
+output/cicero_joined/cicero_assembled_reference.stl filter=lfs diff=lfs merge=lfs -text

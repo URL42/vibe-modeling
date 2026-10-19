@@ -1,68 +1,68 @@
 {
   "config": "designs/cicero_joined/configs/rev_0001.json",
-  "verification_script_sha256": "253d2701dff614bf3dd65960113b6d1f37d08ecd28c24b5184ca0cfd2a04ac9f",
-  "geometry_manifest_sha256": "d3cc9b489fb358ffa6298ba8ecaeef0db208de30bcc9cfe2436f541bf7b5b079",
-  "build_manifest_sha256": "3b513366e7ebc7eccba5b9e33c9ec035c9f2ace34bdc569a17416f8aeceeeda8",
+  "verification_script_sha256": "d4e3ca7fd9b18dc9863252e79308499dcdf726033435aeb5a88bd3acf175171c",
+  "geometry_manifest_sha256": "dab354bdabf66ba3274a75d5040986ba25bdf70add7b98d622f5b9555f843385",
+  "build_manifest_sha256": "178bc0c37b7aad28416a40cd8e81d8da5b87bca79293909bfed1720ae8a6e6e2",
   "parts": {
     "h_face": {
       "size_xyz_mm": [
-        200.94700622558594,
-        200.94700622558594,
-        43.145301818847656
+        209.7469940185547,
+        209.7469940185547,
+        49.09379959106445
       ],
-      "bed_area_mm2": 19877.354248137563,
+      "bed_area_mm2": 23424.388570174997,
       "shells": 1,
-      "maximum_export_vertex_deviation_mm": 0.0007016492248413162
+      "maximum_export_vertex_deviation_mm": 0.0007046584053659493
     },
     "h_neck": {
       "size_xyz_mm": [
-        205.6320037841797,
-        205.6320037841797,
-        69.20030212402344
+        205.16900634765625,
+        205.16900634765625,
+        69.00859832763672
       ],
-      "bed_area_mm2": 18293.288259895002,
+      "bed_area_mm2": 18293.282704324996,
       "shells": 1,
-      "maximum_export_vertex_deviation_mm": 0.0006985247227082279
+      "maximum_export_vertex_deviation_mm": 0.0007059214108857483
     },
     "h_left_lower": {
       "size_xyz_mm": [
-        201.10499572753906,
-        201.10499572753906,
+        197.67799377441406,
+        197.6790008544922,
         98.89360046386719
       ],
-      "bed_area_mm2": 19969.436505554997,
+      "bed_area_mm2": 19544.69635925,
       "shells": 1,
-      "maximum_export_vertex_deviation_mm": 0.0005508235017033644
+      "maximum_export_vertex_deviation_mm": 0.0005421671992206708
     },
     "h_right_lower": {
       "size_xyz_mm": [
-        201.3040008544922,
-        201.3040008544922,
+        197.50599670410156,
+        197.50599670410156,
         104.89399719238281
       ],
-      "bed_area_mm2": 15437.603109649663,
+      "bed_area_mm2": 15157.513556742764,
       "shells": 1,
-      "maximum_export_vertex_deviation_mm": 0.0006952270149867639
+      "maximum_export_vertex_deviation_mm": 0.0007627784644620606
     },
     "h_left_upper": {
       "size_xyz_mm": [
-        201.22799682617188,
-        201.22799682617188,
+        197.80799865722656,
+        197.8070068359375,
         116.53299713134766
       ],
-      "bed_area_mm2": 19858.740874013994,
+      "bed_area_mm2": 19439.152369073003,
       "shells": 1,
-      "maximum_export_vertex_deviation_mm": 0.0008268795634863932
+      "maximum_export_vertex_deviation_mm": 0.0008455406808206955
     },
     "h_right_upper": {
       "size_xyz_mm": [
-        199.51199340820312,
-        199.51199340820312,
+        197.1300048828125,
+        197.1300048828125,
         108.62799835205078
       ],
-      "bed_area_mm2": 20232.920732282004,
+      "bed_area_mm2": 19890.839775203494,
       "shells": 1,
-      "maximum_export_vertex_deviation_mm": 0.0008111397493828598
+      "maximum_export_vertex_deviation_mm": 0.0008000715832677124
     },
     "b_neck": {
       "size_xyz_mm": [
@@ -557,7 +557,7 @@
         "h_right_lower"
       ],
       "sampled_states": 7,
-      "maximum_interference_mm3": 0.00724146923135112,
+      "maximum_interference_mm3": 0.005238873170088266,
       "witness": [
         2,
         "h_left_upper",
@@ -582,8 +582,17 @@
         "h_right_upper"
       ],
       "sampled_states": 7,
-      "maximum_interference_mm3": 0.0,
-      "witness": null
+      "maximum_interference_mm3": 0.00022226956972603716,
+      "witness": [
+        6,
+        "h_face",
+        "h_neck",
+        [
+          0.0,
+          -0.0,
+          0.0
+        ]
+      ]
     },
     {
       "stage": "bust_lower_rf",
@@ -808,11 +817,41 @@
       "witness": null
     }
   ],
+  "eye_backing_samples": [
+    {
+      "face_plane_coordinates_mm": [
+        -18.50448747,
+        -422.09609932
+      ],
+      "depth_samples_mm": [
+        0.5,
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "result": "passed"
+    },
+    {
+      "face_plane_coordinates_mm": [
+        42.6874949,
+        -431.18818001
+      ],
+      "depth_samples_mm": [
+        0.5,
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "result": "passed"
+    }
+  ],
   "actual_seams": 33,
   "covered_seams": 33,
   "connector_only_leaves": 0,
   "head_to_bust_connections": 1,
-  "ear_span_mm": 228.60018830356114,
+  "ear_span_mm": 228.60019033589603,
   "diagnostic_contact_exclusion_mm": 0.02,
   "full_subassembly_swept_paths": "unverified",
   "physical_fit": "unverified",

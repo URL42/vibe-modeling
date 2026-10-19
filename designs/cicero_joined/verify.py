@@ -126,6 +126,18 @@ def main():
         part_checks[name]=dict(size_xyz_mm=check['size_xyz_mm'],bed_area_mm2=contact,shells=check['connected_shells'],maximum_export_vertex_deviation_mm=deviation)
         print('PASS printable:',name,np.round(check['size_xyz_mm'],2).tolist(),'bed',round(contact),flush=True)
     actual={tuple(sorted(contact['parts'])) for contact in data['actual_seam_contacts']}
+    # The shallow face's two small cap contours locate the exposed eye regions
+    # in an orthonormal face-plane frame. Check backing in the actual exported
+    # face, after all connector cuts, rather than only trusting the new plane.
+    n=np.array(data['parameters']['face_normal'])
+    u=np.cross(n,[0,0,1]);u/=np.linalg.norm(u);w=np.cross(n,u)
+    eye_backing=[]
+    for center in [[-18.50448747,-422.09609932],[42.68749490,-431.18818001]]:
+        points=[u*center[0]+w*center[1]+n*(data['parameters']['face_offset_mm']+depth) for depth in [.5,1.,2.,3.,4.]]
+        assert all(inside(rays['h_face'],p) for p in points),('eye backing missing after joint cuts',center)
+        eye_backing.append(dict(face_plane_coordinates_mm=center,depth_samples_mm=[.5,1.,2.,3.,4.],result='passed'))
+    assert data['parameters']['face_uncut_rear_cap_contours']==1
+    print('PASS: uninterrupted rear face cap and solid eye-region backing probes through 4 mm',flush=True)
     declared={tuple(sorted([j['male'],j['female']])) for j in data['joints']}
     assert actual==declared and len(actual)==len(data['joints']),'Missing or duplicate mating-pair joint'
     joint_checks=[]
@@ -175,7 +187,7 @@ def main():
     print('PASS: 33/33 actual mating pairs have integral features and closed seats; single neck connection; ear span',ear_span,flush=True)
     if not assets_only:
         result=dict(config='designs/cicero_joined/configs/rev_0001.json',verification_script_sha256=sha(Path(__file__)),geometry_manifest_sha256=sha(HERE/'geometry_manifest.json'),build_manifest_sha256=sha(out/'build_manifest.json'),
-                    parts=part_checks,joints=joint_checks,subassembly_installation_samples=group_checks,actual_seams=len(actual),covered_seams=len(declared),connector_only_leaves=0,head_to_bust_connections=1,ear_span_mm=ear_span,
+                    parts=part_checks,joints=joint_checks,subassembly_installation_samples=group_checks,eye_backing_samples=eye_backing,actual_seams=len(actual),covered_seams=len(declared),connector_only_leaves=0,head_to_bust_connections=1,ear_span_mm=ear_span,
                     diagnostic_contact_exclusion_mm=.02,full_subassembly_swept_paths='unverified',physical_fit='unverified',structural_load_capacity='unverified',global_minimum_material_width='unverified')
         write_json(HERE/'verification.json',result)
 
