@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "design": "6u_cyberdeck",
+  "primary_assembly": "product_assembly",
+  "view_set": "full",
+  "generated_at_utc": "2026-10-21T06:44:42.767682+00:00",
+  "config": {
+    "path": "designs/6u_cyberdeck/configs/rev_0003.json",
+    "sha256": "bbe19ed52adb9e22aca33bd34bdfd0c2ae20813ff6a08cb228dccdb062d64ad3"
+  },
+  "parts_manifest": {
+    "path": "designs/6u_cyberdeck/parts.json",
+    "sha256": "e627d8d0a1a64743c22ae3463aecc4569f210044ce2999bb0ed9210243d6051e"
+  },
+  "assembly_contract": {
+    "path": "designs/6u_cyberdeck/assembly.json",
+    "sha256": "5d523d62760fb806d68ac40ccfcf69a8d2e9f97a9b97f5a4b89d945ce28dde18"
+  },
+  "source": {
+    "path": "designs/6u_cyberdeck/src",
+    "sha256": "5142d3d16bf4127ff0ccb4fbed132970ea0c030a890b89ac8f8fb08d3ecef303",
+    "main_scad": "designs/6u_cyberdeck/src/main.scad"
+  },
+  "printable_build": {
+    "path": "output/6u_cyberdeck/build_manifest.json",
+    "directory": "output/6u_cyberdeck",
+    "sha256": "f254bc29145a27cfa82cf7c8af40131a3f2ec59c7ce62539cb1b3eff7645ad4e",
+    "counts": {
+      "parts": 7,
+      "stl": 7,
+      "png": 119,
+      "artifacts": 126
+    },
+    "stl_artifacts": [
+      {
+        "part_id": 1,
+        "name": "leaf_bottom_left",
+        "path": "leaf_bottom_left_rev_0003.stl",
+        "bytes": 535183,
+        "sha256": "75aa48b9b17f73cec1f9ff1f90fa7420cbb45306e737720a3c4d01012a08235b"
+      },
+      {
+        "part_id": 2,
+        "name": "leaf_bottom_right",
+        "path": "leaf_bottom_right_rev_0003.stl",
+        "bytes": 638324,
+        "sha256": "dbd3c397a68d22094a4c4c82e0c896cb5bd663db77c4b31abcc8d0fb11f47b11"
+      },
+      {
+        "part_id": 3,
+        "name": "leaf_top_right",
+        "path": "leaf_top_right_rev_0003.stl",
+        "bytes": 732095,
+        "sha256": "f192a486820a274072ee1c0395a8d550d1ece8a85bb57cba93cba51b8cac0e77"
+      },
+      {
+        "part_id": 4,
+        "name": "leaf_top_left",
+        "path": "leaf_top_left_rev_0003.stl",
+        "bytes": 628307,
+        "sha256": "e8d432c69ebc952cb23fba01ff42f4b34ef0d929467124e3c81a86991cca5839"
+      },
+      {
+        "part_id": 5,
+        "name": "rear_center_bridge",
+        "path": "rear_center_bridge_rev_0003.stl",
+        "bytes": 142439,
+        "sha256": "5c3b72b9dc65efc5602f74f43c4fc488a83466ba332dcf73354170bd9f5e995f"
+      },
+      {
+        "part_id": 6,
+        "name": "control_cover_left",
+        "path": "control_cover_left_rev_0003.stl",
+        "bytes": 801798,
+        "sha256": "01fe9b0388f8c47d268e291f7deb83df708b98bb9063b581d1a8c5b569daaa5d"
+      },
+      {
+        "part_id": 7,
+        "name": "control_cover_right",
+        "path": "control_cover_right_rev_0003.stl",
+        "bytes": 814398,
+        "sha256": "a37a7638937e050cdc1cb4433d3cf03d662a184daa7c34cbc7656256a1989e2f"
+      }
+    ]
+  },
+  "git": {
+    "commit": "25ee2c84a4bbbfa3a0880f2bc30b37756ff9dcb1",
+    "dirty": true
+  },
+  "counts": {
+    "png": 34,
+    "stl": 4,
+    "artifacts": 38
+  },
+  "artifacts": [
+    {
+      "path": "cover_seam_coupon.stl",
+      "bytes": 97448,
+      "sha256": "320782c80a3ab0a6bad82974783cdbcbea75f99a15e9c076ac3c41410329ceb8"
+    },
+    {
+      "path": "cyberdeck_6u_assembled.stl",
+      "bytes": 4233099,
+      "sha256": "b15719a58e93bd38f8f26961681953bff2b88bd497d1b56c892bd9fe3604a30b"
+    },
+    {
+      "path": "cyberdeck_6u_unsplit_master.stl",
+      "bytes": 2237882,
+      "sha256": "a26495ca68d53edf5f66d07932397920369ae5118ff27a249180af905542a05d"
+    },
+    {
+      "path": "product_assembly_bottom.png",
+      "bytes": 5976,
+      "sha256": "5c7514f1fb8f10fd9e4e4fb417ffd53ebc0b71f160a77bdf1f800961fe65a083"
+    },
+    {
+      "path": "product_assembly_cover_back.png",
+      "bytes": 10249,
+      "sha256": "9dcae496f3cdf67a49f6829fa1097c917d9081cf1ca9e2b80dbc2f45a81cdef3"
+    },
+    {
+      "path": "product_assembly_cover_coupon.png",
+      "bytes": 18532,
+      "sha256": "99aa51d2f4a26b0ba6d1b2c287d62a01c0905c250f583ae89771953642523c1b"
+    },
+    {
+      "path": "product_assembly_cover_front.png",
+      "bytes": 10286,
+      "sha256": "c73bfababf31ba0fadb982c94ab79a279aed8e2caa56a4eeb712f546564db801"
+    },
+    {
+      "path": "product_assembly_cover_left_isolation.png",
+      "bytes": 22625,
+      "sha256": "d94fd08a1c6c010ea656dc508e71e94d29bb32bde456113498b8b2b543e3a04d"
+    },
+    {
+      "path": "product_assembly_cover_lower_seam_section.png",
+      "bytes": 5949,
+      "sha256": "87337d3d83de0784dd338f48c6dffc65594e69ce489743c791918a1a14935aa5"
+    },
+    {
+      "path": "product_assembly_cover_right_isolation.png",
+      "bytes": 23063,
+      "sha256": "1761122ccbdaae51d4c7e38db69cb265a412ef181487ba7894a825483dc1e665"
+    },
+    {
+      "path": "product_assembly_cover_upper_seam_section.png",
+      "bytes": 5949,
+      "sha256": "87337d3d83de0784dd338f48c6dffc65594e69ce489743c791918a1a14935aa5"
+    },
+    {
+      "path": "product_assembly_enclosure_isolation.png",
+      "bytes": 22783,
+      "sha256": "95fac7caa5f325ef2a55910f28eb01bbb00c4d7e168e54be5fd834f4b1110665"
+    },
+    {
+      "path": "product_assembly_exploded.png",
+      "bytes": 35774,
+      "sha256": "8acad086869c3f166e9d4704825a8b3389929a6ab1ecd66d827a37c8a0b35799"
+    },
+    {
+      "path": "product_assembly_front.png",
+      "bytes": 5859,
+      "sha256": "822be5581a44ea9f6f8448ae41bd9bd6dc6d77438b3381e1140c1efd0423d6fc"
+    },
+    {
+      "path": "product_assembly_isometric.png",
+      "bytes": 27602,
+      "sha256": "f232e076cd9aef651a568060b455c4be54b28fdf921ea9324d2296f81b5cc55f"
+    },
+    {
+      "path": "product_assembly_leaf_bottom_left.png",
+      "bytes": 20358,
+      "sha256": "bbc1fbaa3422a39887fde92c8cf4810eea068b2faea5558935462f64e58ff707"
+    },
+    {
+      "path": "product_assembly_leaf_bottom_right.png",
+      "bytes": 19974,
+      "sha256": "7cf53d95e9a81a61e8084d5f2eceec12e20bb36e68c7c366c20cb94fb66d5ea9"
+    },
+    {
+      "path": "product_assembly_leaf_top_left.png",
+      "bytes": 18325,
+      "sha256": "ae483f33c394705102d14cd881c5b3ed93616d434937035fc2cbaac5d690d117"
+    },
+    {
+      "path": "product_assembly_leaf_top_right.png",
+      "bytes": 18067,
+      "sha256": "60bb2adc100676d63b2708711952c9b0506715c9a582ce7fe2df71b709e9bfea"
+    },
+    {
+      "path": "product_assembly_left.png",
+      "bytes": 5979,
+      "sha256": "a51bc26d2ba7dafb155df7528310e68c37624b7c2a241aca45012bfa04bd3fa0"
+    },
+    {
+      "path": "product_assembly_rear.png",
+      "bytes": 5859,
+      "sha256": "822be5581a44ea9f6f8448ae41bd9bd6dc6d77438b3381e1140c1efd0423d6fc"
+    },
+    {
+      "path": "product_assembly_rear_bridge_isolation.png",
+      "bytes": 16181,
+      "sha256": "87e8aaf394de796e78437e62b414227229d5bfbaf4c61bf39cd47fb849c40275"
+    },
+    {
+      "path": "product_assembly_rear_center_inside.png",
+      "bytes": 17612,
+      "sha256": "59fb68aae5d5b5085339309a941027e7ce6d9e57eb5e5e434f46b09100f429fc"
+    },
+    {
+      "path": "product_assembly_rear_center_nut_access.png",
+      "bytes": 6587,
+      "sha256": "37c12908cfc2e016239005976d77b9d5fa79c6aee56a5405cd3adee083ccf9b9"
+    },
+    {
+      "path": "product_assembly_rear_center_pads.png",
+      "bytes": 19937,
+      "sha256": "7f7259c0d581e3e2c4596204e1e25b03ad109f472d3afbef105504e869ecad52"
+    },
+    {
+      "path": "product_assembly_rear_center_section.png",
+      "bytes": 5960,
+      "sha256": "9d6f0871bd2a927754ac7e88f776f2142454a9542787d7d6ca058eafe39a21e2"
+    },
+    {
+      "path": "product_assembly_right.png",
+      "bytes": 5978,
+      "sha256": "1ccb26ded776abc9386d938cda511065b66ff7456c807ee854a1581146a5c398"
+    },
+    {
+      "path": "product_assembly_seam_station_coupon.png",
+      "bytes": 20339,
+      "sha256": "5229719f438d4c11e419eadbe34a7bf004c6125e2851ad6c77c1540bf16e277f"
+    },
+    {
+      "path": "product_assembly_station_0_section.png",
+      "bytes": 5988,
+      "sha256": "5790fc12a7fe4861ece519137f15086c11803ee7d987d8f7d58fe4ef5a6eb0e0"
+    },
+    {
+      "path": "product_assembly_station_1_section.png",
+      "bytes": 5988,
+      "sha256": "5790fc12a7fe4861ece519137f15086c11803ee7d987d8f7d58fe4ef5a6eb0e0"
+    },
+    {
+      "path": "product_assembly_station_2_section.png",
+      "bytes": 5997,
+      "sha256": "20a7cc905dbce9b62628cca73e508ae24d5dc3e012af45fcfca71672b27ab162"
+    },
+    {
+      "path": "product_assembly_station_3_section.png",
+      "bytes": 5997,
+      "sha256": "20a7cc905dbce9b62628cca73e508ae24d5dc3e012af45fcfca71672b27ab162"
+    },
+    {
+      "path": "product_assembly_station_4_section.png",
+      "bytes": 5997,
+      "sha256": "f38528b28f696e85876b02a0cc176f2750ec3ee11ba94d264b78037f82c1ba08"
+    },
+    {
+      "path": "product_assembly_station_5_section.png",
+      "bytes": 5997,
+      "sha256": "f38528b28f696e85876b02a0cc176f2750ec3ee11ba94d264b78037f82c1ba08"
+    },
+    {
+      "path": "product_assembly_station_6_section.png",
+      "bytes": 5999,
+      "sha256": "07762146f1ccdc24324d0f08a73543b788eb83a9a300e546d1acdd6a9de2a9cb"
+    },
+    {
+      "path": "product_assembly_station_7_section.png",
+      "bytes": 5999,
+      "sha256": "07762146f1ccdc24324d0f08a73543b788eb83a9a300e546d1acdd6a9de2a9cb"
+    },
+    {
+      "path": "product_assembly_top.png",
+      "bytes": 5981,
+      "sha256": "720daa763ff78ca93d163c45ccb60ea7478a1bf32f3161a37879599415eaf93e"
+    },
+    {
+      "path": "seam_station_coupon.stl",
+      "bytes": 119848,
+      "sha256": "c48043f7788c0065f32f6047d608d9c4f78fbf60b9f00e643b0e22fac1e4a80b"
+    }
+  ]
+}

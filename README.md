@@ -81,7 +81,8 @@ If the agent follows the included playbooks, it should also document what it cha
   - `parts.json` (multi-part designs): authoritative complete-build part IDs and names
   - `assembly.json` (new or modified multi-part designs): authoritative product/subassembly hierarchy, transforms, interfaces, and review views
   - `configs/rev_000N.json`: committed parameter sets
-  - Included designs: `example_box`, `helical`, `yagi`, `yagi_card`, `dtv_yagi`, `winegard_gm6000_logic_backplane`, `gigachad_xavier_void`, `cottage_pi6_plus`, `old_rca_display_baseplate`, `opi_zero_2w_carrier`, `comrade`, `cyberdeck`, `cyberdeck-2`, `micro_cyberdeck_case`, `raspberrypi5_case`, `fan_guard`, `ac_redirectors`, `solarpunk_exhaust`, `solarpunk_seed_tray`, `solarpunk_siphon_filter`
+  - Included designs: `example_box`, `helical`, `yagi`, `yagi_card`, `dtv_yagi`, `winegard_gm6000_logic_backplane`, `gigachad_xavier_void`, `cottage_pi6_plus`, `old_rca_display_baseplate`, `opi_zero_2w_carrier`, `comrade`, `cyberdeck`, `cyberdeck-2`, `6u_cyberdeck`, `micro_cyberdeck_case`, `raspberrypi5_case`, `fan_guard`, `ac_redirectors`, `solarpunk_exhaust`, `solarpunk_seed_tray`, `solarpunk_siphon_filter`
+  - [`6u_cyberdeck`](designs/6u_cyberdeck/README.md): standalone 254 x 293.9 x 80 mm four-quadrant 6U case with an internal rear-center bridge and two-piece lower-4U joystick/button cover; mutable `rev_0003` candidate. Physical coupon/calibration and slicer verification remain required before immutable publication.
   - The `solarpunk_*` designs are at mixed stages (seed_tray: scaffold, placeholder configs; siphon_filter: deferred; solarpunk_exhaust: scaffold, rev_0001 blockout built and audited); their canonical details live in `docs/solarpunk_series.md`
   - `cyberdeck-2`: fully enclosed 5U ten-inch-rack receiver (80 mm deep behind the rack) split into four printable quadrant leaves and joined by eight end-aligned M3 tongue/receiver seam stations with captive washers and hex nuts; thirty front rack holes, two internal equipment shelves, closed rear
 - `output/`
@@ -352,6 +353,11 @@ embedded in one-off design notes:
   - Parametric positive void/cutter model for subtracting a Jetson Xavier + carrier board cavity shape from a head mesh (simple back prism + top shaft prototype)
 - [designs/cicero/](designs/cicero/README.md)
   - Imported CC BY-NC-SA bust scan targeting a 228.6 mm ear span; source, scaled master and intermediate head/base references. The complete 17-piece integral-joint candidate is in `designs/cicero_joined/`, with broad flat bed faces and documented fabrication limits.
+- [designs/cicero_datacenter/](designs/cicero_datacenter/README.md)
+  - New mostly hollow full-size Cicero computer enclosure: licensed scan reference,
+    canonical device-negative inventory, AGX/Orin/phone-server requirements,
+    void-aware integral joinery and mouth-speaker/ear-microphone planning.
+    Definition only; no printable shell or device negatives generated yet.
 - `designs/cottage_pi6_plus/`
   - Parametric cottage-style Orange Pi 6 Plus enclosure concept with separate base + roof and a chimney exhaust path
   - Includes a separate sliding drawer part and tunables for drawer length, drawer end-wall headroom, and front-biased exhaust opening (`main_room_extra_x`, `drawer_end_wall_extra_h`, `divider_hole_front_extend_y`)

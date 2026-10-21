@@ -1,0 +1,921 @@
+{
+  "schema_version": 1,
+  "design": "cicero_datacenter",
+  "status": "definition_only_no_cutters_generated",
+  "units": "mm",
+  "canonical_authority": "This file owns negative-family IDs and unresolved dimensional contracts; PLAN.md owns design intent.",
+  "coordinate_convention": "Cicero assembly coordinates Z up, back generally +Y; each device needs an explicit independent local frame and transform.",
+  "minimum_wall_thickness_target_mm": 3,
+  "minimum_structural_overlap_target_mm": 6,
+  "minimum_internal_edge_width_target_mm": 3,
+  "clearance_contract": "Fit clearances are per side when stated; currently null. Separate body fit, thermal gaps, cable/tool/service clearance, numeric epsilon and structural stock.",
+  "quantity_contract": "null is unresolved; phone families share a future instance map, not independent invented counts. Two ear microphone IDs represent one planned microphone per ear.",
+  "scope": "Registry only. No dimension, quantity, position or part choice is fabricated from unknown inputs.",
+  "required_future_record_fields": [
+    "exact device variant and source revision",
+    "physical dimensions and tolerances",
+    "units/local datum/orientation/transform",
+    "fit clearances per surface",
+    "mount hole/fastener/head/tool envelopes",
+    "ventilation keepouts and airflow direction",
+    "plug bodies/bend radii/strain relief",
+    "insertion/removal and service sweeps",
+    "retention and protected positive stock",
+    "mass, power and thermal assumptions",
+    "verification/coupon evidence and dependency hashes"
+  ],
+  "families": [
+    {
+      "id": "interior_core",
+      "subject": "Mostly hollow head and bust",
+      "role": "interior_subtraction",
+      "priority": "initial",
+      "status": "planned_not_modeled",
+      "quantity": 1,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "inner cavity",
+        "neck cable/air passage",
+        "connected usable internal space"
+      ],
+      "protected_positive_stock": [
+        "outer shell",
+        "perimeter seam lands",
+        "neck collars",
+        "supported device mounts",
+        "audio baffles"
+      ],
+      "missing_inputs": [
+        "robust offset method",
+        "nominal shell thickness and local reinforcements",
+        "usable-volume target"
+      ],
+      "reference_paths": [
+        "designs/cicero/assets/cicero_original.stl",
+        "designs/cicero_joined/build_geometry.py"
+      ],
+      "legacy_reference_only": null,
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "agx_xavier",
+      "subject": "Actual AGX Xavier assembly",
+      "role": "hardware_fit",
+      "priority": "initial",
+      "status": "planned_not_modeled",
+      "quantity": 1,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "board/carrier or case body",
+        "installed heat sink/fan",
+        "feet and protrusions",
+        "insertion and withdrawal sweep"
+      ],
+      "protected_positive_stock": [
+        "load-bearing carrier supports",
+        "retention stations"
+      ],
+      "missing_inputs": [
+        "exact assembled hardware and dimensions",
+        "mass",
+        "allowed support surfaces"
+      ],
+      "reference_paths": [
+        "designs/gigachad_xavier_void/configs/rev_0001.json",
+        "designs/gigachad_xavier_void/src/parts/gigachad_xavier_void.scad"
+      ],
+      "legacy_reference_only": {
+        "main_cutter_xyz_mm": [
+          110,
+          220,
+          110
+        ],
+        "warning": "simplified historical cutter, not verified AGX dimensions"
+      },
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "agx_mount_interface",
+      "subject": "AGX mounting and service tools",
+      "role": "mount_interface",
+      "priority": "initial",
+      "status": "planned_not_modeled",
+      "quantity": 1,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "screw shanks",
+        "head/nut/tool recesses",
+        "mounting installation access"
+      ],
+      "protected_positive_stock": [
+        "bosses or rails",
+        "root overlap and supports",
+        "load paths to frame/shell"
+      ],
+      "missing_inputs": [
+        "mount pattern",
+        "fasteners and engagement",
+        "tool access"
+      ],
+      "reference_paths": [
+        "designs/gigachad_xavier_void/configs/rev_0001.json",
+        "designs/gigachad_xavier_void/src/parts/gigachad_xavier_void.scad"
+      ],
+      "legacy_reference_only": null,
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "agx_rear_io",
+      "subject": "AGX rear peripheral access",
+      "role": "rear_interface",
+      "priority": "initial",
+      "status": "planned_not_modeled",
+      "quantity": 1,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "actual connector apertures",
+        "installed plugs",
+        "cable bend/strain relief",
+        "media access if present"
+      ],
+      "protected_positive_stock": [
+        "rear panel lands",
+        "port-edge margins"
+      ],
+      "missing_inputs": [
+        "actual port mapping and plugs",
+        "required connector directions"
+      ],
+      "reference_paths": [
+        "designs/gigachad_xavier_void/configs/rev_0001.json",
+        "designs/gigachad_xavier_void/src/parts/gigachad_xavier_void.scad"
+      ],
+      "legacy_reference_only": null,
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "agx_cooling",
+      "subject": "AGX cooler and upper airflow shaft",
+      "role": "cooling",
+      "priority": "initial",
+      "status": "planned_not_modeled",
+      "quantity": 1,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "cooler/fan body",
+        "intake/exhaust paths",
+        "fan screw holes",
+        "fan service travel"
+      ],
+      "protected_positive_stock": [
+        "retained fan plate",
+        "mount roots",
+        "duct boundaries"
+      ],
+      "missing_inputs": [
+        "actual cooler/fan",
+        "airflow direction and clearance",
+        "thermal budget"
+      ],
+      "reference_paths": [
+        "designs/gigachad_xavier_void/configs/rev_0001.json",
+        "designs/gigachad_xavier_void/src/parts/gigachad_xavier_void.scad"
+      ],
+      "legacy_reference_only": {
+        "shaft_xyz_mm": [
+          80,
+          205,
+          100
+        ],
+        "fan_nominal_mm": 80,
+        "hole_pitch_mm": 71.5,
+        "hole_diameter_mm": 4.4,
+        "fan_plate_xyz_mm": [
+          80,
+          86,
+          3
+        ],
+        "warning": "negative relief inside legacy cutter preserves positive fan plate; do not remove that stock"
+      },
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "orin_nano_super_tray",
+      "subject": "User Jetson Orin Nano Super with existing slot-load tray",
+      "role": "hardware_fit",
+      "priority": "initial",
+      "status": "planned_not_modeled",
+      "quantity": 1,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "assembled board/tray/cooler/storage envelope",
+        "body fitting clearance",
+        "full tray insertion and removal sweep"
+      ],
+      "protected_positive_stock": [
+        "tray supports",
+        "clear support surfaces"
+      ],
+      "missing_inputs": [
+        "exact carrier and tray",
+        "assembled dimensions and mass",
+        "physical slide axis"
+      ],
+      "reference_paths": [],
+      "legacy_reference_only": null,
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "orin_tray_docking",
+      "subject": "Orin tray guides and retention",
+      "role": "mount_interface",
+      "priority": "initial",
+      "status": "planned_not_modeled",
+      "quantity": 1,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "slot entry opening",
+        "rail/channel clearance",
+        "end-stop seating",
+        "retention/tool access"
+      ],
+      "protected_positive_stock": [
+        "guide rails or ledges",
+        "closed stop",
+        "retention roots"
+      ],
+      "missing_inputs": [
+        "existing tray mating profile",
+        "positive retention",
+        "coupon-derived fit"
+      ],
+      "reference_paths": [],
+      "legacy_reference_only": null,
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "orin_rear_io",
+      "subject": "Orin user-described rear port face",
+      "role": "rear_interface",
+      "priority": "initial",
+      "status": "planned_not_modeled",
+      "quantity": 1,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "rear-facing connectors",
+        "plug body and cable bends",
+        "media and power access if present"
+      ],
+      "protected_positive_stock": [
+        "rear panel lands",
+        "strain-relief supports"
+      ],
+      "missing_inputs": [
+        "actual tray/carrier port locations",
+        "plug dimensions and bend radii"
+      ],
+      "reference_paths": [],
+      "legacy_reference_only": null,
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "orin_ventilation",
+      "subject": "Orin tray ventilation",
+      "role": "cooling",
+      "priority": "initial",
+      "status": "planned_not_modeled",
+      "quantity": 1,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "fan/heat-sink envelope",
+        "intake keepout",
+        "exhaust keepout",
+        "underside ventilation if present"
+      ],
+      "protected_positive_stock": [
+        "tray support stock outside airflow"
+      ],
+      "missing_inputs": [
+        "actual cooler orientation",
+        "ventilation zones and required clearances",
+        "heat load"
+      ],
+      "reference_paths": [],
+      "legacy_reference_only": null,
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "phone_server_slot",
+      "subject": "Repeatable phone AI-server bay",
+      "role": "hardware_fit",
+      "priority": "future_reserved_now",
+      "status": "planned_not_modeled",
+      "quantity": null,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "phone plus case",
+        "camera bump",
+        "buttons/contacts",
+        "insertion/removal",
+        "air gaps"
+      ],
+      "protected_positive_stock": [
+        "rails/stand-offs",
+        "bottom support cage",
+        "retention"
+      ],
+      "missing_inputs": [
+        "initial phone models and cases",
+        "count and mass",
+        "service direction"
+      ],
+      "reference_paths": [
+        "designs/old_rca_building/README.md",
+        "designs/old_rca_building/src/lib/defaults.scad",
+        "designs/old_rca_building/configs/rev_0002.json"
+      ],
+      "legacy_reference_only": {
+        "phone_hwt_mm": [
+          163.6,
+          78.1,
+          8.9
+        ],
+        "slot_xy_mm": [
+          18,
+          88
+        ],
+        "face_gap_min_mm": 3,
+        "side_gap_min_mm": 3.5,
+        "warning": "legacy combined maxima and draft slot; not measured target devices"
+      },
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "phone_cooler",
+      "subject": "Repeatable phone cooler/fan interface",
+      "role": "cooling",
+      "priority": "future_reserved_now",
+      "status": "planned_not_modeled",
+      "quantity": null,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "cooler body",
+        "clamps/contact region",
+        "fan intake/exhaust",
+        "power lead",
+        "cooler installation sweep"
+      ],
+      "protected_positive_stock": [
+        "cooler supports",
+        "clamp load surfaces",
+        "duct boundaries"
+      ],
+      "missing_inputs": [
+        "specific cooler type/model",
+        "dimensions",
+        "contact orientation",
+        "whether forced-air or thermoelectric"
+      ],
+      "reference_paths": [
+        "designs/old_rca_building/README.md",
+        "designs/old_rca_building/src/lib/defaults.scad",
+        "designs/old_rca_building/configs/rev_0002.json"
+      ],
+      "legacy_reference_only": {
+        "rca_fan_nominal_mm": 40,
+        "rca_hole_pitch_mm": 32,
+        "rca_config_hole_diameter_mm": 3.6,
+        "rca_intake_diameter_mm": 38,
+        "warning": "RCA forced-air example; no verified clip-on or thermoelectric cooler model"
+      },
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "phone_cabling",
+      "subject": "Repeatable phone charging/data cable space",
+      "role": "cable_service",
+      "priority": "future_reserved_now",
+      "status": "planned_not_modeled",
+      "quantity": null,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "charging/data plugs",
+        "bend windows",
+        "cable routing and strain relief",
+        "individual unplug access"
+      ],
+      "protected_positive_stock": [
+        "support cage around cable window",
+        "cable clips"
+      ],
+      "missing_inputs": [
+        "actual connectors and cables",
+        "charging/data arrangement"
+      ],
+      "reference_paths": [
+        "designs/old_rca_building/README.md",
+        "designs/old_rca_building/src/lib/defaults.scad",
+        "designs/old_rca_building/configs/rev_0002.json"
+      ],
+      "legacy_reference_only": null,
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "shared_airflow",
+      "subject": "Shared intake/exhaust and plenum reserves",
+      "role": "cooling",
+      "priority": "initial",
+      "status": "planned_not_modeled",
+      "quantity": 1,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "intake and exhaust openings",
+        "duct/plenum space",
+        "fan/filter bodies if selected",
+        "filter/fan replacement access"
+      ],
+      "protected_positive_stock": [
+        "fan mounting lands",
+        "duct partitions",
+        "guards"
+      ],
+      "missing_inputs": [
+        "device heat loads",
+        "flow topology",
+        "fan/filter selection",
+        "acceptable noise"
+      ],
+      "reference_paths": [],
+      "legacy_reference_only": null,
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "rear_service_ports",
+      "subject": "Other rear peripheral openings",
+      "role": "rear_interface",
+      "priority": "initial",
+      "status": "planned_not_modeled",
+      "quantity": null,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "additional connector apertures",
+        "plug envelopes",
+        "bend/service clearance",
+        "blanking covers"
+      ],
+      "protected_positive_stock": [
+        "rear opening edge lands",
+        "cover mounts"
+      ],
+      "missing_inputs": [
+        "future peripheral list",
+        "port dimensions and counts"
+      ],
+      "reference_paths": [],
+      "legacy_reference_only": null,
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "power_network_hub",
+      "subject": "Power and network infrastructure reserve",
+      "role": "expansion_keepout",
+      "priority": "future_reserved_now",
+      "status": "planned_not_modeled",
+      "quantity": null,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "candidate hub/switch/distribution bodies",
+        "power/data connectors",
+        "heat and service keepouts"
+      ],
+      "protected_positive_stock": [
+        "supported mounting zones"
+      ],
+      "missing_inputs": [
+        "actual products",
+        "dimensions",
+        "power budget and routing"
+      ],
+      "reference_paths": [],
+      "legacy_reference_only": null,
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "cable_trunk",
+      "subject": "Shared inter-device and neck cable routes",
+      "role": "cable_service",
+      "priority": "initial",
+      "status": "planned_not_modeled",
+      "quantity": 1,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "cable bundles",
+        "bend radii",
+        "service loops",
+        "neck disconnect/withdrawal corridor"
+      ],
+      "protected_positive_stock": [
+        "supported clips and strain relief",
+        "separation from moving joints"
+      ],
+      "missing_inputs": [
+        "cable types/counts",
+        "disconnect strategy",
+        "minimum bend radii"
+      ],
+      "reference_paths": [],
+      "legacy_reference_only": null,
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "mouth_speaker",
+      "subject": "Speaker coupled to mouth",
+      "role": "acoustic_interface",
+      "priority": "feasibility",
+      "status": "planned_not_modeled",
+      "quantity": 1,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "driver body",
+        "mouth aperture/acoustic passage",
+        "driver-dependent chamber",
+        "wiring",
+        "service sweep",
+        "mount holes"
+      ],
+      "protected_positive_stock": [
+        "speaker rim/baffle",
+        "supported mounting roots",
+        "lip/face backing outside intentional aperture"
+      ],
+      "missing_inputs": [
+        "driver model",
+        "acoustic chamber requirements",
+        "visible mouth alteration allowance",
+        "mounting/gasket details"
+      ],
+      "reference_paths": [],
+      "legacy_reference_only": null,
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "ear_microphone_left",
+      "subject": "Left ear microphone",
+      "role": "acoustic_interface",
+      "priority": "feasibility",
+      "status": "planned_not_modeled",
+      "quantity": 1,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "capsule/board",
+        "controlled duct to ear surface",
+        "wiring",
+        "service sweep",
+        "mounting holes"
+      ],
+      "protected_positive_stock": [
+        "isolated microphone holder",
+        "ear-rim material",
+        "acoustic partition from fans/speaker"
+      ],
+      "missing_inputs": [
+        "capsule/board model",
+        "port direction",
+        "duct/grille dimensions",
+        "wiring/retention"
+      ],
+      "reference_paths": [],
+      "legacy_reference_only": null,
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "ear_microphone_right",
+      "subject": "Right ear microphone",
+      "role": "acoustic_interface",
+      "priority": "feasibility",
+      "status": "planned_not_modeled",
+      "quantity": 1,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "capsule/board",
+        "controlled duct to ear surface",
+        "wiring",
+        "service sweep",
+        "mounting holes"
+      ],
+      "protected_positive_stock": [
+        "isolated microphone holder",
+        "ear-rim material",
+        "acoustic partition from fans/speaker"
+      ],
+      "missing_inputs": [
+        "capsule/board model",
+        "port direction",
+        "duct/grille dimensions",
+        "wiring/retention"
+      ],
+      "reference_paths": [],
+      "legacy_reference_only": null,
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "audio_electronics",
+      "subject": "Audio driver/interface electronics",
+      "role": "expansion_keepout",
+      "priority": "feasibility",
+      "status": "planned_not_modeled",
+      "quantity": 1,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "amplifier/interface boards",
+        "power/data plugs",
+        "wiring and service space",
+        "thermal/EMI separation if needed"
+      ],
+      "protected_positive_stock": [
+        "board mounts",
+        "cable retention"
+      ],
+      "missing_inputs": [
+        "audio topology",
+        "component selection",
+        "power and interface"
+      ],
+      "reference_paths": [],
+      "legacy_reference_only": null,
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "rear_service_access",
+      "subject": "Rear maintenance panels and hardware entry",
+      "role": "service_access",
+      "priority": "initial",
+      "status": "planned_not_modeled",
+      "quantity": 1,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "hand/tool entry",
+        "panel removal sweep",
+        "tray/cooler entry corridors",
+        "retention fastener cuts"
+      ],
+      "protected_positive_stock": [
+        "panel perimeter",
+        "supported catches or bosses",
+        "seam load paths"
+      ],
+      "missing_inputs": [
+        "door segmentation",
+        "required access dimensions",
+        "retention strategy"
+      ],
+      "reference_paths": [],
+      "legacy_reference_only": null,
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    },
+    {
+      "id": "future_expansion",
+      "subject": "Additional devices not yet specified",
+      "role": "expansion_keepout",
+      "priority": "future_reserved_now",
+      "status": "planned_not_modeled",
+      "quantity": null,
+      "hardware_variant": null,
+      "nominal_hardware_envelope_mm": null,
+      "fit_clearance_per_side_mm": null,
+      "installation_direction": null,
+      "local_frame": null,
+      "assembly_transform": null,
+      "required_volumes": [
+        "explicit usable growth volume",
+        "future connector and cable reserve"
+      ],
+      "protected_positive_stock": [
+        "reusable supported mounting zones"
+      ],
+      "missing_inputs": [
+        "device families",
+        "reserve volume target",
+        "future mass/thermal loads"
+      ],
+      "reference_paths": [],
+      "legacy_reference_only": null,
+      "acceptance": [
+        "dimensions and datum are source-bound or measured; null values block final geometry",
+        "fit, installation, cable and air constraints checked independently",
+        "post-subtraction stock and neighboring-void ligaments checked",
+        "cutters/reference geometry excluded from printable positives"
+      ]
+    }
+  ]
+}

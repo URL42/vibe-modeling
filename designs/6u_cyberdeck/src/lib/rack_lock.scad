@@ -70,8 +70,9 @@ OUTER_HEIGHT                = OPENING_HEIGHT + 2 * RING_BAND;          // 293.9
 // --- Per-leaf print bounds (quadrant split at X=0 and Z=0, full depth) ------
 // A leaf owns one quadrant of the face. Its print bounds are the half-envelope
 // on each axis plus the ring band that the leaf's seam stations carry.
-LEAF_X                      = (OUTER_WIDTH  / 2.0) + RING_BAND;        // 127.0  + 13.6 = 140.6
-LEAF_Z                      = (OUTER_HEIGHT / 2.0) + RING_BAND;        // 146.95 + 13.6 = 160.55
+LEAF_EXTENSION              = 14.0; // actual candidate tongue reach, not radial band
+LEAF_X                      = (OUTER_WIDTH  / 2.0) + LEAF_EXTENSION;  // 141.0
+LEAF_Z                      = (OUTER_HEIGHT / 2.0) + LEAF_EXTENSION;  // 160.95
 LEAF_Y                      = OUTER_DEPTH;                             // 80.0 (full depth)
 
 PRINT_BED                   = 220.0;   // per-leaf build bed (mm)

@@ -83,8 +83,8 @@ Provide a repeatable local workflow to iterate OpenSCAD prototypes, generate mul
 - Revision outputs go in `revisions/<design>/rev_000N/`.
 - Built artifacts (`output/<design>/`, `revisions/<design>/rev_000N/`) are
   committed and pushed with source and configs; the remote is the deliverable.
-- Probes, sections, partial builds, and staging remain under
-  `.tmp/scad/<design>/`; successful governed commands leave `output/<design>/`
+- Probes, sections, partial builds, and staging remain inside
+  `output/<design>/`; successful governed commands leave that directory
   as a flat exact set.
 - Do not invent artifact directories. In particular, `output/<design>_rev_000N/` is invalid.
 - Completed outputs contain no `.scad` source, probe file, or staging directory.

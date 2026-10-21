@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "design": "cicero_datacenter",
+  "status": "definition_only",
+  "units": "mm",
+  "classification": "non_printable_full_size_reference",
+  "asset": "assets/cicero_full_size_reference.stl",
+  "asset_sha256": "3a034bec3ebe4802f80876d735b58bb8832547433bffc99404f430b3ad67792c",
+  "copied_from": "output/cicero/scaled_master.stl",
+  "copied_from_sha256": "3a034bec3ebe4802f80876d735b58bb8832547433bffc99404f430b3ad67792c",
+  "byte_identical": true,
+  "triangle_count": 508792,
+  "bounds_mm": [
+    [
+      -218.77000427246094,
+      -171.11700439453125,
+      -3.8239000860066166e-14
+    ],
+    [
+      218.77000427246094,
+      171.11700439453125,
+      568.9990234375
+    ]
+  ],
+  "size_xyz_mm": [
+    437.5400085449219,
+    342.2340087890625,
+    568.9990234375
+  ],
+  "target_ear_span_mm": 228.6,
+  "scale_factor_mm_per_source_unit": 8.610663014175309,
+  "original_landmarks": {
+    "ear_negative_x": [
+      -14.551604270935059,
+      -4.4222002029418945,
+      45.65835952758789
+    ],
+    "ear_positive_x": [
+      9.461223602294922,
+      6.8988494873046875,
+      45.459285736083984
+    ]
+  },
+  "original_source_offset": [
+    0.31207847595214844,
+    -0.12383747100830078,
+    4.307562828063965
+  ],
+  "coordinate_system": {
+    "x": "source left/right; head is turned",
+    "y": "source depth; back generally +Y, front generally -Y",
+    "z": "up; full scan minimum Z is zero"
+  },
+  "source_url": "https://www.myminifactory.com/object/3d-print-cicero-55952",
+  "license": {
+    "identifier": "CC BY-NC-SA",
+    "authority": "user specification inherited from Cicero import",
+    "version": null,
+    "creator": null,
+    "verification": "listing previously returned HTTP 403; exact version/creator not verified"
+  },
+  "changes_to_copied_mesh": "none; already uniformly scaled full scan; no joints, cuts, hollowing or repair",
+  "reference_sources_sha256": {
+    "designs/gigachad_xavier_void/src/lib/defaults.scad": "ac649bdce732da13643c920aa36dffec7c3c1a3e66cd64a1e8eacdf79dac4087",
+    "designs/gigachad_xavier_void/src/parts/gigachad_xavier_void.scad": "123881001bc51ae930005757f6fb5eed9c03573a0c7dce28c1fccc4e6d8e1976",
+    "designs/gigachad_xavier_void/configs/rev_0001.json": "3c7486fd619b29530572a0f0bb64e010a2b085fd5e951577828ade5036f3a912",
+    "designs/old_rca_building/README.md": "f144524a9e2141fc3b52489daf10de374b0a0bae5afa49eb6b4d90425ecedc67",
+    "designs/old_rca_building/src/lib/defaults.scad": "42b618ab0071ed0fcab623ab60659f3c77a4d220399d779d7feb3dd52c8c108b",
+    "designs/old_rca_building/src/parts/old_rca_building.scad": "1fe693f391babb8dd6c105e3ab9fad7c4b957e2ea229e171b4ff9ae383d194c2",
+    "designs/old_rca_building/configs/rev_0002.json": "13188374a855dd649e8bce01ee4c38766e0e88c2fabcee4882133e603505c847",
+    "designs/cicero_joined/build_geometry.py": "96705a53d95bc8aa12d4a2951a6a432c873edbb173ba0591bb2d06c617797eac",
+    "designs/cicero_joined/geometry_manifest.json": "dab354bdabf66ba3274a75d5040986ba25bdf70add7b98d622f5b9555f843385",
+    "designs/cicero_joined/assembly.json": "2bf83109df66e6c15e78ffe90d0a810c5b93e971d9abf72667a94b5d634d1494",
+    "designs/cicero_joined/configs/rev_0001.json": "e69427fed878b63ff08d4fd5babd7e1693f6f8949f3aa2f67e4dae02465fea2a",
+    "designs/cicero/configs/rev_0001.json": "0e5e746728c0882bf876fff1b5ca05394fb6c8b66b03828d2708d87fb0028eb4",
+    "output/cicero/scaled_master_measurements.json": "e379034584bd3325a08babc230a6ea799cd30bd00d1561c0a310cf54beec7ee5",
+    "designs/cicero/assets/cicero_original.stl": "db7b379d72aa3abc496fd5ea425933e3e6da5e8a36160fa6e3bb0012c84c17e8",
+    "output/gigachad_xavier_void/mesh.scad": "61f76232789807244a15f676ee87a113e038113d1f494dcb70e037d701b91d92"
+  },
+  "verification": {
+    "copy_hash": "passed",
+    "reference_bounds": "passed",
+    "topology": "unverified inherited scan",
+    "structural_joins": "unverified future design",
+    "minimum_material_width": "unverified future design",
+    "ear_span": "passed against inherited landmark transform; landmark interpretation inherited, not newly selected"
+  },
+  "measured_imported_ear_span_mm": 228.60019092445214,
+  "ear_landmark_maximum_export_deviation_mm": 0.00044120802405030787
+}

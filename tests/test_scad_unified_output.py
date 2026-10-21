@@ -4,6 +4,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -25,6 +26,51 @@ def record(path: Path) -> dict:
 
 
 class UnifiedOutputTests(unittest.TestCase):
+    def test_review_stage_stays_in_design_output_and_is_cleaned_after_render_failure(self):
+        with tempfile.TemporaryDirectory(prefix="assembly review with spaces ") as temporary:
+            root = Path(temporary)
+            design = root / "designs" / "demo"
+            (design / "src").mkdir(parents=True)
+            (design / "src" / "main.scad").write_text("cube(3);", encoding="utf-8")
+            final = root / "output" / "demo"
+            final.mkdir(parents=True)
+            printable = final / "part.stl"
+            printable.write_bytes(b"preserved printable")
+            stages = []
+            contract = {
+                "primary": "product",
+                "view_sets": {"full": ["front"]},
+                "views": [{"name": "front", "assembly_view": "product",
+                           "assembly_view_id": 0, "show_proxies": False,
+                           "projection": "o", "camera": [0,0,0,90,0,0,800]}],
+                "geometry_exports": [],
+            }
+
+            def fail_render(command, dry_run):
+                stage = Path(command[command.index("-o") + 1]).parent
+                stages.append(stage)
+                self.assertEqual(stage.parent, final)
+                self.assertTrue(stage.is_dir())
+                self.assertEqual(command[0], "OpenSCAD path with spaces.exe")
+                raise RuntimeError("injected render failure")
+
+            with mock.patch.object(assembly_review, "REPO_ROOT", root), \
+                 mock.patch.object(assembly_review.assembly_contract, "load_parts", return_value=({1:"part"}, {})), \
+                 mock.patch.object(assembly_review.assembly_contract, "load_json", return_value={"review_dispatch_id":90}), \
+                 mock.patch.object(assembly_review.assembly_contract, "validate_contract", return_value=contract), \
+                 mock.patch.object(assembly_review, "printable_build_provenance", return_value={}), \
+                 mock.patch.object(assembly_review, "input_provenance", return_value={}), \
+                 mock.patch.object(assembly_review.scad_build, "resolve_openscad_exe", return_value="OpenSCAD path with spaces.exe"), \
+                 mock.patch.object(assembly_review, "run_command", side_effect=fail_render), \
+                 mock.patch.object(sys, "argv", ["review", "--design", "demo", "--config", "candidate.json"]):
+                with self.assertRaisesRegex(RuntimeError, "injected render failure"):
+                    assembly_review.main()
+            self.assertEqual(len(stages), 1)
+            self.assertFalse(stages[0].exists())
+            self.assertFalse((root / ".tmp").exists())
+            self.assertEqual(printable.read_bytes(), b"preserved printable")
+            self.assertEqual(list(final.iterdir()), [printable])
+
     def test_mutable_staging_is_allowed_only_inside_design_output(self):
         accepted = scad_build.validate_output_directory(
             REPO_ROOT / "output" / "example_box" / ".build-stage-test",

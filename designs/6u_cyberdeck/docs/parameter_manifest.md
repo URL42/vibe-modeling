@@ -1,3 +1,6 @@
+> Historical rev_0001 record. The current shared source and manifest target rev_0003;
+> this record does not approve or reproduce the corrected geometry. See [rev_0003 verification](rev_0003_verification.md).
+
 # 6u_cyberdeck — Resolved Parameter Manifest (rev_0001)
 
 Governing plan:
@@ -27,7 +30,8 @@ Governing plan:
 | Clear opening (Z) | 266.7 mm | 6 x 44.45 |
 | Face width (X) | 254.0 mm | spec `rack_front_width_nominal` |
 | Depth (Y) | 80.0 mm | user mandate — see depth resolution record |
-| Ring band (radial, both axes) | 13.6 mm | 3.8 head recess + 3.0 tongue root + 1.0 socket tip clearance + 3.0 receiver closed-end wall + 2.8 nut pocket depth |
+| Top/bottom band and station radial envelope | 13.6 mm | Original dimensional allowance; actual clamp stack is head recess 3.8 + tongue 3.0 + bearing wall 4.0 + nut pocket 2.8. Socket tip clearance 1.0 is along insertion. |
+| Side front rail band | 15.875 mm | (254.0 - 222.25) / 2; independent of station radial depth |
 | Outer envelope | 254.0 x 80.0 x 293.9 mm | 266.7 + 2 x 13.6 (Z); face width; user depth |
 | `minimum_wall_thickness` | 3.0 mm | host baseline |
 | `minimum_structural_overlap` | 3.0 mm | host baseline (>= wall) |
@@ -60,3 +64,13 @@ Governing plan:
 
 Fit clearance, structural engagement, and boolean epsilon are kept distinct
 quantities per the station reference.
+
+2026-10-18 candidate clarification: each tongue reaches 14 mm beyond its seam,
+so conservative leaf print bounds are 141 x 160.95 x 80 mm, not the original
+140.6 x 160.55 estimate based on the radial band. The dimensions still fit the
+220 mm target with the originally required total free margin of at least 55 mm
+per axis. The installed meshes provide the authoritative actual bounds.
+
+The original starting profile is not a production tolerance freeze. See
+`verification.md` and `geometry_measurements.json` for the implemented dimensions,
+pending physical measurements, and exact candidate artifact evidence.

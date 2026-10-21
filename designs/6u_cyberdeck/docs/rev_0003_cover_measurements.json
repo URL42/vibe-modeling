@@ -1,0 +1,2115 @@
+{
+  "config": "designs\\6u_cyberdeck\\configs\\rev_0003.json",
+  "verification_script_sha256": "5f45dc0a0fe1cee6e8af0bd8b29eb4606dcdb949ae76614cb0b20229d422e246",
+  "config_sha256": "bbe19ed52adb9e22aca33bd34bdfd0c2ae20813ff6a08cb228dccdb062d64ad3",
+  "build_manifest_sha256": "f254bc29145a27cfa82cf7c8af40131a3f2ec59c7ce62539cb1b3eff7645ad4e",
+  "parts": [
+    {
+      "triangles": 4832,
+      "closed_shells": 1,
+      "bounds_mm": [
+        [
+          0.0,
+          5.72205e-07,
+          0.0
+        ],
+        [
+          141.0,
+          177.2,
+          3.0
+        ]
+      ],
+      "signed_volume_mm3": 58619.51760319395,
+      "consistent_winding": true,
+      "name": "control_cover_left",
+      "sha256": "01fe9b0388f8c47d268e291f7deb83df708b98bb9063b581d1a8c5b569daaa5d"
+    },
+    {
+      "triangles": 4912,
+      "closed_shells": 1,
+      "bounds_mm": [
+        [
+          0.0,
+          5.72205e-07,
+          0.0
+        ],
+        [
+          127.0,
+          177.2,
+          9.8
+        ]
+      ],
+      "signed_volume_mm3": 60916.77477927497,
+      "consistent_winding": true,
+      "name": "control_cover_right",
+      "sha256": "a37a7638937e050cdc1cb4433d3cf03d662a184daa7c34cbc7656256a1989e2f"
+    }
+  ],
+  "sections": [
+    {
+      "label": "hole 0 open",
+      "owner": 6,
+      "x": -83.5,
+      "v": 24.299999999999997,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 0 open",
+      "owner": 6,
+      "x": -76.5,
+      "v": 24.299999999999997,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 0 open",
+      "owner": 6,
+      "x": -83.5,
+      "v": 31.299999999999997,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 0 surrounding face",
+      "owner": 6,
+      "x": -69.1,
+      "v": 24.299999999999997,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 0 surrounding face",
+      "owner": 6,
+      "x": -97.9,
+      "v": 24.299999999999997,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 0 surrounding face",
+      "owner": 6,
+      "x": -83.5,
+      "v": 38.699999999999996,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 0 surrounding face",
+      "owner": 6,
+      "x": -83.5,
+      "v": 9.899999999999997,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 1 open",
+      "owner": 6,
+      "x": -83.5,
+      "v": 64.3,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 1 open",
+      "owner": 6,
+      "x": -76.5,
+      "v": 64.3,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 1 open",
+      "owner": 6,
+      "x": -83.5,
+      "v": 71.3,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 1 surrounding face",
+      "owner": 6,
+      "x": -69.1,
+      "v": 64.3,
+      "w_intervals": [
+        [
+          0.0,
+          2.9999999999999996
+        ]
+      ]
+    },
+    {
+      "label": "hole 1 surrounding face",
+      "owner": 6,
+      "x": -97.9,
+      "v": 64.3,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 1 surrounding face",
+      "owner": 6,
+      "x": -83.5,
+      "v": 78.7,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 1 surrounding face",
+      "owner": 6,
+      "x": -83.5,
+      "v": 49.9,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 2 open",
+      "owner": 6,
+      "x": -43.5,
+      "v": 24.299999999999997,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 2 open",
+      "owner": 6,
+      "x": -36.5,
+      "v": 24.299999999999997,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 2 open",
+      "owner": 6,
+      "x": -43.5,
+      "v": 31.299999999999997,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 2 surrounding face",
+      "owner": 6,
+      "x": -29.1,
+      "v": 24.299999999999997,
+      "w_intervals": [
+        [
+          0.0,
+          2.9999999999999996
+        ]
+      ]
+    },
+    {
+      "label": "hole 2 surrounding face",
+      "owner": 6,
+      "x": -57.9,
+      "v": 24.299999999999997,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 2 surrounding face",
+      "owner": 6,
+      "x": -43.5,
+      "v": 38.699999999999996,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 2 surrounding face",
+      "owner": 6,
+      "x": -43.5,
+      "v": 9.899999999999997,
+      "w_intervals": [
+        [
+          0.0,
+          3.0000000000000004
+        ]
+      ]
+    },
+    {
+      "label": "hole 3 open",
+      "owner": 6,
+      "x": -43.5,
+      "v": 64.3,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 3 open",
+      "owner": 6,
+      "x": -36.5,
+      "v": 64.3,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 3 open",
+      "owner": 6,
+      "x": -43.5,
+      "v": 71.3,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 3 surrounding face",
+      "owner": 6,
+      "x": -29.1,
+      "v": 64.3,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 3 surrounding face",
+      "owner": 6,
+      "x": -57.9,
+      "v": 64.3,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 3 surrounding face",
+      "owner": 6,
+      "x": -43.5,
+      "v": 78.7,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 3 surrounding face",
+      "owner": 6,
+      "x": -43.5,
+      "v": 49.9,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 4 open",
+      "owner": 7,
+      "x": 63.5,
+      "v": 69.5,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 4 open",
+      "owner": 7,
+      "x": 70.5,
+      "v": 69.5,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 4 open",
+      "owner": 7,
+      "x": 63.5,
+      "v": 76.5,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 4 surrounding face",
+      "owner": 7,
+      "x": 77.9,
+      "v": 69.5,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 4 surrounding face",
+      "owner": 7,
+      "x": 49.1,
+      "v": 69.5,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 4 surrounding face",
+      "owner": 7,
+      "x": 63.5,
+      "v": 83.9,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 4 surrounding face",
+      "owner": 7,
+      "x": 63.5,
+      "v": 55.1,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 5 open",
+      "owner": 7,
+      "x": 89.0,
+      "v": 44,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 5 open",
+      "owner": 7,
+      "x": 96.0,
+      "v": 44,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 5 open",
+      "owner": 7,
+      "x": 89.0,
+      "v": 51.0,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 5 surrounding face",
+      "owner": 7,
+      "x": 103.4,
+      "v": 44,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 5 surrounding face",
+      "owner": 7,
+      "x": 74.6,
+      "v": 44,
+      "w_intervals": [
+        [
+          0.0,
+          3.0000000000000004
+        ]
+      ]
+    },
+    {
+      "label": "hole 5 surrounding face",
+      "owner": 7,
+      "x": 89.0,
+      "v": 58.4,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 5 surrounding face",
+      "owner": 7,
+      "x": 89.0,
+      "v": 29.6,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 6 open",
+      "owner": 7,
+      "x": 63.5,
+      "v": 18.5,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 6 open",
+      "owner": 7,
+      "x": 70.5,
+      "v": 18.5,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 6 open",
+      "owner": 7,
+      "x": 63.5,
+      "v": 25.5,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 6 surrounding face",
+      "owner": 7,
+      "x": 77.9,
+      "v": 18.5,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 6 surrounding face",
+      "owner": 7,
+      "x": 49.1,
+      "v": 18.5,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 6 surrounding face",
+      "owner": 7,
+      "x": 63.5,
+      "v": 32.9,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 6 surrounding face",
+      "owner": 7,
+      "x": 63.5,
+      "v": 4.1,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 7 open",
+      "owner": 7,
+      "x": 38.0,
+      "v": 44,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 7 open",
+      "owner": 7,
+      "x": 45.0,
+      "v": 44,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 7 open",
+      "owner": 7,
+      "x": 38.0,
+      "v": 51.0,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 7 surrounding face",
+      "owner": 7,
+      "x": 52.4,
+      "v": 44,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 7 surrounding face",
+      "owner": 7,
+      "x": 23.6,
+      "v": 44,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 7 surrounding face",
+      "owner": 7,
+      "x": 38.0,
+      "v": 58.4,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 7 surrounding face",
+      "owner": 7,
+      "x": 38.0,
+      "v": 29.6,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 8 open",
+      "owner": 6,
+      "x": -63.5,
+      "v": -44.3,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 8 open",
+      "owner": 6,
+      "x": -56.0,
+      "v": -44.3,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 8 open",
+      "owner": 6,
+      "x": -63.5,
+      "v": -36.8,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 8 surrounding face",
+      "owner": 6,
+      "x": -48.1,
+      "v": -44.3,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 8 surrounding face",
+      "owner": 6,
+      "x": -78.9,
+      "v": -44.3,
+      "w_intervals": [
+        [
+          0.0,
+          3.0000000000000004
+        ]
+      ]
+    },
+    {
+      "label": "hole 8 surrounding face",
+      "owner": 6,
+      "x": -63.5,
+      "v": -28.9,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 8 surrounding face",
+      "owner": 6,
+      "x": -63.5,
+      "v": -59.699999999999996,
+      "w_intervals": [
+        [
+          0.0,
+          2.9999999999999996
+        ]
+      ]
+    },
+    {
+      "label": "hole 9 open",
+      "owner": 6,
+      "x": -103.5,
+      "v": -64.3,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 9 open",
+      "owner": 6,
+      "x": -102.65,
+      "v": -64.3,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 9 open",
+      "owner": 6,
+      "x": -103.5,
+      "v": -63.449999999999996,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 9 surrounding face",
+      "owner": 6,
+      "x": -101.4,
+      "v": -64.3,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 9 surrounding face",
+      "owner": 6,
+      "x": -105.6,
+      "v": -64.3,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 9 surrounding face",
+      "owner": 6,
+      "x": -103.5,
+      "v": -62.199999999999996,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 9 surrounding face",
+      "owner": 6,
+      "x": -103.5,
+      "v": -66.39999999999999,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 10 open",
+      "owner": 6,
+      "x": -103.5,
+      "v": -24.299999999999997,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 10 open",
+      "owner": 6,
+      "x": -102.65,
+      "v": -24.299999999999997,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 10 open",
+      "owner": 6,
+      "x": -103.5,
+      "v": -23.449999999999996,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 10 surrounding face",
+      "owner": 6,
+      "x": -101.4,
+      "v": -24.299999999999997,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 10 surrounding face",
+      "owner": 6,
+      "x": -105.6,
+      "v": -24.299999999999997,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 10 surrounding face",
+      "owner": 6,
+      "x": -103.5,
+      "v": -22.199999999999996,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 10 surrounding face",
+      "owner": 6,
+      "x": -103.5,
+      "v": -26.4,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 11 open",
+      "owner": 6,
+      "x": -23.5,
+      "v": -64.3,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 11 open",
+      "owner": 6,
+      "x": -22.65,
+      "v": -64.3,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 11 open",
+      "owner": 6,
+      "x": -23.5,
+      "v": -63.449999999999996,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 11 surrounding face",
+      "owner": 6,
+      "x": -21.4,
+      "v": -64.3,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 11 surrounding face",
+      "owner": 6,
+      "x": -25.6,
+      "v": -64.3,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 11 surrounding face",
+      "owner": 6,
+      "x": -23.5,
+      "v": -62.199999999999996,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 11 surrounding face",
+      "owner": 6,
+      "x": -23.5,
+      "v": -66.39999999999999,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 12 open",
+      "owner": 6,
+      "x": -23.5,
+      "v": -24.299999999999997,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 12 open",
+      "owner": 6,
+      "x": -22.65,
+      "v": -24.299999999999997,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 12 open",
+      "owner": 6,
+      "x": -23.5,
+      "v": -23.449999999999996,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 12 surrounding face",
+      "owner": 6,
+      "x": -21.4,
+      "v": -24.299999999999997,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 12 surrounding face",
+      "owner": 6,
+      "x": -25.6,
+      "v": -24.299999999999997,
+      "w_intervals": [
+        [
+          0.0,
+          2.9999999999999996
+        ]
+      ]
+    },
+    {
+      "label": "hole 12 surrounding face",
+      "owner": 6,
+      "x": -23.5,
+      "v": -22.199999999999996,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 12 surrounding face",
+      "owner": 6,
+      "x": -23.5,
+      "v": -26.4,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 13 open",
+      "owner": 7,
+      "x": 63.5,
+      "v": -44.3,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 13 open",
+      "owner": 7,
+      "x": 71.0,
+      "v": -44.3,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 13 open",
+      "owner": 7,
+      "x": 63.5,
+      "v": -36.8,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 13 surrounding face",
+      "owner": 7,
+      "x": 78.9,
+      "v": -44.3,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 13 surrounding face",
+      "owner": 7,
+      "x": 48.1,
+      "v": -44.3,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 13 surrounding face",
+      "owner": 7,
+      "x": 63.5,
+      "v": -28.9,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 13 surrounding face",
+      "owner": 7,
+      "x": 63.5,
+      "v": -59.699999999999996,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 14 open",
+      "owner": 7,
+      "x": 23.5,
+      "v": -64.3,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 14 open",
+      "owner": 7,
+      "x": 24.35,
+      "v": -64.3,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 14 open",
+      "owner": 7,
+      "x": 23.5,
+      "v": -63.449999999999996,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 14 surrounding face",
+      "owner": 7,
+      "x": 25.6,
+      "v": -64.3,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 14 surrounding face",
+      "owner": 7,
+      "x": 21.4,
+      "v": -64.3,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 14 surrounding face",
+      "owner": 7,
+      "x": 23.5,
+      "v": -62.199999999999996,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 14 surrounding face",
+      "owner": 7,
+      "x": 23.5,
+      "v": -66.39999999999999,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 15 open",
+      "owner": 7,
+      "x": 23.5,
+      "v": -24.299999999999997,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 15 open",
+      "owner": 7,
+      "x": 24.35,
+      "v": -24.299999999999997,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 15 open",
+      "owner": 7,
+      "x": 23.5,
+      "v": -23.449999999999996,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 15 surrounding face",
+      "owner": 7,
+      "x": 25.6,
+      "v": -24.299999999999997,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 15 surrounding face",
+      "owner": 7,
+      "x": 21.4,
+      "v": -24.299999999999997,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 15 surrounding face",
+      "owner": 7,
+      "x": 23.5,
+      "v": -22.199999999999996,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 15 surrounding face",
+      "owner": 7,
+      "x": 23.5,
+      "v": -26.4,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 16 open",
+      "owner": 7,
+      "x": 103.5,
+      "v": -64.3,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 16 open",
+      "owner": 7,
+      "x": 104.35,
+      "v": -64.3,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 16 open",
+      "owner": 7,
+      "x": 103.5,
+      "v": -63.449999999999996,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 16 surrounding face",
+      "owner": 7,
+      "x": 105.6,
+      "v": -64.3,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 16 surrounding face",
+      "owner": 7,
+      "x": 101.4,
+      "v": -64.3,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 16 surrounding face",
+      "owner": 7,
+      "x": 103.5,
+      "v": -62.199999999999996,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 16 surrounding face",
+      "owner": 7,
+      "x": 103.5,
+      "v": -66.39999999999999,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 17 open",
+      "owner": 7,
+      "x": 103.5,
+      "v": -24.299999999999997,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 17 open",
+      "owner": 7,
+      "x": 104.35,
+      "v": -24.299999999999997,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 17 open",
+      "owner": 7,
+      "x": 103.5,
+      "v": -23.449999999999996,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 17 surrounding face",
+      "owner": 7,
+      "x": 105.6,
+      "v": -24.299999999999997,
+      "w_intervals": [
+        [
+          0.0,
+          2.9999999999999996
+        ]
+      ]
+    },
+    {
+      "label": "hole 17 surrounding face",
+      "owner": 7,
+      "x": 101.4,
+      "v": -24.299999999999997,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 17 surrounding face",
+      "owner": 7,
+      "x": 103.5,
+      "v": -22.199999999999996,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 17 surrounding face",
+      "owner": 7,
+      "x": 103.5,
+      "v": -26.4,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 18 open",
+      "owner": 6,
+      "x": -118.2625,
+      "v": -82.55,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 18 open",
+      "owner": 6,
+      "x": -117.3625,
+      "v": -82.55,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 18 open",
+      "owner": 6,
+      "x": -118.2625,
+      "v": -81.64999999999999,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 18 surrounding face",
+      "owner": 6,
+      "x": -116.0625,
+      "v": -82.55,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 18 surrounding face",
+      "owner": 6,
+      "x": -120.4625,
+      "v": -82.55,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 18 surrounding face",
+      "owner": 6,
+      "x": -118.2625,
+      "v": -80.35,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 18 surrounding face",
+      "owner": 6,
+      "x": -118.2625,
+      "v": -84.75,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 19 open",
+      "owner": 6,
+      "x": -118.2625,
+      "v": 82.55,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 19 open",
+      "owner": 6,
+      "x": -117.3625,
+      "v": 82.55,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 19 open",
+      "owner": 6,
+      "x": -118.2625,
+      "v": 83.45,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 19 surrounding face",
+      "owner": 6,
+      "x": -116.0625,
+      "v": 82.55,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 19 surrounding face",
+      "owner": 6,
+      "x": -120.4625,
+      "v": 82.55,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 19 surrounding face",
+      "owner": 6,
+      "x": -118.2625,
+      "v": 84.75,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 19 surrounding face",
+      "owner": 6,
+      "x": -118.2625,
+      "v": 80.35,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 20 open",
+      "owner": 7,
+      "x": 118.2625,
+      "v": -82.55,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 20 open",
+      "owner": 7,
+      "x": 119.16250000000001,
+      "v": -82.55,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 20 open",
+      "owner": 7,
+      "x": 118.2625,
+      "v": -81.64999999999999,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 20 surrounding face",
+      "owner": 7,
+      "x": 120.4625,
+      "v": -82.55,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 20 surrounding face",
+      "owner": 7,
+      "x": 116.0625,
+      "v": -82.55,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 20 surrounding face",
+      "owner": 7,
+      "x": 118.2625,
+      "v": -80.35,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 20 surrounding face",
+      "owner": 7,
+      "x": 118.2625,
+      "v": -84.75,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 21 open",
+      "owner": 7,
+      "x": 118.2625,
+      "v": 82.55,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 21 open",
+      "owner": 7,
+      "x": 119.16250000000001,
+      "v": 82.55,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 21 open",
+      "owner": 7,
+      "x": 118.2625,
+      "v": 83.45,
+      "w_intervals": []
+    },
+    {
+      "label": "hole 21 surrounding face",
+      "owner": 7,
+      "x": 120.4625,
+      "v": 82.55,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 21 surrounding face",
+      "owner": 7,
+      "x": 116.0625,
+      "v": 82.55,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 21 surrounding face",
+      "owner": 7,
+      "x": 118.2625,
+      "v": 84.75,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "hole 21 surrounding face",
+      "owner": 7,
+      "x": 118.2625,
+      "v": 80.35,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "tongue root full overlap",
+      "owner": 6,
+      "x": -1.5,
+      "v": -80.0,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "tongue midpoint",
+      "owner": 6,
+      "x": 2,
+      "v": -80.0,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "tongue end",
+      "owner": 6,
+      "x": 13.5,
+      "v": -80.0,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "tongue root full overlap",
+      "owner": 6,
+      "x": -1.5,
+      "v": -75.36999999999999,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "tongue midpoint",
+      "owner": 6,
+      "x": 2,
+      "v": -75.36999999999999,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "tongue end",
+      "owner": 6,
+      "x": 13.5,
+      "v": -75.36999999999999,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "tongue root full overlap",
+      "owner": 6,
+      "x": -1.5,
+      "v": -71.19999999999999,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "tongue midpoint",
+      "owner": 6,
+      "x": 2,
+      "v": -71.19999999999999,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "tongue end",
+      "owner": 6,
+      "x": 13.5,
+      "v": -71.19999999999999,
+      "w_intervals": [
+        [
+          0.0,
+          2.9999999999999996
+        ]
+      ]
+    },
+    {
+      "label": "tongue screw bore",
+      "owner": 6,
+      "x": 8,
+      "v": -75.6,
+      "w_intervals": []
+    },
+    {
+      "label": "receiver screw bore",
+      "owner": 7,
+      "x": 8,
+      "v": -75.6,
+      "w_intervals": []
+    },
+    {
+      "label": "receiver 4 mm clamp web",
+      "owner": 7,
+      "x": 8,
+      "v": -73.3,
+      "w_intervals": [
+        [
+          3.0,
+          7.0
+        ]
+      ]
+    },
+    {
+      "label": "receiver shoulder and face overlap",
+      "owner": 7,
+      "x": 0.4,
+      "v": -83.1,
+      "w_intervals": [
+        [
+          0.0,
+          9.800000000000002
+        ]
+      ]
+    },
+    {
+      "label": "receiver shoulder and face overlap",
+      "owner": 7,
+      "x": 8.1,
+      "v": -83.1,
+      "w_intervals": [
+        [
+          0.0,
+          9.8
+        ]
+      ]
+    },
+    {
+      "label": "receiver shoulder and face overlap",
+      "owner": 7,
+      "x": 17.5,
+      "v": -83.1,
+      "w_intervals": [
+        [
+          0.0,
+          9.8
+        ]
+      ]
+    },
+    {
+      "label": "receiver shoulder and face overlap",
+      "owner": 7,
+      "x": 0.4,
+      "v": -68.1,
+      "w_intervals": [
+        [
+          0.0,
+          9.8
+        ]
+      ]
+    },
+    {
+      "label": "receiver shoulder and face overlap",
+      "owner": 7,
+      "x": 8.1,
+      "v": -68.1,
+      "w_intervals": [
+        [
+          0.0,
+          9.8
+        ]
+      ]
+    },
+    {
+      "label": "receiver shoulder and face overlap",
+      "owner": 7,
+      "x": 17.5,
+      "v": -68.1,
+      "w_intervals": [
+        [
+          0.0,
+          9.8
+        ]
+      ]
+    },
+    {
+      "label": "receiver closed end",
+      "owner": 7,
+      "x": 16.5,
+      "v": -75.39999999999999,
+      "w_intervals": [
+        [
+          0.0,
+          9.8
+        ]
+      ]
+    },
+    {
+      "label": "closed socket tip clearance",
+      "owner": 7,
+      "x": 14.5,
+      "v": -75.39999999999999,
+      "w_intervals": [
+        [
+          3.0,
+          9.8
+        ]
+      ]
+    },
+    {
+      "label": "socket side clearance",
+      "owner": 7,
+      "x": 8,
+      "v": -70.1,
+      "w_intervals": [
+        [
+          3.0,
+          9.8
+        ]
+      ]
+    },
+    {
+      "label": "tongue root full overlap",
+      "owner": 6,
+      "x": -1.5,
+      "v": 71.19999999999999,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "tongue midpoint",
+      "owner": 6,
+      "x": 2,
+      "v": 71.19999999999999,
+      "w_intervals": [
+        [
+          0.0,
+          3.0000000000000004
+        ]
+      ]
+    },
+    {
+      "label": "tongue end",
+      "owner": 6,
+      "x": 13.5,
+      "v": 71.19999999999999,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "tongue root full overlap",
+      "owner": 6,
+      "x": -1.5,
+      "v": 75.83,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "tongue midpoint",
+      "owner": 6,
+      "x": 2,
+      "v": 75.83,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "tongue end",
+      "owner": 6,
+      "x": 13.5,
+      "v": 75.83,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "tongue root full overlap",
+      "owner": 6,
+      "x": -1.5,
+      "v": 80.0,
+      "w_intervals": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "label": "tongue midpoint",
+      "owner": 6,
+      "x": 2,
+      "v": 80.0,
+      "w_intervals": [
+        [
+          0.0,
+          3.0000000000000004
+        ]
+      ]
+    },
+    {
+      "label": "tongue end",
+      "owner": 6,
+      "x": 13.5,
+      "v": 80.0,
+      "w_intervals": [
+        [
+          0.0,
+          2.9999999999999996
+        ]
+      ]
+    },
+    {
+      "label": "tongue screw bore",
+      "owner": 6,
+      "x": 8,
+      "v": 75.6,
+      "w_intervals": []
+    },
+    {
+      "label": "receiver screw bore",
+      "owner": 7,
+      "x": 8,
+      "v": 75.6,
+      "w_intervals": []
+    },
+    {
+      "label": "receiver 4 mm clamp web",
+      "owner": 7,
+      "x": 8,
+      "v": 77.89999999999999,
+      "w_intervals": [
+        [
+          3.0,
+          7.0
+        ]
+      ]
+    },
+    {
+      "label": "receiver shoulder and face overlap",
+      "owner": 7,
+      "x": 0.4,
+      "v": 68.1,
+      "w_intervals": [
+        [
+          0.0,
+          9.800000000000002
+        ]
+      ]
+    },
+    {
+      "label": "receiver shoulder and face overlap",
+      "owner": 7,
+      "x": 8.1,
+      "v": 68.1,
+      "w_intervals": [
+        [
+          0.0,
+          9.8
+        ]
+      ]
+    },
+    {
+      "label": "receiver shoulder and face overlap",
+      "owner": 7,
+      "x": 17.5,
+      "v": 68.1,
+      "w_intervals": [
+        [
+          0.0,
+          9.8
+        ]
+      ]
+    },
+    {
+      "label": "receiver shoulder and face overlap",
+      "owner": 7,
+      "x": 0.4,
+      "v": 83.1,
+      "w_intervals": [
+        [
+          0.0,
+          9.8
+        ]
+      ]
+    },
+    {
+      "label": "receiver shoulder and face overlap",
+      "owner": 7,
+      "x": 8.1,
+      "v": 83.1,
+      "w_intervals": [
+        [
+          0.0,
+          9.8
+        ]
+      ]
+    },
+    {
+      "label": "receiver shoulder and face overlap",
+      "owner": 7,
+      "x": 17.5,
+      "v": 83.1,
+      "w_intervals": [
+        [
+          0.0,
+          9.8
+        ]
+      ]
+    },
+    {
+      "label": "receiver closed end",
+      "owner": 7,
+      "x": 16.5,
+      "v": 75.8,
+      "w_intervals": [
+        [
+          0.0,
+          9.8
+        ]
+      ]
+    },
+    {
+      "label": "closed socket tip clearance",
+      "owner": 7,
+      "x": 14.5,
+      "v": 75.8,
+      "w_intervals": [
+        [
+          3.0,
+          9.8
+        ]
+      ]
+    },
+    {
+      "label": "socket side clearance",
+      "owner": 7,
+      "x": 8,
+      "v": 81.1,
+      "w_intervals": [
+        [
+          3.0,
+          9.8
+        ]
+      ]
+    }
+  ],
+  "case_regression": {
+    "leaf_bottom_left.stl": {
+      "previous_sha256": "650aacefc43c80e97dfd45011f34b85dbd0cd18981c41b2a7d9a6c35f1aae20f",
+      "current_sha256": "75aa48b9b17f73cec1f9ff1f90fa7420cbb45306e737720a3c4d01012a08235b",
+      "identical_bytes": false,
+      "triangle_count": 3188,
+      "volume_delta_mm3": 5.820766091346741e-11,
+      "identical_bounds": true
+    },
+    "leaf_bottom_right.stl": {
+      "previous_sha256": "176f5035088dda9168d04a6d8123830ca4167d3864182b627023be68ac75c5e9",
+      "current_sha256": "dbd3c397a68d22094a4c4c82e0c896cb5bd663db77c4b31abcc8d0fb11f47b11",
+      "identical_bytes": false,
+      "triangle_count": 3740,
+      "volume_delta_mm3": -5.820766091346741e-11,
+      "identical_bounds": true
+    },
+    "leaf_top_left.stl": {
+      "previous_sha256": "c50c4abe235033695ec1960dde605aebceffd1e7b48ecf2081da6bacccb324f2",
+      "current_sha256": "e8d432c69ebc952cb23fba01ff42f4b34ef0d929467124e3c81a86991cca5839",
+      "identical_bytes": false,
+      "triangle_count": 3740,
+      "volume_delta_mm3": 5.820766091346741e-11,
+      "identical_bounds": true
+    },
+    "leaf_top_right.stl": {
+      "previous_sha256": "f8115aa2f2e646e46c05f44bdd923385dd9fe381adf4a0e15017256bd1b6e80b",
+      "current_sha256": "f192a486820a274072ee1c0395a8d550d1ece8a85bb57cba93cba51b8cac0e77",
+      "identical_bytes": false,
+      "triangle_count": 4292,
+      "volume_delta_mm3": 0.0,
+      "identical_bounds": true
+    },
+    "rear_center_bridge.stl": {
+      "previous_sha256": "ca0bb70d7ae648ebbd9ec346df6ccd250b0f8a64abc77d38b2df585d6d08e995",
+      "current_sha256": "5c3b72b9dc65efc5602f74f43c4fc488a83466ba332dcf73354170bd9f5e995f",
+      "identical_bytes": false,
+      "triangle_count": 796,
+      "volume_delta_mm3": 0.0,
+      "identical_bounds": true
+    }
+  },
+  "through_holes": 22,
+  "minimum_face_edge_ligament_mm": 4.249999999999997,
+  "minimum_face_cut_pair_ligament_mm": 8.062445840513924,
+  "panel_span_sections": 34,
+  "seam_stations": 2,
+  "rail_fasteners": 4,
+  "button_envelope_clearance_mm": 1.0624458405139237,
+  "analytical_master_samples": 9528,
+  "analytical_depths_mm": [
+    1.5,
+    3.5,
+    6,
+    8.5
+  ],
+  "analytical_circle_boundary_exclusion_mm": 0.03,
+  "result": "PASS: installed digital geometry only",
+  "readiness": "unverified: hardware bodies, physical fit, PLA load and slicer layers",
+  "installed_product_hole_and_face_rays": 44,
+  "assembly_review_manifest_sha256": "f6a58ae4c1133d0e7975440719db3ba77d98659f022755dccf199a1d5391be67",
+  "coupon_connected_pieces": 2,
+  "coupon_sha256": "320782c80a3ab0a6bad82974783cdbcbea75f99a15e9c076ac3c41410329ceb8"
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "parts": [
+    {
+      "part_id": 1,
+      "name": "leaf_bottom_left"
+    },
+    {
+      "part_id": 2,
+      "name": "leaf_bottom_right"
+    },
+    {
+      "part_id": 3,
+      "name": "leaf_top_right"
+    },
+    {
+      "part_id": 4,
+      "name": "leaf_top_left"
+    },
+    {
+      "part_id": 5,
+      "name": "rear_center_bridge"
+    },
+    {
+      "part_id": 6,
+      "name": "control_cover_left"
+    },
+    {
+      "part_id": 7,
+      "name": "control_cover_right"
+    }
+  ]
+}

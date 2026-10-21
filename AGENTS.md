@@ -184,6 +184,13 @@ Keep the documented repository layout synchronized with `README.md`:
 - `docs/`: supplemental artifacts, including `docs/solarpunk_series.md`, the
   canonical source of truth for all `solarpunk_*` designs.
 
+Design navigation: `designs/6u_cyberdeck/README.md` describes the standalone
+four-quadrant 6U case with an internal rear-center bridge and a two-piece lower-4U
+control cover. Its mutable `rev_0003` candidate is governed by the case plan
+`plans/current/2026-10-04-11-35-16_create-6u-cyberdeck.md` and cover plan
+`plans/current/2026-10-18-23-59-27_6u-cyberdeck-4u-control-cover.md`; physical coupon,
+calibration and slicer evidence are required before immutable publication.
+
 Design-series canonical: every design whose directory prefix is `solarpunk_`
 must link to `docs/solarpunk_series.md` from its design README. That document
 is the single source of truth for series-level decisions and for the details of

@@ -1,0 +1,115 @@
+// Candidate manufacturing profile; all physical fits await the coupon.
+part_id = is_undef(part_id) ? 1 : part_id;
+assembly_view_id = is_undef(assembly_view_id) ? 0 : assembly_view_id;
+minimum_wall_thickness = 3;
+minimum_structural_overlap = 3;
+minimum_internal_edge_width = 3;
+boolean_epsilon = 0.02;
+case_width = 254;
+case_height = 293.9;
+case_depth = 80;
+opening_width = 222.25;
+opening_height = 266.7;
+wall_thickness = 3;
+front_thickness = 5.8;
+ring_band = 13.6;
+m3_clearance_diameter = 3.6;
+head_recess_diameter = 8.25;
+head_recess_depth = 3.8;
+nut_across_flats = 5.9;
+nut_pocket_circumscribed_diameter = nut_across_flats / cos(30);
+nut_pocket_depth = 2.8;
+tongue_insertion_depth = 14;
+tongue_root_structural_overlap = 3;
+receiver_closed_end_thickness = 3;
+socket_side_clearance = 1;
+socket_tip_clearance = 1;
+tongue_width = 10;
+tongue_thickness = 3;
+socket_outer_clearance = 0.2;
+station_width = tongue_width + 2 * socket_side_clearance + 2 * minimum_wall_thickness;
+socket_length = tongue_insertion_depth + socket_tip_clearance;
+receiver_length = socket_length + receiver_closed_end_thickness;
+fastener_offset = 8;
+station_depth_centers = [18, 71];
+side_front_station_y = 40;
+rail_service_end_y = 28;
+rail_service_diameter = 8;
+rear_bridge_size = 48;
+rear_bridge_thickness = 3;
+rear_bridge_front_y = 70.2;
+rear_pad_size = 14;
+rear_fastener_offset = 12;
+rear_nut_depth = 2.8;
+rear_nut_floor_y = case_depth - rear_nut_depth;
+rear_bridge_back_y = rear_bridge_front_y + rear_bridge_thickness;
+rear_bearing_web = rear_nut_floor_y - rear_bridge_back_y;
+rear_screw_length = 10;
+rear_washer_thickness = 0.5;
+rear_nut_thickness = 2.4;
+rear_screw_start_y = rear_bridge_front_y-rear_washer_thickness;
+rear_screw_tip_y = rear_screw_start_y+rear_screw_length;
+rail_x = 236.525 / 2;
+rack_nut_across_flats = 5.6;
+rack_nut_diameter = rack_nut_across_flats / cos(30);
+rack_nut_depth = 2.8;
+print_bed = 220;
+print_margin = 5;
+// Each row: [ribbon (top,bottom,left,right), depth, tongue owner, receiver].
+stations = [[0,18,4,3],[0,71,4,3],[1,18,1,2],[1,71,1,2],
+            [2,side_front_station_y,1,4],[2,71,1,4],
+            [3,side_front_station_y,2,3],[3,71,2,3]];
+function leaf_signs(id) = id==1 ? [-1,-1] : id==2 ? [1,-1] : id==3 ? [1,1] : [-1,1];
+function rack_hole_z(i) = -opening_height/2 + 6.35 + floor(i/3)*44.45 + [0,15.875,31.75][i%3];
+module assert_candidate() {
+  assert(minimum_structural_overlap >= minimum_wall_thickness);
+  assert(minimum_internal_edge_width >= minimum_wall_thickness);
+  assert(wall_thickness >= minimum_wall_thickness);
+  assert(front_thickness-rack_nut_depth >= minimum_wall_thickness);
+  assert(abs(case_height-opening_height-2*ring_band)<0.001);
+  assert(tongue_thickness >= minimum_wall_thickness);
+  assert(tongue_root_structural_overlap >= minimum_structural_overlap);
+  assert(head_recess_depth-socket_outer_clearance >= minimum_wall_thickness);
+  assert(ring_band-nut_pocket_depth-head_recess_depth-tongue_thickness >= minimum_wall_thickness);
+  assert((station_width-tongue_width-2*socket_side_clearance)/2 >= minimum_wall_thickness);
+  assert(receiver_closed_end_thickness >= minimum_wall_thickness);
+  assert(tongue_width/2-m3_clearance_diameter/2 >= minimum_internal_edge_width);
+  assert(tongue_insertion_depth-fastener_offset-m3_clearance_diameter/2 >= minimum_internal_edge_width);
+  assert(fastener_offset-head_recess_diameter/2 >= minimum_internal_edge_width);
+  assert(receiver_length-fastener_offset-head_recess_diameter/2 >= minimum_internal_edge_width);
+  assert(station_width/2-head_recess_diameter/2 >= minimum_internal_edge_width);
+  assert(station_width/2-nut_pocket_circumscribed_diameter/2 >= minimum_internal_edge_width);
+  // The nearest rack-pocket pair lies across the central fabrication seam.
+  assert(6.35-rack_nut_diameter/2 >= minimum_internal_edge_width);
+  assert(12.7-rack_nut_diameter >= minimum_internal_edge_width);
+  assert(rail_x-opening_width/2-rack_nut_diameter/2 >= minimum_internal_edge_width);
+  assert(case_width/2-rail_x-rack_nut_diameter/2 >= minimum_internal_edge_width);
+  // Front socket vs rack nut pockets: closest projected Y bounds.
+  assert(station_depth_centers[0]-(tongue_width/2+socket_side_clearance)-front_thickness >= minimum_internal_edge_width);
+  assert(case_width/2+tongue_insertion_depth+2*print_margin <= print_bed);
+  assert(case_height/2+tongue_insertion_depth+2*print_margin <= print_bed);
+  assert(case_depth+2*print_margin <= print_bed);
+  assert(side_front_station_y-station_width/2-rail_service_end_y >= minimum_internal_edge_width);
+  assert(rail_x+rail_service_diameter/2 < case_width/2-wall_thickness);
+  assert(127+rail_service_diameter/2 < case_height/2-wall_thickness);
+  assert(71-side_front_station_y-station_width >= minimum_internal_edge_width);
+  assert(rear_bridge_thickness >= minimum_wall_thickness);
+  assert(rear_bearing_web >= minimum_wall_thickness);
+  assert(rear_pad_size/2-nut_pocket_circumscribed_diameter/2 >= minimum_internal_edge_width);
+  assert(rear_fastener_offset-rear_pad_size/2 >= minimum_internal_edge_width);
+  assert(rear_bridge_size/2-rear_fastener_offset-m3_clearance_diameter/2 >= minimum_internal_edge_width);
+  assert(rear_screw_tip_y >= rear_nut_floor_y+rear_nut_thickness);
+  assert(rear_screw_tip_y <= case_depth);
+  assert(rear_bridge_back_y <= case_depth-wall_thickness);
+}
+assert_candidate();
+
+// Removable lower-4U cover; recovered early cyberdeck auxiliary pattern.
+cover_thickness = 3;
+cover_fit_gap = 0.6;
+cover_button_hole_d = 28;
+cover_button_envelope_d = 35;
+cover_joystick_center_d = 30;
+cover_joystick_pitch_x = 80;
+cover_joystick_pitch_v = 40;
+cover_joystick_bolt_d = 3.4;

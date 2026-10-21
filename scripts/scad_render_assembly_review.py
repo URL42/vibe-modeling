@@ -315,13 +315,14 @@ def main() -> int:
         return 0
 
     executable = scad_build.resolve_openscad_exe(args.openscad_path)
-    # Review artifacts are staged outside the governed final directory.  The
-    # final audit intentionally rejects every directory in output/<design>, so
-    # staging there would make a successful review impossible.
-    stage = REPO_ROOT / ".tmp" / "scad" / args.design / f"assembly-stage-{uuid.uuid4().hex}"
+    # Host policy keeps all mutable staging inside this design's output.
+    # The promotion audit ignores only this active stage; finally removes it
+    # on success or failure so ordinary audits still require a flat directory.
+    stage = final / f".assembly-stage-{uuid.uuid4().hex}"
     if stage.exists():
         fail(f"Unexpected existing staging directory: {stage}")
     stage.mkdir(parents=True, exist_ok=False)
+    info(f"Stage: {stage}")
 
     selected_views = set(contract["view_sets"][args.view_set])
     try:
