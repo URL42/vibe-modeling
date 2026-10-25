@@ -42,21 +42,47 @@ def load_json(path: Path, label: str) -> dict:
     return data
 
 
+def normalized_bytes(path: Path) -> bytes:
+    """File content with CRLF folded to LF when the file is text (has no NUL byte).
+
+    Git rewrites text line endings per platform (core.autocrlf), so provenance
+    hashes and sizes must not depend on them. Binary STL and PNG files always
+    contain NUL bytes and are hashed exactly as stored.
+    """
+    data = path.read_bytes()
+    if b"\0" not in data:
+        data = data.replace(b"\r\n", b"\n")
+    return data
+
+
 def sha256_file(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
+    return hashlib.sha256(normalized_bytes(path)).hexdigest()
 
 
-def sha256_tree(root: Path, suffixes: Tuple[str, ...]) -> str:
+def file_fingerprint(path: Path) -> Tuple[int, str]:
+    """Line-ending-normalized (size, sha256) used by every artifact record."""
+    data = normalized_bytes(path)
+    return len(data), hashlib.sha256(data).hexdigest()
+
+
+def is_hidden(path: Path, root: Path) -> bool:
+    return any(part.startswith(".") for part in path.relative_to(root).parts)
+
+
+def sha256_tree(
+    root: Path,
+    suffixes: Optional[Tuple[str, ...]],
+    skip_hidden: bool = False,
+) -> str:
+    """Hash files under root; suffixes=None includes every file."""
     digest = hashlib.sha256()
     paths = sorted(
         (
             path
             for path in root.rglob("*")
-            if path.is_file() and path.suffix.lower() in suffixes
+            if path.is_file()
+            and (suffixes is None or path.suffix.lower() in suffixes)
+            and not (skip_hidden and is_hidden(path, root))
         ),
         key=lambda path: path.relative_to(root).as_posix(),
     )
@@ -66,9 +92,36 @@ def sha256_tree(root: Path, suffixes: Tuple[str, ...]) -> str:
         relative = path.relative_to(root).as_posix()
         digest.update(relative.encode("utf-8"))
         digest.update(b"\0")
-        digest.update(path.read_bytes())
+        digest.update(normalized_bytes(path))
         digest.update(b"\0")
     return digest.hexdigest()
+
+
+def assets_provenance(assets_root: Path) -> Optional[dict]:
+    """Hash design assets (e.g. imported STL meshes) that live outside src/.
+
+    Hidden files (.DS_Store and similar) are ignored so OS metadata never
+    invalidates a build.
+    """
+    if not assets_root.is_dir() or not any(
+        p.is_file() and not is_hidden(p, assets_root) for p in assets_root.rglob("*")
+    ):
+        return None
+    return {
+        "path": repo_relative(assets_root),
+        "sha256": sha256_tree(assets_root, None, skip_hidden=True),
+    }
+
+
+def check_assets(manifest: dict, assets_root: Path) -> None:
+    """Fail unless the manifest's asset record matches designs/<design>/assets/ now."""
+    current = assets_provenance(assets_root)
+    saved = manifest.get("assets")
+    if current is None:
+        if saved is not None:
+            fail("Build manifest records design assets that no longer exist.")
+    elif not isinstance(saved, dict) or saved.get("sha256") != current["sha256"]:
+        fail("Design assets have changed since the artifacts were built (or were never recorded).")
 
 
 def repo_relative(path: Path) -> str:
@@ -133,14 +186,8 @@ def expected_artifact_names(parts: Iterable[dict], revision: str) -> Set[str]:
 def artifact_records(directory: Path, names: Iterable[str]) -> List[dict]:
     records: List[dict] = []
     for name in sorted(names):
-        path = directory / name
-        records.append(
-            {
-                "path": name,
-                "bytes": path.stat().st_size,
-                "sha256": sha256_file(path),
-            }
-        )
+        size, digest = file_fingerprint(directory / name)
+        records.append({"path": name, "bytes": size, "sha256": digest})
     return records
 
 
@@ -201,9 +248,10 @@ def recorded_artifact_names_and_validate(
         artifact_path = directory / name
         if not artifact_path.is_file():
             fail(f"Artifact recorded by {label} is missing: {artifact_path}")
-        if artifact_path.stat().st_size != record.get("bytes"):
+        size, digest = file_fingerprint(artifact_path)
+        if size != record.get("bytes"):
             fail(f"Artifact size mismatch: {artifact_path}")
-        if sha256_file(artifact_path) != record.get("sha256"):
+        if digest != record.get("sha256"):
             fail(f"Artifact hash mismatch: {artifact_path}")
     return names
 
@@ -326,10 +374,11 @@ def create_build_manifest(
     openscad_path: str,
     parts: List[dict],
     artifacts: List[dict],
+    assets: Optional[dict] = None,
 ) -> dict:
     png_count = sum(1 for artifact in artifacts if artifact["path"].endswith(".png"))
     stl_count = sum(1 for artifact in artifacts if artifact["path"].endswith(".stl"))
-    return {
+    manifest = {
         "schema_version": 1,
         "build_scope": "complete",
         "design": design,
@@ -367,6 +416,11 @@ def create_build_manifest(
         ],
         "artifacts": artifacts,
     }
+    # Only designs with an assets/ directory get the key, so manifests of
+    # designs without imported assets are unchanged.
+    if assets is not None:
+        manifest["assets"] = assets
+    return manifest
 
 
 def audit(
@@ -377,6 +431,7 @@ def audit(
     parts_path: Path,
     source_root: Path,
     ignored_top_dirs: Optional[Set[str]] = None,
+    assets_root: Optional[Path] = None,
 ) -> None:
     directory = final_directory(design, revision, destination)
     manifest_path = directory / BUILD_MANIFEST_NAME
@@ -410,6 +465,8 @@ def audit(
     source = manifest.get("source")
     if not isinstance(source, dict) or source.get("sha256") != sha256_tree(source_root, (".scad",)):
         fail("OpenSCAD source has changed since the artifacts were built.")
+    if assets_root is not None:
+        check_assets(manifest, assets_root)
 
     counts = manifest.get("counts", {})
     info(
@@ -460,6 +517,7 @@ def main() -> int:
         else design_root / "src" / "main.scad"
     )
     source_root = main_scad.parent
+    assets_root = design_root / "assets"
 
     repo_relative(config_path)
     repo_relative(parts_path)
@@ -479,6 +537,7 @@ def main() -> int:
             config_path,
             parts_path,
             source_root,
+            assets_root=assets_root,
         )
         return 0
 
@@ -555,6 +614,7 @@ def main() -> int:
             openscad_path,
             parts,
             records,
+            assets_provenance(assets_root),
         )
         (artifacts_dir / BUILD_MANIFEST_NAME).write_text(
             json.dumps(build_manifest, indent=2) + "\n",
@@ -573,6 +633,7 @@ def main() -> int:
                 parts_path,
                 source_root,
                 {stage_root.name},
+                assets_root=assets_root,
             )
         except BaseException:
             rollback_install(final, stage_root, backup)

@@ -6,25 +6,25 @@
   "generated_at_utc": "2026-10-21T06:44:42.767682+00:00",
   "config": {
     "path": "designs/6u_cyberdeck/configs/rev_0003.json",
-    "sha256": "bbe19ed52adb9e22aca33bd34bdfd0c2ae20813ff6a08cb228dccdb062d64ad3"
+    "sha256": "9daf86419e73a621d5d7f2bd0bea2ccb55286fa0868b576e82020e5f363a0eed"
   },
   "parts_manifest": {
     "path": "designs/6u_cyberdeck/parts.json",
-    "sha256": "e627d8d0a1a64743c22ae3463aecc4569f210044ce2999bb0ed9210243d6051e"
+    "sha256": "5b8083cb0e85880cc733a350a6f3db8216169e6e460cf7f6a939d4c6e8965473"
   },
   "assembly_contract": {
     "path": "designs/6u_cyberdeck/assembly.json",
-    "sha256": "5d523d62760fb806d68ac40ccfcf69a8d2e9f97a9b97f5a4b89d945ce28dde18"
+    "sha256": "970d056b894648c4c8e2602f09d647c720750a96d2a4df1593e86214e30bf547"
   },
   "source": {
     "path": "designs/6u_cyberdeck/src",
-    "sha256": "5142d3d16bf4127ff0ccb4fbed132970ea0c030a890b89ac8f8fb08d3ecef303",
+    "sha256": "08b8bfc5613ddb96578f68a4712b7d237b6e67e077f9714c52f9a02f33a8b763",
     "main_scad": "designs/6u_cyberdeck/src/main.scad"
   },
   "printable_build": {
     "path": "output/6u_cyberdeck/build_manifest.json",
     "directory": "output/6u_cyberdeck",
-    "sha256": "f254bc29145a27cfa82cf7c8af40131a3f2ec59c7ce62539cb1b3eff7645ad4e",
+    "sha256": "71daa423b7cc402bc79a6ea0a436fcb59f700e1b8402ef329cc49aad82c01c4a",
     "counts": {
       "parts": 7,
       "stl": 7,
@@ -36,50 +36,50 @@
         "part_id": 1,
         "name": "leaf_bottom_left",
         "path": "leaf_bottom_left_rev_0003.stl",
-        "bytes": 535183,
-        "sha256": "75aa48b9b17f73cec1f9ff1f90fa7420cbb45306e737720a3c4d01012a08235b"
+        "bytes": 512865,
+        "sha256": "e5f75498ac19fc85a6ff79259d986a347eea8647ca45ed6f3b5aef57b134da1c"
       },
       {
         "part_id": 2,
         "name": "leaf_bottom_right",
         "path": "leaf_bottom_right_rev_0003.stl",
-        "bytes": 638324,
-        "sha256": "dbd3c397a68d22094a4c4c82e0c896cb5bd663db77c4b31abcc8d0fb11f47b11"
+        "bytes": 612142,
+        "sha256": "00078a60e0a7bda4c789cd1d878292ea290e32a3a278b3dd5396f9d27926597c"
       },
       {
         "part_id": 3,
         "name": "leaf_top_right",
         "path": "leaf_top_right_rev_0003.stl",
-        "bytes": 732095,
-        "sha256": "f192a486820a274072ee1c0395a8d550d1ece8a85bb57cba93cba51b8cac0e77"
+        "bytes": 702049,
+        "sha256": "6ae3bc2e64e6822ba6af1f7c314f4c4317134f964513ddb994b5130600f3f573"
       },
       {
         "part_id": 4,
         "name": "leaf_top_left",
         "path": "leaf_top_left_rev_0003.stl",
-        "bytes": 628307,
-        "sha256": "e8d432c69ebc952cb23fba01ff42f4b34ef0d929467124e3c81a86991cca5839"
+        "bytes": 602125,
+        "sha256": "176e1c210adc4fee3de54754731cbd31e583216684f842bb936e36dd6630cd64"
       },
       {
         "part_id": 5,
         "name": "rear_center_bridge",
         "path": "rear_center_bridge_rev_0003.stl",
-        "bytes": 142439,
-        "sha256": "5c3b72b9dc65efc5602f74f43c4fc488a83466ba332dcf73354170bd9f5e995f"
+        "bytes": 136865,
+        "sha256": "c17c250a91fde222c8c3a5d5e72e291537489341e64c950c36e42a2c2673ddd6"
       },
       {
         "part_id": 6,
         "name": "control_cover_left",
         "path": "control_cover_left_rev_0003.stl",
-        "bytes": 801798,
-        "sha256": "01fe9b0388f8c47d268e291f7deb83df708b98bb9063b581d1a8c5b569daaa5d"
+        "bytes": 767972,
+        "sha256": "c2f23d269e3fc3efbb6f35c0903680d18b38f3f303b453acb7f5e20db01b967d"
       },
       {
         "part_id": 7,
         "name": "control_cover_right",
         "path": "control_cover_right_rev_0003.stl",
-        "bytes": 814398,
-        "sha256": "a37a7638937e050cdc1cb4433d3cf03d662a184daa7c34cbc7656256a1989e2f"
+        "bytes": 780012,
+        "sha256": "77d7a17a5e1e652f0252ec557f336729643bd11e08c3f8af90b82dab46cc3ea4"
       }
     ]
   },
@@ -95,18 +95,18 @@
   "artifacts": [
     {
       "path": "cover_seam_coupon.stl",
-      "bytes": 97448,
-      "sha256": "320782c80a3ab0a6bad82974783cdbcbea75f99a15e9c076ac3c41410329ceb8"
+      "bytes": 93134,
+      "sha256": "bc8bbf904cda200bba024805bb6edd330cfb8e808063be856d70b9a6902bf38d"
     },
     {
       "path": "cyberdeck_6u_assembled.stl",
-      "bytes": 4233099,
-      "sha256": "b15719a58e93bd38f8f26961681953bff2b88bd497d1b56c892bd9fe3604a30b"
+      "bytes": 4059973,
+      "sha256": "84eea2138480fb18dcfb6f56620f5a838d974e4d3e1018a86e29d353a162e6af"
     },
     {
       "path": "cyberdeck_6u_unsplit_master.stl",
-      "bytes": 2237882,
-      "sha256": "a26495ca68d53edf5f66d07932397920369ae5118ff27a249180af905542a05d"
+      "bytes": 2146180,
+      "sha256": "c4a0c5e025bd2dd7618415db62c03f32a242d5c78f17dce44cfbe1e675026d63"
     },
     {
       "path": "product_assembly_bottom.png",
@@ -280,8 +280,8 @@
     },
     {
       "path": "seam_station_coupon.stl",
-      "bytes": 119848,
-      "sha256": "c48043f7788c0065f32f6047d608d9c4f78fbf60b9f00e643b0e22fac1e4a80b"
+      "bytes": 114722,
+      "sha256": "095f918a6ced14259f8afe0b15bc94b475b05ccf4d576ff9057a0400a1dd026e"
     }
   ]
 }

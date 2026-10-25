@@ -28,7 +28,8 @@ def record(path: Path) -> dict:
 class UnifiedOutputTests(unittest.TestCase):
     def test_review_stage_stays_in_design_output_and_is_cleaned_after_render_failure(self):
         with tempfile.TemporaryDirectory(prefix="assembly review with spaces ") as temporary:
-            root = Path(temporary)
+            # Resolve: macOS temp dirs live under the /var -> /private/var symlink.
+            root = Path(temporary).resolve()
             design = root / "designs" / "demo"
             (design / "src").mkdir(parents=True)
             (design / "src" / "main.scad").write_text("cube(3);", encoding="utf-8")

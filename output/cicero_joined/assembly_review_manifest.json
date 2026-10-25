@@ -3,28 +3,28 @@
   "design": "cicero_joined",
   "primary_assembly": "cicero",
   "view_set": "full",
-  "generated_at_utc": "2026-10-19T05:12:49.026206+00:00",
+  "generated_at_utc": "2026-10-25T14:13:35.529296+00:00",
   "config": {
     "path": "designs/cicero_joined/configs/rev_0001.json",
-    "sha256": "e69427fed878b63ff08d4fd5babd7e1693f6f8949f3aa2f67e4dae02465fea2a"
+    "sha256": "1a80c2eefa31175c0eec3f15f7a89fd7876b1951a453a3e38eadde7648b8f1d2"
   },
   "parts_manifest": {
     "path": "designs/cicero_joined/parts.json",
-    "sha256": "4301bc74ab82d30fb7a43bed5540bd89d4c881c17b8f6bbf0db1c6094c0f3187"
+    "sha256": "90be8b232485086731ac956e6bd39abe9a3cbbe444a1c3e24b433a11d8f004d1"
   },
   "assembly_contract": {
     "path": "designs/cicero_joined/assembly.json",
-    "sha256": "2bf83109df66e6c15e78ffe90d0a810c5b93e971d9abf72667a94b5d634d1494"
+    "sha256": "d958de3f8c7bb7002e4a6a009a2c4002b4dcc88b97ba8f7008021536af537467"
   },
   "source": {
     "path": "designs/cicero_joined/src",
-    "sha256": "5010d0e15a2e3073a140e6eb4bb28a28aec0f15518419376a11de85bc079bcbc",
+    "sha256": "79e046eb66c405bf81b8e21ebd372b69d08ebe4499643f78e4a7dc7ebbed6b86",
     "main_scad": "designs/cicero_joined/src/main.scad"
   },
   "printable_build": {
     "path": "output/cicero_joined/build_manifest.json",
     "directory": "output/cicero_joined",
-    "sha256": "178bc0c37b7aad28416a40cd8e81d8da5b87bca79293909bfed1720ae8a6e6e2",
+    "sha256": "a52ea771e6008bb4746b37c3e598f7c4b65b654c0d1722e96ec056d734dc33a9",
     "counts": {
       "parts": 17,
       "stl": 17,
@@ -36,125 +36,125 @@
         "part_id": 1,
         "name": "h_face",
         "path": "h_face_rev_0001.stl",
-        "bytes": 6369198,
-        "sha256": "b6e4e0c9709f681c7231ef2dd752ae190dcdf14a97f790b24073160f8062a654"
+        "bytes": 10120133,
+        "sha256": "5a47bd65b01112cbbbe63fedd40806f7b9650717d35f280f40559143a9331096"
       },
       {
         "part_id": 2,
         "name": "h_neck",
         "path": "h_neck_rev_0001.stl",
-        "bytes": 5952017,
-        "sha256": "12123197107b913cc2403352a50e2bdf38ca3308972e2df2f371ae61b8a6eba7"
+        "bytes": 9437747,
+        "sha256": "95efa19c8b33d70a3e9023de2e1448a9899d76a911000f329b8e5e4a4fc18364"
       },
       {
         "part_id": 3,
         "name": "h_left_lower",
         "path": "h_left_lower_rev_0001.stl",
-        "bytes": 10041508,
-        "sha256": "20fe94dfc0ff4393bb9695cc80ca17ea29907e061f6c041a49b1fdcd460153ab"
+        "bytes": 15926303,
+        "sha256": "2c5854bffdeb521590b9510bfbf33e7bc65587731f35ff3f057d105447f18dd7"
       },
       {
         "part_id": 4,
         "name": "h_right_lower",
         "path": "h_right_lower_rev_0001.stl",
-        "bytes": 9537556,
-        "sha256": "c6b07a25c287574efc19e472d556659598eb33e5f34dd687ae032e333647665e"
+        "bytes": 15104709,
+        "sha256": "601f4cf0e1e442908d2b4b71e76905ac43b1347863b67df63c693e8d5417206d"
       },
       {
         "part_id": 5,
         "name": "h_left_upper",
         "path": "h_left_upper_rev_0001.stl",
-        "bytes": 16741692,
-        "sha256": "346a054216368e9ba6db9dbe3f95ec0f0f5495e4dfec05fa6e683eda34db59aa"
+        "bytes": 26633387,
+        "sha256": "d15f6aaa84bae45dc9f27a8f1091c6cf56797ced9348be2f69228364ed2b5f9a"
       },
       {
         "part_id": 6,
         "name": "h_right_upper",
         "path": "h_right_upper_rev_0001.stl",
-        "bytes": 15910231,
-        "sha256": "dd12672171ada48363124db299af07a48bd738616fc76df9017aaf887a7db5c9"
+        "bytes": 25238174,
+        "sha256": "1f69726e6590c2f849d5c1e15cf8c87269d92f1d6a3b506a54e8953ace73edcc"
       },
       {
         "part_id": 7,
         "name": "b_neck",
         "path": "b_neck_rev_0001.stl",
-        "bytes": 1632314,
-        "sha256": "4cf5b11985da390688f9d875ae0e8b014a3f4bd8fb121645c7ed25e59c25157e"
+        "bytes": 2631456,
+        "sha256": "1090b03fdf98a31ddf325e9adab3fffc09a8f035c529a1ef499ce4e8201bda2d"
       },
       {
         "part_id": 8,
         "name": "b_lower_lf",
         "path": "b_lower_lf_rev_0001.stl",
-        "bytes": 4679263,
-        "sha256": "ca6191e11fb6ed3f6b74a2ee650ff4b7294c6caac94c05025908c43efd615bdb"
+        "bytes": 7460716,
+        "sha256": "8eac77adc4171390a43e25feabccdfaa7bbb4cef868997186383e4c79de5636b"
       },
       {
         "part_id": 9,
         "name": "b_lower_lb",
         "path": "b_lower_lb_rev_0001.stl",
-        "bytes": 75623,
-        "sha256": "5ac447b94ea790d4f11e70979befbd922eafd65b8c1b52d2bfa519dcc1b64a84"
+        "bytes": 118646,
+        "sha256": "443120b098b3512c576f26d32fc715ac0f1f0a957e0f9269b00ca6d63c7e6e28"
       },
       {
         "part_id": 10,
         "name": "b_lower_rf",
         "path": "b_lower_rf_rev_0001.stl",
-        "bytes": 3593526,
-        "sha256": "cdcc98b493cf58fdcc16a223b85d7e649fecdf26fe5d4c3433f3cca1148c725d"
+        "bytes": 5739246,
+        "sha256": "d18cf644d39528ec698aca40dcb116e655be3fef18f89580d60a89bfe476303a"
       },
       {
         "part_id": 11,
         "name": "b_lower_rb",
         "path": "b_lower_rb_rev_0001.stl",
-        "bytes": 65882,
-        "sha256": "ba4081654aff1fa0ac7ba13772282f3833366b2438e4b3f00acb43e8b90d7fa8"
+        "bytes": 99560,
+        "sha256": "7eb9c87a9a6808a77bebabf3cb3938c1d9022335e16202c41680f4cdd43b2b4b"
       },
       {
         "part_id": 12,
         "name": "b_upper_lf",
         "path": "b_upper_lf_rev_0001.stl",
-        "bytes": 3272464,
-        "sha256": "a30fa528a00a84c5c1389bc3c544a830c141c788240307d04b63486c9b289878"
+        "bytes": 5176062,
+        "sha256": "6f32f88246e72209585a00e3afacf9b9056f637727431b72e2f9ff3fad49575c"
       },
       {
         "part_id": 13,
         "name": "b_upper_lb",
         "path": "b_upper_lb_rev_0001.stl",
-        "bytes": 4489841,
-        "sha256": "f619f094126fc4fe05dba54698b56ef930464694046c077cf4db8541b4effe7b"
+        "bytes": 7142397,
+        "sha256": "757c869fe956222746c303790f43edf56a275951b24ae92655f821018371db54"
       },
       {
         "part_id": 14,
         "name": "b_upper_mf",
         "path": "b_upper_mf_rev_0001.stl",
-        "bytes": 7404049,
-        "sha256": "32414f3ceecc1d6a4ac3b08ad5c5d388e6cc98e2652196f23a69bed10dd96bda"
+        "bytes": 11759820,
+        "sha256": "06e9c2f05604a3462ddb972c7817863f1186718ad4a003ce0f5beed8531b6c7c"
       },
       {
         "part_id": 15,
         "name": "b_upper_mb",
         "path": "b_upper_mb_rev_0001.stl",
-        "bytes": 7115373,
-        "sha256": "8c4f121112d0541841d3c0f33c6a9be970b2040fa0bf0ce17302e6fcf5143ed1"
+        "bytes": 11343302,
+        "sha256": "c634d55f43c7a26247d1ff69f103278b7188fbb644fbd1c6f0a52d81631aa48c"
       },
       {
         "part_id": 16,
         "name": "b_upper_rf",
         "path": "b_upper_rf_rev_0001.stl",
-        "bytes": 3972601,
-        "sha256": "1760028ffb4499b52dcc6defac5820076982301a9254e65c5a270ebccd9f728b"
+        "bytes": 6291015,
+        "sha256": "64bbfc9784d5e4bd692bc7c8a6956f93a840845303f684d6f1787abf4cc50f10"
       },
       {
         "part_id": 17,
         "name": "b_upper_rb",
         "path": "b_upper_rb_rev_0001.stl",
-        "bytes": 3134988,
-        "sha256": "9f806b04ec461f9ece5b122e65f3030df2b205947820a075efa317c1b5f56ccb"
+        "bytes": 4976816,
+        "sha256": "9d1672c068d2fd343922bd7c07117d5875a4b88df9ccb05318f23a54eec266de"
       }
     ]
   },
   "git": {
-    "commit": "b3c558acf0b13641fc347a83ccf8f89b5e61ee76",
+    "commit": "8f266cfa2869bf1964bdb82cac2528e8d7b64f8b",
     "dirty": true
   },
   "counts": {
@@ -165,143 +165,143 @@
   "artifacts": [
     {
       "path": "bust_assembled_reference.stl",
-      "bytes": 40249295,
-      "sha256": "7a55fef7f9e736127ac3ccf656dce74b07b1a12750be29234c4fdb662bd57553"
+      "bytes": 63674531,
+      "sha256": "c6b0032f7043aa15f16add114aafa5d2983110833d2f5480e149566932e2f1b2"
     },
     {
       "path": "cicero_assembled_reference.stl",
-      "bytes": 106049798,
-      "sha256": "6c9d5e11895bd3d8d23e8b115a83bd2ec86994fb982705895f9da7bf9c659351"
+      "bytes": 167215965,
+      "sha256": "ee28e07838f2fa0f62768a2712a71cf67d06ae8bab58213c5d2a9e8be0fc7c75"
     },
     {
       "path": "cicero_back.png",
-      "bytes": 193844,
-      "sha256": "a92de0053d00338903dc5395f3d0493a2bb77ac8622f4d7e61b59c45a55638a0"
+      "bytes": 197795,
+      "sha256": "76d4f6198c7deeb12e2c2f8b58b7c44a3550041e54a3e2d185ad83453ca77f38"
     },
     {
       "path": "cicero_bottom.png",
-      "bytes": 73693,
-      "sha256": "c749aad256942cbcf59034f604cdfdcbcfe4703bb15a7eeee8ed8828049f64a4"
+      "bytes": 89065,
+      "sha256": "a47aa2ceedf612bb3f7bdf9b80a72c853355401d80550cd7caaff8f8fd77caa9"
     },
     {
       "path": "cicero_bust.png",
-      "bytes": 275049,
-      "sha256": "da6f6ea30adc8b6e99a88943d9ed8805459b957393f3382b13a85ecc67752360"
+      "bytes": 285632,
+      "sha256": "67e41dc6a87ee0092b18dcaea3e2086032135bcef81cf89d089b992163465779"
     },
     {
       "path": "cicero_bust_exploded_back_left.png",
-      "bytes": 100904,
-      "sha256": "957ed734c52a223fe9929c554b1a7fadf6328bbc9cd144c8232c09d61af56b86"
+      "bytes": 112028,
+      "sha256": "5c937a81f5014ba379c6703e3a73a4cbb0fc9852e1a94253da8f40673f5e6baf"
     },
     {
       "path": "cicero_bust_exploded_back_right.png",
-      "bytes": 96947,
-      "sha256": "d04ebf2c18533b9fc298583e6af1fc0b71c05f4d88558c580dfe93e6dfe4359c"
+      "bytes": 106369,
+      "sha256": "aea55c7bf802e81709beb0f52333fcc43daf51d8f84f308bf05924f3a094fcfa"
     },
     {
       "path": "cicero_bust_exploded_front_left.png",
-      "bytes": 192561,
-      "sha256": "2e40a267abaa99c1c021029b0d3b3c379b77f79ab3b576351618432fb0e1d7df"
+      "bytes": 199447,
+      "sha256": "71ba05a8dc93d45ccbc7a3dab301045b1b84a965c973d8f35ed87b6051ddae7e"
     },
     {
       "path": "cicero_bust_exploded_front_right.png",
-      "bytes": 176677,
-      "sha256": "67a40246198d74fd6bc97d1c0bc3d4236ad9deb99775e538691b49e87aed7a3c"
+      "bytes": 187703,
+      "sha256": "517a5364c999cf1be3396b7ef0b55a87889b3fa57985df6df6b08b7bb41b13c5"
     },
     {
       "path": "cicero_bust_exploded_underside.png",
-      "bytes": 88030,
-      "sha256": "fd6cc0a0b79c72c9e0fc2673191e35e8f24c63393952bd3607a2f227380095c7"
+      "bytes": 100997,
+      "sha256": "8acbafd0078b7d526e48ff89afd63defe8042bbcde813ebae148adff459db79f"
     },
     {
       "path": "cicero_bust_neck_rail.png",
-      "bytes": 30922,
-      "sha256": "8abdc4ea1309acc159616760f929e14c89a1c6f7b9e0dd7811347c08d3b44947"
+      "bytes": 42210,
+      "sha256": "782625884f76130d2eb6cf9728c1cabbd5d920340750b4f33f8f4bcc6bfb8437"
     },
     {
       "path": "cicero_exploded.png",
-      "bytes": 230510,
-      "sha256": "461b37db45dcd63343536106c03e208f38b6080cdb783e0d6849cc0a75abb0b6"
+      "bytes": 235230,
+      "sha256": "23196bd8224b913a9dbfbc6604919a91b407a9308a168260512ed84184469b43"
     },
     {
       "path": "cicero_exposed.png",
-      "bytes": 291686,
-      "sha256": "0d68c4b1714dae8dd8de89d37ee6b6e126ae33d994d33032c6b51760c4524afd"
+      "bytes": 292253,
+      "sha256": "3bf45e8ffc51f6da605b612f47b3b53c882023b5808ad8984eab337d76790e1d"
     },
     {
       "path": "cicero_front.png",
-      "bytes": 284885,
-      "sha256": "e8ebc65ae1f2c00b32a40e1dcbbc6f1d12aa535b684f7d80be83bfdeba4c704c"
+      "bytes": 296687,
+      "sha256": "fedeee1d74ba25b295984c3aace40e13489273637f6e0f2d456d20083d3f4972"
     },
     {
       "path": "cicero_head.png",
-      "bytes": 337086,
-      "sha256": "f62db37b476ec1ee01ca29200fc5220563e353a1f1f4ab15feb17e56f8ffbdfd"
+      "bytes": 331006,
+      "sha256": "7ea3ecacb108082f5d54c9575b5e6a8448856af2765a8d61ac48b4af350e0493"
     },
     {
       "path": "cicero_head_exploded_back_left.png",
-      "bytes": 195965,
-      "sha256": "507e9eac45cebe50f72bfc0bae89e5623e1951d804bae8e39d49d270ae5a6f24"
+      "bytes": 193420,
+      "sha256": "3a7614ccd49ed4642e6bf41771905a496c370cb35321fd93dd47bba0b9bfda34"
     },
     {
       "path": "cicero_head_exploded_back_right.png",
-      "bytes": 204365,
-      "sha256": "a987e73648f4c8af9a099b68b50bb8bcdd905b43dbf2aca4c6dccf7049255f45"
+      "bytes": 201575,
+      "sha256": "91889f0f8b6e7896058f92f0a787bf2b7ef83265b6cb63afb779e4ea020edf90"
     },
     {
       "path": "cicero_head_exploded_front_left.png",
-      "bytes": 190116,
-      "sha256": "26d07944c553869002260e6fcb9d0abf664b88f000af044dbaf1520e1e806a23"
+      "bytes": 191919,
+      "sha256": "af1c1e7f0f0229df5fb434eab15149c7273c25c178411d941d1f0fa1cf0e28e6"
     },
     {
       "path": "cicero_head_exploded_front_right.png",
-      "bytes": 186287,
-      "sha256": "4eb11550f4e47a1b0d865accf80c710d8d0b675e60dfe40d1170b0d2d5e27db3"
+      "bytes": 186058,
+      "sha256": "8a98ef74e9734cd4d936cfe7ae6d5eb379e48e3532d4f14f6301661bfaf6eeae"
     },
     {
       "path": "cicero_head_exploded_underside.png",
-      "bytes": 133307,
-      "sha256": "6a3889da5d9fe55e4c854157c404809f5084e5fec755038184d666479b6e6fc9"
+      "bytes": 147197,
+      "sha256": "dc94b1cd347645dcf8072c1c3e2aca818058df2d10c81f7f4328f2cb1e8620d9"
     },
     {
       "path": "cicero_head_neck_socket.png",
-      "bytes": 128435,
-      "sha256": "9322055a751a4d05d9fe062d2fb4006b0b53fa87d0d87b621b0be7e2022e1ce3"
+      "bytes": 136882,
+      "sha256": "4ec1d34a60436b18b9180a43c24b8518432c5b54a5e53654b7c2955cfa7896fe"
     },
     {
       "path": "cicero_isometric.png",
-      "bytes": 323046,
-      "sha256": "e9566aa97a88d3c00169c59d1d6b4f69e6941178ca0e852d507e1d07c0599f28"
+      "bytes": 325019,
+      "sha256": "a2c9d6aad9c6f3833ee7e04505d44f2018a4a4f8484a25d28f66ada7f56195c0"
     },
     {
       "path": "cicero_left.png",
-      "bytes": 231038,
-      "sha256": "eb5bbf44eef56319dfab3674b9f14cb3c9b2c50ca1f5c1ab00d4d140b1f1dcbb"
+      "bytes": 235486,
+      "sha256": "80a914337ceb9ad841364d8bc3fc0fb7f9eae56362e348e962660fa6dd71b22e"
     },
     {
       "path": "cicero_neck_back.png",
-      "bytes": 142658,
-      "sha256": "fa6bad7f02880969664f84da336c80dce22b83c2b16adef821fcc1acbcca4f9c"
+      "bytes": 151538,
+      "sha256": "e70d544fc9a1e6d744db89660d1ca5c8d8f987cf56281453c3d5ac5686f49699"
     },
     {
       "path": "cicero_neck_front.png",
-      "bytes": 43823,
-      "sha256": "a5b74e63a54cab35e2bf418ce42d9172add5576e18e81602e4ce9e557e38a241"
+      "bytes": 52418,
+      "sha256": "d4b4969dad6e2a84009e59ca3f79c825bb1a94d70cd2a0edfcb58686b01ad687"
     },
     {
       "path": "cicero_right.png",
-      "bytes": 206888,
-      "sha256": "2c74c7008950676ef35752ca21a64034fc82c2f4f87fdb4d56d244bce8bae43f"
+      "bytes": 215238,
+      "sha256": "3ed5c0e6860cb39713e37de3aa539ccba3374264d942230f6c443da919f9db51"
     },
     {
       "path": "cicero_top.png",
-      "bytes": 256471,
-      "sha256": "2d203659d0b1de7c20a564c015f3964ff5e59fc5ed50d51077a98fccee1b651d"
+      "bytes": 251909,
+      "sha256": "6b5d07501d4b53c7bc5d440a4baa836e09aec3f294a7862a8c5577afde2043f2"
     },
     {
       "path": "head_assembled_reference.stl",
-      "bytes": 65800550,
-      "sha256": "3cfe3cb1c6a3bbe0cbd4e1ba17b610ddda1034fab4806a104dd395d8f29b133c"
+      "bytes": 103541479,
+      "sha256": "9aa8e4921382d450504e48f060aaa6d9412308fe934a0210c1ad995b531be9bb"
     }
   ]
 }

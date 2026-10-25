@@ -7,15 +7,15 @@
   "generated_at_utc": "2026-10-09T06:02:38.758916+00:00",
   "config": {
     "path": "designs/solarpunk_exhaust/configs/rev_0001.json",
-    "sha256": "99dc0987fc31dafc8c8616f96f5b380e70b5970391ecc84a00436ae660c7518d"
+    "sha256": "863062516d2224cdd39c9997667a4dbed3169a61482963229083e67763aa7c9c"
   },
   "parts_manifest": {
     "path": "designs/solarpunk_exhaust/parts.json",
-    "sha256": "a59153f45814417719a2827a6568c825bdfc4f9c4ade247e182b0cd0e7897be2"
+    "sha256": "4cd69bf6707ea312e6d7fe4a8c3c6f9c3dc72cb7d6485ac4eaa2e0a068ab6fa9"
   },
   "source": {
     "path": "designs/solarpunk_exhaust/src",
-    "sha256": "25378bf1484a977f13fdfd6a796e05cfc65c33751a5c73961da05a3c77e8dffb",
+    "sha256": "8e6fb074db59e03dad1c7401740fa67b642331056298f3c7c7cc7b5c75ef3ee2",
     "main_scad": "designs/solarpunk_exhaust/src/main.scad"
   },
   "git": {
@@ -49,8 +49,8 @@
     },
     {
       "path": "fan_proxy_rev_0001.stl",
-      "bytes": 154434,
-      "sha256": "ea5fa53f7461708a037ca312b28287f7ec3bf9ad80ddbdc2a11f188ea2e0566e"
+      "bytes": 147936,
+      "sha256": "805adf0fd5be72157c51f84a877f7cee95bc6ebf464e196be9eeeb0878594b43"
     },
     {
       "path": "fan_proxy_rev_0001_inspect_inside_bottom_iso.png",
@@ -139,8 +139,8 @@
     },
     {
       "path": "solarpunk_exhaust_rev_0001.stl",
-      "bytes": 807423,
-      "sha256": "302575080ce683649fc736efcad868b4bcab6b1ea7ffd99b8454b69e5abe8801"
+      "bytes": 773737,
+      "sha256": "c820fbcd990313a8710231bb9ffd0b6bd0bfa3a2ee3aee52c159c4f36b324513"
     },
     {
       "path": "solarpunk_exhaust_rev_0001_inspect_inside_bottom_iso.png",

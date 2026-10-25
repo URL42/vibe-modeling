@@ -54,8 +54,8 @@
     },
     {
       "path": "ac_redirector_bed_side_rev_0001.stl",
-      "bytes": 76471,
-      "sha256": "3ed55f8f911aff1d7c28a70997843222ced27bc3294a348618af8e9fb2a47cd2"
+      "bytes": 72969,
+      "sha256": "0fd1c63bc21305cfe891787c235048c9236880ac3b06f9d9e399b0ada3c40539"
     },
     {
       "path": "ac_redirector_bed_side_rev_0001_inspect_inside_bottom_iso.png",
@@ -144,8 +144,8 @@
     },
     {
       "path": "ac_redirector_door_side_rev_0001.stl",
-      "bytes": 38960,
-      "sha256": "cf30ca8ad14134cd27f3b9af8bf5d03967050b3f7510520a58ba131ae70e7e2a"
+      "bytes": 37194,
+      "sha256": "5e2c85c54da9128a6dceff739bbdd74b0a8a50b72f22d0714849b6ce22f85a63"
     },
     {
       "path": "ac_redirector_door_side_rev_0001_inspect_inside_bottom_iso.png",
@@ -234,8 +234,8 @@
     },
     {
       "path": "ac_vent_rail_mockup_rev_0001.stl",
-      "bytes": 8374,
-      "sha256": "bc82f7bd9a3bbab2258802cd2d49dc4a66f6f3f79eac372939f4788f4b5397ac"
+      "bytes": 7952,
+      "sha256": "5c7073437cd3e6de0147b2644a1fa2a2b4abdbf34eebe1229d7de40f75d6264c"
     },
     {
       "path": "ac_vent_rail_mockup_rev_0001_inspect_inside_bottom_iso.png",

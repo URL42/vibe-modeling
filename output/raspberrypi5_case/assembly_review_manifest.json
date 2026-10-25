@@ -6,25 +6,25 @@
   "generated_at_utc": "2026-10-10T06:34:10.509322+00:00",
   "config": {
     "path": "designs/raspberrypi5_case/configs/rev_0004.json",
-    "sha256": "57074aea42ac1294d289ffe6b1b21090d81d8c62f722bd7ab1627b311fc7bd31"
+    "sha256": "ca3e055d6147c8df854f5a000c7dbb206a5b7e054c03f6b6b261493f03580d93"
   },
   "parts_manifest": {
     "path": "designs/raspberrypi5_case/parts.json",
-    "sha256": "e4e0d3dd85f90a75a45dbef937dc1d0c699ac9904e5ccb3366cae7662931b610"
+    "sha256": "eae9e22d830d93bf5044faee4eca94bec2c737cdf978cb9f5cf97eaf104b1182"
   },
   "assembly_contract": {
     "path": "designs/raspberrypi5_case/assembly.json",
-    "sha256": "0cb70fc99f679a1e0af19b291ba806a3e838a2910f1efe2b6ff51dd4258144cc"
+    "sha256": "4e630fb8684d421d15d39dbd120b0e091dd2c1437ab2b9c6f8b28de3f9561b52"
   },
   "source": {
     "path": "designs/raspberrypi5_case/src",
-    "sha256": "66d26b64ecb741e95cca5ed29828dbed414d0463f41af119cfbf811e7706baff",
+    "sha256": "334c3511935fe306170407cff2dd259d00b4f90afc53f7af7579dcb24b0124ad",
     "main_scad": "designs/raspberrypi5_case/src/main.scad"
   },
   "printable_build": {
     "path": "output/raspberrypi5_case/build_manifest.json",
     "directory": "output/raspberrypi5_case",
-    "sha256": "f0c7d08c238570ed034de11d17a20b45f0067a4b7a723315f2d7f7e5cdd1a7cf",
+    "sha256": "45d32c9bb3044b6d16edd05511408f0830cfb1e6da1c176defa04d4b51b5a210",
     "counts": {
       "parts": 2,
       "stl": 2,
@@ -36,15 +36,15 @@
         "part_id": 1,
         "name": "base",
         "path": "base_rev_0004.stl",
-        "bytes": 397688,
-        "sha256": "0576f307253eb15b00840b97b5a2f6f4dae38f8291c5533d2effaed46f8828a1"
+        "bytes": 380802,
+        "sha256": "4f0f0339ae49599403e11b4dfdc0ebd000e9bcab89ce1b65cd6945f24d6bfc3a"
       },
       {
         "part_id": 2,
         "name": "lid",
         "path": "lid_rev_0004.stl",
-        "bytes": 368912,
-        "sha256": "6e9cc399b43130483ea456f443bfe3c44e203c347e083a43050d2e718bdb499b"
+        "bytes": 353678,
+        "sha256": "999d3a6a70ec1e916003231fff83155e27a6c4ad6db310cf3d677533da44c308"
       }
     ]
   },
@@ -60,8 +60,8 @@
   "artifacts": [
     {
       "path": "product_assembly.stl",
-      "bytes": 764453,
-      "sha256": "2a13d9a058a7ad3b23fb7b42c8a4628f8b56139c8b87f07bb68053204b8241ee"
+      "bytes": 732531,
+      "sha256": "390c2e6832cd1276299c2ae505363cadfc4efb9bf31f4f12d8d016fd5d7ffd5e"
     },
     {
       "path": "product_assembly_base_isolation.png",

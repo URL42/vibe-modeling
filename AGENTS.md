@@ -217,8 +217,9 @@ The VS Code launch task "Rebuild stale CAD designs" runs
 `python scripts/rebuild_stale_designs.py --all`, the governed automatic build
 pipeline. Use it to rebuild updated designs; do not hand-run OpenSCAD or
 otherwise chase build/verification details. It rebuilds and audits only
-multi-part designs (those with `designs/<design>/parts.json`), and only while the
-design tree is newer than the installed `output/<design>/build_manifest.json`. Its
+multi-part designs (those with `designs/<design>/parts.json`), and only when the
+installed `output/<design>/build_manifest.json` is missing or fails
+`scad_build_all.py --audit-only` (content hashes, never file timestamps). Its
 config choice comes from that installed manifest's `config.path` (single-config
 directory as fallback). Single-part designs (no `parts.json`) are outside its
 scope and are built explicitly with
@@ -292,8 +293,18 @@ These rules apply unless a design documents stricter requirements:
 - The final flat output must equal the union of every declared printable and
   assembly artifact plus their manifests; no other file or directory is allowed.
 - Reject missing, unexpected, duplicate, stale, or hash-mismatched artifacts.
-- Record config, parts-manifest, OpenSCAD source-tree, Git, and artifact hashes in
+- Record config, parts-manifest, OpenSCAD source-tree, design-asset
+  (`designs/<design>/assets/`, when present), Git, and artifact hashes in
   `build_manifest.json`.
+- Provenance hashes and sizes of text files (no NUL byte) fold CRLF to LF, so
+  audits give the same result on Windows `autocrlf` and LF checkouts. Revision
+  manifests created before 2026-10-25 under `revisions/` still hold CRLF-byte
+  hashes and fail `--destination revision --audit-only` on LF checkouts; they
+  are immutable and were deliberately not migrated.
+- Asset hashes ignore hidden files (`.DS_Store` and similar). Assembly reviews
+  reject a printable build whose recorded assets differ from the current ones.
+- Hand-made slicer projects belong in `designs/<design>/slicer/`, never in
+  `output/<design>/`.
 - Numbered revisions are immutable; geometry or config changes require a new one.
 - Revision-like filenames are not provenance. A passing manifest audit is.
 - Single-part builds are partial and must not be represented as complete outputs.

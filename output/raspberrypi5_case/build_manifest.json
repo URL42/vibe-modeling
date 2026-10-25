@@ -7,15 +7,15 @@
   "generated_at_utc": "2026-10-10T06:31:25.725780+00:00",
   "config": {
     "path": "designs/raspberrypi5_case/configs/rev_0004.json",
-    "sha256": "57074aea42ac1294d289ffe6b1b21090d81d8c62f722bd7ab1627b311fc7bd31"
+    "sha256": "ca3e055d6147c8df854f5a000c7dbb206a5b7e054c03f6b6b261493f03580d93"
   },
   "parts_manifest": {
     "path": "designs/raspberrypi5_case/parts.json",
-    "sha256": "e4e0d3dd85f90a75a45dbef937dc1d0c699ac9904e5ccb3366cae7662931b610"
+    "sha256": "eae9e22d830d93bf5044faee4eca94bec2c737cdf978cb9f5cf97eaf104b1182"
   },
   "source": {
     "path": "designs/raspberrypi5_case/src",
-    "sha256": "66d26b64ecb741e95cca5ed29828dbed414d0463f41af119cfbf811e7706baff",
+    "sha256": "334c3511935fe306170407cff2dd259d00b4f90afc53f7af7579dcb24b0124ad",
     "main_scad": "designs/raspberrypi5_case/src/main.scad"
   },
   "git": {
@@ -49,8 +49,8 @@
     },
     {
       "path": "base_rev_0004.stl",
-      "bytes": 397688,
-      "sha256": "0576f307253eb15b00840b97b5a2f6f4dae38f8291c5533d2effaed46f8828a1"
+      "bytes": 380802,
+      "sha256": "4f0f0339ae49599403e11b4dfdc0ebd000e9bcab89ce1b65cd6945f24d6bfc3a"
     },
     {
       "path": "base_rev_0004_inspect_inside_bottom_iso.png",
@@ -139,8 +139,8 @@
     },
     {
       "path": "lid_rev_0004.stl",
-      "bytes": 368912,
-      "sha256": "6e9cc399b43130483ea456f443bfe3c44e203c347e083a43050d2e718bdb499b"
+      "bytes": 353678,
+      "sha256": "999d3a6a70ec1e916003231fff83155e27a6c4ad6db310cf3d677533da44c308"
     },
     {
       "path": "lid_rev_0004_inspect_inside_bottom_iso.png",

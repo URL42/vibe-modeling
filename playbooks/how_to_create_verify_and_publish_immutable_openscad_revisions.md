@@ -18,7 +18,11 @@ artifacts exactly once without modifying an existing numbered revision.
 4. Apply structural, fit, print-volume, and manifest verification playbooks.
 5. Record expected part names and artifact counts before publication.
 6. After all gates pass, run `scad_new_revision.py` with the staged config as
-   `--base-config`. Confirm it selects the expected unused number.
+   `--base-config`. It publishes the candidate under its own number only when it
+   is the highest-numbered config and no revision at or above it exists; any
+   other base is copied forward. Confirm the printed mode and number. Use
+   `--dry-run` first if in doubt: it writes nothing. A failed build removes the
+   config and revision folder the command created.
 7. For manifest designs, rebuild current output once from the newly published
    host config path so its manifest no longer points at the temporary candidate path, then
    require passing audits of both `output/<design>/` and

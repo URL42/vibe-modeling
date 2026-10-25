@@ -7,15 +7,15 @@
   "generated_at_utc": "2026-09-21T01:25:52.684114+00:00",
   "config": {
     "path": "designs/solarpunk_seed_tray/configs/rev_0002.json",
-    "sha256": "c1e21e3ae84b3d8c10007007f2f4b2e19db20a3ae359c4d6b09b0e1e8ad17695"
+    "sha256": "847d809f2037b5938df23d576090a3b9394ff9f94e49b667f709019c9b3b9182"
   },
   "parts_manifest": {
     "path": "designs/solarpunk_seed_tray/parts.json",
-    "sha256": "9576cfb12a3549d48a7fe2d1a465dc8728cf0f3b191bda994060e0173db17571"
+    "sha256": "ba9aa3d08436426e83ec0aad3e449ecbd4f0682cb5d95184221e42d5d102fee0"
   },
   "source": {
     "path": "designs/solarpunk_seed_tray/src",
-    "sha256": "3bb0808a165e9ab873e4641b5fe475374ffe2346cb30899cdd36a73e980f437f",
+    "sha256": "889c9cf656b4cf07a96820ac1c65c8fcfa017a1df0ea59b06f17a8ec2e52f4cc",
     "main_scad": "designs/solarpunk_seed_tray/src/main.scad"
   },
   "git": {
@@ -44,8 +44,8 @@
     },
     {
       "path": "solarpunk_seed_tray_rev_0002.stl",
-      "bytes": 261121,
-      "sha256": "2951e44cfd400231c4ed350149f9729adf90f94805ef2121b01396f9f8a6b44f"
+      "bytes": 250031,
+      "sha256": "ac4885ac842d6d9d19a9bd88fd0586b016de821cb5717a43d7c9e014afb02c7c"
     },
     {
       "path": "solarpunk_seed_tray_rev_0002_inspect_inside_bottom_iso.png",

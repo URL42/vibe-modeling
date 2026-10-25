@@ -85,6 +85,11 @@ If the agent follows the included playbooks, it should also document what it cha
   - [`6u_cyberdeck`](designs/6u_cyberdeck/README.md): standalone 254 x 293.9 x 80 mm four-quadrant 6U case with an internal rear-center bridge and two-piece lower-4U joystick/button cover; mutable `rev_0003` candidate. Physical coupon/calibration and slicer verification remain required before immutable publication.
   - The `solarpunk_*` designs are at mixed stages (seed_tray: scaffold, placeholder configs; siphon_filter: deferred; solarpunk_exhaust: scaffold, rev_0001 blockout built and audited); their canonical details live in `docs/solarpunk_series.md`
   - `cyberdeck-2`: fully enclosed 5U ten-inch-rack receiver (80 mm deep behind the rack) split into four printable quadrant leaves and joined by eight end-aligned M3 tongue/receiver seam stations with captive washers and hex nuts; thirty front rack holes, two internal equipment shelves, closed rear
+- `designs/<design>/assets/` (optional)
+  - imported meshes or other non-SCAD inputs; complete builds record their hash
+    and audits fail when they change
+- `designs/<design>/slicer/` (optional)
+  - hand-made slicer projects (`.3mf`); never written by the build pipeline
 - `output/`
   - the single mutable destination for printable parts, combined assemblies,
     review views, probes, sections, manifests, and managed in-progress staging
@@ -213,9 +218,12 @@ python scripts/scad_build_all.py \
 ### VS Code stale-build hook
 
 The `Rebuild stale CAD designs` launch configuration runs the hook directly, so
-the VS Code play button works even when no editor is active. The hook compares
-each multipart design tree with its installed `output/<design>/build_manifest.json`,
-then rebuilds and audits only stale designs through `scad_build_all.py`. The
+the VS Code play button works even when no editor is active. The hook runs
+`scad_build_all.py --audit-only` for each multipart design and rebuilds and
+audits, through `scad_build_all.py`, only designs whose installed
+`output/<design>/build_manifest.json` is missing or fails that audit. Staleness
+is decided by content hashes, never file timestamps, so a fresh clone does not
+trigger rebuilds. The
 default VS Code rebuild therefore installs and audits the complete printable
 manifest only; it does not run the costly CGAL assembly-review set.
 For a design with several configs and no installed manifest, run one explicit
@@ -242,16 +250,21 @@ python scripts/scad_new_revision.py \
   --base-config designs/example_box/configs/rev_0002.json
 ```
 
-By default this creates:
+When `--base-config` is the staged candidate `configs/rev_000N.json` (the
+highest-numbered config, with no revision folder at or above `rev_000N`), the
+command publishes it as `rev_000N` and leaves the config untouched. The example
+therefore creates:
 
-- `designs/example_box/configs/rev_0002.json`
-- `revisions/example_box/rev_0002/params.json`
-- (when not dry-run) STL + multi-view PNG artifacts in the revision folder
+- `revisions/example_box/rev_0002/params.json` (a byte copy of the config)
+- STL + multi-view PNG artifacts in the revision folder
 
-The example assumes `designs/example_box/configs/rev_0002.json` is the already verified
-candidate and `rev_0002` is still unused. `--dry-run` skips OpenSCAD rendering
-but still creates the config and revision files. It is not a read-only preview.
-Never run this command against a revision number that has already been published.
+For any other base config, including older configs that were never published,
+the command copies it to the next unused number (a new `configs/rev_000N.json` plus its
+revision folder). The command prints which mode it selected.
+
+If the build fails, the command removes the config file and revision folder it
+created, so a failed attempt never consumes a revision number. `--dry-run` writes nothing: it prints
+the selected revision, the files it would write, and the build command.
 
 Default PNG outputs include:
 

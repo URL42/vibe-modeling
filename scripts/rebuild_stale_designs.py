@@ -1,4 +1,4 @@
-"""Rebuild governed multipart CAD outputs whose design tree is newer than its build.
+"""Rebuild governed multipart CAD outputs whose installed build no longer passes audit.
 
 Designed for VS Code's preLaunchTask. Only complete printable-manifest builds
 and their installed-output audits run automatically; the expensive, supplementary
@@ -16,8 +16,23 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def newest_mtime(path: Path) -> float:
-    return max((p.stat().st_mtime for p in path.rglob("*") if p.is_file()), default=0)
+def build_command(design: str, config: Path) -> list[str]:
+    return [sys.executable, "scripts/scad_build_all.py", "--design", design,
+            "--config", str(config.relative_to(ROOT)), "--destination", "current"]
+
+
+def is_current(design: str, config: Path) -> bool:
+    """The installed build is current exactly when its hash audit passes.
+
+    File mtimes are not used: checkouts and clones rewrite them, and content
+    hashes already record what each build was made from.
+    """
+    result = subprocess.run([*build_command(design, config), "--audit-only"], cwd=ROOT,
+                            capture_output=True, text=True)
+    if result.returncode:
+        reason = (result.stderr or result.stdout).strip().splitlines()
+        print(f"STALE {design}: {reason[-1] if reason else 'audit failed'}")
+    return result.returncode == 0
 
 
 def configured_path(design: Path) -> Path | None:
@@ -35,8 +50,7 @@ def configured_path(design: Path) -> Path | None:
 
 
 def audit(design: str, config: Path) -> int:
-    command = [sys.executable, "scripts/scad_build_all.py", "--design", design,
-               "--config", str(config.relative_to(ROOT)), "--destination", "current"]
+    command = build_command(design, config)
     result = subprocess.run(command, cwd=ROOT)
     if result.returncode:
         return result.returncode
@@ -63,9 +77,8 @@ def main() -> int:
             print(f"ERROR {design.name}: no installed config and multiple/no configs; build once explicitly.")
             failures += 1
             continue
-        stale = not manifest.is_file() or newest_mtime(design) > manifest.stat().st_mtime
-        if stale:
-            print(f"REBUILD {design.name}: design tree is newer than current build")
+        if not manifest.is_file() or not is_current(design.name, config):
+            print(f"REBUILD {design.name}: installed build is missing or fails audit")
             failures += bool(audit(design.name, config))
         else:
             print(f"CURRENT {design.name}: {config.relative_to(ROOT)}")

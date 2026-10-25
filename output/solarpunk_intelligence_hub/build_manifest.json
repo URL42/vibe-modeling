@@ -7,15 +7,15 @@
   "generated_at_utc": "2026-09-23T04:34:45.221883+00:00",
   "config": {
     "path": "designs/solarpunk_intelligence_hub/configs/rev_0003.json",
-    "sha256": "f0df17dedb5a89ebcf12af4f1fb4af353ec851e3166927fec69a76ca08342675"
+    "sha256": "64bcd752812587f62952d193a40476e64ed9f6aede00ada54cfb3e5bd1637b0c"
   },
   "parts_manifest": {
     "path": "designs/solarpunk_intelligence_hub/parts.json",
-    "sha256": "738def6dbaa33e4516c3d549c7c70ca1f58dcd6667fc95ac22b3f0029378b894"
+    "sha256": "eb4b77bb181a514aea3a54f7c858bd3baccd4170f3d69758befe599e31ba0a69"
   },
   "source": {
     "path": "designs/solarpunk_intelligence_hub/src",
-    "sha256": "f46cd9bdddce1a7d55bb0bd07759d92f454dcb256d9999199037d5c2fe136c8c",
+    "sha256": "ea3cf7eb6aab6898f2a75be52cdf7f30208ec73090494ba0b7417bcf24252f86",
     "main_scad": "designs/solarpunk_intelligence_hub/src/main.scad"
   },
   "git": {
@@ -49,8 +49,8 @@
     },
     {
       "path": "backplane_blockout_mockup_rev_0003.stl",
-      "bytes": 413793,
-      "sha256": "1e52ebbb0d8e5668517b23aad72b90f5830326dd956981dba629137cec4182ba"
+      "bytes": 395787,
+      "sha256": "084194d70026f2ecd9f82a1ddfc064e26784d0203add1b8cc872db92c13c7fc2"
     },
     {
       "path": "backplane_blockout_mockup_rev_0003_inspect_inside_bottom_iso.png",
@@ -139,8 +139,8 @@
     },
     {
       "path": "solarpunk_intelligence_hub_rev_0003.stl",
-      "bytes": 2903894,
-      "sha256": "6548152c42862672c1b4aff0caf6c87ebbbc174358057ba2ce3d5cf5004fd908"
+      "bytes": 2781588,
+      "sha256": "c380395f0f5fdf52f8a576abfb07825e2302ae26fa07f952a2240134d0610673"
     },
     {
       "path": "solarpunk_intelligence_hub_rev_0003_inspect_inside_bottom_iso.png",

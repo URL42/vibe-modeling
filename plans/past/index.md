@@ -2,6 +2,7 @@
 
 Format: `created_at | path | title | summary`
 
+2026-10-24-11-00-00 | plans/past/2026-10-24-11-00-00_fix-build-automation-review-findings.md | Fix build-automation review findings | Correct revision numbering, make revision publication fail clean, bind design assets into build provenance, detect stale builds by audit, make provenance hashes line-ending independent, and restore passing audits for every multipart design.
 2026-10-18-22-35-09 | plans/past/2026-10-18-22-35-09_cicero-datacenter-definition.md | Define the Cicero datacenter design | Import the licensed full-size reference and document canonical negatives and void-aware joinery requirements.
 2026-10-16-21-00-00 | plans/past/2026-10-16-21-00-00_gravity-dovetails-and-flat-bed-slicing.md | Document gravity-seated dovetails and flat-bed slicing | Establish reusable joint and slicing workflows and map Cicero seam ownership before production geometry.
 2026-10-16-20-00-00 | plans/past/2026-10-16-20-00-00_cicero-artifact-cleanup.md | Remove superseded Cicero artifacts | Keep only current reference outputs and original imports, and synchronize documentation.

@@ -3,7 +3,6 @@
 
 import argparse
 import datetime
-import hashlib
 import json
 import shutil
 import subprocess
@@ -40,23 +39,16 @@ def validate_build_directory(path: Path, design: str) -> Path:
     return resolved
 
 
-def sha256_file(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
+# Shared with the printable build so both manifests use line-ending-normalized hashes.
+sha256_file = scad_build_all.sha256_file
 
 
 def artifact_records(directory: Path, names: Iterable[str]) -> List[dict]:
-    return [
-        {
-            "path": name,
-            "bytes": (directory / name).stat().st_size,
-            "sha256": sha256_file(directory / name),
-        }
-        for name in sorted(names)
-    ]
+    records = []
+    for name in sorted(names):
+        size, digest = scad_build_all.file_fingerprint(directory / name)
+        records.append({"path": name, "bytes": size, "sha256": digest})
+    return records
 
 
 def expected_names(contract: dict, view_set: str) -> Set[str]:
@@ -150,6 +142,9 @@ def printable_build_provenance(
         recorded = manifest.get(key)
         if not isinstance(recorded, dict) or recorded.get("sha256") != expected_hash:
             fail(f"Printable build is stale: {key} does not match current input.")
+    # Imported meshes feed the review renders too; reject a printable build made
+    # from different assets than the ones the review would render.
+    scad_build_all.check_assets(manifest, REPO_ROOT / "designs" / design / "assets")
 
     records = manifest.get("artifacts")
     if not isinstance(records, list) or not records:
@@ -165,7 +160,7 @@ def printable_build_provenance(
         path = build_dir / name
         if not path.exists():
             fail(f"Printable build artifact is missing: {path}")
-        if path.stat().st_size != record.get("bytes") or sha256_file(path) != record.get("sha256"):
+        if scad_build_all.file_fingerprint(path) != (record.get("bytes"), record.get("sha256")):
             fail(f"Printable build artifact hash or size mismatch: {path}")
     expected = scad_build_all.unified_expected_names(build_dir, manifest)
     scad_build_all.validate_exact_artifacts(build_dir, expected)

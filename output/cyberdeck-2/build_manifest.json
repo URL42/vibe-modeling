@@ -7,15 +7,15 @@
   "generated_at_utc": "2026-09-13T09:07:31.377095+00:00",
   "config": {
     "path": "designs/cyberdeck-2/configs/rev_0001.json",
-    "sha256": "ab3b2fcb01085295943d367ebc21304e23d22f03f6510c850bd1b1121d2f38ad"
+    "sha256": "65dfe68608940f60ec5a6f8a1178c87ddccbc068f9813e7be026c998b6d67e52"
   },
   "parts_manifest": {
     "path": "designs/cyberdeck-2/parts.json",
-    "sha256": "bda2810250a942edb0469b5bd5e3ce6a39b67e59a1e8902d61a6c7cf55f96c31"
+    "sha256": "3cdc1dcf2d24e5e193ec99b66400f888a4f118a47c41ba6ed857f0aebf0aa370"
   },
   "source": {
     "path": "designs/cyberdeck-2/src",
-    "sha256": "aab853c9d8fc2c60a42b239c19784d95f43274e20fce81a9bf11e6fc2fab0687",
+    "sha256": "3a8fdac6b0de4535340b24618767a3ba243ef1864ca449bf7ab3167ba89cafc0",
     "main_scad": "designs/cyberdeck-2/src/main.scad"
   },
   "git": {
@@ -59,8 +59,8 @@
     },
     {
       "path": "leaf_bottom_left_rev_0001.stl",
-      "bytes": 205141,
-      "sha256": "d5f38288e6e859862ba9626f4599351678f28f78b461c0867004f372b9658a3e"
+      "bytes": 196473,
+      "sha256": "934964b4b68a2e46cfd7045fbf7a3fd95ebf1c4764b1671e63a3aec5d43ba93a"
     },
     {
       "path": "leaf_bottom_left_rev_0001_inspect_inside_bottom_iso.png",
@@ -149,8 +149,8 @@
     },
     {
       "path": "leaf_bottom_right_rev_0001.stl",
-      "bytes": 238175,
-      "sha256": "b8d74bf4cda8d263f07bfd0c573d6809d419146d387647d43cd6150fe72025ea"
+      "bytes": 228219,
+      "sha256": "a1aa6484980ddf6975ac8210821272a77bef8699acd91b623c48e038d25893f5"
     },
     {
       "path": "leaf_bottom_right_rev_0001_inspect_inside_bottom_iso.png",
@@ -239,8 +239,8 @@
     },
     {
       "path": "leaf_top_left_rev_0001.stl",
-      "bytes": 237252,
-      "sha256": "11f95ce1e81327904aa0fabaab2c2db626001928f38c20771edd82f3ac6f8782"
+      "bytes": 227296,
+      "sha256": "79f2d49760c3512828b81b77882d69d46614d19ef992102dcb9e0428893a706a"
     },
     {
       "path": "leaf_top_left_rev_0001_inspect_inside_bottom_iso.png",
@@ -329,8 +329,8 @@
     },
     {
       "path": "leaf_top_right_rev_0001.stl",
-      "bytes": 271894,
-      "sha256": "9a89bdb6e2889915dd1c8355c6fbd8392a5f8558fac6c1ab44d0396ab0dd874c"
+      "bytes": 260650,
+      "sha256": "a28bc3f9aecf62fd26ef085675f7012c604c0e541ef29de0a55411538989ef9c"
     },
     {
       "path": "leaf_top_right_rev_0001_inspect_inside_bottom_iso.png",

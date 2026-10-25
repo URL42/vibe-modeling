@@ -6,25 +6,25 @@
   "generated_at_utc": "2026-08-31T23:46:15.954532+00:00",
   "config": {
     "path": "designs/triple_thor_enclosure/configs/rev_0001.json",
-    "sha256": "5404b96d762fe8f156fcde9862d048e9b394cbac473d6e533ad78dcec1aef07f"
+    "sha256": "e43e5ceabd9a857b9360f3aff4ed507331f35fe6fe1677f8325e9e6622e132f8"
   },
   "parts_manifest": {
     "path": "designs/triple_thor_enclosure/parts.json",
-    "sha256": "6c866af8afb4df65209d728ca297c46c4eef17d6d4197a34bd6180ac4d7f42e4"
+    "sha256": "507dda87f0ea79a1753900da592974c7dab3ed79d8ea6a598edd3a01ae8f7e50"
   },
   "assembly_contract": {
     "path": "designs/triple_thor_enclosure/assembly.json",
-    "sha256": "3147697cba5bcd3a90dce330c5ca63aae6a4287cb211c771031f1079a8020ba6"
+    "sha256": "b301b01079a9e3858c0c72eb4a8537f4bf822a9819e07cc80956e9fbb6072a93"
   },
   "source": {
     "path": "designs/triple_thor_enclosure/src",
-    "sha256": "fc0413b9b3ad3c5c2360ccab6a558d5952822015c1358f9382b98bf2044eb231",
+    "sha256": "bfc0c3de0d3ec3a72e31da2a367b6db88e3e512efb0ebd25276961b23a213574",
     "main_scad": "designs/triple_thor_enclosure/src/main.scad"
   },
   "printable_build": {
     "path": "output/triple_thor_enclosure/build_manifest.json",
     "directory": "output/triple_thor_enclosure",
-    "sha256": "46193ebaef05902f01fc62969a2bf6be52b14c298d4478badd12e208cf21f8a5",
+    "sha256": "d795b0b4e0f064b8b1c6d8fc307cba0d52379f603c05524fde182bee77680588",
     "counts": {
       "parts": 4,
       "stl": 4,
@@ -36,29 +36,29 @@
         "part_id": 1,
         "name": "base_sector",
         "path": "base_sector_rev_0001.stl",
-        "bytes": 25016,
-        "sha256": "f11973dd2b5532e8bec63091c4790be35c712cb227e84d5b68ce1a385c78d788"
+        "bytes": 23978,
+        "sha256": "b00b7fa89558db945df5ec003f4848e0094effb18a74c19cbe71d695e7771516"
       },
       {
         "part_id": 2,
         "name": "column",
         "path": "column_rev_0001.stl",
-        "bytes": 25016,
-        "sha256": "f11973dd2b5532e8bec63091c4790be35c712cb227e84d5b68ce1a385c78d788"
+        "bytes": 23978,
+        "sha256": "b00b7fa89558db945df5ec003f4848e0094effb18a74c19cbe71d695e7771516"
       },
       {
         "part_id": 3,
         "name": "cap_sector",
         "path": "cap_sector_rev_0001.stl",
-        "bytes": 25016,
-        "sha256": "f11973dd2b5532e8bec63091c4790be35c712cb227e84d5b68ce1a385c78d788"
+        "bytes": 23978,
+        "sha256": "b00b7fa89558db945df5ec003f4848e0094effb18a74c19cbe71d695e7771516"
       },
       {
         "part_id": 4,
         "name": "exhaust_ring",
         "path": "exhaust_ring_rev_0001.stl",
-        "bytes": 25016,
-        "sha256": "f11973dd2b5532e8bec63091c4790be35c712cb227e84d5b68ce1a385c78d788"
+        "bytes": 23978,
+        "sha256": "b00b7fa89558db945df5ec003f4848e0094effb18a74c19cbe71d695e7771516"
       }
     ]
   },
